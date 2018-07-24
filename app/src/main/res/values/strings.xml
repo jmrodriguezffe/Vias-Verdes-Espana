@@ -1,3 +1,7 @@
 <resources>
-  <string name="app_name">Vias Verdes España</string>
+  <string name="app_name">Vias Verdes y ENP</string>
+  <string name="section__vv_list">Vias Verdes y ENP</string>
+  <string name="section__map">Mapa</string>
+  <string name="section__more_info">+ Info</string>
+  <string name="section__settings">Ajustes</string>
 </resources>

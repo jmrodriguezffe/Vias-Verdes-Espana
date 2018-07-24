@@ -1,8 +1,8 @@
 apply plugin: 'com.android.application'
 
 apply plugin: 'kotlin-android'
-
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
 
 android {
   compileSdkVersion 27
@@ -27,10 +27,29 @@ android {
   }
 }
 
+// Library Versions
+def androidSupportVersion = "27.1.1"
+def butterknifeVersion = "8.8.1"
+def daggerVersion = "2.13"
+
 dependencies {
   implementation fileTree(dir: 'libs', include: ['*.jar'])
+  // KOTLIN
   implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+  // CORE LEGENDZ
+  implementation 'com.underlegendz.core:core-legendz:1.1.0'
+  // UnderActivity
+  implementation "com.underlegendz.underactivity:under-activity:2.0.1"
+  // Architecture components
+  implementation "android.arch.lifecycle:extensions:1.1.1"
+  implementation "android.arch.persistence.room:runtime:1.1.1"
+  kapt "android.arch.persistence.room:compiler:1.1.1"
+  // Butterknife
+  implementation "com.jakewharton:butterknife:$butterknifeVersion"
+  kapt "com.jakewharton:butterknife-compiler:$butterknifeVersion"
+  // Android Support
   implementation 'com.android.support:appcompat-v7:27.1.1'
+  implementation 'com.android.support:design:27.1.1'
   implementation 'com.android.support.constraint:constraint-layout:1.1.2'
   testImplementation 'junit:junit:4.12'
   androidTestImplementation 'com.android.support.test:runner:1.0.2'
