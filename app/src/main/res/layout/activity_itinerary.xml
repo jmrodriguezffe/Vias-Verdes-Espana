@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".ui.activity.ItineraryActivity">
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+      <ImageView
+        android:id="@+id/itinerary__image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        tools:src="@drawable/image__sier"
+        app:layout_constraintTop_toTopOf="parent" />
+
+      <TextView
+        android:id="@+id/itinerary__see_in_map"
+        style="@style/Text_Detail_Button"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/itinerary__see_in_map"
+        app:layout_constraintEnd_toStartOf="@id/itinerary__how_to_get"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/itinerary__image" />
+
+      <TextView
+        android:id="@+id/itinerary__how_to_get"
+        style="@style/Text_Detail_Button"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:background="@color/colorAccent"
+        android:text="@string/itinerary__how_to_get"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/itinerary__see_in_map"
+        app:layout_constraintTop_toBottomOf="@id/itinerary__image" />
+
+      <TextView
+        android:id="@+id/itinerary__localization_label"
+        style="@style/Text_Detail_Section"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin__default"
+        android:text="@string/itinerary__localization"
+        app:layout_constraintTop_toBottomOf="@id/itinerary__see_in_map" />
+
+      <TextView
+        android:id="@+id/itinerary__localization"
+        style="@style/Text_Normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="@dimen/margin__default"
+        android:paddingStart="@dimen/margin__default"
+        tools:text="Entre Puerto Serrano y Olvera."
+        app:layout_constraintTop_toBottomOf="@id/itinerary__localization_label" />
+
+      <TextView
+        android:id="@+id/itinerary__provinces"
+        style="@style/Text_Normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="@dimen/margin__default"
+        android:paddingStart="@dimen/margin__default"
+        tools:text="Cádiz, Sevilla"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/itinerary__localization" />
+
+      <TextView
+        android:id="@+id/itinerary__length_label"
+        style="@style/Text_Detail_Section"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin__default"
+        android:text="@string/itinerary__length"
+        app:layout_constraintTop_toBottomOf="@id/itinerary__provinces" />
+
+      <TextView
+        android:id="@+id/itinerary__length"
+        style="@style/Text_Normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="@dimen/margin__default"
+        android:paddingStart="@dimen/margin__default"
+        tools:text="36 km"
+        app:layout_constraintTop_toBottomOf="@id/itinerary__length_label" />
+
+      <TextView
+        android:id="@+id/itinerary__user_type_label"
+        style="@style/Text_Detail_Section"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin__default"
+        android:text="@string/itinerary__user_type"
+        app:layout_constraintTop_toBottomOf="@id/itinerary__length" />
+
+      <ImageView
+        android:id="@+id/itinerary__wheelchair_user_type"
+        android:layout_width="@dimen/image_size__detail__user_type"
+        android:layout_height="@dimen/image_size__detail__user_type"
+        android:layout_margin="@dimen/margin__small"
+        android:scaleType="fitCenter"
+        android:src="@drawable/user_type__wheelchair"
+        app:layout_constraintStart_toEndOf="@id/itinerary__bicycle_user_type"
+        app:layout_constraintTop_toBottomOf="@id/itinerary__user_type_label" />
+
+      <ImageView
+        android:id="@+id/itinerary__bicycle_user_type"
+        android:layout_width="@dimen/image_size__detail__user_type"
+        android:layout_height="@dimen/image_size__detail__user_type"
+        android:layout_margin="@dimen/margin__small"
+        android:scaleType="fitCenter"
+        android:src="@drawable/user_type__bicycle"
+        app:layout_constraintStart_toEndOf="@id/itinerary__walk_user_type"
+        app:layout_constraintTop_toBottomOf="@id/itinerary__user_type_label" />
+
+      <ImageView
+        android:id="@+id/itinerary__walk_user_type"
+        android:layout_width="@dimen/image_size__detail__user_type"
+        android:layout_height="@dimen/image_size__detail__user_type"
+        android:layout_margin="@dimen/margin__small"
+        android:layout_marginStart="@dimen/margin__default"
+        android:scaleType="fitCenter"
+        android:src="@drawable/user_type__walk"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/itinerary__user_type_label" />
+
+      <TextView
+        android:id="@+id/itinerary__natura_label"
+        style="@style/Text_Detail_Section"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin__default"
+        android:text="@string/itinerary__natura"
+        app:layout_constraintTop_toBottomOf="@id/itinerary__walk_user_type" />
+
+      <TextView
+        android:id="@+id/itinerary__natura"
+        style="@style/Text_Normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="@dimen/margin__default"
+        android:paddingStart="@dimen/margin__default"
+        tools:text="Esta Vía Verde cuenta con 9 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: La Reserva de la Biosfera Intercontinental del Mediterráneo, la Reserva Natural Peñón de Zaframagón,  así como el LIC Laguna de Coripe y las Zonas de Importancia Comunitaria ZICS Arroyo de Santiago, Salado de Morón y Matabueyes/Garrapata; el Peñón del Zaframagón; Río Guadaira; Río Guadalete; y la Sierra Lijar (Red Natura 2000). Además del Monumento Natural Chaparro de la Vega."
+        app:layout_constraintTop_toBottomOf="@id/itinerary__natura_label" />
+
+    </android.support.constraint.ConstraintLayout>
+  </ScrollView>
+
+  <TextView
+    android:id="@+id/itinerary__title"
+    style="@style/Text_Detail_Title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:text="V.V. de la Sierra y sus Espacios Naturales Protegidos"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <ImageView
+    android:id="@+id/itinerary__back"
+    android:layout_width="70dp"
+    android:layout_height="0dp"
+    android:scaleType="center"
+    android:src="@drawable/ic__back"
+    app:layout_constraintBottom_toBottomOf="@id/itinerary__title"
+    app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

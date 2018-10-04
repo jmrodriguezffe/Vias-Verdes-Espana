@@ -1,0 +1,24 @@
+{
+  "itineraries": [
+    {
+      "codVV": "ACEI",
+      "id": 67,
+      "name": "V.V. del Aceite",
+      "length": 127.36,
+      "provinces": "Córdoba, Jaén",
+      "userTypes": "1,2",
+      "localization": "Entre Jaén y la antigua estación de Campo Real, en Puente Genil (Córdoba)    Ramal entre la Estación de Luque y Baena (Córdoba).",
+      "naturaText": "Esta Vía Verde cuenta con 14 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: El Parque Natural Sierras Subbéticas, el Parque Periurbano Santa Catalina, el Geoparque Sierras Subbéticas, las Zona de Importancia Comunitaria ZIC Embalse de Cordobilla, Laguna Honda, Lagunas del Sur de Córdoba y Sierra Subbetica(Red Natura 2000). Además también están las Reservas Naturales Laguna del Conde o Salobral, la Laguna del Chinche, Laguna del Rincón y Laguna Honda,  los Monumentos Naturales  Bosque de la Bañizuela y la Cueva de los Murciélagos, así como el Paraje Natural del Embalse de Cordobilla.   Además, es posible conocer más sobre estos Espacios Naturales Protegidos gracias al Ecomuseo de la Cueva de los Murciélagos, al Punto de información laguna del Ricón, al Centro de Visitantes Santa Rita y al Centro de Visitantes Laguna de Zóñar."
+    },
+	{
+      "codVV": "SIER",
+      "id": 39,
+      "name": "V.V. de la Sierra",
+      "length": 36.02,
+      "provinces": "Cádiz, Sevilla",
+      "userTypes": "1,2",
+      "localization": "Entre Puerto Serrano y Olvera",
+      "naturaText": "Esta Vía Verde cuenta con 9 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: La Reserva de la Biosfera Intercontinental del Mediterráneo, la Reserva Natural Peñón de Zaframagón,  así como el LIC Laguna de Coripe y las Zonas de Importancia Comunitaria ZICS Arroyo de Santiago, Salado de Morón y Matabueyes/Garrapata; el Peñón del Zaframagón; Río Guadaira; Río Guadalete; y la Sierra Lijar (Red Natura 2000). Además del Monumento Natural Chaparro de la Vega.\n\nAdemás, es posible conocer más sobre estos Espacios Naturales Protegidos gracias al Centro de Interpretación y Observatorio Ornitológico del Peñón de Zaframagón y al Centro de Interpretación de la Vía Verde de la Sierra."
+    }
+  ]
+}

@@ -1,8 +1,19 @@
 <resources>
-  <string name="app_name">Vias Verdes y ENP</string>
-  <string name="section__vv_list">Vias Verdes y ENP</string>
+  <string name="app_name">Vias Verdes y Espacios Naturales Protegidos</string>
+  <string name="section__vv_list">Itinerarios</string>
   <string name="section__map">Mapa</string>
-  <string name="section__more_info">+ Info</string>
+  <string name="section__more_info">Más info</string>
   <string name="section__settings">Ajustes</string>
   <string name="title_activity_maps">Map</string>
+
+  <string name="km">%1$.2f km</string>
+
+  <string name="itinerary__see_in_map">Ver en mapa</string>
+  <string name="itinerary__how_to_get">Como llegar</string>
+  <string name="itinerary__localization">Localización</string>
+  <string name="itinerary__length">Longitud</string>
+  <string name="itinerary__user_type">Perfil de usuarios</string>
+  <string name="itinerary__natura">Espacios Naturales y Red Natura 2000</string>
+  <string name="itinerary__title">%1$s y sus Espacios Naturales Protegidos</string>
+
 </resources>

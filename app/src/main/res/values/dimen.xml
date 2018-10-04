@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <dimen name="text_size__title">18sp</dimen>
+  <dimen name="text_size__normal">13sp</dimen>
+  <dimen name="text_size__small">11sp</dimen>
+  <dimen name="margin__itinerary_card__horizontal">16dp</dimen>
+  <dimen name="margin__itinerary_card__vertical">10dp</dimen>
+  <dimen name="margin__map">32dp</dimen>
+  <dimen name="margin__default">10dp</dimen>
+  <dimen name="margin__small">6dp</dimen>
+  <dimen name="image_size__user_type">16dp</dimen>
+  <dimen name="image_size__detail__user_type">24dp</dimen>
+</resources>
