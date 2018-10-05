@@ -66,10 +66,10 @@ class MapFragment : VMFragment(), OnMapReadyCallback {
           mMap.setOnMapLoadedCallback { moveCameraToKml(layer) }
         }
       }else{
-        for (kmlResource in getAllKmls()) {
-          val layer = KmlLayer(mMap, kmlResource, context)
+//        for (kmlResource in getAllKmls()) {
+          val layer = KmlLayer(mMap, R.raw.capa_vias_verdes, context)
           layer.addLayerToMap()
-        }
+//        }
         moveCameraToMadrid()
       }
     }
