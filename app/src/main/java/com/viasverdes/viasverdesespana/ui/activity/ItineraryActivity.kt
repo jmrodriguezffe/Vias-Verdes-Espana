@@ -17,6 +17,10 @@ import com.viasverdes.viasverdesespana.utils.getImageResource
 import com.viasverdes.viasverdesespana.utils.setVisible
 import kotlinx.android.synthetic.main.activity_itinerary.*
 import kotlinx.android.synthetic.main.toolbar.*
+import android.support.v4.view.ViewCompat.setAlpha
+import android.view.ViewTreeObserver
+import com.underlegendz.corelegendz.utils.ScreenUtils
+
 
 class ItineraryActivity : UnderActivity() {
 
@@ -57,6 +61,12 @@ class ItineraryActivity : UnderActivity() {
     itinerary__natura.text = itinerary.naturaText
     itinerary__back.setOnClickListener { onBackPressed() }
     itinerary__see_in_map.setOnClickListener { MapActivity.start(this, itinerary) }
+
+    itinerary__scroll.viewTreeObserver.addOnScrollChangedListener {
+      val scrollY = itinerary__scroll.scrollY.toFloat()
+      itinerary__title_bg.alpha = Math.min(1f, scrollY / ScreenUtils.width() + 0.4f)
+    }
+
   }
 
   override fun finish() {

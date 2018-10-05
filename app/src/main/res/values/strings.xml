@@ -4,7 +4,6 @@
   <string name="section__map">Mapa</string>
   <string name="section__more_info">Más info</string>
   <string name="section__settings">Ajustes</string>
-  <string name="title_activity_maps">Map</string>
 
   <string name="km">%1$.2f km</string>
 
@@ -15,5 +14,7 @@
   <string name="itinerary__user_type">Perfil de usuarios</string>
   <string name="itinerary__natura">Espacios Naturales y Red Natura 2000</string>
   <string name="itinerary__title">%1$s y sus Espacios Naturales Protegidos</string>
+
+  <string name="logo__fundacion_biodiversidad">Este contenido forma parte del proyecto "Vías Verdes y Red Natura 2000" desarrollado con el apoyo de la Fundación Biodiversidad del Ministerio de Agricultura y Pesca, Alimentación y Medio Ambiente.</string>
 
 </resources>
