@@ -49,6 +49,26 @@
       "userTypes": "1,3",
       "localization": "Entre el núcleo de Apatamonasterio (Atxondo) y la antigua estación de Errotabarri - El Tope (Atxondo)",
       "naturaText": "Esta Vía Verde cuenta con 2 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: El Parque Natural de Urkiola y el LIC del mismo nombre.\n\nAdemás, es posible conocer más sobre estos Espacios Naturales Protegidos gracias al Centro de Interpretación Toki Alai – Parque de Urkiola."
+    },
+	{
+      "codVV": "CART",
+      "id": 129,
+      "name": "V.V. Barrio de Peral",
+      "length": 1.96,
+      "provinces": "Murcia",
+      "userTypes": "1,2,3",
+      "localization": "Barrio de Peral. Cartagena. Entre la rotonda de Los Barreros y la avenida Victor Beltrí (Ronda Norte).",
+      "naturaText": "Esta Vía Verde cuenta con 3 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: Los LICS Cabezo de Roldán y Valles submarinos del Escarpe de Mazarrón, así como la ZEPA La Muela – Cabo Tiñoso (Red Natura 2000)."
+    },
+	{
+      "codVV": "BESA",
+      "id": 140,
+      "name": "V.V. del Besaya",
+      "length": 20.14,
+      "provinces": "Cantabria",
+      "userTypes": "1,2,4",
+      "localization": "Suances – Los Corrales de Buelna (Cantabria). Entre el cruce de las calles Torrelavega y Laredo de Suances (junto al parque paisajístico de la Ribera y la playa de la Riberuca), y la calle Alfonso Álvarez Miranda del  polígono industrial de la población de  Barros(municipio de Los Corrales de Buelna). ",
+      "naturaText": "Esta Vía Verde cuenta con 4 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: Los ZECs LIC-Dunas de Liencres y Estuario del Pas, y LIC-Rio Pas, la ZEPA Espacio marino de los Islotes de Portios-Isla Conejera-Isla de Mouro (Red Natura 2000), y el Parque Natural Dunas de Liencres\n\nAdemás, es posible conocer más sobre estos Espacios Naturales Protegidos gracias al Punto de Información Red Natura 2000 en Valles Pasiegos."
     }
   ]
 }

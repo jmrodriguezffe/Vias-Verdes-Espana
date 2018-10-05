@@ -65,6 +65,16 @@
       app:layout_constraintStart_toStartOf="@id/itinerary__row__title" />
 
     <ImageView
+      android:id="@+id/itinerary__row__roller_user_type"
+      android:layout_width="@dimen/image_size__user_type"
+      android:layout_height="@dimen/image_size__user_type"
+      android:layout_margin="@dimen/margin__small"
+      android:scaleType="fitCenter"
+      android:src="@drawable/user_type__roller"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageView
       android:id="@+id/itinerary__row__wheelchair_user_type"
       android:layout_width="@dimen/image_size__user_type"
       android:layout_height="@dimen/image_size__user_type"
@@ -72,7 +82,7 @@
       android:scaleType="fitCenter"
       android:src="@drawable/user_type__wheelchair"
       app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintEnd_toEndOf="parent" />
+      app:layout_constraintEnd_toStartOf="@id/itinerary__row__roller_user_type" />
 
     <ImageView
       android:id="@+id/itinerary__row__bicycle_user_type"

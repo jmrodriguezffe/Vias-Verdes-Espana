@@ -7,10 +7,6 @@ import android.support.v4.app.Fragment
 import com.underlegendz.corelegendz.utils.ResourcesUtils
 import com.underlegendz.underactivity.ActivityBuilder
 import com.underlegendz.underactivity.UnderActivity
-import com.viasverdes.viasverdesespana.R
-import com.viasverdes.viasverdesespana.USER_TYPE__BICYCLE
-import com.viasverdes.viasverdesespana.USER_TYPE__WALK
-import com.viasverdes.viasverdesespana.USER_TYPE__WHEELCHAIR
 import com.viasverdes.viasverdesespana.data.bo.ItineraryBO
 import com.viasverdes.viasverdesespana.ui.fragment.MapFragment
 import com.viasverdes.viasverdesespana.utils.getImageResource
@@ -20,6 +16,7 @@ import kotlinx.android.synthetic.main.toolbar.*
 import android.support.v4.view.ViewCompat.setAlpha
 import android.view.ViewTreeObserver
 import com.underlegendz.corelegendz.utils.ScreenUtils
+import com.viasverdes.viasverdesespana.*
 
 
 class ItineraryActivity : UnderActivity() {
@@ -58,6 +55,7 @@ class ItineraryActivity : UnderActivity() {
     itinerary__walk_user_type.setVisible(itinerary.userTypes.contains(USER_TYPE__WALK))
     itinerary__bicycle_user_type.setVisible(itinerary.userTypes.contains(USER_TYPE__BICYCLE))
     itinerary__wheelchair_user_type.setVisible(itinerary.userTypes.contains(USER_TYPE__WHEELCHAIR))
+    itinerary__roller_user_type.setVisible(itinerary.userTypes.contains(USER_TYPE__ROLLER))
     itinerary__natura.text = itinerary.naturaText
     itinerary__back.setOnClickListener { onBackPressed() }
     itinerary__see_in_map.setOnClickListener { MapActivity.start(this, itinerary) }

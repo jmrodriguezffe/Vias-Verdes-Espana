@@ -104,6 +104,16 @@
         app:layout_constraintTop_toBottomOf="@id/itinerary__length" />
 
       <ImageView
+        android:id="@+id/itinerary__roller_user_type"
+        android:layout_width="@dimen/image_size__detail__user_type"
+        android:layout_height="@dimen/image_size__detail__user_type"
+        android:layout_margin="@dimen/margin__small"
+        android:scaleType="fitCenter"
+        android:src="@drawable/user_type__roller"
+        app:layout_constraintStart_toEndOf="@id/itinerary__wheelchair_user_type"
+        app:layout_constraintTop_toBottomOf="@id/itinerary__user_type_label" />
+
+      <ImageView
         android:id="@+id/itinerary__wheelchair_user_type"
         android:layout_width="@dimen/image_size__detail__user_type"
         android:layout_height="@dimen/image_size__detail__user_type"

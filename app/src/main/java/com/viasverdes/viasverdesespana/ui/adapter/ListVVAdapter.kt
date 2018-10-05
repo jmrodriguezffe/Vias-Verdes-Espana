@@ -45,6 +45,7 @@ class ListVVAdapter(val data: List<ItineraryBO>) : RecyclerView.Adapter<ListVVAd
       itinerary__row__walk_user_type.setVisible(itinerary.userTypes.contains(USER_TYPE__WALK))
       itinerary__row__bicycle_user_type.setVisible(itinerary.userTypes.contains(USER_TYPE__BICYCLE))
       itinerary__row__wheelchair_user_type.setVisible(itinerary.userTypes.contains(USER_TYPE__WHEELCHAIR))
+      itinerary__row__roller_user_type.setVisible(itinerary.userTypes.contains(USER_TYPE__ROLLER))
       var imageResource = getImageResource(itinerary)
       if(imageResource == 0){
         imageResource = R.drawable.ic__itinerary__no_image
