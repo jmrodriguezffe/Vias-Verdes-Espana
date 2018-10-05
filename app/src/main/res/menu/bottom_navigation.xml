@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+  <item
+    android:id="@+id/action__vv_list"
+    android:enabled="true"
+    android:icon="@drawable/ic__section__vv_list"
+    android:title="@string/section__vv_list"
+    app:showAsAction="ifRoom" />
+  <item
+    android:id="@+id/action__map"
+    android:enabled="true"
+    android:icon="@drawable/ic__section__map"
+    android:title="@string/section__map"
+    app:showAsAction="ifRoom" />
+  <item
+    android:id="@+id/action__more_info"
+    android:enabled="true"
+    android:icon="@drawable/ic__section__more_info"
+    android:title="@string/section__more_info"
+    app:showAsAction="ifRoom" />
+  <item
+    android:id="@+id/action__settings"
+    android:enabled="true"
+    android:icon="@drawable/ic__section__settings"
+    android:title="@string/section__settings"
+    app:showAsAction="ifRoom" />
+</menu>
