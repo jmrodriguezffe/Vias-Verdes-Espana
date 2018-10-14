@@ -62,7 +62,9 @@ class ItineraryActivity : UnderActivity() {
 
     itinerary__scroll.viewTreeObserver.addOnScrollChangedListener {
       val scrollY = itinerary__scroll.scrollY.toFloat()
-      itinerary__title_bg.alpha = Math.min(1f, scrollY / ScreenUtils.width() + 0.4f)
+      val alpha = Math.min(1f, scrollY / ScreenUtils.width() + 0.4f)
+      itinerary__title_bg.alpha = alpha
+      itinerary__title_shadow.alpha = alpha
     }
 
   }

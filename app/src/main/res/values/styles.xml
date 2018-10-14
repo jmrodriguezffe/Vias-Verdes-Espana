@@ -33,7 +33,7 @@
   <style name="Text_Detail_Title">
     <item name="android:fontFamily">Roboto</item>
     <item name="android:textColor">#FFFFFFFF</item>
-    <item name="android:textSize">20sp</item>
+    <item name="android:textSize">17sp</item>
     <item name="android:paddingEnd">@dimen/margin__default</item>
     <item name="android:paddingTop">@dimen/margin__default</item>
     <item name="android:paddingBottom">@dimen/margin__default</item>
@@ -43,7 +43,7 @@
   <style name="Text_Detail_Button">
     <item name="android:fontFamily">Roboto</item>
     <item name="android:textColor">#FFFFFFFF</item>
-    <item name="android:textSize">18sp</item>
+    <item name="android:textSize">15sp</item>
     <item name="android:textStyle">bold</item>
     <item name="android:gravity">center</item>
     <item name="android:textAllCaps">true</item>

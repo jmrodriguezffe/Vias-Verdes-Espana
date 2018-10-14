@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+  <item
+    android:id="@+id/action__search"
+    android:enabled="true"
+    android:icon="@drawable/ic__search"
+    android:title="@string/action__search"
+    app:showAsAction="always" />
+  <item
+    android:id="@+id/action__filter"
+    android:enabled="true"
+    android:icon="@drawable/ic__filter"
+    android:title="@string/action__filter"
+    app:showAsAction="always" />
+</menu>

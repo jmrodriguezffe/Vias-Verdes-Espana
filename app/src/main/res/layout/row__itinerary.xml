@@ -70,7 +70,7 @@
       android:layout_height="@dimen/image_size__user_type"
       android:layout_margin="@dimen/margin__small"
       android:scaleType="fitCenter"
-      android:src="@drawable/user_type__roller"
+      android:src="@drawable/ic__user_type__roller"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintBottom_toBottomOf="parent"/>
 
@@ -80,7 +80,7 @@
       android:layout_height="@dimen/image_size__user_type"
       android:layout_margin="@dimen/margin__small"
       android:scaleType="fitCenter"
-      android:src="@drawable/user_type__wheelchair"
+      android:src="@drawable/ic__user_type__wheelchair"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toStartOf="@id/itinerary__row__roller_user_type" />
 
@@ -90,7 +90,7 @@
       android:layout_height="@dimen/image_size__user_type"
       android:layout_margin="@dimen/margin__small"
       android:scaleType="fitCenter"
-      android:src="@drawable/user_type__bicycle"
+      android:src="@drawable/ic__user_type__bicycle"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toStartOf="@id/itinerary__row__wheelchair_user_type" />
 
@@ -100,7 +100,7 @@
       android:layout_height="@dimen/image_size__user_type"
       android:layout_margin="@dimen/margin__small"
       android:scaleType="fitCenter"
-      android:src="@drawable/user_type__walk"
+      android:src="@drawable/ic__user_type__walk"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toStartOf="@id/itinerary__row__bicycle_user_type" />
   </android.support.constraint.ConstraintLayout>

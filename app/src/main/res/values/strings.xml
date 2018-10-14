@@ -5,6 +5,9 @@
   <string name="section__more_info">Más info</string>
   <string name="section__settings">Ajustes</string>
 
+  <string name="action__search">Buscar</string>
+  <string name="action__filter">Filtrar</string>
+
   <string name="km">%1$.2f km</string>
 
   <string name="itinerary__see_in_map">Ver en mapa</string>

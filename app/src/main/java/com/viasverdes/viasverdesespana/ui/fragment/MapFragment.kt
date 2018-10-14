@@ -67,8 +67,10 @@ class MapFragment : VMFragment(), OnMapReadyCallback {
         }
       }else{
 //        for (kmlResource in getAllKmls()) {
-          val layer = KmlLayer(mMap, R.raw.capa_vias_verdes, context)
-          layer.addLayerToMap()
+//        val layer = KmlLayer(mMap, R.raw.capa_vias_verdes, context)
+//        layer.addLayerToMap()
+        val enp = KmlLayer(mMap, R.raw.enp, context)
+        enp.addLayerToMap()
 //        }
         moveCameraToMadrid()
       }
