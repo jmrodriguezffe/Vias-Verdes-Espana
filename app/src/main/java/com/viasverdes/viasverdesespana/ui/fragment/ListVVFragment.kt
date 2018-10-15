@@ -75,6 +75,7 @@ class ListVVFragment : VMFragment(), Observer<List<ItineraryBO>>, AdapterClickLi
 
   private fun toogleSearchContainer() {
     itineraries__container__search.toogleVisibility()
+    itineraries__shadow__search.visibility = itineraries__container__search.visibility
   }
 
   override fun onChanged(data: List<ItineraryBO>?) {

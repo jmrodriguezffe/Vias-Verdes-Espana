@@ -47,4 +47,12 @@
     app:layout_constraintTop_toBottomOf="@id/itineraries__container__search"
     app:layout_constraintBottom_toBottomOf="parent"/>
 
+  <View
+    android:id="@+id/itineraries__shadow__search"
+    android:layout_width="match_parent"
+    android:layout_height="3dp"
+    android:background="@drawable/bg__shadow__bottom"
+    android:visibility="gone"
+    app:layout_constraintTop_toBottomOf="@id/itineraries__container__search"/>
+
 </android.support.constraint.ConstraintLayout>
