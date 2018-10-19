@@ -6,10 +6,10 @@ import android.support.v7.widget.LinearLayoutManager
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
-import android.view.View
-import android.widget.AdapterView
+import android.widget.ArrayAdapter
 import com.underlegendz.corelegendz.vm.VMFragment
 import com.viasverdes.viasverdesespana.R
+import com.viasverdes.viasverdesespana.autocompleteSearchValues
 import com.viasverdes.viasverdesespana.data.VVDatabase
 import com.viasverdes.viasverdesespana.data.bo.ItineraryBO
 import com.viasverdes.viasverdesespana.ui.activity.ItineraryActivity
@@ -18,8 +18,6 @@ import com.viasverdes.viasverdesespana.utils.AdapterClickListener
 import com.viasverdes.viasverdesespana.utils.toogleVisibility
 import com.viasverdes.viasverdesespana.utils.trueRes
 import kotlinx.android.synthetic.main.fragment__list_itineraries.*
-import android.widget.ArrayAdapter
-import com.viasverdes.viasverdesespana.autocompleteSearchValues
 
 
 class ListVVFragment : VMFragment(), Observer<List<ItineraryBO>>, AdapterClickListener<ItineraryBO> {

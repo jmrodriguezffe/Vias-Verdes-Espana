@@ -1,30 +1,29 @@
 package com.viasverdes.viasverdesespana.ui.fragment
 
 import android.os.Bundle
-import android.util.Log
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
+import com.google.android.gms.maps.model.LatLngBounds
+import com.google.maps.android.data.kml.AssetIconKmlLayer
+import com.google.maps.android.data.kml.KmlLayer
+import com.google.maps.android.data.kml.KmlMultiGeometry
+import com.underlegendz.corelegendz.utils.ResourcesUtils
 import com.underlegendz.corelegendz.vm.VMFragment
 import com.viasverdes.viasverdesespana.R
 import com.viasverdes.viasverdesespana.data.bo.ItineraryBO
-import com.viasverdes.viasverdesespana.utils.getAllKmls
 import com.viasverdes.viasverdesespana.utils.getKmlResource
-import com.google.android.gms.maps.model.LatLngBounds
-import com.google.maps.android.data.kml.*
-import com.underlegendz.corelegendz.utils.ResourcesUtils
-import java.lang.Exception
 
 
 class MapFragment : VMFragment(), OnMapReadyCallback {
   companion object {
     const val ARG_ITINERARY = "ITINERARY"
 
-    fun newInstance(itinerary : ItineraryBO?): MapFragment {
+    fun newInstance(itinerary: ItineraryBO?): MapFragment {
       val args = Bundle()
-      if(itinerary != null){
+      if (itinerary != null) {
         args.putParcelable(ARG_ITINERARY, itinerary)
       }
       val fragment = MapFragment()
@@ -58,18 +57,18 @@ class MapFragment : VMFragment(), OnMapReadyCallback {
     mMap = googleMap
 
     arguments?.let {
-      if(it.containsKey(ARG_ITINERARY)){
+      if (it.containsKey(ARG_ITINERARY)) {
         val kmlResource = getKmlResource(it.getParcelable(ARG_ITINERARY))
-        if(kmlResource > 0){
+        if (kmlResource > 0) {
           val layer = KmlLayer(mMap, kmlResource, context)
           layer.addLayerToMap()
           mMap.setOnMapLoadedCallback { moveCameraToKml(layer) }
         }
-      }else{
+      } else {
 //        for (kmlResource in getAllKmls()) {
 //        val layer = KmlLayer(mMap, R.raw.capa_vias_verdes, context)
 //        layer.addLayerToMap()
-        val enp = AssetIconKmlLayer(mMap, R.raw.enp__acei, context)
+        val enp = AssetIconKmlLayer(mMap, R.raw.capa_vias_verdes, context)
         enp.addLayerToMap()
 //        }
         moveCameraToMadrid()
@@ -77,13 +76,13 @@ class MapFragment : VMFragment(), OnMapReadyCallback {
     }
   }
 
-  private fun moveCameraToMadrid(){
+  private fun moveCameraToMadrid() {
     val madrid = LatLng(39.977413, -4.273707)
     mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(madrid, 5.5f))
   }
 
   private fun moveCameraToKml(kmlLayer: KmlLayer) {
-    try{
+    try {
       //Retrieve the first container in the KML layer
       var container = kmlLayer.containers.iterator().next()
       //Retrieve a nested container within the first container
@@ -99,7 +98,7 @@ class MapFragment : VMFragment(), OnMapReadyCallback {
         builder.include(latLng)
       }
       mMap.moveCamera(CameraUpdateFactory.newLatLngBounds(builder.build(), ResourcesUtils.getDimen(R.dimen.margin__map).toInt()))
-    }catch (e: Exception){
+    } catch (e: Exception) {
       moveCameraToMadrid()
     }
   }

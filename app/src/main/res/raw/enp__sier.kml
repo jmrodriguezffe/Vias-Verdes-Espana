@@ -7,7 +7,7 @@
       <IconStyle>
         <scale>1.1</scale>
         <Icon>
-          <href>images/icon-1.png</href>
+          <href>images/km0.png</href>
         </Icon>
         <hotSpot x="12" xunits="pixels" y="16" yunits="insetPixels"/>
       </IconStyle>
@@ -19,7 +19,7 @@
       <IconStyle>
         <scale>1.1</scale>
         <Icon>
-          <href>images/icon-1.png</href>
+          <href>images/km0.png</href>
         </Icon>
         <hotSpot x="12" xunits="pixels" y="16" yunits="insetPixels"/>
       </IconStyle>
@@ -41,7 +41,7 @@
       <IconStyle>
         <scale>1.1</scale>
         <Icon>
-          <href>images/icon-10.png</href>
+          <href>images/estacion.png</href>
         </Icon>
         <hotSpot x="14" xunits="pixels" y="16" yunits="insetPixels"/>
       </IconStyle>
@@ -53,7 +53,7 @@
       <IconStyle>
         <scale>1.1</scale>
         <Icon>
-          <href>images/icon-10.png</href>
+          <href>images/estacion.png</href>
         </Icon>
         <hotSpot x="14" xunits="pixels" y="16" yunits="insetPixels"/>
       </IconStyle>
@@ -75,31 +75,25 @@
       <IconStyle>
         <scale>1.1</scale>
         <Icon>
-          <href>images/icon-10.png</href>
+          <href>images/estacion.png</href>
         </Icon>
         <hotSpot x="14" xunits="pixels" y="16" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
         <scale>0</scale>
       </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
     </Style>
     <Style id="icon-ci-10-nodesc-highlight">
       <IconStyle>
         <scale>1.1</scale>
         <Icon>
-          <href>images/icon-10.png</href>
+          <href>images/estacion.png</href>
         </Icon>
         <hotSpot x="14" xunits="pixels" y="16" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
         <scale>1.1</scale>
       </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
     </Style>
     <StyleMap id="icon-ci-10-nodesc">
       <Pair>
@@ -115,31 +109,25 @@
       <IconStyle>
         <scale>1.1</scale>
         <Icon>
-          <href>images/icon-11.png</href>
+          <href>images/acceso.png</href>
         </Icon>
         <hotSpot x="14" xunits="pixels" y="16" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
         <scale>0</scale>
       </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
     </Style>
     <Style id="icon-ci-11-nodesc-highlight">
       <IconStyle>
         <scale>1.1</scale>
         <Icon>
-          <href>images/icon-11.png</href>
+          <href>images/acceso.png</href>
         </Icon>
         <hotSpot x="14" xunits="pixels" y="16" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
         <scale>1.1</scale>
       </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
     </Style>
     <StyleMap id="icon-ci-11-nodesc">
       <Pair>
@@ -155,31 +143,25 @@
       <IconStyle>
         <scale>1.1</scale>
         <Icon>
-          <href>images/icon-12.png</href>
+          <href>images/rampa.png</href>
         </Icon>
         <hotSpot x="10" xunits="pixels" y="16" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
         <scale>0</scale>
       </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
     </Style>
     <Style id="icon-ci-12-nodesc-highlight">
       <IconStyle>
         <scale>1.1</scale>
         <Icon>
-          <href>images/icon-12.png</href>
+          <href>images/rampa.png</href>
         </Icon>
         <hotSpot x="10" xunits="pixels" y="16" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
         <scale>1.1</scale>
       </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
     </Style>
     <StyleMap id="icon-ci-12-nodesc">
       <Pair>
@@ -195,7 +177,7 @@
       <IconStyle>
         <scale>1.1</scale>
         <Icon>
-          <href>images/icon-13.png</href>
+          <href>images/tunel.png</href>
         </Icon>
         <hotSpot x="14" xunits="pixels" y="16" yunits="insetPixels"/>
       </IconStyle>
@@ -207,7 +189,7 @@
       <IconStyle>
         <scale>1.1</scale>
         <Icon>
-          <href>images/icon-13.png</href>
+          <href>images/tunel.png</href>
         </Icon>
         <hotSpot x="14" xunits="pixels" y="16" yunits="insetPixels"/>
       </IconStyle>
@@ -229,31 +211,25 @@
       <IconStyle>
         <scale>1.1</scale>
         <Icon>
-          <href>images/icon-13.png</href>
+          <href>images/tunel.png</href>
         </Icon>
         <hotSpot x="14" xunits="pixels" y="16" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
         <scale>0</scale>
       </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
     </Style>
     <Style id="icon-ci-13-nodesc-highlight">
       <IconStyle>
         <scale>1.1</scale>
         <Icon>
-          <href>images/icon-13.png</href>
+          <href>images/tunel.png</href>
         </Icon>
         <hotSpot x="14" xunits="pixels" y="16" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
         <scale>1.1</scale>
       </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
     </Style>
     <StyleMap id="icon-ci-13-nodesc">
       <Pair>
@@ -269,31 +245,25 @@
       <IconStyle>
         <scale>1.1</scale>
         <Icon>
-          <href>images/icon-14.png</href>
+          <href>images/puente.png</href>
         </Icon>
         <hotSpot x="14" xunits="pixels" y="16" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
         <scale>0</scale>
       </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
     </Style>
     <Style id="icon-ci-14-nodesc-highlight">
       <IconStyle>
         <scale>1.1</scale>
         <Icon>
-          <href>images/icon-14.png</href>
+          <href>images/puente.png</href>
         </Icon>
         <hotSpot x="14" xunits="pixels" y="16" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
         <scale>1.1</scale>
       </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
     </Style>
     <StyleMap id="icon-ci-14-nodesc">
       <Pair>
@@ -309,31 +279,25 @@
       <IconStyle>
         <scale>1.1</scale>
         <Icon>
-          <href>images/icon-15.png</href>
+          <href>images/fuente.png</href>
         </Icon>
         <hotSpot x="16" xunits="pixels" y="16" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
         <scale>0</scale>
       </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
     </Style>
     <Style id="icon-ci-15-nodesc-highlight">
       <IconStyle>
         <scale>1.1</scale>
         <Icon>
-          <href>images/icon-15.png</href>
+          <href>images/fuente.png</href>
         </Icon>
         <hotSpot x="16" xunits="pixels" y="16" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
         <scale>1.1</scale>
       </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
     </Style>
     <StyleMap id="icon-ci-15-nodesc">
       <Pair>
@@ -349,31 +313,25 @@
       <IconStyle>
         <scale>1.1</scale>
         <Icon>
-          <href>images/icon-16.png</href>
+          <href>images/mirador.png</href>
         </Icon>
         <hotSpot x="16" xunits="pixels" y="16" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
         <scale>0</scale>
       </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
     </Style>
     <Style id="icon-ci-16-nodesc-highlight">
       <IconStyle>
         <scale>1.1</scale>
         <Icon>
-          <href>images/icon-16.png</href>
+          <href>images/mirador.png</href>
         </Icon>
         <hotSpot x="16" xunits="pixels" y="16" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
         <scale>1.1</scale>
       </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
     </Style>
     <StyleMap id="icon-ci-16-nodesc">
       <Pair>
@@ -389,31 +347,25 @@
       <IconStyle>
         <scale>1.1</scale>
         <Icon>
-          <href>images/icon-17.png</href>
+          <href>images/mirador.png</href>
         </Icon>
         <hotSpot x="16" xunits="pixels" y="16" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
         <scale>0</scale>
       </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
     </Style>
     <Style id="icon-ci-17-nodesc-highlight">
       <IconStyle>
         <scale>1.1</scale>
         <Icon>
-          <href>images/icon-17.png</href>
+          <href>images/mirador.png</href>
         </Icon>
         <hotSpot x="16" xunits="pixels" y="16" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
         <scale>1.1</scale>
       </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
     </Style>
     <StyleMap id="icon-ci-17-nodesc">
       <Pair>
@@ -429,31 +381,25 @@
       <IconStyle>
         <scale>1.1</scale>
         <Icon>
-          <href>images/icon-18.png</href>
+          <href>images/rampa.png</href>
         </Icon>
         <hotSpot x="12" xunits="pixels" y="16" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
         <scale>0</scale>
       </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
     </Style>
     <Style id="icon-ci-18-nodesc-highlight">
       <IconStyle>
         <scale>1.1</scale>
         <Icon>
-          <href>images/icon-18.png</href>
+          <href>images/rampa.png</href>
         </Icon>
         <hotSpot x="12" xunits="pixels" y="16" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
         <scale>1.1</scale>
       </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
     </Style>
     <StyleMap id="icon-ci-18-nodesc">
       <Pair>
@@ -469,31 +415,25 @@
       <IconStyle>
         <scale>1.1</scale>
         <Icon>
-          <href>images/icon-19.png</href>
+          <href>images/fuente.png</href>
         </Icon>
         <hotSpot x="12" xunits="pixels" y="16" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
         <scale>0</scale>
       </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
     </Style>
     <Style id="icon-ci-19-nodesc-highlight">
       <IconStyle>
         <scale>1.1</scale>
         <Icon>
-          <href>images/icon-19.png</href>
+          <href>images/fuente.png</href>
         </Icon>
         <hotSpot x="12" xunits="pixels" y="16" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
         <scale>1.1</scale>
       </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
     </Style>
     <StyleMap id="icon-ci-19-nodesc">
       <Pair>
@@ -509,31 +449,25 @@
       <IconStyle>
         <scale>1.1</scale>
         <Icon>
-          <href>images/icon-2.png</href>
+          <href>images/km5.png</href>
         </Icon>
         <hotSpot x="13" xunits="pixels" y="16" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
         <scale>0</scale>
       </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
     </Style>
     <Style id="icon-ci-2-nodesc-highlight">
       <IconStyle>
         <scale>1.1</scale>
         <Icon>
-          <href>images/icon-2.png</href>
+          <href>images/km5.png</href>
         </Icon>
         <hotSpot x="13" xunits="pixels" y="16" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
         <scale>1.1</scale>
       </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
     </Style>
     <StyleMap id="icon-ci-2-nodesc">
       <Pair>
@@ -549,31 +483,25 @@
       <IconStyle>
         <scale>1.1</scale>
         <Icon>
-          <href>images/icon-3.png</href>
+          <href>images/km10.png</href>
         </Icon>
         <hotSpot x="13" xunits="pixels" y="16" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
         <scale>0</scale>
       </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
     </Style>
     <Style id="icon-ci-3-nodesc-highlight">
       <IconStyle>
         <scale>1.1</scale>
         <Icon>
-          <href>images/icon-3.png</href>
+          <href>images/km10.png</href>
         </Icon>
         <hotSpot x="13" xunits="pixels" y="16" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
         <scale>1.1</scale>
       </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
     </Style>
     <StyleMap id="icon-ci-3-nodesc">
       <Pair>
@@ -589,31 +517,25 @@
       <IconStyle>
         <scale>1.1</scale>
         <Icon>
-          <href>images/icon-4.png</href>
+          <href>images/km15.png</href>
         </Icon>
         <hotSpot x="13" xunits="pixels" y="16" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
         <scale>0</scale>
       </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
     </Style>
     <Style id="icon-ci-4-nodesc-highlight">
       <IconStyle>
         <scale>1.1</scale>
         <Icon>
-          <href>images/icon-4.png</href>
+          <href>images/km15.png</href>
         </Icon>
         <hotSpot x="13" xunits="pixels" y="16" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
         <scale>1.1</scale>
       </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
     </Style>
     <StyleMap id="icon-ci-4-nodesc">
       <Pair>
@@ -629,31 +551,25 @@
       <IconStyle>
         <scale>1.1</scale>
         <Icon>
-          <href>images/icon-5.png</href>
+          <href>images/km20.png</href>
         </Icon>
         <hotSpot x="13" xunits="pixels" y="16" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
         <scale>0</scale>
       </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
     </Style>
     <Style id="icon-ci-5-nodesc-highlight">
       <IconStyle>
         <scale>1.1</scale>
         <Icon>
-          <href>images/icon-5.png</href>
+          <href>images/km20.png</href>
         </Icon>
         <hotSpot x="13" xunits="pixels" y="16" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
         <scale>1.1</scale>
       </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
     </Style>
     <StyleMap id="icon-ci-5-nodesc">
       <Pair>
@@ -669,31 +585,25 @@
       <IconStyle>
         <scale>1.1</scale>
         <Icon>
-          <href>images/icon-6.png</href>
+          <href>images/km25.png</href>
         </Icon>
         <hotSpot x="13" xunits="pixels" y="16" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
         <scale>0</scale>
       </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
     </Style>
     <Style id="icon-ci-6-nodesc-highlight">
       <IconStyle>
         <scale>1.1</scale>
         <Icon>
-          <href>images/icon-6.png</href>
+          <href>images/km25.png</href>
         </Icon>
         <hotSpot x="13" xunits="pixels" y="16" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
         <scale>1.1</scale>
       </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
     </Style>
     <StyleMap id="icon-ci-6-nodesc">
       <Pair>
@@ -709,31 +619,25 @@
       <IconStyle>
         <scale>1.1</scale>
         <Icon>
-          <href>images/icon-7.png</href>
+          <href>images/km30.png</href>
         </Icon>
         <hotSpot x="13" xunits="pixels" y="16" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
         <scale>0</scale>
       </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
     </Style>
     <Style id="icon-ci-7-nodesc-highlight">
       <IconStyle>
         <scale>1.1</scale>
         <Icon>
-          <href>images/icon-7.png</href>
+          <href>images/km30.png</href>
         </Icon>
         <hotSpot x="13" xunits="pixels" y="16" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
         <scale>1.1</scale>
       </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
     </Style>
     <StyleMap id="icon-ci-7-nodesc">
       <Pair>
@@ -749,7 +653,7 @@
       <IconStyle>
         <scale>1.1</scale>
         <Icon>
-          <href>images/icon-8.png</href>
+          <href>images/descanso.png</href>
         </Icon>
         <hotSpot x="14" xunits="pixels" y="16" yunits="insetPixels"/>
       </IconStyle>
@@ -761,7 +665,7 @@
       <IconStyle>
         <scale>1.1</scale>
         <Icon>
-          <href>images/icon-8.png</href>
+          <href>images/descanso.png</href>
         </Icon>
         <hotSpot x="14" xunits="pixels" y="16" yunits="insetPixels"/>
       </IconStyle>
@@ -783,31 +687,25 @@
       <IconStyle>
         <scale>1.1</scale>
         <Icon>
-          <href>images/icon-9.png</href>
+          <href>images/parking.png</href>
         </Icon>
         <hotSpot x="10" xunits="pixels" y="16" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
         <scale>0</scale>
       </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
     </Style>
     <Style id="icon-ci-9-nodesc-highlight">
       <IconStyle>
         <scale>1.1</scale>
         <Icon>
-          <href>images/icon-9.png</href>
+          <href>images/parking.png</href>
         </Icon>
         <hotSpot x="10" xunits="pixels" y="16" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
         <scale>1.1</scale>
       </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
     </Style>
     <StyleMap id="icon-ci-9-nodesc">
       <Pair>
@@ -824,18 +722,12 @@
         <color>ff009900</color>
         <width>5</width>
       </LineStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
     </Style>
     <Style id="line-009900-5000-nodesc-highlight">
       <LineStyle>
         <color>ff009900</color>
         <width>7.5</width>
       </LineStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
     </Style>
     <StyleMap id="line-009900-5000-nodesc">
       <Pair>
@@ -852,18 +744,12 @@
         <color>ff0000ff</color>
         <width>15</width>
       </LineStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
     </Style>
     <Style id="line-FF0000-15000-nodesc-highlight">
       <LineStyle>
         <color>ff0000ff</color>
         <width>22.5</width>
       </LineStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
     </Style>
     <StyleMap id="line-FF0000-15000-nodesc">
       <Pair>
@@ -880,18 +766,12 @@
         <color>ff00ffff</color>
         <width>15</width>
       </LineStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
     </Style>
     <Style id="line-FFFF00-15000-nodesc-highlight">
       <LineStyle>
         <color>ff00ffff</color>
         <width>22.5</width>
       </LineStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
     </Style>
     <StyleMap id="line-FFFF00-15000-nodesc">
       <Pair>

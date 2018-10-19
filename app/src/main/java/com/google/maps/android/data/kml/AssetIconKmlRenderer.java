@@ -18,7 +18,6 @@ import com.google.android.gms.maps.model.GroundOverlayOptions;
 import com.google.android.gms.maps.model.Marker;
 import com.google.maps.android.data.Feature;
 import com.google.maps.android.data.Geometry;
-import com.google.maps.android.data.Renderer;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.MalformedURLException;
@@ -42,8 +41,8 @@ public class AssetIconKmlRenderer extends KmlRenderer {
   }
 
   private static BitmapDescriptor scaleIcon(Bitmap unscaledBitmap, Double scale) {
-    int width = (int)((double)unscaledBitmap.getWidth() * scale);
-    int height = (int)((double)unscaledBitmap.getHeight() * scale);
+    int width = (int) ((double) unscaledBitmap.getWidth() * scale);
+    int height = (int) ((double) unscaledBitmap.getHeight() * scale);
     Bitmap scaledBitmap = Bitmap.createScaledBitmap(unscaledBitmap, width, height, false);
     return BitmapDescriptorFactory.fromBitmap(scaledBitmap);
   }
@@ -52,7 +51,8 @@ public class AssetIconKmlRenderer extends KmlRenderer {
     removeFeatures((HashMap<Feature, Object>) placemarks);
   }
 
-  static boolean getContainerVisibility(KmlContainer kmlContainer, boolean isParentContainerVisible) {
+  static boolean getContainerVisibility(KmlContainer kmlContainer,
+      boolean isParentContainerVisible) {
     boolean isChildContainerVisible = true;
     if (kmlContainer.hasProperty("visibility")) {
       String placemarkVisibility = kmlContainer.getProperty("visibility");
@@ -67,23 +67,21 @@ public class AssetIconKmlRenderer extends KmlRenderer {
   private void removeGroundOverlays(HashMap<KmlGroundOverlay, GroundOverlay> groundOverlays) {
     Iterator var2 = groundOverlays.values().iterator();
 
-    while(var2.hasNext()) {
-      GroundOverlay groundOverlay = (GroundOverlay)var2.next();
+    while (var2.hasNext()) {
+      GroundOverlay groundOverlay = (GroundOverlay) var2.next();
       groundOverlay.remove();
     }
-
   }
 
   private void removeContainers(Iterable<KmlContainer> containers) {
     Iterator var2 = containers.iterator();
 
-    while(var2.hasNext()) {
-      KmlContainer container = (KmlContainer)var2.next();
+    while (var2.hasNext()) {
+      KmlContainer container = (KmlContainer) var2.next();
       this.removePlacemarks(container.getPlacemarksHashMap());
       this.removeGroundOverlays(container.getGroundOverlayHashMap());
       this.removeContainers(container.getContainers());
     }
-
   }
 
   public void addLayerToMap() {
@@ -102,10 +100,11 @@ public class AssetIconKmlRenderer extends KmlRenderer {
     if (!this.mMarkerIconsDownloaded) {
       this.downloadMarkerIcons();
     }
-
   }
 
-  void storeKmlData(HashMap<String, KmlStyle> styles, HashMap<String, String> styleMaps, HashMap<KmlPlacemark, Object> features, ArrayList<KmlContainer> folders, HashMap<KmlGroundOverlay, GroundOverlay> groundOverlays) {
+  void storeKmlData(HashMap<String, KmlStyle> styles, HashMap<String, String> styleMaps,
+      HashMap<KmlPlacemark, Object> features, ArrayList<KmlContainer> folders,
+      HashMap<KmlGroundOverlay, GroundOverlay> groundOverlays) {
     this.storeData(styles, styleMaps, features, folders, groundOverlays);
   }
 
@@ -149,18 +148,18 @@ public class AssetIconKmlRenderer extends KmlRenderer {
   private void addPlacemarksToMap(HashMap<? extends Feature, Object> placemarks) {
     Iterator var2 = placemarks.keySet().iterator();
 
-    while(var2.hasNext()) {
-      Feature kmlPlacemark = (Feature)var2.next();
+    while (var2.hasNext()) {
+      Feature kmlPlacemark = (Feature) var2.next();
       this.addFeature(kmlPlacemark);
     }
-
   }
 
-  private void addContainerGroupToMap(Iterable<KmlContainer> kmlContainers, boolean containerVisibility) {
+  private void addContainerGroupToMap(Iterable<KmlContainer> kmlContainers,
+      boolean containerVisibility) {
     Iterator var3 = kmlContainers.iterator();
 
-    while(var3.hasNext()) {
-      KmlContainer container = (KmlContainer)var3.next();
+    while (var3.hasNext()) {
+      KmlContainer container = (KmlContainer) var3.next();
       boolean isContainerVisible = getContainerVisibility(container, containerVisibility);
       if (container.getStyles() != null) {
         this.putStyles(container.getStyles());
@@ -175,45 +174,44 @@ public class AssetIconKmlRenderer extends KmlRenderer {
         this.addContainerGroupToMap(container.getContainers(), isContainerVisible);
       }
     }
-
   }
 
   private void addContainerObjectToMap(KmlContainer kmlContainer, boolean isContainerVisible) {
     Iterator var3 = kmlContainer.getPlacemarks().iterator();
 
-    while(var3.hasNext()) {
-      Feature placemark = (Feature)var3.next();
+    while (var3.hasNext()) {
+      Feature placemark = (Feature) var3.next();
       boolean isPlacemarkVisible = getPlacemarkVisibility(placemark);
       boolean isObjectVisible = isContainerVisible && isPlacemarkVisible;
       if (placemark.getGeometry() != null) {
         String placemarkId = placemark.getId();
         Geometry geometry = placemark.getGeometry();
         KmlStyle style = this.getPlacemarkStyle(placemarkId);
-        KmlStyle inlineStyle = ((KmlPlacemark)placemark).getInlineStyle();
-        Object mapObject = this.addKmlPlacemarkToMap((KmlPlacemark)placemark, geometry, style, inlineStyle, isObjectVisible);
-        kmlContainer.setPlacemark((KmlPlacemark)placemark, mapObject);
+        KmlStyle inlineStyle = ((KmlPlacemark) placemark).getInlineStyle();
+        Object mapObject =
+            this.addKmlPlacemarkToMap((KmlPlacemark) placemark, geometry, style, inlineStyle,
+                isObjectVisible);
+        kmlContainer.setPlacemark((KmlPlacemark) placemark, mapObject);
         this.putContainerFeature(mapObject, placemark);
       }
     }
-
   }
 
   private void downloadMarkerIcons() {
     this.mMarkerIconsDownloaded = true;
     Iterator iterator = this.getMarkerIconUrls().iterator();
 
-    while(iterator.hasNext()) {
-      String markerIconUrl = (String)iterator.next();
+    while (iterator.hasNext()) {
+      String markerIconUrl = (String) iterator.next();
       (new AssetIconKmlRenderer.MarkerIconImageDownload(markerIconUrl)).execute(new String[0]);
       iterator.remove();
     }
-
   }
 
   private void addIconToMarkers(String iconUrl, HashMap<KmlPlacemark, Object> placemarks) {
     Iterator var3 = placemarks.keySet().iterator();
 
-    while(true) {
+    while (true) {
       Feature placemark;
       KmlStyle urlStyle;
       KmlStyle inlineStyle;
@@ -222,58 +220,59 @@ public class AssetIconKmlRenderer extends KmlRenderer {
           return;
         }
 
-        placemark = (Feature)var3.next();
-        urlStyle = (KmlStyle)this.getStylesRenderer().get(placemark.getId());
-        inlineStyle = ((KmlPlacemark)placemark).getInlineStyle();
-      } while(!"Point".equals(placemark.getGeometry().getGeometryType()));
+        placemark = (Feature) var3.next();
+        urlStyle = (KmlStyle) this.getStylesRenderer().get(placemark.getId());
+        inlineStyle = ((KmlPlacemark) placemark).getInlineStyle();
+      } while (!"Point".equals(placemark.getGeometry().getGeometryType()));
 
       boolean isInlineStyleIcon = inlineStyle != null && iconUrl.equals(inlineStyle.getIconUrl());
       boolean isPlacemarkStyleIcon = urlStyle != null && iconUrl.equals(urlStyle.getIconUrl());
       if (isInlineStyleIcon) {
-        this.scaleBitmap(inlineStyle, placemarks, (KmlPlacemark)placemark);
+        this.scaleBitmap(inlineStyle, placemarks, (KmlPlacemark) placemark);
       } else if (isPlacemarkStyleIcon) {
-        this.scaleBitmap(urlStyle, placemarks, (KmlPlacemark)placemark);
+        this.scaleBitmap(urlStyle, placemarks, (KmlPlacemark) placemark);
       }
     }
   }
 
-  private void scaleBitmap(KmlStyle style, HashMap<KmlPlacemark, Object> placemarks, KmlPlacemark placemark) {
+  private void scaleBitmap(KmlStyle style, HashMap<KmlPlacemark, Object> placemarks,
+      KmlPlacemark placemark) {
     double bitmapScale = style.getIconScale();
     String bitmapUrl = style.getIconUrl();
-    Bitmap bitmapImage = (Bitmap)this.getImagesCache().get(bitmapUrl);
+    Bitmap bitmapImage = (Bitmap) this.getImagesCache().get(bitmapUrl);
     BitmapDescriptor scaledBitmap = scaleIcon(bitmapImage, bitmapScale);
-    ((Marker)placemarks.get(placemark)).setIcon(scaledBitmap);
+    ((Marker) placemarks.get(placemark)).setIcon(scaledBitmap);
   }
 
-  private void addContainerGroupIconsToMarkers(String iconUrl, Iterable<KmlContainer> kmlContainers) {
+  private void addContainerGroupIconsToMarkers(String iconUrl,
+      Iterable<KmlContainer> kmlContainers) {
     Iterator var3 = kmlContainers.iterator();
 
-    while(var3.hasNext()) {
-      KmlContainer container = (KmlContainer)var3.next();
+    while (var3.hasNext()) {
+      KmlContainer container = (KmlContainer) var3.next();
       this.addIconToMarkers(iconUrl, container.getPlacemarksHashMap());
       if (container.hasContainers()) {
         this.addContainerGroupIconsToMarkers(iconUrl, container.getContainers());
       }
     }
-
   }
 
-  private void addGroundOverlays(HashMap<KmlGroundOverlay, GroundOverlay> groundOverlays, Iterable<KmlContainer> kmlContainers) {
+  private void addGroundOverlays(HashMap<KmlGroundOverlay, GroundOverlay> groundOverlays,
+      Iterable<KmlContainer> kmlContainers) {
     this.addGroundOverlays(groundOverlays);
     Iterator var3 = kmlContainers.iterator();
 
-    while(var3.hasNext()) {
-      KmlContainer container = (KmlContainer)var3.next();
+    while (var3.hasNext()) {
+      KmlContainer container = (KmlContainer) var3.next();
       this.addGroundOverlays(container.getGroundOverlayHashMap(), container.getContainers());
     }
-
   }
 
   private void addGroundOverlays(HashMap<KmlGroundOverlay, GroundOverlay> groundOverlays) {
     Iterator var2 = groundOverlays.keySet().iterator();
 
-    while(var2.hasNext()) {
-      KmlGroundOverlay groundOverlay = (KmlGroundOverlay)var2.next();
+    while (var2.hasNext()) {
+      KmlGroundOverlay groundOverlay = (KmlGroundOverlay) var2.next();
       String groundOverlayUrl = groundOverlay.getImageUrl();
       if (groundOverlayUrl != null && groundOverlay.getLatLngBox() != null) {
         if (this.getImagesCache().get(groundOverlayUrl) != null) {
@@ -283,29 +282,31 @@ public class AssetIconKmlRenderer extends KmlRenderer {
         }
       }
     }
-
   }
 
   private void downloadGroundOverlays() {
     this.mGroundOverlayImagesDownloaded = true;
     Iterator iterator = this.mGroundOverlayUrls.iterator();
 
-    while(iterator.hasNext()) {
-      String groundOverlayUrl = (String)iterator.next();
-      (new AssetIconKmlRenderer.GroundOverlayImageDownload(groundOverlayUrl)).execute(new String[0]);
+    while (iterator.hasNext()) {
+      String groundOverlayUrl = (String) iterator.next();
+      (new AssetIconKmlRenderer.GroundOverlayImageDownload(groundOverlayUrl)).execute(
+          new String[0]);
       iterator.remove();
     }
-
   }
 
-  private void addGroundOverlayToMap(String groundOverlayUrl, HashMap<KmlGroundOverlay, GroundOverlay> groundOverlays, boolean containerVisibility) {
-    BitmapDescriptor groundOverlayBitmap = BitmapDescriptorFactory.fromBitmap((Bitmap)this.getImagesCache().get(groundOverlayUrl));
+  private void addGroundOverlayToMap(String groundOverlayUrl,
+      HashMap<KmlGroundOverlay, GroundOverlay> groundOverlays, boolean containerVisibility) {
+    BitmapDescriptor groundOverlayBitmap =
+        BitmapDescriptorFactory.fromBitmap((Bitmap) this.getImagesCache().get(groundOverlayUrl));
     Iterator var5 = groundOverlays.keySet().iterator();
 
-    while(var5.hasNext()) {
-      KmlGroundOverlay kmlGroundOverlay = (KmlGroundOverlay)var5.next();
+    while (var5.hasNext()) {
+      KmlGroundOverlay kmlGroundOverlay = (KmlGroundOverlay) var5.next();
       if (kmlGroundOverlay.getImageUrl().equals(groundOverlayUrl)) {
-        GroundOverlayOptions groundOverlayOptions = kmlGroundOverlay.getGroundOverlayOptions().image(groundOverlayBitmap);
+        GroundOverlayOptions groundOverlayOptions =
+            kmlGroundOverlay.getGroundOverlayOptions().image(groundOverlayBitmap);
         GroundOverlay mapGroundOverlay = this.attachGroundOverlay(groundOverlayOptions);
         if (!containerVisibility) {
           mapGroundOverlay.setVisible(false);
@@ -314,21 +315,22 @@ public class AssetIconKmlRenderer extends KmlRenderer {
         groundOverlays.put(kmlGroundOverlay, mapGroundOverlay);
       }
     }
-
   }
 
-  private void addGroundOverlayInContainerGroups(String groundOverlayUrl, Iterable<KmlContainer> kmlContainers, boolean containerVisibility) {
+  private void addGroundOverlayInContainerGroups(String groundOverlayUrl,
+      Iterable<KmlContainer> kmlContainers, boolean containerVisibility) {
     Iterator var4 = kmlContainers.iterator();
 
-    while(var4.hasNext()) {
-      KmlContainer container = (KmlContainer)var4.next();
+    while (var4.hasNext()) {
+      KmlContainer container = (KmlContainer) var4.next();
       boolean isContainerVisible = getContainerVisibility(container, containerVisibility);
-      this.addGroundOverlayToMap(groundOverlayUrl, container.getGroundOverlayHashMap(), isContainerVisible);
+      this.addGroundOverlayToMap(groundOverlayUrl, container.getGroundOverlayHashMap(),
+          isContainerVisible);
       if (container.hasContainers()) {
-        this.addGroundOverlayInContainerGroups(groundOverlayUrl, container.getContainers(), isContainerVisible);
+        this.addGroundOverlayInContainerGroups(groundOverlayUrl, container.getContainers(),
+            isContainerVisible);
       }
     }
-
   }
 
   private class GroundOverlayImageDownload extends AsyncTask<String, Void, Bitmap> {
@@ -340,7 +342,8 @@ public class AssetIconKmlRenderer extends KmlRenderer {
 
     protected Bitmap doInBackground(String... params) {
       try {
-        return BitmapFactory.decodeStream((InputStream)(new URL(this.mGroundOverlayUrl)).getContent());
+        return BitmapFactory.decodeStream(
+            (InputStream) (new URL(this.mGroundOverlayUrl)).getContent());
       } catch (MalformedURLException var3) {
         return BitmapFactory.decodeFile(this.mGroundOverlayUrl);
       } catch (IOException var4) {
@@ -355,11 +358,12 @@ public class AssetIconKmlRenderer extends KmlRenderer {
       } else {
         AssetIconKmlRenderer.this.putImagesCache(this.mGroundOverlayUrl, bitmap);
         if (AssetIconKmlRenderer.this.isLayerOnMap()) {
-          AssetIconKmlRenderer.this.addGroundOverlayToMap(this.mGroundOverlayUrl, AssetIconKmlRenderer.this.mGroundOverlays, true);
-          AssetIconKmlRenderer.this.addGroundOverlayInContainerGroups(this.mGroundOverlayUrl, AssetIconKmlRenderer.this.mContainers, true);
+          AssetIconKmlRenderer.this.addGroundOverlayToMap(this.mGroundOverlayUrl,
+              AssetIconKmlRenderer.this.mGroundOverlays, true);
+          AssetIconKmlRenderer.this.addGroundOverlayInContainerGroups(this.mGroundOverlayUrl,
+              AssetIconKmlRenderer.this.mContainers, true);
         }
       }
-
     }
   }
 
@@ -389,10 +393,10 @@ public class AssetIconKmlRenderer extends KmlRenderer {
         if (AssetIconKmlRenderer.this.isLayerOnMap()) {
           AssetIconKmlRenderer.this.addIconToMarkers(this.mIconUrl,
               (HashMap<KmlPlacemark, Object>) AssetIconKmlRenderer.this.getAllFeatures());
-          AssetIconKmlRenderer.this.addContainerGroupIconsToMarkers(this.mIconUrl, AssetIconKmlRenderer.this.mContainers);
+          AssetIconKmlRenderer.this.addContainerGroupIconsToMarkers(this.mIconUrl,
+              AssetIconKmlRenderer.this.mContainers);
         }
       }
-
     }
   }
 }
