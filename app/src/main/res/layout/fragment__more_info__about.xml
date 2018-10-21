@@ -12,19 +12,64 @@
     android:padding="@dimen/margin__default">
 
     <TextView
+      style="@style/Text_Detail_Section"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/margin__big"
+      android:text="@string/more_info__about__project"
+      android:textAllCaps="true" />
+
+    <TextView
       style="@style/Text_Normal"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id nibh id nunc pellentesque molestie. Donec vitae diam diam. Vivamus maximus lectus ullamcorper massa vulputate iaculis. Donec dignissim, metus dignissim ornare bibendum, odio nunc vulputate nisl, mollis facilisis sapien massa quis erat. Nullam ac urna velit. Aenean turpis dui, ultrices et sapien eget, mollis vestibulum leo. Sed at consectetur dolor. Donec at ligula massa. Cras ultrices eu orci condimentum iaculis. Mauris vulputate elit pretium, fermentum ligula ut, sodales lorem.
+      android:layout_marginTop="@dimen/margin__small"
+      android:paddingStart="@dimen/margin__default"
+      android:text="@string/more_info__about__project_1" />
 
-Mauris vel fringilla velit, vitae luctus nibh. Nullam a elementum ipsum, facilisis suscipit orci. Etiam pharetra neque in magna fringilla rhoncus. Nullam ultrices, orci at pretium congue, ligula nibh ultricies ipsum, at porta felis metus ut enim. Vestibulum tortor elit, consectetur quis ullamcorper maximus, porttitor eget velit. Nunc commodo tortor a enim mattis viverra. Fusce in ipsum dui.
+    <TextView
+      style="@style/Text_Normal"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="20dp"
+      android:layout_marginTop="@dimen/margin__small"
+      android:paddingStart="@dimen/margin__default"
+      android:text="@string/more_info__about__project_2" />
 
-Praesent eleifend elit vitae purus vehicula, ut elementum nibh condimentum. Nunc ultrices orci vel neque posuere, vel dignissim lectus efficitur. Ut in justo dui. Pellentesque iaculis ante vel porta aliquam. Praesent nec massa quis nibh ornare egestas. Suspendisse potenti. Praesent eget lectus tempor metus dictum pretium. Duis at leo nec turpis rhoncus lacinia. Nulla orci eros, tristique vel augue semper, porttitor tristique purus. Suspendisse nec tellus quis odio ultricies viverra eget eu eros. Suspendisse placerat mattis ultricies. Morbi laoreet aliquam tortor. Quisque massa diam, mattis dignissim felis eget, malesuada placerat leo.
+    <TextView
+      style="@style/Text_Normal"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="50dp"
+      android:layout_marginTop="@dimen/margin__small"
+      android:paddingStart="@dimen/margin__default"
+      android:text="@string/more_info__about__project_3" />
 
-Phasellus eu mollis sem, sed aliquet enim. Nunc eu tristique est, vitae maximus nisi. Morbi varius, nisi eu tincidunt elementum, velit nulla scelerisque lacus, non tempus sem risus rhoncus mi. Duis sodales nibh diam, commodo consectetur justo tristique nec. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam erat volutpat. Pellentesque pretium semper tellus quis viverra. Vestibulum imperdiet, justo non vestibulum condimentum, turpis ligula aliquam dolor, non molestie ante augue imperdiet augue. Sed ante sem, condimentum eget rhoncus sit amet, lacinia a elit. Pellentesque quis urna convallis, efficitur magna eget, pharetra magna. Fusce sit amet euismod lectus, tincidunt iaculis sem. Praesent vestibulum iaculis nibh, ac auctor augue bibendum at. Sed quis dui vel ex fermentum dapibus. Nam imperdiet, dui nec viverra faucibus, lorem enim rutrum sapien, ut ultrices arcu turpis nec nisl. Etiam tempus sodales diam, sed interdum enim. Sed at ante non nibh tristique porttitor.
+    <TextView
+      style="@style/Text_Normal"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="20dp"
+      android:layout_marginTop="@dimen/margin__default"
+      android:paddingStart="@dimen/margin__default"
+      android:autoLink="all"
+      android:textColorLink="@color/colorPrimary"
+      android:text="@string/more_info__about__project_4" />
 
-Vivamus sodales pretium ipsum in ultricies. Sed tempor, massa sed euismod interdum, magna lacus rhoncus libero, a rhoncus arcu magna et urna. Proin quis euismod augue. Curabitur interdum ut leo ut convallis. Aenean et dictum diam. Quisque ultrices ac risus et blandit. Nam luctus dapibus maximus. Integer tempor accumsan diam vitae iaculis. Vivamus risus massa, imperdiet in lorem non, semper euismod augue. Vestibulum vehicula molestie nunc a ullamcorper. Donec vestibulum dolor mi, at vehicula lectus efficitur quis. Donec porta non nibh vitae molestie. Phasellus pulvinar magna est, id iaculis est tempus vitae. Proin semper, ante vel viverra venenatis, enim est ultricies augue, non facilisis ipsum augue a arcu." />
+    <TextView
+      style="@style/Text_Detail_Section"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/margin__map"
+      android:text="@string/more_info__about__vv"
+      android:textAllCaps="true" />
 
+    <ImageView
+      android:layout_width="128dp"
+      android:layout_height="128dp"
+      android:layout_gravity="center_horizontal"
+      android:layout_margin="@dimen/margin__map"
+      android:src="@drawable/working" />
 
   </LinearLayout>
 </android.support.v4.widget.NestedScrollView>

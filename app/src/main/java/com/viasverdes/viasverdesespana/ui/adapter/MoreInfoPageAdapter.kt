@@ -5,6 +5,7 @@ import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentStatePagerAdapter
 import com.underlegendz.corelegendz.utils.ResourcesUtils
 import com.viasverdes.viasverdesespana.R
+import com.viasverdes.viasverdesespana.ui.fragment.InfoAboutFragment
 import com.viasverdes.viasverdesespana.ui.fragment.InfoLegalTextFragment
 import com.viasverdes.viasverdesespana.ui.fragment.InfoResourcesFragment
 import com.viasverdes.viasverdesespana.ui.fragment.ToDoFragment
@@ -13,6 +14,7 @@ class MoreInfoPageAdapter(fm: FragmentManager?) : FragmentStatePagerAdapter(fm) 
   override fun getItem(position: Int): Fragment {
     return when (position) {
       0 -> InfoResourcesFragment.newInstance()
+      1 -> InfoAboutFragment.newInstance()
       2 -> InfoLegalTextFragment.newInstance()
       else -> ToDoFragment.newInstance()
     }
