@@ -5,6 +5,7 @@ import android.support.v4.app.Fragment
 import com.underlegendz.underactivity.ActivityBuilder
 import com.underlegendz.underactivity.UnderActivity
 import com.viasverdes.viasverdesespana.R
+import com.viasverdes.viasverdesespana.ui.fragment.InfoFragment
 import com.viasverdes.viasverdesespana.ui.fragment.ListVVFragment
 import com.viasverdes.viasverdesespana.ui.fragment.MapFragment
 import com.viasverdes.viasverdesespana.ui.fragment.ToDoFragment
@@ -83,7 +84,7 @@ class MainActivity : UnderActivity() {
     if (fragment != null) {
       return fragment
     } else {
-      return ToDoFragment.newInstance()
+      return InfoFragment.newInstance()
     }
   }
 

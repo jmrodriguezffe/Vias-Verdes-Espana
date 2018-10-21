@@ -7,10 +7,10 @@
     android:icon="@drawable/ic__search"
     android:title="@string/action__search"
     app:showAsAction="always" />
-  <item
-    android:id="@+id/action__filter"
-    android:enabled="true"
-    android:icon="@drawable/ic__filter"
-    android:title="@string/action__filter"
-    app:showAsAction="always" />
+  <!--<item-->
+    <!--android:id="@+id/action__filter"-->
+    <!--android:enabled="true"-->
+    <!--android:icon="@drawable/ic__filter"-->
+    <!--android:title="@string/action__filter"-->
+    <!--app:showAsAction="always" />-->
 </menu>

@@ -3,20 +3,15 @@ package com.viasverdes.viasverdesespana.ui.activity
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
-import android.support.v4.app.Fragment
 import com.underlegendz.corelegendz.utils.ResourcesUtils
+import com.underlegendz.corelegendz.utils.ScreenUtils
 import com.underlegendz.underactivity.ActivityBuilder
 import com.underlegendz.underactivity.UnderActivity
+import com.viasverdes.viasverdesespana.*
 import com.viasverdes.viasverdesespana.data.bo.ItineraryBO
-import com.viasverdes.viasverdesespana.ui.fragment.MapFragment
 import com.viasverdes.viasverdesespana.utils.getImageResource
 import com.viasverdes.viasverdesespana.utils.setVisible
 import kotlinx.android.synthetic.main.activity_itinerary.*
-import kotlinx.android.synthetic.main.toolbar.*
-import android.support.v4.view.ViewCompat.setAlpha
-import android.view.ViewTreeObserver
-import com.underlegendz.corelegendz.utils.ScreenUtils
-import com.viasverdes.viasverdesespana.*
 
 
 class ItineraryActivity : UnderActivity() {

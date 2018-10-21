@@ -3,12 +3,16 @@
   <string name="section__vv_list">Itinerarios</string>
   <string name="section__map">Mapa</string>
   <string name="section__more_info">Más info</string>
+  <string name="section__more_info__resources">Recursos</string>
+  <string name="section__more_info__about">Acerca de…</string>
+  <string name="section__more_info__legal_text">Avisos legales</string>
   <string name="section__settings">Ajustes</string>
 
   <string name="action__search">Buscar</string>
   <string name="action__filter">Filtrar</string>
 
   <string name="km">%1$.2f km</string>
+  <string name="download_pdf">Descargar PDF</string>
 
   <string name="itinerary__see_in_map">Ver en mapa</string>
   <string name="itinerary__how_to_get">Como llegar</string>
@@ -19,5 +23,9 @@
   <string name="itinerary__title">%1$s y sus Espacios Naturales Protegidos</string>
 
   <string name="logo__fundacion_biodiversidad">Este contenido forma parte del proyecto "Vías Verdes y Red Natura 2000" desarrollado con el apoyo de la Fundación Biodiversidad del Ministerio de Agricultura y Pesca, Alimentación y Medio Ambiente.</string>
+  <string name="resources__vv_y_enp__title">Vias Verdes y Red Natura 2000: Divulgación de Espacios Naturales Protegidos y Geoparques a través de la Red Estatal de Vías Verdes</string>
+  <string name="resources__vv_y_enp__content">El presente informe es el resultado de un Inventario de Espacios Naturales protegidos, Red Natura 2000 y red de Geoparques y su relación con la red de Vías Verdes. Su objetivo es conocer esta conexión entre ambos tipos de recursos ambientales y contribuir a su divulgación. Este inventario se enmarca en el proyecto "Vias Verdes y Red Natura 2000: Divulgación de Espacios Naturales Protegidos y Geoparques a través de la Red Estatal de Vías Verdes" que desarrolla el área de Vías Verdes de la FFE con el apoyo de la Fundación Biodiversidad del Ministerio de Agricultura y Pesca, Alimentación y Medio Ambiente.</string>
+  <string name="resources__vv_y_2000__title">Mapa Vías Verdes y Red Natura 2000</string>
+  <string name="resources__vv_y_2000__content">Divulgación de Espacios Naturales y Geoparques a través de la Red Estatal de Vías Verdes. Mayo 2018. Este mapa ha sido realizado con el apoyo de la Fundación Biodiversidad del Ministerio de Agricultura y Pesca, Alimentación y Medio Ambiente. IMPORTANTE: Para ver el mapa con más tamaño descarga en PDF y utiliza el zoom.</string>
 
 </resources>

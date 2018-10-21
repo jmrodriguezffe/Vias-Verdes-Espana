@@ -11,10 +11,16 @@ fun getImageResource(itinerary: ItineraryBO): Int {
         "image__" + itinerary.codVV.toLowerCase(), "drawable", application.getPackageName())
 }
 
-fun getKmlResource(itinerary: ItineraryBO): Int {
+fun getItineraryKmlResource(itinerary: ItineraryBO): Int {
   val application = CoreApplication.get()
   return application.getResources().getIdentifier(
         "itinerary__" + itinerary.codVV.toLowerCase(), "raw", application.getPackageName())
+}
+
+fun getEnpKmlResource(itinerary: ItineraryBO): Int {
+  val application = CoreApplication.get()
+  return application.getResources().getIdentifier(
+        "enp__" + itinerary.codVV.toLowerCase(), "raw", application.getPackageName())
 }
 
 fun getAllKmls(): IntArray {

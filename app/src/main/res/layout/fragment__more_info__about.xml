@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".ui.activity.MainActivity">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/margin__default">
+
+    <TextView
+      style="@style/Text_Normal"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id nibh id nunc pellentesque molestie. Donec vitae diam diam. Vivamus maximus lectus ullamcorper massa vulputate iaculis. Donec dignissim, metus dignissim ornare bibendum, odio nunc vulputate nisl, mollis facilisis sapien massa quis erat. Nullam ac urna velit. Aenean turpis dui, ultrices et sapien eget, mollis vestibulum leo. Sed at consectetur dolor. Donec at ligula massa. Cras ultrices eu orci condimentum iaculis. Mauris vulputate elit pretium, fermentum ligula ut, sodales lorem.
+
+Mauris vel fringilla velit, vitae luctus nibh. Nullam a elementum ipsum, facilisis suscipit orci. Etiam pharetra neque in magna fringilla rhoncus. Nullam ultrices, orci at pretium congue, ligula nibh ultricies ipsum, at porta felis metus ut enim. Vestibulum tortor elit, consectetur quis ullamcorper maximus, porttitor eget velit. Nunc commodo tortor a enim mattis viverra. Fusce in ipsum dui.
+
+Praesent eleifend elit vitae purus vehicula, ut elementum nibh condimentum. Nunc ultrices orci vel neque posuere, vel dignissim lectus efficitur. Ut in justo dui. Pellentesque iaculis ante vel porta aliquam. Praesent nec massa quis nibh ornare egestas. Suspendisse potenti. Praesent eget lectus tempor metus dictum pretium. Duis at leo nec turpis rhoncus lacinia. Nulla orci eros, tristique vel augue semper, porttitor tristique purus. Suspendisse nec tellus quis odio ultricies viverra eget eu eros. Suspendisse placerat mattis ultricies. Morbi laoreet aliquam tortor. Quisque massa diam, mattis dignissim felis eget, malesuada placerat leo.
+
+Phasellus eu mollis sem, sed aliquet enim. Nunc eu tristique est, vitae maximus nisi. Morbi varius, nisi eu tincidunt elementum, velit nulla scelerisque lacus, non tempus sem risus rhoncus mi. Duis sodales nibh diam, commodo consectetur justo tristique nec. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam erat volutpat. Pellentesque pretium semper tellus quis viverra. Vestibulum imperdiet, justo non vestibulum condimentum, turpis ligula aliquam dolor, non molestie ante augue imperdiet augue. Sed ante sem, condimentum eget rhoncus sit amet, lacinia a elit. Pellentesque quis urna convallis, efficitur magna eget, pharetra magna. Fusce sit amet euismod lectus, tincidunt iaculis sem. Praesent vestibulum iaculis nibh, ac auctor augue bibendum at. Sed quis dui vel ex fermentum dapibus. Nam imperdiet, dui nec viverra faucibus, lorem enim rutrum sapien, ut ultrices arcu turpis nec nisl. Etiam tempus sodales diam, sed interdum enim. Sed at ante non nibh tristique porttitor.
+
+Vivamus sodales pretium ipsum in ultricies. Sed tempor, massa sed euismod interdum, magna lacus rhoncus libero, a rhoncus arcu magna et urna. Proin quis euismod augue. Curabitur interdum ut leo ut convallis. Aenean et dictum diam. Quisque ultrices ac risus et blandit. Nam luctus dapibus maximus. Integer tempor accumsan diam vitae iaculis. Vivamus risus massa, imperdiet in lorem non, semper euismod augue. Vestibulum vehicula molestie nunc a ullamcorper. Donec vestibulum dolor mi, at vehicula lectus efficitur quis. Donec porta non nibh vitae molestie. Phasellus pulvinar magna est, id iaculis est tempus vitae. Proin semper, ante vel viverra venenatis, enim est ultricies augue, non facilisis ipsum augue a arcu." />
+
+
+  </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

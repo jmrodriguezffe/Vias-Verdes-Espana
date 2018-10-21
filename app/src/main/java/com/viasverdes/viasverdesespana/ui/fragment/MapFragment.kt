@@ -14,7 +14,8 @@ import com.underlegendz.corelegendz.utils.ResourcesUtils
 import com.underlegendz.corelegendz.vm.VMFragment
 import com.viasverdes.viasverdesespana.R
 import com.viasverdes.viasverdesespana.data.bo.ItineraryBO
-import com.viasverdes.viasverdesespana.utils.getKmlResource
+import com.viasverdes.viasverdesespana.utils.getEnpKmlResource
+import com.viasverdes.viasverdesespana.utils.getItineraryKmlResource
 
 
 class MapFragment : VMFragment(), OnMapReadyCallback {
@@ -58,11 +59,16 @@ class MapFragment : VMFragment(), OnMapReadyCallback {
 
     arguments?.let {
       if (it.containsKey(ARG_ITINERARY)) {
-        val kmlResource = getKmlResource(it.getParcelable(ARG_ITINERARY))
+        val kmlResource = getItineraryKmlResource(it.getParcelable(ARG_ITINERARY))
         if (kmlResource > 0) {
           val layer = KmlLayer(mMap, kmlResource, context)
           layer.addLayerToMap()
           mMap.setOnMapLoadedCallback { moveCameraToKml(layer) }
+        }
+        val enpKmlResource = getEnpKmlResource(it.getParcelable(ARG_ITINERARY))
+        if (enpKmlResource > 0) {
+          val layer = KmlLayer(mMap, enpKmlResource, context)
+          layer.addLayerToMap()
         }
       } else {
 //        for (kmlResource in getAllKmls()) {
