@@ -7,6 +7,7 @@
   <dimen name="margin__itinerary_card__vertical">10dp</dimen>
   <dimen name="margin__map">32dp</dimen>
   <dimen name="margin__default">10dp</dimen>
+  <dimen name="margin__big">16dp</dimen>
   <dimen name="margin__small">6dp</dimen>
   <dimen name="image_size__user_type">16dp</dimen>
   <dimen name="image_size__detail__user_type">24dp</dimen>

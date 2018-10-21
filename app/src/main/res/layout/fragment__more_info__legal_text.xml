@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".ui.activity.MainActivity">
+
+  <TextView
+    style="@style/Text_Normal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:autoLink="all"
+    android:padding="@dimen/margin__default"
+    android:text="@string/more_info__legal_text"
+    android:textColorLink="@color/colorPrimary" />
+</android.support.v4.widget.NestedScrollView>
