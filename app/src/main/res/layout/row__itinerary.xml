@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="wrap_content"
-  xmlns:tools="http://schemas.android.com/tools"
   android:layout_marginEnd="@dimen/margin__itinerary_card__horizontal"
   android:layout_marginStart="@dimen/margin__itinerary_card__horizontal"
   android:layout_marginTop="@dimen/margin__itinerary_card__vertical"
@@ -17,7 +17,7 @@
     <ImageView
       android:id="@+id/itinerary__row__image"
       android:layout_width="125dp"
-      android:layout_height="110dp"
+      android:layout_height="120dp"
       android:adjustViewBounds="true"
       android:scaleType="centerCrop"
       tools:src="@drawable/image__sier" />
@@ -32,10 +32,10 @@
       android:paddingEnd="@dimen/margin__default"
       android:paddingStart="@dimen/margin__default"
       android:paddingTop="@dimen/margin__small"
-      tools:text="VV. de la Ruta de la Plata (Barcial del Barco - Pobladura)"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toEndOf="@id/itinerary__row__image"
-      app:layout_constraintTop_toTopOf="parent" />
+      app:layout_constraintTop_toTopOf="parent"
+      tools:text="VV. de la Ruta de la Plata (Barcial del Barco - Pobladura)" />
 
     <TextView
       android:id="@+id/itinerary__row__provinces"
@@ -47,10 +47,25 @@
       android:paddingEnd="@dimen/margin__default"
       android:paddingStart="@dimen/margin__default"
       android:paddingTop="@dimen/margin__small"
-      tools:text="Cádiz, Sevilla Cádiz, Sevilla Cádiz, Sevilla Cádiz, Sevilla Cádiz, Sevilla"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="@id/itinerary__row__title"
-      app:layout_constraintTop_toBottomOf="@id/itinerary__row__title" />
+      app:layout_constraintTop_toBottomOf="@id/itinerary__row__title"
+      tools:text="Cádiz, Sevilla" />
+
+    <TextView
+      android:id="@+id/itinerary__row__ccaa"
+      style="@style/Text_Normal"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:ellipsize="end"
+      android:maxLines="1"
+      android:paddingEnd="@dimen/margin__default"
+      android:paddingStart="@dimen/margin__default"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="@id/itinerary__row__title"
+      app:layout_constraintTop_toBottomOf="@id/itinerary__row__provinces"
+      tools:text="Andalucía" />
 
     <TextView
       android:id="@+id/itinerary__row__length"
@@ -60,9 +75,9 @@
       android:paddingBottom="@dimen/margin__small"
       android:paddingEnd="@dimen/margin__default"
       android:paddingStart="@dimen/margin__default"
-      tools:text="36km"
       app:layout_constraintBottom_toBottomOf="@id/itinerary__row__image"
-      app:layout_constraintStart_toStartOf="@id/itinerary__row__title" />
+      app:layout_constraintStart_toStartOf="@id/itinerary__row__title"
+      tools:text="36km" />
 
     <ImageView
       android:id="@+id/itinerary__row__roller_user_type"
@@ -71,8 +86,8 @@
       android:layout_margin="@dimen/margin__small"
       android:scaleType="fitCenter"
       android:src="@drawable/ic__user_type__roller"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintBottom_toBottomOf="parent"/>
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent" />
 
     <ImageView
       android:id="@+id/itinerary__row__wheelchair_user_type"

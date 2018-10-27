@@ -71,6 +71,7 @@ class ListVVAdapter(private var data: List<ItineraryBO>) : RecyclerView.Adapter<
       itinerary__row__title.text = itinerary.name
       itinerary__row__provinces.text = itinerary.provinces
       itinerary__row__length.text = ResourcesUtils.getString(R.string.km, itinerary.length)
+      itinerary__row__ccaa.text = itinerary.ca
       itinerary__row__walk_user_type.setVisible(itinerary.userTypes.contains(USER_TYPE__WALK))
       itinerary__row__bicycle_user_type.setVisible(itinerary.userTypes.contains(USER_TYPE__BICYCLE))
       itinerary__row__wheelchair_user_type.setVisible(itinerary.userTypes.contains(USER_TYPE__WHEELCHAIR))
