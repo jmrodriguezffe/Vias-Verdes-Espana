@@ -7,7 +7,12 @@ package com.google.maps.android.data.kml;
 
 import android.content.Context;
 import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.model.Marker;
+import com.google.android.gms.maps.model.Polygon;
+import com.google.android.gms.maps.model.Polyline;
+import com.google.maps.android.data.Feature;
 import com.google.maps.android.data.Layer;
+import com.google.maps.android.data.Renderer;
 import java.io.IOException;
 import java.io.InputStream;
 import org.xmlpull.v1.XmlPullParser;
@@ -15,6 +20,8 @@ import org.xmlpull.v1.XmlPullParserException;
 import org.xmlpull.v1.XmlPullParserFactory;
 
 public class AssetIconKmlLayer extends Layer {
+  private AssetIconKmlRenderer mRenderer;
+
   public AssetIconKmlLayer(GoogleMap map, int resourceId, Context context)
       throws XmlPullParserException, IOException {
     this(map, context.getResources().openRawResource(resourceId), context);
@@ -25,7 +32,7 @@ public class AssetIconKmlLayer extends Layer {
     if (stream == null) {
       throw new IllegalArgumentException("KML InputStream cannot be null");
     } else {
-      AssetIconKmlRenderer mRenderer = new AssetIconKmlRenderer(map, context);
+      mRenderer = new AssetIconKmlRenderer(map, context);
       XmlPullParser xmlPullParser = createXmlParser(stream);
       KmlParser parser = new KmlParser(xmlPullParser);
       parser.parseKml();
@@ -66,5 +73,47 @@ public class AssetIconKmlLayer extends Layer {
 
   public Iterable<KmlGroundOverlay> getGroundOverlays() {
     return super.getGroundOverlays();
+  }
+
+  @Override
+  public void setOnFeatureClickListener(final OnFeatureClickListener listener) {
+    GoogleMap map = this.getMap();
+    map.setOnPolygonClickListener(new GoogleMap.OnPolygonClickListener() {
+      public void onPolygonClick(Polygon polygon) {
+        if (AssetIconKmlLayer.this.getFeature(polygon) != null) {
+          listener.onFeatureClick(AssetIconKmlLayer.this.getFeature(polygon));
+        } else if (AssetIconKmlLayer.this.getContainerFeature(polygon) != null) {
+          listener.onFeatureClick(AssetIconKmlLayer.this.getContainerFeature(polygon));
+        } else {
+          listener.onFeatureClick(findPolygonFeature(polygon));
+        }
+
+      }
+    });
+    map.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
+      public boolean onMarkerClick(Marker marker) {
+        if (AssetIconKmlLayer.this.getFeature(marker) != null) {
+          listener.onFeatureClick(AssetIconKmlLayer.this.getFeature(marker));
+        } else if (AssetIconKmlLayer.this.getContainerFeature(marker) != null) {
+          listener.onFeatureClick(AssetIconKmlLayer.this.getContainerFeature(marker));
+        }
+
+        return false;
+      }
+    });
+    map.setOnPolylineClickListener(new GoogleMap.OnPolylineClickListener() {
+      public void onPolylineClick(Polyline polyline) {
+        if (AssetIconKmlLayer.this.getFeature(polyline) != null) {
+          listener.onFeatureClick(AssetIconKmlLayer.this.getFeature(polyline));
+        } else if (AssetIconKmlLayer.this.getContainerFeature(polyline) != null) {
+          listener.onFeatureClick(AssetIconKmlLayer.this.getContainerFeature(polyline));
+        }
+
+      }
+    });
+  }
+
+  private Feature findPolygonFeature(Polygon mapObject) {
+    return mRenderer.getPolygonCache().get(mapObject);
   }
 }

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:animateLayoutChanges="true"
+  tools:context=".ui.fragment.MapFragment">
+
+  <fragment
+    android:id="@+id/map__view__map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+
+  <RelativeLayout
+    android:id="@+id/map__container__info"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_gravity="bottom"
+    android:visibility="gone">
+
+    <View
+      android:id="@+id/map__view__info_shadow"
+      android:layout_width="match_parent"
+      android:layout_height="3dp"
+      android:background="@drawable/bg__shadow__top" />
+
+    <FrameLayout
+      android:id="@+id/map__btn__info_close"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/map__view__info_shadow"
+      android:background="#D3D3D3">
+
+      <TextView
+        style="@style/Text_Normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/close"
+        android:textAllCaps="true"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical"
+        android:drawableStart="@drawable/ic__dropdown"
+        android:drawableEnd="@drawable/ic__dropdown"/>
+    </FrameLayout>
+
+    <WebView
+      android:id="@+id/map__web__info_description"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@+id/map__btn__info_close"
+      android:background="@color/white"
+      android:padding="@dimen/margin__big" />
+  </RelativeLayout>
+
+</FrameLayout>

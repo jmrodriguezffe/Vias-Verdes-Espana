@@ -16,6 +16,7 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.GroundOverlay;
 import com.google.android.gms.maps.model.GroundOverlayOptions;
 import com.google.android.gms.maps.model.Marker;
+import com.google.android.gms.maps.model.Polygon;
 import com.google.maps.android.data.Feature;
 import com.google.maps.android.data.Geometry;
 import java.io.IOException;
@@ -25,6 +26,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.Map;
 
 public class AssetIconKmlRenderer extends KmlRenderer {
   private static final String LOG_TAG = "KmlRenderer";
@@ -34,6 +36,12 @@ public class AssetIconKmlRenderer extends KmlRenderer {
   private boolean mGroundOverlayImagesDownloaded = false;
   private HashMap<KmlGroundOverlay, GroundOverlay> mGroundOverlays;
   private ArrayList<KmlContainer> mContainers;
+
+  public Map<Polygon, Feature> getPolygonCache() {
+    return mPolygonCache;
+  }
+
+  private Map<Polygon, Feature> mPolygonCache = new HashMap<>();
 
   AssetIconKmlRenderer(GoogleMap map, Context context) {
     super(map, context);
@@ -193,6 +201,15 @@ public class AssetIconKmlRenderer extends KmlRenderer {
                 isObjectVisible);
         kmlContainer.setPlacemark((KmlPlacemark) placemark, mapObject);
         this.putContainerFeature(mapObject, placemark);
+        if (mapObject instanceof ArrayList) {
+          if (!((ArrayList) mapObject).isEmpty()) {
+            for (Object obj : ((ArrayList) mapObject)) {
+              if (obj instanceof Polygon) {
+                mPolygonCache.put((Polygon) obj, placemark);
+              }
+            }
+          }
+        }
       }
     }
   }
