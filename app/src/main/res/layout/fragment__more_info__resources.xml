@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".ui.activity.MainActivity">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/margin__default">
+
+    <android.support.v7.widget.CardView
+      android:id="@+id/resources__container__rednatura2000"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/white"
+      android:foreground="?android:attr/selectableItemBackground"
+      app:cardCornerRadius="7dp"
+      tools:visibility="visible">
+
+      <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+          android:id="@+id/resources__img__rednatura2000"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:adjustViewBounds="true"
+          android:src="@drawable/logo__rednatura2000"
+          app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+          android:id="@+id/resources__label__rednatura2000_title"
+          style="@style/Text_Info_Title"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:padding="@dimen/margin__small"
+          android:text="@string/resources__vv_y_enp__title"
+          app:layout_constraintBottom_toBottomOf="@id/resources__img__rednatura2000" />
+
+        <TextView
+          android:id="@+id/resources__label__rednatura2000_text"
+          style="@style/Text_Normal"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="@dimen/margin__default"
+          android:text="@string/resources__vv_y_enp__content"
+          app:layout_constraintTop_toBottomOf="@id/resources__label__rednatura2000_title" />
+
+        <TextView
+          style="@style/Text_Green_Button"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="@dimen/margin__big"
+          android:text="@string/download_pdf"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/resources__label__rednatura2000_text" />
+
+      </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+      android:id="@+id/resources__container__mapa"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/margin__default"
+      android:background="@color/white"
+      android:foreground="?android:attr/selectableItemBackground"
+      app:cardCornerRadius="7dp"
+      tools:visibility="gone">
+
+      <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+          android:id="@+id/resources__img__mapa"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:adjustViewBounds="true"
+          android:src="@drawable/logo__mapa_red_natura"
+          app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+          android:id="@+id/resources__label__mapa"
+          style="@style/Text_Info_Title"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:padding="@dimen/margin__small"
+          android:text="@string/resources__vv_y_2000__title"
+          app:layout_constraintBottom_toBottomOf="@id/resources__img__mapa" />
+
+        <TextView
+          android:id="@+id/resources__label__mapa_text"
+          style="@style/Text_Normal"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="@dimen/margin__default"
+          android:text="@string/resources__vv_y_2000__content"
+          app:layout_constraintTop_toBottomOf="@id/resources__label__mapa" />
+
+        <TextView
+          style="@style/Text_Green_Button"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="@dimen/margin__big"
+          android:text="@string/download_pdf"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/resources__label__mapa_text" />
+
+      </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+      android:id="@+id/resources__container__camino"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/margin__default"
+      android:background="@color/white"
+      android:foreground="?android:attr/selectableItemBackground"
+      app:cardCornerRadius="7dp"
+      tools:visibility="gone">
+
+      <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+          android:id="@+id/resources__img__camino"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:adjustViewBounds="true"
+          android:src="@drawable/logo__caminos_naturales"
+          app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+          android:id="@+id/resources__label__camino"
+          style="@style/Text_Info_Title"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:padding="@dimen/margin__small"
+          android:text="@string/resources__caminos__title"
+          app:layout_constraintBottom_toBottomOf="@id/resources__img__camino" />
+
+        <TextView
+          android:id="@+id/resources__label__camino_text"
+          style="@style/Text_Normal"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="@dimen/margin__default"
+          android:text="@string/resources__caminos__content"
+          app:layout_constraintTop_toBottomOf="@id/resources__label__camino" />
+
+        <TextView
+          style="@style/Text_Green_Button"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="@dimen/margin__big"
+          android:text="@string/download_pdf"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/resources__label__camino_text" />
+
+      </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+      style="@style/Text_Normal"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/margin__big"
+      android:autoLink="web"
+      android:gravity="center_horizontal"
+      android:paddingEnd="@dimen/margin__default"
+      android:paddingStart="@dimen/margin__default"
+      android:text="@string/resources__footer"
+      android:textColorLink="@color/colorPrimary" />
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/margin__big"
+      android:orientation="horizontal">
+
+      <ImageView
+        android:id="@+id/resources__btn__facebook"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:padding="16dp"
+        android:src="@drawable/ic__facebook" />
+
+      <ImageView
+        android:id="@+id/resources__btn__twitter"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:padding="16dp"
+        android:src="@drawable/ic__twitter" />
+
+      <ImageView
+        android:id="@+id/resources__btn__instagram"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:padding="16dp"
+        android:src="@drawable/ic__instagram" />
+
+      <ImageView
+        android:id="@+id/resources__btn__youtube"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:padding="16dp"
+        android:src="@drawable/ic__youtube" />
+    </LinearLayout>
+
+  </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

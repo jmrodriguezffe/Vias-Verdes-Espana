@@ -12,9 +12,38 @@ import com.viasverdes.viasverdesespana.utils.getImageResource
 import com.viasverdes.viasverdesespana.utils.setVisible
 import kotlinx.android.extensions.LayoutContainer
 import kotlinx.android.synthetic.main.row__itinerary.*
+import java.util.*
 
-class ListVVAdapter(val data: List<ItineraryBO>) : RecyclerView.Adapter<ListVVAdapter.ListVVHolder>() {
-  var listener : AdapterClickListener<ItineraryBO>? = null
+class ListVVAdapter(private var data: List<ItineraryBO>) : RecyclerView.Adapter<ListVVAdapter.ListVVHolder>() {
+  var listener: AdapterClickListener<ItineraryBO>? = null
+  private var filterText: String? = null
+  private val backupData: List<ItineraryBO>
+
+  init {
+    backupData = data
+  }
+
+  fun filter(filterText: String?) {
+    this.filterText = filterText
+    applyFilter()
+  }
+
+  private fun applyFilter() {
+    if (filterText.isNullOrEmpty()) {
+      data = backupData
+    } else {
+      val list = LinkedList<ItineraryBO>()
+      for (itineraryBO in backupData) {
+        if (itineraryBO.name.contains(filterText!!)
+              || itineraryBO.provinces.contains(filterText!!)
+              || itineraryBO.ca.contains(filterText!!)) {
+          list.add(itineraryBO)
+        }
+      }
+      data = list
+    }
+    notifyDataSetChanged()
+  }
 
   override fun onCreateViewHolder(
         parent: ViewGroup,
@@ -45,8 +74,9 @@ class ListVVAdapter(val data: List<ItineraryBO>) : RecyclerView.Adapter<ListVVAd
       itinerary__row__walk_user_type.setVisible(itinerary.userTypes.contains(USER_TYPE__WALK))
       itinerary__row__bicycle_user_type.setVisible(itinerary.userTypes.contains(USER_TYPE__BICYCLE))
       itinerary__row__wheelchair_user_type.setVisible(itinerary.userTypes.contains(USER_TYPE__WHEELCHAIR))
+      itinerary__row__roller_user_type.setVisible(itinerary.userTypes.contains(USER_TYPE__ROLLER))
       var imageResource = getImageResource(itinerary)
-      if(imageResource == 0){
+      if (imageResource == 0) {
         imageResource = R.drawable.ic__itinerary__no_image
       }
       itinerary__row__image.setImageResource(imageResource)

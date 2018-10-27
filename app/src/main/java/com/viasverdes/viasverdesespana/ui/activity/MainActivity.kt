@@ -5,6 +5,7 @@ import android.support.v4.app.Fragment
 import com.underlegendz.underactivity.ActivityBuilder
 import com.underlegendz.underactivity.UnderActivity
 import com.viasverdes.viasverdesespana.R
+import com.viasverdes.viasverdesespana.ui.fragment.InfoFragment
 import com.viasverdes.viasverdesespana.ui.fragment.ListVVFragment
 import com.viasverdes.viasverdesespana.ui.fragment.MapFragment
 import com.viasverdes.viasverdesespana.ui.fragment.ToDoFragment
@@ -24,10 +25,11 @@ class MainActivity : UnderActivity() {
     return builder.setContentLayout(R.layout.activity_main)
           .enableToolbar(true)
           .setToolbar(R.layout.toolbar)
+//          .setToolbarScrollFlags(ActivityBuilder.SCROLL_FLAG_SCROLL or ActivityBuilder.SCROLL_FLAG_ENTER_ALWAYS or ActivityBuilder.SCROLL_FLAG_SNAP)
   }
 
-  override fun onCreate(savedInstanceState: Bundle?) {
-    super.onCreate(savedInstanceState)
+  override fun onPostCreate(savedInstanceState: Bundle?) {
+    super.onPostCreate(savedInstanceState)
     main__bottom_navigation.removeShiftMode()
     main__bottom_navigation.setOnNavigationItemSelectedListener { item ->
       if (lastSectionSelected != item.itemId) {
@@ -82,7 +84,7 @@ class MainActivity : UnderActivity() {
     if (fragment != null) {
       return fragment
     } else {
-      return ToDoFragment.newInstance()
+      return InfoFragment.newInstance()
     }
   }
 

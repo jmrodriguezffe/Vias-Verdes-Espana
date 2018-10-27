@@ -7,6 +7,7 @@
   tools:context=".ui.activity.ItineraryActivity">
 
   <ScrollView
+    android:id="@+id/itinerary__scroll"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -19,14 +20,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
-        tools:src="@drawable/image__sier"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/image__sier" />
 
       <TextView
         android:id="@+id/itinerary__see_in_map"
         style="@style/Text_Detail_Button"
         android:layout_width="0dp"
-        android:layout_height="55dp"
+        android:layout_height="50dp"
         android:background="@color/colorPrimary"
         android:text="@string/itinerary__see_in_map"
         app:layout_constraintEnd_toStartOf="@id/itinerary__how_to_get"
@@ -37,7 +38,7 @@
         android:id="@+id/itinerary__how_to_get"
         style="@style/Text_Detail_Button"
         android:layout_width="0dp"
-        android:layout_height="55dp"
+        android:layout_height="50dp"
         android:background="@color/colorAccent"
         android:text="@string/itinerary__how_to_get"
         app:layout_constraintEnd_toEndOf="parent"
@@ -60,8 +61,8 @@
         android:layout_height="wrap_content"
         android:paddingEnd="@dimen/margin__default"
         android:paddingStart="@dimen/margin__default"
-        tools:text="Entre Puerto Serrano y Olvera."
-        app:layout_constraintTop_toBottomOf="@id/itinerary__localization_label" />
+        app:layout_constraintTop_toBottomOf="@id/itinerary__localization_label"
+        tools:text="Entre Puerto Serrano y Olvera." />
 
       <TextView
         android:id="@+id/itinerary__provinces"
@@ -70,9 +71,9 @@
         android:layout_height="wrap_content"
         android:paddingEnd="@dimen/margin__default"
         android:paddingStart="@dimen/margin__default"
-        tools:text="Cádiz, Sevilla"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/itinerary__localization" />
+        app:layout_constraintTop_toBottomOf="@id/itinerary__localization"
+        tools:text="Cádiz, Sevilla" />
 
       <TextView
         android:id="@+id/itinerary__length_label"
@@ -90,8 +91,8 @@
         android:layout_height="wrap_content"
         android:paddingEnd="@dimen/margin__default"
         android:paddingStart="@dimen/margin__default"
-        tools:text="36 km"
-        app:layout_constraintTop_toBottomOf="@id/itinerary__length_label" />
+        app:layout_constraintTop_toBottomOf="@id/itinerary__length_label"
+        tools:text="36 km" />
 
       <TextView
         android:id="@+id/itinerary__user_type_label"
@@ -103,12 +104,22 @@
         app:layout_constraintTop_toBottomOf="@id/itinerary__length" />
 
       <ImageView
+        android:id="@+id/itinerary__roller_user_type"
+        android:layout_width="@dimen/image_size__detail__user_type"
+        android:layout_height="@dimen/image_size__detail__user_type"
+        android:layout_margin="@dimen/margin__small"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic__user_type__roller"
+        app:layout_constraintStart_toEndOf="@id/itinerary__wheelchair_user_type"
+        app:layout_constraintTop_toBottomOf="@id/itinerary__user_type_label" />
+
+      <ImageView
         android:id="@+id/itinerary__wheelchair_user_type"
         android:layout_width="@dimen/image_size__detail__user_type"
         android:layout_height="@dimen/image_size__detail__user_type"
         android:layout_margin="@dimen/margin__small"
         android:scaleType="fitCenter"
-        android:src="@drawable/user_type__wheelchair"
+        android:src="@drawable/ic__user_type__wheelchair"
         app:layout_constraintStart_toEndOf="@id/itinerary__bicycle_user_type"
         app:layout_constraintTop_toBottomOf="@id/itinerary__user_type_label" />
 
@@ -118,7 +129,7 @@
         android:layout_height="@dimen/image_size__detail__user_type"
         android:layout_margin="@dimen/margin__small"
         android:scaleType="fitCenter"
-        android:src="@drawable/user_type__bicycle"
+        android:src="@drawable/ic__user_type__bicycle"
         app:layout_constraintStart_toEndOf="@id/itinerary__walk_user_type"
         app:layout_constraintTop_toBottomOf="@id/itinerary__user_type_label" />
 
@@ -129,7 +140,7 @@
         android:layout_margin="@dimen/margin__small"
         android:layout_marginStart="@dimen/margin__default"
         android:scaleType="fitCenter"
-        android:src="@drawable/user_type__walk"
+        android:src="@drawable/ic__user_type__walk"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/itinerary__user_type_label" />
 
@@ -147,21 +158,70 @@
         style="@style/Text_Normal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/margin__map"
         android:paddingEnd="@dimen/margin__default"
         android:paddingStart="@dimen/margin__default"
-        tools:text="Esta Vía Verde cuenta con 9 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: La Reserva de la Biosfera Intercontinental del Mediterráneo, la Reserva Natural Peñón de Zaframagón,  así como el LIC Laguna de Coripe y las Zonas de Importancia Comunitaria ZICS Arroyo de Santiago, Salado de Morón y Matabueyes/Garrapata; el Peñón del Zaframagón; Río Guadaira; Río Guadalete; y la Sierra Lijar (Red Natura 2000). Además del Monumento Natural Chaparro de la Vega."
-        app:layout_constraintTop_toBottomOf="@id/itinerary__natura_label" />
+        app:layout_constraintTop_toBottomOf="@id/itinerary__natura_label"
+        tools:text="Esta Vía Verde cuenta con 9 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: La Reserva de la Biosfera Intercontinental del Mediterráneo, la Reserva Natural Peñón de Zaframagón,  así como el LIC Laguna de Coripe y las Zonas de Importancia Comunitaria ZICS Arroyo de Santiago, Salado de Morón y Matabueyes/Garrapata; el Peñón del Zaframagón; Río Guadaira; Río Guadalete; y la Sierra Lijar (Red Natura 2000). Además del Monumento Natural Chaparro de la Vega." />
+
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginEnd="@dimen/margin__map"
+        android:layout_marginStart="@dimen/margin__map"
+        android:background="@color/colorAccent"
+        app:layout_constraintTop_toBottomOf="@id/itinerary__natura" />
+
+      <TextView
+        android:id="@+id/itinerary__logo__fundacion_biodiversidad_text"
+        style="@style/Text_Normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="@dimen/margin__default"
+        android:paddingEnd="@dimen/margin__map"
+        android:paddingStart="@dimen/margin__map"
+        android:paddingTop="@dimen/margin__map"
+        android:text="@string/logo__fundacion_biodiversidad"
+        app:layout_constraintTop_toBottomOf="@id/itinerary__natura" />
+
+      <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin__map"
+        android:layout_marginStart="@dimen/margin__map"
+        android:adjustViewBounds="true"
+        android:paddingBottom="@dimen/margin__map"
+        android:src="@drawable/logo__fundacion_biodiversidad"
+        app:layout_constraintTop_toBottomOf="@id/itinerary__logo__fundacion_biodiversidad_text" />
 
     </android.support.constraint.ConstraintLayout>
   </ScrollView>
+
+  <View
+    android:id="@+id/itinerary__title_bg"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:alpha="0.4"
+    android:background="@color/colorPrimary"
+    app:layout_constraintBottom_toBottomOf="@id/itinerary__title"
+    app:layout_constraintTop_toTopOf="parent" />
 
   <TextView
     android:id="@+id/itinerary__title"
     style="@style/Text_Detail_Title"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:text="V.V. de la Sierra y sus Espacios Naturales Protegidos"
-    app:layout_constraintTop_toTopOf="parent" />
+    app:layout_constraintTop_toTopOf="parent"
+    tools:text="V.V. de la Sierra y sus Espacios Naturales Protegidos" />
+
+  <View
+    android:id="@+id/itinerary__title_shadow"
+    android:layout_width="match_parent"
+    android:layout_height="3dp"
+    android:alpha="0.4"
+    android:background="@drawable/bg__shadow__bottom"
+    app:layout_constraintTop_toBottomOf="@id/itinerary__title_bg" />
 
   <ImageView
     android:id="@+id/itinerary__back"

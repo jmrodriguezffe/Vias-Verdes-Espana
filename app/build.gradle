@@ -8,6 +8,14 @@ androidExtensions {
 apply plugin: 'kotlin-kapt'
 
 android {
+  signingConfigs {
+    beta {
+      keyAlias 'beta'
+      keyPassword '1234567890'
+      storeFile file('C:/Android/UNDERLEGENDZ/Proyectos/Vias-Verdes-Espana/keystore.jks')
+      storePassword '1234567890'
+    }
+  }
   compileSdkVersion 27
   defaultConfig {
     applicationId "com.viasverdes.viasverdesespana"
@@ -18,13 +26,19 @@ android {
     testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
   }
   buildTypes {
+    debug {
+      debuggable true
+      minifyEnabled false
+      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+      signingConfig signingConfigs.beta
+    }
+
     release {
       minifyEnabled false
       proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+      signingConfig signingConfigs.beta
     }
   }
-
-
   lintOptions {
     abortOnError false
   }
@@ -34,29 +48,23 @@ android {
 def androidSupportVersion = "27.1.1"
 
 dependencies {
-  implementation fileTree(dir: 'libs', include: ['*.jar'])
+  implementation fileTree(include: ['*.jar'], dir: 'libs')
   // KOTLIN
   implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-
   // CORE LEGENDZ
   implementation 'com.underlegendz.core:core-legendz:1.1.0'
-
   // UnderActivity
-  implementation "com.underlegendz.underactivity:under-activity:2.0.1"
-
+  implementation 'com.underlegendz.underactivity:under-activity:2.0.1'
   // Architecture components
-  implementation "android.arch.lifecycle:extensions:1.1.1"
-  implementation "android.arch.persistence.room:runtime:1.1.1"
+  implementation 'android.arch.lifecycle:extensions:1.1.1'
+  implementation 'android.arch.persistence.room:runtime:1.1.1'
   kapt "android.arch.persistence.room:compiler:1.1.1"
-  implementation "android.arch.work:work-runtime-ktx:1.0.0-alpha09"
-
+  implementation 'android.arch.work:work-runtime-ktx:1.0.0-alpha09'
   // Gson
   implementation 'com.google.code.gson:gson:2.8.5'
-
   // Google Maps
   implementation 'com.google.maps.android:android-maps-utils:0.5'
   implementation 'com.google.android.gms:play-services-maps:15.0.1'
-
   // Android Support
   implementation "com.android.support:appcompat-v7:$androidSupportVersion"
   implementation "com.android.support:design:$androidSupportVersion"

@@ -3,20 +3,16 @@ package com.viasverdes.viasverdesespana.ui.activity
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
-import android.support.v4.app.Fragment
 import com.underlegendz.corelegendz.utils.ResourcesUtils
+import com.underlegendz.corelegendz.utils.ScreenUtils
 import com.underlegendz.underactivity.ActivityBuilder
 import com.underlegendz.underactivity.UnderActivity
-import com.viasverdes.viasverdesespana.R
-import com.viasverdes.viasverdesespana.USER_TYPE__BICYCLE
-import com.viasverdes.viasverdesespana.USER_TYPE__WALK
-import com.viasverdes.viasverdesespana.USER_TYPE__WHEELCHAIR
+import com.viasverdes.viasverdesespana.*
 import com.viasverdes.viasverdesespana.data.bo.ItineraryBO
-import com.viasverdes.viasverdesespana.ui.fragment.MapFragment
 import com.viasverdes.viasverdesespana.utils.getImageResource
 import com.viasverdes.viasverdesespana.utils.setVisible
 import kotlinx.android.synthetic.main.activity_itinerary.*
-import kotlinx.android.synthetic.main.toolbar.*
+
 
 class ItineraryActivity : UnderActivity() {
 
@@ -54,9 +50,18 @@ class ItineraryActivity : UnderActivity() {
     itinerary__walk_user_type.setVisible(itinerary.userTypes.contains(USER_TYPE__WALK))
     itinerary__bicycle_user_type.setVisible(itinerary.userTypes.contains(USER_TYPE__BICYCLE))
     itinerary__wheelchair_user_type.setVisible(itinerary.userTypes.contains(USER_TYPE__WHEELCHAIR))
+    itinerary__roller_user_type.setVisible(itinerary.userTypes.contains(USER_TYPE__ROLLER))
     itinerary__natura.text = itinerary.naturaText
     itinerary__back.setOnClickListener { onBackPressed() }
     itinerary__see_in_map.setOnClickListener { MapActivity.start(this, itinerary) }
+
+    itinerary__scroll.viewTreeObserver.addOnScrollChangedListener {
+      val scrollY = itinerary__scroll.scrollY.toFloat()
+      val alpha = Math.min(1f, scrollY / ScreenUtils.width() + 0.4f)
+      itinerary__title_bg.alpha = alpha
+      itinerary__title_shadow.alpha = alpha
+    }
+
   }
 
   override fun finish() {

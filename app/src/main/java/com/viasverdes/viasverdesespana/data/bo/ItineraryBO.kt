@@ -13,6 +13,7 @@ data class ItineraryBO(
       var name: String,
       var length: Float,
       var provinces: String,
+      var ca: String,
       var localization: String,
       var naturaText: String,
       var userTypes: String
