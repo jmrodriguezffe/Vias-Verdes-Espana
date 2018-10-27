@@ -34,9 +34,9 @@ class ListVVAdapter(private var data: List<ItineraryBO>) : RecyclerView.Adapter<
     } else {
       val list = LinkedList<ItineraryBO>()
       for (itineraryBO in backupData) {
-        if (itineraryBO.name.contains(filterText!!)
-              || itineraryBO.provinces.contains(filterText!!)
-              || itineraryBO.ca.contains(filterText!!)) {
+        if (itineraryBO.name.contains(filterText!!, true)
+              || itineraryBO.provinces.contains(filterText!!, true)
+              || itineraryBO.ca.contains(filterText!!, true)) {
           list.add(itineraryBO)
         }
       }
