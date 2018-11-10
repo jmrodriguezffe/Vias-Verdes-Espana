@@ -1,10 +1,16 @@
 package com.viasverdes.viasverdesespana.ui.fragment
 
+import android.Manifest
+import android.arch.lifecycle.Observer
+import android.content.pm.PackageManager
 import android.os.Bundle
+import android.support.v4.app.ActivityCompat
+import android.support.v4.content.PermissionChecker
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
+import com.google.android.gms.maps.model.BitmapDescriptorFactory
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.LatLngBounds
 import com.google.android.gms.maps.model.MarkerOptions
@@ -16,9 +22,11 @@ import com.google.maps.android.data.kml.KmlMultiGeometry
 import com.underlegendz.corelegendz.utils.ResourcesUtils
 import com.underlegendz.corelegendz.vm.VMFragment
 import com.viasverdes.viasverdesespana.R
+import com.viasverdes.viasverdesespana.data.VVDatabase
 import com.viasverdes.viasverdesespana.data.bo.ItineraryBO
 import com.viasverdes.viasverdesespana.utils.getEnpKmlResource
 import com.viasverdes.viasverdesespana.utils.getItineraryKmlResource
+import com.viasverdes.viasverdesespana.utils.isNotNullOrEmpty
 import com.viasverdes.viasverdesespana.utils.setVisible
 import kotlinx.android.synthetic.main.fragment__map.*
 
@@ -27,6 +35,7 @@ class MapFragment : VMFragment(), OnMapReadyCallback, Layer.OnFeatureClickListen
 
   companion object {
     const val ARG_ITINERARY = "ITINERARY"
+    const val LOCATION_REQUEST_CODE = 786
 
     fun newInstance(itinerary: ItineraryBO?): MapFragment {
       val args = Bundle()
@@ -55,29 +64,75 @@ class MapFragment : VMFragment(), OnMapReadyCallback, Layer.OnFeatureClickListen
   override fun onMapReady(googleMap: GoogleMap) {
     mMap = googleMap
 
+    checkMyLocation()
+
     arguments?.let {
       if (it.containsKey(ARG_ITINERARY)) {
         val itinerary = it.getParcelable<ItineraryBO>(ARG_ITINERARY)
-        val kmlResource = getItineraryKmlResource(itinerary)
-        if (kmlResource > 0) {
-          val layer = KmlLayer(mMap, kmlResource, context)
-          layer.addLayerToMap()
-          mMap.setOnMapLoadedCallback { moveCameraToKml(layer) }
-        }
-        val enpKmlResource = getEnpKmlResource(itinerary)
-        if (enpKmlResource > 0) {
-          val layer = AssetIconKmlLayer(mMap, enpKmlResource, context)
-          layer.setOnFeatureClickListener(this)
-          layer.addLayerToMap()
-        }
+        addItineraryToMap(itinerary, true, true)
       } else {
-//        for (kmlResource in getAllKmls()) {
-//        val layer = KmlLayer(mMap, R.raw.capa_vias_verdes, context)
-//        layer.addLayerToMap()
-//        val enp = KmlLayer(mMap, R.raw.capa_vias_verdes, context)
-//        enp.addLayerToMap()
-////        }
-//        moveCameraToMadrid()
+        context?.let { ctx ->
+          VVDatabase.getInstance(ctx)?.itineraryDAO()?.getAllLiveData()?.observe(this,
+                Observer {
+                  if (it.isNotNullOrEmpty()) {
+                    it?.forEach {
+                      addItineraryToMap(it, false, false)
+                    }
+                    moveCameraToMadrid()
+                  }
+                })
+        }
+      }
+    }
+  }
+
+  private fun checkMyLocation() {
+    context?.let {
+      var permission = PermissionChecker.checkSelfPermission(it,
+            Manifest.permission.ACCESS_FINE_LOCATION)
+      if (permission == PermissionChecker.PERMISSION_GRANTED) {
+        mMap.isMyLocationEnabled = true
+      } else if (activity != null && activity!!.isFinishing.not()) {
+        ActivityCompat.requestPermissions(activity!!, arrayOf(Manifest.permission.ACCESS_FINE_LOCATION), LOCATION_REQUEST_CODE)
+      }
+    }
+  }
+
+  override fun onRequestPermissionsResult(requestCode: Int,
+                                          permissions: Array<out String>,
+                                          grantResults: IntArray
+  ) {
+    if (requestCode == LOCATION_REQUEST_CODE) {
+      if (grantResults.size > 0
+            && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+        checkMyLocation()
+      }
+    } else {
+      super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+    }
+  }
+
+  private fun addItineraryToMap(
+        itinerary: ItineraryBO,
+        centerMap: Boolean,
+        addEnp: Boolean
+  ) {
+    val kmlResource = getItineraryKmlResource(itinerary)
+    if (kmlResource > 0) {
+      val layer = KmlLayer(mMap, kmlResource, context)
+      layer.addLayerToMap()
+      if (centerMap) {
+        mMap.setOnMapLoadedCallback { moveCameraToKml(layer) }
+      } else {
+        insertMarkerOnFirstCoordinate(itinerary, layer)
+      }
+    }
+    if (addEnp) {
+      val enpKmlResource = getEnpKmlResource(itinerary)
+      if (enpKmlResource > 0) {
+        val layer = AssetIconKmlLayer(mMap, enpKmlResource, context)
+        layer.setOnFeatureClickListener(this)
+        layer.addLayerToMap()
       }
     }
   }
@@ -124,13 +179,14 @@ class MapFragment : VMFragment(), OnMapReadyCallback, Layer.OnFeatureClickListen
       val polygon = placemark.geometry as KmlMultiGeometry
       //Create LatLngBounds of the outer coordinates of the polygon
       val latlngList = polygon.geometryObject.first().geometryObject as ArrayList<LatLng>
-
-      mMap.addMarker(
-            MarkerOptions().position(latlngList.first())
-                  .title(itinerary.name)
+      val latLng = latlngList.first()
+      mMap.addMarker(MarkerOptions()
+            .position(latLng)
+            .title(itinerary.name)
+            .icon(BitmapDescriptorFactory.fromResource(R.drawable.marker__itinerary))
       ).tag = itinerary.id
     } catch (e: Exception) {
-      // nothing to do
+      // Nothing to do
     }
   }
 
