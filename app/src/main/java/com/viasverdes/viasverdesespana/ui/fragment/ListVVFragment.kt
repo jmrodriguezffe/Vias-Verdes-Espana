@@ -92,7 +92,6 @@ class ListVVFragment : VMFragment(), Observer<List<ItineraryBO>>, AdapterClickLi
   override fun onOptionsItemSelected(item: MenuItem?): Boolean {
     return when (item?.itemId) {
       R.id.action__search -> trueRes { toogleSearchContainer() }
-//      R.id.action__filter -> toogleFilterContainer()
       else -> super.onOptionsItemSelected(item)
     }
   }

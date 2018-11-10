@@ -6,6 +6,9 @@ import android.content.pm.PackageManager
 import android.os.Bundle
 import android.support.v4.app.ActivityCompat
 import android.support.v4.content.PermissionChecker
+import android.view.Menu
+import android.view.MenuInflater
+import android.view.MenuItem
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
@@ -25,10 +28,7 @@ import com.viasverdes.viasverdesespana.R
 import com.viasverdes.viasverdesespana.data.VVDatabase
 import com.viasverdes.viasverdesespana.data.bo.ItineraryBO
 import com.viasverdes.viasverdesespana.ui.activity.ItineraryActivity
-import com.viasverdes.viasverdesespana.utils.getEnpKmlResource
-import com.viasverdes.viasverdesespana.utils.getItineraryKmlResource
-import com.viasverdes.viasverdesespana.utils.isNotNullOrEmpty
-import com.viasverdes.viasverdesespana.utils.setVisible
+import com.viasverdes.viasverdesespana.utils.*
 import kotlinx.android.synthetic.main.fragment__map.*
 
 
@@ -60,6 +60,24 @@ class MapFragment : VMFragment(), OnMapReadyCallback, Layer.OnFeatureClickListen
 
   override fun getLayoutResource(): Int {
     return R.layout.fragment__map
+  }
+
+  override fun onCreateOptionsMenu(
+        menu: Menu?,
+        inflater: MenuInflater?
+  ) {
+    super.onCreateOptionsMenu(menu, inflater)
+    inflater?.inflate(R.menu.map_layers, menu)
+  }
+
+  override fun onOptionsItemSelected(item: MenuItem?): Boolean {
+    return when (item?.itemId) {
+      R.id.action__layer__roadmap -> trueRes { mMap.mapType =  GoogleMap.MAP_TYPE_NORMAL}
+      R.id.action__layer__satellite -> trueRes { mMap.mapType =  GoogleMap.MAP_TYPE_SATELLITE}
+      R.id.action__layer__hybrid -> trueRes { mMap.mapType =  GoogleMap.MAP_TYPE_HYBRID}
+      R.id.action__layer__terrain -> trueRes { mMap.mapType =  GoogleMap.MAP_TYPE_TERRAIN}
+      else -> super.onOptionsItemSelected(item)
+    }
   }
 
   override fun onMapReady(googleMap: GoogleMap) {

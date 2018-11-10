@@ -10,6 +10,11 @@
 
   <string name="action__search">Buscar</string>
   <string name="action__filter">Filtrar</string>
+  <string name="action__change_layer">Cambiar vista de mapa</string>
+  <string name="action__layer__roadmap">Vista de carretera</string>
+  <string name="action__layer__satellite">Vista satélite</string>
+  <string name="action__layer__hybrid">Vista híbrida</string>
+  <string name="action__layer__terrain">Vista de terreno</string>
 
   <string name="km">%1$.2f km</string>
   <string name="download_pdf">Descargar PDF</string>
