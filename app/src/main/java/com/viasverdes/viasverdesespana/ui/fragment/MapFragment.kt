@@ -24,6 +24,7 @@ import com.underlegendz.corelegendz.vm.VMFragment
 import com.viasverdes.viasverdesespana.R
 import com.viasverdes.viasverdesespana.data.VVDatabase
 import com.viasverdes.viasverdesespana.data.bo.ItineraryBO
+import com.viasverdes.viasverdesespana.ui.activity.ItineraryActivity
 import com.viasverdes.viasverdesespana.utils.getEnpKmlResource
 import com.viasverdes.viasverdesespana.utils.getItineraryKmlResource
 import com.viasverdes.viasverdesespana.utils.isNotNullOrEmpty
@@ -66,19 +67,22 @@ class MapFragment : VMFragment(), OnMapReadyCallback, Layer.OnFeatureClickListen
 
     checkMyLocation()
 
-    arguments?.let {
-      if (it.containsKey(ARG_ITINERARY)) {
-        val itinerary = it.getParcelable<ItineraryBO>(ARG_ITINERARY)
+    arguments?.let { bundle ->
+      if (bundle.containsKey(ARG_ITINERARY)) {
+        val itinerary = bundle.getParcelable<ItineraryBO>(ARG_ITINERARY)
         addItineraryToMap(itinerary, true, true)
       } else {
         context?.let { ctx ->
           VVDatabase.getInstance(ctx)?.itineraryDAO()?.getAllLiveData()?.observe(this,
-                Observer {
-                  if (it.isNotNullOrEmpty()) {
-                    it?.forEach {
+                Observer { itinerary ->
+                  if (itinerary.isNotNullOrEmpty()) {
+                    itinerary?.forEach {
                       addItineraryToMap(it, false, false)
                     }
                     moveCameraToMadrid()
+                    mMap.setOnInfoWindowClickListener {
+                      activity?.let { it1 -> ItineraryActivity.start(it1, it.tag as ItineraryBO) }
+                    }
                   }
                 })
         }
@@ -183,8 +187,9 @@ class MapFragment : VMFragment(), OnMapReadyCallback, Layer.OnFeatureClickListen
       mMap.addMarker(MarkerOptions()
             .position(latLng)
             .title(itinerary.name)
+            .snippet(getString(R.string.map__marker_more_info))
             .icon(BitmapDescriptorFactory.fromResource(R.drawable.marker__itinerary))
-      ).tag = itinerary.id
+      ).tag = itinerary
     } catch (e: Exception) {
       // Nothing to do
     }
