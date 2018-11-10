@@ -6,21 +6,23 @@ import android.support.v7.widget.LinearLayoutManager
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
+import android.view.View
+import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import com.underlegendz.corelegendz.vm.VMFragment
 import com.viasverdes.viasverdesespana.R
-import com.viasverdes.viasverdesespana.autocompleteSearchValues
 import com.viasverdes.viasverdesespana.data.VVDatabase
 import com.viasverdes.viasverdesespana.data.bo.ItineraryBO
 import com.viasverdes.viasverdesespana.ui.activity.ItineraryActivity
 import com.viasverdes.viasverdesespana.ui.adapter.ListVVAdapter
 import com.viasverdes.viasverdesespana.utils.AdapterClickListener
+import com.viasverdes.viasverdesespana.utils.getProvinceFromCA
 import com.viasverdes.viasverdesespana.utils.toogleVisibility
 import com.viasverdes.viasverdesespana.utils.trueRes
 import kotlinx.android.synthetic.main.fragment__list_itineraries.*
 
 
-class ListVVFragment : VMFragment(), Observer<List<ItineraryBO>>, AdapterClickListener<ItineraryBO> {
+class ListVVFragment : VMFragment(), Observer<List<ItineraryBO>>, AdapterClickListener<ItineraryBO>, AdapterView.OnItemSelectedListener {
 
   companion object {
     fun newInstance(): ListVVFragment {
@@ -35,20 +37,44 @@ class ListVVFragment : VMFragment(), Observer<List<ItineraryBO>>, AdapterClickLi
   private var listVVAdapter: ListVVAdapter? = null
 
   override fun initializeView() {
-    context?.let {
-      itineraries__list.layoutManager = LinearLayoutManager(context)
-      VVDatabase.getInstance(it)?.itineraryDAO()?.getAllLiveData()?.observe(this, this)
+    context?.let {ctx ->
+      itineraries__list.layoutManager = LinearLayoutManager(ctx)
+      VVDatabase.getInstance(ctx)?.itineraryDAO()?.getAllLiveData()?.observe(this, this)
 
-      val adapter = ArrayAdapter<String>(context, android.R.layout.select_dialog_item, autocompleteSearchValues())
-      itineraries__input__search.setAdapter(adapter)
-      itineraries__input__search.threshold = 2
+//      val adapter = ArrayAdapter<String>(context, android.R.layout.select_dialog_item, autocompleteSearchValues())
+//      itineraries__input__search.setAdapter(adapter)
+//      itineraries__input__search.threshold = 2
+
+      ArrayAdapter.createFromResource(
+            ctx,
+            R.array.ca_array,
+            android.R.layout.simple_spinner_item
+      ).also { adapter ->
+        // Specify the layout to use when the list of choices appears
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        // Apply the adapter to the spinner
+        itineraries__input__ca.adapter = adapter
+        itineraries__input__ca.setSelection(0)
+      }
     }
 
+    itineraries__input__ca.onItemSelectedListener = this
     itineraries__btn__search.setOnClickListener { search() }
   }
 
   private fun search() {
-    listVVAdapter?.filter(itineraries__input__search.text.toString())
+    var ca = if(itineraries__input__ca.selectedItemPosition != 0){
+      itineraries__input__ca.selectedItem.toString()
+    }else{
+      null
+    }
+    var province = if(itineraries__input__provinces.selectedItemPosition != 0){
+      itineraries__input__provinces.selectedItem.toString()
+    }else{
+      null
+    }
+
+    listVVAdapter?.filter(itineraries__input__search.text.toString(), ca, province)
   }
 
   override fun getLayoutResource(): Int {
@@ -86,6 +112,27 @@ class ListVVFragment : VMFragment(), Observer<List<ItineraryBO>>, AdapterClickLi
 
   override fun onItemClick(item: ItineraryBO) {
     activity?.let { ItineraryActivity.start(it, item) }
+  }
+
+  override fun onNothingSelected(p0: AdapterView<*>?) {
+    // Nothing to do
+  }
+
+  override fun onItemSelected(p0: AdapterView<*>?,
+                              p1: View?,
+                              position: Int,
+                              p3: Long
+  ) {
+    ArrayAdapter.createFromResource(
+          context,
+          getProvinceFromCA(position),
+          android.R.layout.simple_spinner_item
+    ).also { adapter ->
+      // Specify the layout to use when the list of choices appears
+      adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+      // Apply the adapter to the spinner
+      itineraries__input__provinces.adapter = adapter
+    }
   }
 
 }

@@ -17,26 +17,40 @@ import java.util.*
 class ListVVAdapter(private var data: List<ItineraryBO>) : RecyclerView.Adapter<ListVVAdapter.ListVVHolder>() {
   var listener: AdapterClickListener<ItineraryBO>? = null
   private var filterText: String? = null
+  private var filterCA: String? = null
+  private var filterProvince: String? = null
   private val backupData: List<ItineraryBO>
 
   init {
     backupData = data
   }
 
-  fun filter(filterText: String?) {
+  fun filter(filterText: String?,
+             filterCA: String?,
+             filterProvince: String?
+  ) {
     this.filterText = filterText
+    this.filterCA = filterCA
+    this.filterProvince = filterProvince
     applyFilter()
   }
 
   private fun applyFilter() {
-    if (filterText.isNullOrEmpty()) {
+    if (filterText.isNullOrEmpty() && filterCA.isNullOrEmpty() && filterProvince.isNullOrEmpty()) {
       data = backupData
     } else {
       val list = LinkedList<ItineraryBO>()
       for (itineraryBO in backupData) {
-        if (itineraryBO.name.contains(filterText!!, true)
+        val filterTextSucces = filterText.isNullOrEmpty()
+              || itineraryBO.name.contains(filterText!!, true)
               || itineraryBO.provinces.contains(filterText!!, true)
-              || itineraryBO.ca.contains(filterText!!, true)) {
+              || itineraryBO.ca.contains(filterText!!, true)
+        val filterCASucces = filterCA.isNullOrEmpty()
+              || itineraryBO.ca.contains(filterCA!!, true)
+        val filterProvinceSucces = filterProvince.isNullOrEmpty()
+              || itineraryBO.provinces.contains(filterProvince!!, true)
+
+        if (filterTextSucces && filterCASucces && filterProvinceSucces) {
           list.add(itineraryBO)
         }
       }

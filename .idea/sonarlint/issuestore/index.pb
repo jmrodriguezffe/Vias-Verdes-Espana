@@ -115,3 +115,7 @@ f
 6app/src/main/res/layout/fragment__more_info__about.xml,1\9\1987623a00deed22a01db04b7d590e38b170abac
 j
 :app/src/main/res/layout/fragment__more_info__resources.xml,3\4\3447f4f4a740ed91244f7c4eda8933077da3b509
+R
+"app/src/main/res/raw/enp__car2.kml,f\0\f005850cf946daff2a1e702bfd9af7b25142c7ef
+X
+(app/src/main/res/raw/itinerary__car2.kml,3\1\313fc6fea777d096cb9bdd536a8afde058a884fc
