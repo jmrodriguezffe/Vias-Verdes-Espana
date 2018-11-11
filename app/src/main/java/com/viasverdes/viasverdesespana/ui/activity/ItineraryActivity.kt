@@ -72,6 +72,7 @@ class ItineraryActivity : UnderActivity() {
     itinerary__back.setOnClickListener { onBackPressed() }
     itinerary__see_in_map.setOnClickListener { MapActivity.start(this, itinerary) }
     itinerary__how_to_get.setOnClickListener { goTo() }
+    itinerary__more_info.setOnClickListener { moreInfo() }
     itinerary__scroll.viewTreeObserver.addOnScrollChangedListener {
       val scrollY = itinerary__scroll.scrollY.toFloat()
       val alpha = Math.min(1f, scrollY / ScreenUtils.width() + 0.4f)
@@ -102,6 +103,13 @@ class ItineraryActivity : UnderActivity() {
       mapIntent.setPackage("com.google.android.apps.maps")
       startActivity(mapIntent)
     }
+  }
+
+  fun moreInfo() {
+    val itinerary = intent.getParcelableExtra<ItineraryBO>(ARG_ITINERARY)
+    val moreInfoUri = Uri.parse("http://www.viasverdes.com/rednatura2000/itinerarios/itinerario.asp?id=" + itinerary.id)
+    val mapIntent = Intent(Intent.ACTION_VIEW, moreInfoUri)
+    startActivity(mapIntent)
   }
 
   @Throws(XmlPullParserException::class)
