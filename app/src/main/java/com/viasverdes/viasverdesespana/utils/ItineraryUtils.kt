@@ -15,6 +15,12 @@ fun getImageResource(itinerary: ItineraryBO): Int {
         "image__" + itinerary.codVV.toLowerCase(), "drawable", application.getPackageName())
 }
 
+fun getAltimetricResource(itinerary: ItineraryBO): Int {
+  val application = CoreApplication.get()
+  return application.getResources().getIdentifier(
+        "altimetric__" + itinerary.codVV.toLowerCase(), "drawable", application.getPackageName())
+}
+
 fun getItineraryKmlResource(itinerary: ItineraryBO): Int {
   val application = CoreApplication.get()
   return application.getResources().getIdentifier(

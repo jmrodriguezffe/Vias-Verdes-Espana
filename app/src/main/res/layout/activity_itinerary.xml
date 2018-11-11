@@ -4,6 +4,7 @@
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
+  android:background="@color/white"
   tools:context=".ui.activity.ItineraryActivity">
 
   <ScrollView
@@ -158,11 +159,44 @@
         style="@style/Text_Normal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingBottom="@dimen/margin__map"
+        android:paddingBottom="@dimen/margin__default"
         android:paddingEnd="@dimen/margin__default"
         android:paddingStart="@dimen/margin__default"
         app:layout_constraintTop_toBottomOf="@id/itinerary__natura_label"
         tools:text="Esta Vía Verde cuenta con 9 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: La Reserva de la Biosfera Intercontinental del Mediterráneo, la Reserva Natural Peñón de Zaframagón,  así como el LIC Laguna de Coripe y las Zonas de Importancia Comunitaria ZICS Arroyo de Santiago, Salado de Morón y Matabueyes/Garrapata; el Peñón del Zaframagón; Río Guadaira; Río Guadalete; y la Sierra Lijar (Red Natura 2000). Además del Monumento Natural Chaparro de la Vega." />
+
+      <LinearLayout
+        android:id="@+id/itinerary__altimetric"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/margin__map"
+        android:paddingEnd="@dimen/margin__default"
+        android:paddingStart="@dimen/margin__default"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/itinerary__natura">
+
+
+        <TextView
+          style="@style/Text_Detail_Section"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:paddingStart="0dp"
+          android:text="@string/itinerary__altimetric"
+          app:layout_constraintTop_toBottomOf="@id/itinerary__walk_user_type" />
+
+        <HorizontalScrollView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+          <ImageView
+            android:id="@+id/itinerary__altimetric__img"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/altimetric__acei" />
+        </HorizontalScrollView>
+      </LinearLayout>
 
       <View
         android:layout_width="match_parent"
@@ -170,7 +204,7 @@
         android:layout_marginEnd="@dimen/margin__map"
         android:layout_marginStart="@dimen/margin__map"
         android:background="@color/colorAccent"
-        app:layout_constraintTop_toBottomOf="@id/itinerary__natura" />
+        app:layout_constraintTop_toBottomOf="@id/itinerary__altimetric" />
 
       <TextView
         android:id="@+id/itinerary__logo__fundacion_biodiversidad_text"
@@ -183,7 +217,7 @@
         android:paddingStart="@dimen/margin__map"
         android:paddingTop="@dimen/margin__map"
         android:text="@string/logo__fundacion_biodiversidad"
-        app:layout_constraintTop_toBottomOf="@id/itinerary__natura" />
+        app:layout_constraintTop_toBottomOf="@id/itinerary__altimetric" />
 
       <ImageView
         android:layout_width="match_parent"

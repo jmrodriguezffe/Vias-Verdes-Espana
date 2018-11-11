@@ -11,10 +11,7 @@ import com.underlegendz.underactivity.ActivityBuilder
 import com.underlegendz.underactivity.UnderActivity
 import com.viasverdes.viasverdesespana.*
 import com.viasverdes.viasverdesespana.data.bo.ItineraryBO
-import com.viasverdes.viasverdesespana.utils.getFirstCoordinateOnLayer
-import com.viasverdes.viasverdesespana.utils.getImageResource
-import com.viasverdes.viasverdesespana.utils.getItineraryKmlResource
-import com.viasverdes.viasverdesespana.utils.setVisible
+import com.viasverdes.viasverdesespana.utils.*
 import kotlinx.android.synthetic.main.activity_itinerary.*
 import org.xmlpull.v1.XmlPullParser
 import org.xmlpull.v1.XmlPullParserException
@@ -47,12 +44,22 @@ class ItineraryActivity : UnderActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
     val itinerary = intent.getParcelableExtra<ItineraryBO>(ARG_ITINERARY)
+
     val imageResource = getImageResource(itinerary)
     if (imageResource > 0) {
       itinerary__image.setImageResource(imageResource)
     } else {
       itinerary__image.setVisible(false)
     }
+
+    val altimetricResource = getAltimetricResource(itinerary)
+    if (altimetricResource > 0) {
+      itinerary__altimetric__img.setImageResource(altimetricResource)
+      itinerary__altimetric.setVisible(true)
+    } else {
+      itinerary__altimetric.setVisible(false)
+    }
+
     itinerary__title.text = ResourcesUtils.getString(R.string.itinerary__title, itinerary.name)
     itinerary__localization.text = itinerary.localization
     itinerary__provinces.text = itinerary.provinces

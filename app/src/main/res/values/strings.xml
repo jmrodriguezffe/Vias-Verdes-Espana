@@ -25,6 +25,7 @@
   <string name="itinerary__length">Longitud</string>
   <string name="itinerary__user_type">Perfil de usuarios</string>
   <string name="itinerary__natura">Espacios Naturales y Red Natura 2000</string>
+  <string name="itinerary__altimetric">Perfil altimétrico</string>
   <string name="itinerary__title">%1$s y sus Espacios Naturales Protegidos</string>
 
   <string name="map__marker_more_info">Haz click aquí para más info</string>
