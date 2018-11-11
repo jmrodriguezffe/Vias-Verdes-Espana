@@ -191,17 +191,7 @@ class MapFragment : VMFragment(), OnMapReadyCallback, Layer.OnFeatureClickListen
         kmlLayer: KmlLayer
   ) {
     try {
-      //Retrieve the first container in the KML layer
-      var container = kmlLayer.containers.iterator().next()
-      //Retrieve a nested container within the first container
-      container = container.containers.iterator().next()
-      //Retrieve the first placemark in the nested container
-      val placemark = container.placemarks.iterator().next()
-      //Retrieve a polygon object in a placemark
-      val polygon = placemark.geometry as KmlMultiGeometry
-      //Create LatLngBounds of the outer coordinates of the polygon
-      val latlngList = polygon.geometryObject.first().geometryObject as ArrayList<LatLng>
-      val latLng = latlngList.first()
+      val latLng = getFirstCoordinateOnLayer(kmlLayer.containers)
       mMap.addMarker(MarkerOptions()
             .position(latLng)
             .title(itinerary.name)

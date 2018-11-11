@@ -1,5 +1,9 @@
 package com.viasverdes.viasverdesespana.utils
 
+import com.google.android.gms.maps.model.LatLng
+import com.google.maps.android.data.kml.KmlContainer
+import com.google.maps.android.data.kml.KmlLayer
+import com.google.maps.android.data.kml.KmlMultiGeometry
 import com.underlegendz.corelegendz.CoreApplication
 import com.viasverdes.viasverdesespana.R
 import com.viasverdes.viasverdesespana.data.bo.ItineraryBO
@@ -47,4 +51,19 @@ fun getProvinceFromCA(ca : Int): Int {
     16 -> R.array.provinces_valencia
     else -> R.array.provinces
   }
+}
+
+fun getFirstCoordinateOnLayer(kmlContainers: Iterable<KmlContainer>): LatLng {
+  //Retrieve the first container in the KML layer
+  var container = kmlContainers.iterator().next()
+  //Retrieve a nested container within the first container
+  container = container.containers.iterator().next()
+  //Retrieve the first placemark in the nested container
+  val placemark = container.placemarks.iterator().next()
+  //Retrieve a polygon object in a placemark
+  val polygon = placemark.geometry as KmlMultiGeometry
+  //Create LatLngBounds of the outer coordinates of the polygon
+  val latlngList = polygon.geometryObject.first().geometryObject as ArrayList<LatLng>
+  val latLng = latlngList.first()
+  return latLng
 }
