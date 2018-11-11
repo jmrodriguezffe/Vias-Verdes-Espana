@@ -7,14 +7,14 @@
 <Document id="Vias_Verdes_2018-ACOND-APP_ENP" xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
 	<Style id="LineStyle0103">
 		<LineStyle>
-			<color>ff00e64c</color>
-			<width>10</width>
+			<color>ff33691e</color>
+			<width>12</width>
 		</LineStyle>
 	</Style>
 	<Style id="LineStyle00">
 		<LineStyle>
-			<color>ff00a838</color>
-			<width>10</width>
+			<color>ff33691e</color>
+			<width>12</width>
 		</LineStyle>
 	</Style>
 	<Folder id="FeatureLayer0">		

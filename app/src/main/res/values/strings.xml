@@ -10,6 +10,11 @@
 
   <string name="action__search">Buscar</string>
   <string name="action__filter">Filtrar</string>
+  <string name="action__change_layer">Cambiar vista de mapa</string>
+  <string name="action__layer__roadmap">Vista de carretera</string>
+  <string name="action__layer__satellite">Vista satélite</string>
+  <string name="action__layer__hybrid">Vista híbrida</string>
+  <string name="action__layer__terrain">Vista de terreno</string>
 
   <string name="km">%1$.2f km</string>
   <string name="download_pdf">Descargar PDF</string>
@@ -20,7 +25,10 @@
   <string name="itinerary__length">Longitud</string>
   <string name="itinerary__user_type">Perfil de usuarios</string>
   <string name="itinerary__natura">Espacios Naturales y Red Natura 2000</string>
+  <string name="itinerary__altimetric">Perfil altimétrico</string>
   <string name="itinerary__title">%1$s y sus Espacios Naturales Protegidos</string>
+
+  <string name="map__marker_more_info">Haz click aquí para más info</string>
 
   <string name="logo__fundacion_biodiversidad">Este contenido forma parte del proyecto "Vías Verdes y Red Natura 2000" desarrollado con el apoyo de la Fundación Biodiversidad del Ministerio de Agricultura y Pesca, Alimentación y Medio Ambiente.</string>
   <string name="resources__vv_y_enp__title">Vias Verdes y Red Natura 2000: Divulgación de Espacios Naturales Protegidos y Geoparques a través de la Red Estatal de Vías Verdes</string>
@@ -43,17 +51,5 @@
     \n\nTodos los contenidos de esta aplicación, ya sean textos, fotografías, imágenes, dibujos, audio, vídeo, software, logotipos o diseño, están protegidos por la normativa de Propiedad Intelectual e Industrial y en particular por el real Decreto Legislativo 1/96, de 12 de abril, por el que se aprueba el Texto Refundido de la Ley de Propiedad Intelectual, y la Ley 18/2006, de 5 de junio, por la que se amplían los medios de tutela de los derechos de propiedad intelectual e industrial y se establecen normas procesales para facilitar la aplicación de diversos reglamentos comunitarios.
     \n\nLos derechos sobre tales contenidos pertenecen a sus respectivos autores. El acceso a este material no supondrá en forma alguna licencia para su reproducción y/o distribución. El usuario se compromete a usar esta aplicación móvil exclusivamente para uso personal.</string>
 
-  <string name="more_info__about__project">El proyecto</string>
-  <string name="more_info__about__project_1"><b>“Vías Verdes y Red Natura 2000: Divulgación de Espacios Naturales Protegidos y Geoparques a través de la Red Estatal de Vías Verdes”</b> es un proyecto que desarrolla la Fundación de los Ferrocarriles Españoles con el apoyo de la Fundación Biodiversidad del Ministerio para la Transición Ecológica. Su objetivo fundamental es la integración y puesta en valor de la biodiversidad en el entorno de las vías verdes.
-    \n\nLas <b>Vías Verdes</b> son infraestructuras ferroviarias recicladas como itinerarios no motorizados que articulan una oferta turística sostenible en el territorio. Ya existen más de 2.600 km de Vías Verdes en todo el territorio estatal. Frecuentemente atraviesan Espacios Naturales Protegidos, Red Natura 2000 y Geoparques, pero hasta el momento no había existido una integración y puesta en valor de este patrimonio natural en el entorno de las vías verdes de manera específica y detallada.
-    \n\nGracias a este proyecto se desarrollan las siguientes acciones:</string>
-  <string name="more_info__about__project_2">&#8226; <b>Inventario de Espacios Naturales, Red Natura 2000 y red de Geoparques.</b> Para ello se ha realizado:</string>
-  <string name="more_info__about__project_3">&#8226; Sistema de Información Geográfica sobre Espacios Naturales Protegidos y vías verdes que ha dado como resultado el Mapa con las diferentes capas de información geográfica ambiental y de los itinerarios.
-    \n\n&#8226; Experiencia piloto <b>“Tu Vía Verde y sus Espacios Naturales Protegidos: Contribuyendo al conocimiento”. Participación</b> de los ciudadanos a través de plataformas de <b>Ciencia Ciudadana</b>. ¿Participas?</string>
-  <string name="more_info__about__project_4">&#8226; <b>Publicación online de toda la información de carácter ambiental</b> en el nuevo microsite www.viasverdesyrednatura2000.com y en www.viasverdes.com
-  \n\n&#8226; <b>APP “Vías Verdes y Red Natura 2000”</b> para dispositivos Android y realización de un vídeo elaborado con drones.
-  \n\n&#8226; <b>Acciones y materiales divulgativos:</b> 2 Campañas de sensibilización aprovechando hitos del calendario como el Día de las Vías Verdes y la Semana de los Geoparques Europeos.
-  \n\n&#8226; Además, campañas en las redes sociales, notas de prensa, publicación de noticias, así como edición y producción de otros materiales como mochilas y un folleto.</string>
-  <string name="more_info__about__vv">Las Vías Verdes y los Espacios Naturales Protegidos en CIFRAS</string>
   <string name="close">Cerrar</string>
 </resources>

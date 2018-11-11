@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+  <item android:id="@+id/action__change_layer"
+    android:title="@string/action__change_layer"
+    android:icon="@drawable/ic__layers"
+    app:showAsAction="always">
+    <menu>
+      <item
+        android:id="@+id/action__layer__roadmap"
+        android:title="@string/action__layer__roadmap"/>
+      <item
+        android:id="@+id/action__layer__satellite"
+        android:title="@string/action__layer__satellite"/>
+      <item
+        android:id="@+id/action__layer__hybrid"
+        android:title="@string/action__layer__hybrid"/>
+      <item
+        android:id="@+id/action__layer__terrain"
+        android:title="@string/action__layer__terrain"/>
+    </menu>
+  </item>
+</menu>
