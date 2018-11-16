@@ -68,6 +68,7 @@ class ItineraryActivity : UnderActivity() {
     itinerary__bicycle_user_type.setVisible(itinerary.userTypes.contains(USER_TYPE__BICYCLE))
     itinerary__wheelchair_user_type.setVisible(itinerary.userTypes.contains(USER_TYPE__WHEELCHAIR))
     itinerary__roller_user_type.setVisible(itinerary.userTypes.contains(USER_TYPE__ROLLER))
+    itinerary__horse_user_type.setVisible(itinerary.userTypes.contains(USER_TYPE__HORSE))
     itinerary__natura.text = itinerary.naturaText
     itinerary__back.setOnClickListener { onBackPressed() }
     itinerary__see_in_map.setOnClickListener { MapActivity.start(this, itinerary) }

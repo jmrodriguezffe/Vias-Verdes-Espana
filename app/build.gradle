@@ -8,14 +8,6 @@ androidExtensions {
 apply plugin: 'kotlin-kapt'
 
 android {
-  signingConfigs {
-    beta {
-      keyAlias 'beta'
-      keyPassword '1234567890'
-      storeFile file('C:/Android/UNDERLEGENDZ/Proyectos/Vias-Verdes-Espana/keystore.jks')
-      storePassword '1234567890'
-    }
-  }
   compileSdkVersion 27
   defaultConfig {
     applicationId "com.viasverdes.viasverdesespana"
@@ -30,13 +22,11 @@ android {
       debuggable true
       minifyEnabled false
       proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-      signingConfig signingConfigs.beta
     }
 
     release {
       minifyEnabled false
       proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-      signingConfig signingConfigs.beta
     }
   }
   lintOptions {

@@ -1,15 +1,81 @@
 {
   "itineraries": [
     {
+      "codVV": "VAN1",
+      "id": 1,
+      "name": "V.V. del Fc Vasco - Navarro",
+      "length": 95.75,
+      "provinces": "Álava, Navarra",
+      "ca": "Navarra, País Vasco",
+      "userTypes": "1,2,3",
+      "localization": "Entre el amplio aparcamiento de la antigua estación de Salinas de Léniz/Leintz Gatzaga (hoy convertida en el restaurante Gure Ametsa), situado en el km 19,1 de la GI-627 junto al cruce de las carreteras GI-627 y GI-3310 en el puerto de Arlabán (muga Álava-Guipúzcoa), y la población de Estella/Lizarra (Navarra).",
+      "naturaText": "Esta Vía Verde cuenta con 27 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: Lo Parques Naturales de Izki y Aizkorri-Aratz; los LICs de Ega-Berron ibaia / Río Ega-Berron, Izki, Entzia, Arabako hegoaldeko mendilerroak / Sierras meridionales de Álava, Sierra de Lokiz, Ríos Ega-Urederra, Sierra de Codés, Aizkorri-Aratz, Gasteizko mendi garaiak / Montes altos de Vitoria, Salburua, Arabako lautadako irla-hariztiak / Robledales isla de la llanada alavesa, Zadorraren sistemako urtegiak / Embalses del sistema del Zadorra, y Zadorra ibaia / Río Zadorra; las ZEPAs de Izki,  Arabako hegoaldeko mendilerroak / Sierras meridionales de Álava y Salburua  (Red Natura 2000); Los Parques Naturales Aizkorri-Aratz e Izki; los Monumentos Naturales Encino de las Tres Patas, Encina de Erául y los Quejigos de Learza; el Paisaje Protegido de Las Huertas; las Reservas Naturales del Barranco de Lasia y Peñalabeja; y por último, los árboles singulares  Tilo de Antoñana, Sequoia de Vitoria yTejo de Antoñana.\n\nAdemás, es posible conocer más sobre estos Espacios Naturales Protegidos gracias a los Centros de Interpretación, Casa del Parque Natural de Izki, Casa del Parque Natural de Aizkorri-Aratz, Centro de Información del Parque Natural de Urbasa-Andía y Centro de interpretación Parque Natural Aizkorri-Aratz."
+    },
+    {
+      "codVV": "DENI",
+      "id": 7,
+      "name": "V.V. de Dénia",
+      "length": 5.91,
+      "provinces": "Alicante",
+      "ca": "Valencia",
+      "userTypes": "1,2,3",
+      "localization": "Entre Dénia y el límite municipal Dénia-Els Poblets.",
+      "naturaText": "Esta Vía Verde cuenta con 17 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: El Parque Natural del Montgó y el Parque Natural Marjal de Pego-Oliva, la Reserva Natural Fons Marins del Cap de Sant Antoni, así como los LICS y ZEPAS L’Almadrava y Marjal de Pego-Oliva, los LICs Montgó y Valls de la Marina, y las ZEPAS Muntayes de la Marina y Montgó-Cap de Sant Antoni (Red Natura 2000). Por otra parte, también se encuentran la Zona Húmeda desembocadura y frente litoral del Riu Racons y la Zona Húmeda Parque Natural de la Marjal de Pego-Oliva, además de las siguientes cuevas: Cova de l’Andorial, Cova de la Punta de Benimàquia, Cova del Bolumini y Cova Fosca-Corb-Pedrera.\n\nEs posible conocer más sobre estos Espacios Naturales Protegidos gracias al Centro de Interpretación del Parc Natural del Montgó y la Oficina del Marjal de Pego-Oliva."
+    },
+    {
+      "codVV": "SAL1",
+      "id": 11,
+      "name": "V.V. de la Sierra de Alcaraz",
+      "length": 77.21,
+      "provinces": "Albacete",
+      "ca": "Castilla-La Mancha",
+      "userTypes": "1,2,3",
+      "localization": "De la llanura albaceteña a la localidad de Alcaraz siguiendo la cuenca del río Jardín.",
+      "naturaText": "Esta Vía Verde cuenta con 4 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: La Reserva  Natural Laguna de los Ojos de Villaverde, los LICs de Laguna de los Ojos de Villaverde y Laguna del Arquillo, y el Monumento Natural Laguna del Arquillo."
+    },
+    {
       "codVV": "ALCO",
       "id": 12,
       "name": "V.V. de Alcoi",
       "length": 13.19,
       "provinces": "Alicante",
-      "ca": "Comunidad Valenciana",
+      "ca": "Valencia",
       "userTypes": "1,2,3",
-      "localization": "Entre Alcoi y La Canal",
+      "localization": "Entre Alcoi y La Canal.",
       "naturaText": "Esta Vía Verde cuenta con 9 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: El Parque Natural de Carrascal de la Font Roja y el Parque Natural de Sierra Mariola, los LIC de Serres de Mariola i el Carrascar de la Font Roja y Cova Juliana, la ZEPA de Cova Juliana, el ZEC de Cova Juliana (Red Natura 2000), así como los Parajes Naturales Municipales de  Sant Pasqual-Torretes y Racó de Sant Bonaventura-Canalons, y finalmente el Paisaje Protegido de Serpis.\n\nAdemás, es posible conocer más sobre estos Espacios Naturales Protegidos gracias a los Centros de interpretación del Parc Natural del Carrascal de la Font Roja y del Parc Natural de la Serra de Mariola."
+    },
+    {
+      "codVV": "MAIG",
+      "id": 14,
+      "name": "V.V. del Maigmó",
+      "length": 21.14,
+      "provinces": "Alicante",
+      "ca": "Valencia",
+      "userTypes": "1,2,3",
+      "localization": "Entre Agost y el Puerto del Maigmó.",
+      "naturaText": "Esta Vía Verde cuenta con 6 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: El LIC Maigmó i Serres de la Foia de Castalla, las ZEPAs Maigmó I Serres de la Foia de Castalla y Riu Montnegre, el Paraje Natural Municipal Serra de les Àguiles i Sant Pasqual, el Paisaje Protegido Serra del Maigmó y Serra del Sit, y la zona húmeda Embalse de Tibi."
+    },
+    {
+      "codVV": "TORR",
+      "id": 15,
+      "name": "V.V. de Torrevieja",
+      "length": 6.61,
+      "provinces": "Alicante",
+      "ca": "Valencia",
+      "userTypes": "1,2,3",
+      "localization": "Entre Torrevieja y la carretera de los Montesinos (CV-945).",
+      "naturaText": "Esta Vía Verde cuenta con 9 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: Los LICs Espacio marino de Cabo Roig, Llacunes de la Mata i Torrevieja y Dunes de Guardamar; las ZEPAs Espacio Marino de Cabo Roig, Lagunas de la Mata y Torrevieja y Espacio marino de Tabarca-Cabo de Palos; el Paraje Natural Municipal Parque del Molino del Agua; la Zona Húmeda Parque Natural Lagunas de la Mata-Torrevieja; y el Parque Natural Lagunas de la Mata y Torrevieja.\n\nAdemás, es posible conocer más sobre estos Espacios Naturales Protegidos gracias al Centro de visitantes del Parc Natural de La Mata-Torrevieja y al Museo de Historia Natural de Torrevieja."
+    },
+    {
+      "codVV": "XIX2",
+      "id": 16,
+      "name": "V.V. del Xixarra",
+      "length": 15.88,
+      "provinces": "Alicante",
+      "ca": "Valencia",
+      "userTypes": "1,2,3,5",
+      "localization": "Entre Santuario de las Virtudes y Biar.",
+      "naturaText": "Esta Vía Verde cuenta con 7 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: los LICS y ZEPAS de mismo nombre Sierra de Salinas, Maigmó I Serres de la Foia de Castalla, el LIC Salero y Cabecicos de Villena y la ZEPA Moratillas – Almela (Red Natura 2000) y, además, la Zona Húmeda, la Laguna y Saleros de Villena."
     },
 	{
       "codVV": "SIER",
@@ -19,7 +85,7 @@
       "provinces": "Cádiz, Sevilla",
       "ca": "Andalucía",
       "userTypes": "1,2",
-      "localization": "Entre Puerto Serrano y Olvera",
+      "localization": "Entre Puerto Serrano y Olvera.",
       "naturaText": "Esta Vía Verde cuenta con 9 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: La Reserva de la Biosfera Intercontinental del Mediterráneo, la Reserva Natural Peñón de Zaframagón,  así como el LIC Laguna de Coripe y las Zonas de Importancia Comunitaria ZICS Arroyo de Santiago, Salado de Morón y Matabueyes/Garrapata; el Peñón del Zaframagón; Río Guadaira; Río Guadalete; y la Sierra Lijar (Red Natura 2000). Además del Monumento Natural Chaparro de la Vega.\n\nAdemás, es posible conocer más sobre estos Espacios Naturales Protegidos gracias al Centro de Interpretación y Observatorio Ornitológico del Peñón de Zaframagón y al Centro de Interpretación de la Vía Verde de la Sierra."
     },
 	{
@@ -30,7 +96,7 @@
       "provinces": "Girona",
       "ca": "Cataluña",
       "userTypes": "1,2,3",
-      "localization": "Entre Girona y Sant Feliu de Guíxols",
+      "localization": "Entre Girona y Sant Feliu de Guíxols.",
       "naturaText": "Esta Vía Verde cuenta con 11 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: Los LICS Les Gavarres, Riberes del Baix Ter, Massís de les Cadiretes, Riu Llémena, Rieres de Xuciá i Riudelleques y la ZEPA Massís de les Cadiretes (Red Natura 2000). Además de PEIN Riberes del Baix Ter, Rieres de Xuclà i Riudelleques, Riu Llémena, Les Gavarres y Massís de les Cadiretes."
     },
 	{
@@ -39,9 +105,9 @@
       "name": "V.V. de Arditurri",
       "length": 12.14,
       "provinces": "Guipúzcoa",
-      "ca": "Euskadi",
+      "ca": "País Vasco",
       "userTypes": "1,2,4",
-      "localization": "Entre Pasai Antxo o Lezo y el Coto Minero de Arditurri (Oiartzun)",
+      "localization": "Entre Pasai Antxo o Lezo y el Coto Minero de Arditurri (Oiartzun).",
       "naturaText": "Esta Vía Verde cuenta con 6 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: El Parque Natural de Aiko Harria, los LICs de Ulia , Jaizkibel, Aiako Harria y Artikutza y la ZEPA Txingudi.\n\nAdemás, es posible conocer más sobre estos Espacios Naturales Protegidos gracias los Centros de Interpretación: Minas de Arditurri y Ekoetxea Txingudi."
     },
 	{
@@ -61,10 +127,21 @@
       "name": "V.V. de Arrazola",
       "length": 4.92,
       "provinces": "Vizcaya",
-      "ca": "Euskadi",
+      "ca": "País Vasco",
       "userTypes": "1,3",
-      "localization": "Entre el núcleo de Apatamonasterio (Atxondo) y la antigua estación de Errotabarri - El Tope (Atxondo)",
+      "localization": "Entre el núcleo de Apatamonasterio (Atxondo) y la antigua estación de Errotabarri - El Tope (Atxondo).",
       "naturaText": "Esta Vía Verde cuenta con 2 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: El Parque Natural de Urkiola y el LIC del mismo nombre.\n\nAdemás, es posible conocer más sobre estos Espacios Naturales Protegidos gracias al Centro de Interpretación Toki Alai – Parque de Urkiola."
+    },
+    {
+      "codVV": "ALC1",
+      "id": 128,
+      "name": "V.V. de Ibi",
+      "length": 1.41,
+      "provinces": "Alicante",
+      "ca": "Valencia",
+      "userTypes": "1,2,3",
+      "localization": "Ibi.",
+      "naturaText": "Esta Vía Verde cuenta con 5 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: El Parque Natural de Carrascal de la Font Roja, así como el LIC y ZEPA Serres de Mariola I El Carrascal de la Font Roja (Red Natura 2000) y los Parajes Naturales Sant Pasqual- Torretes y Els Plantadets.\n\nAdemás, es posible conocer más sobre estos Espacios Naturales Protegidos gracias al Centro de visitantes del Parc Natural del Carrascal de la Font Roja."
     },
 	{
       "codVV": "CART",
@@ -72,7 +149,7 @@
       "name": "V.V. del Barrio del Peral",
       "length": 1.96,
       "provinces": "Murcia",
-      "ca": "Región de Murcia",
+      "ca": "Murcia",
       "userTypes": "1,2,3",
       "localization": "Barrio de Peral. Cartagena. Entre la rotonda de Los Barreros y la avenida Victor Beltrí (Ronda Norte).",
       "naturaText": "Esta Vía Verde cuenta con 3 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: Los LICS Cabezo de Roldán y Valles submarinos del Escarpe de Mazarrón, así como la ZEPA La Muela – Cabo Tiñoso (Red Natura 2000)."
@@ -87,6 +164,17 @@
       "userTypes": "1,2,4",
       "localization": "Suances – Los Corrales de Buelna (Cantabria). Entre el cruce de las calles Torrelavega y Laredo de Suances (junto al parque paisajístico de la Ribera y la playa de la Riberuca), y la calle Alfonso Álvarez Miranda del  polígono industrial de la población de  Barros(municipio de Los Corrales de Buelna). ",
       "naturaText": "Esta Vía Verde cuenta con 4 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: Los ZECs LIC-Dunas de Liencres y Estuario del Pas, y LIC-Rio Pas, la ZEPA Espacio marino de los Islotes de Portios-Isla Conejera-Isla de Mouro (Red Natura 2000), y el Parque Natural Dunas de Liencres\n\nAdemás, es posible conocer más sobre estos Espacios Naturales Protegidos gracias al Punto de Información Red Natura 2000 en Valles Pasiegos."
+    },
+	{
+      "codVV": "KADA",
+      "id": 149,
+      "name": "V.V. de Kadagua",
+      "length": 5.78,
+      "provinces": "Álava, Vizcaya",
+      "ca": "País Vasco",
+      "userTypes": "1,2,3,4",
+      "localization": "Entre los barrios de Arbuio (Alonsotegi) y Sodupe (Güeñes).",
+      "naturaText": "Esta Vía Verde cuenta con 1 Espacio Natural Protegido localizado en un radio inferior a 5 km: El Biotopo Meatzaldea - Zona Minera de Bizkaia.\n\nAdemás, es posible conocer más sobre este Espacio Natural Protegido gracias al Museo de la Minería del País Vasco"
     }
   ]
 }
