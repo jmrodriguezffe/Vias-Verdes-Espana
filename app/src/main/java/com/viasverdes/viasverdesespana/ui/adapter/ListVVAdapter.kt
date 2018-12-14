@@ -9,6 +9,7 @@ import com.viasverdes.viasverdesespana.*
 import com.viasverdes.viasverdesespana.data.bo.ItineraryBO
 import com.viasverdes.viasverdesespana.utils.AdapterClickListener
 import com.viasverdes.viasverdesespana.utils.getImageResource
+import com.viasverdes.viasverdesespana.utils.search
 import com.viasverdes.viasverdesespana.utils.setVisible
 import kotlinx.android.extensions.LayoutContainer
 import kotlinx.android.synthetic.main.row__itinerary.*
@@ -42,13 +43,13 @@ class ListVVAdapter(private var data: List<ItineraryBO>) : RecyclerView.Adapter<
       val list = LinkedList<ItineraryBO>()
       for (itineraryBO in backupData) {
         val filterTextSucces = filterText.isNullOrEmpty()
-              || itineraryBO.name.contains(filterText!!, true)
-              || itineraryBO.provinces.contains(filterText!!, true)
-              || itineraryBO.ca.contains(filterText!!, true)
+              || itineraryBO.name.search(filterText!!)
+              || itineraryBO.provinces.search(filterText!!)
+              || itineraryBO.ca.search(filterText!!)
         val filterCASucces = filterCA.isNullOrEmpty()
-              || itineraryBO.ca.contains(filterCA!!, true)
+              || itineraryBO.ca.search(filterCA!!)
         val filterProvinceSucces = filterProvince.isNullOrEmpty()
-              || itineraryBO.provinces.contains(filterProvince!!, true)
+              || itineraryBO.provinces.search(filterProvince!!)
 
         if (filterTextSucces && filterCASucces && filterProvinceSucces) {
           list.add(itineraryBO)

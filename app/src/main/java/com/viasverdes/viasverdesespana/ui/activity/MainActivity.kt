@@ -38,16 +38,14 @@ class MainActivity : UnderActivity() {
             setFragment(getOrCreateListVV(), tagListVV, lastSectionSelected != 0)
           }
           R.id.action__map -> {
-//                    val intent = Intent(this, MapsActivity::class.java)
-//                    startActivity(intent)
             setFragment(getOrCreateMap(), tagMap, lastSectionSelected != 0)
           }
           R.id.action__more_info -> {
             setFragment(getOrCreateMoreInfo(), tagMoreInfo, lastSectionSelected != 0)
           }
-          R.id.action__settings -> {
-            setFragment(getOrCreateSettings(), tagSettings, lastSectionSelected != 0)
-          }
+//          R.id.action__settings -> {
+//            setFragment(getOrCreateSettings(), tagSettings, lastSectionSelected != 0)
+//          }
           else -> return@setOnNavigationItemSelectedListener false
         }
         lastSectionSelected = item.itemId

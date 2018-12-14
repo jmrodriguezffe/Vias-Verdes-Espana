@@ -49,7 +49,8 @@ class ItineraryActivity : UnderActivity() {
     if (imageResource > 0) {
       itinerary__image.setImageResource(imageResource)
     } else {
-      itinerary__image.setVisible(false)
+      itinerary__image.setImageResource(R.drawable.ic__itinerary__no_image)
+//      itinerary__image.setVisible(false)
     }
 
     val altimetricResource = getAltimetricResource(itinerary)
@@ -99,7 +100,7 @@ class ItineraryActivity : UnderActivity() {
       stream.close()
 
       val latLng = getFirstCoordinateOnLayer(parser.containers)
-      val gmmIntentUri = Uri.parse("google.navigation:q=" + latLng.latitude + "," + latLng.longitude + "&mode=d")
+      val gmmIntentUri = Uri.parse("google.navigation:q=" + latLng.latitude + "," + latLng.longitude)
       val mapIntent = Intent(Intent.ACTION_VIEW, gmmIntentUri)
       mapIntent.setPackage("com.google.android.apps.maps")
       startActivity(mapIntent)

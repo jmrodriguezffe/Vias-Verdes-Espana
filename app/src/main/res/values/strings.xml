@@ -1,5 +1,5 @@
 <resources>
-  <string name="app_name">Vias Verdes y Espacios Naturales Protegidos</string>
+  <string name="app_name">Vias Verdes y Red Natura 2000</string>
   <string name="section__vv_list">Itinerarios</string>
   <string name="section__map">Mapa</string>
   <string name="section__more_info">Más info</string>
@@ -30,7 +30,7 @@
 
   <string name="map__marker_more_info">Haz click aquí para más info</string>
 
-  <string name="logo__fundacion_biodiversidad">Este contenido forma parte del proyecto "Vías Verdes y Red Natura 2000" desarrollado con el apoyo de la Fundación Biodiversidad del Ministerio de Agricultura y Pesca, Alimentación y Medio Ambiente.</string>
+  <string name="logo__fundacion_biodiversidad">Este contenido forma parte del proyecto "Vías Verdes y Red Natura 2000" desarrollado con el apoyo de la Fundación Biodiversidad del Ministerio para la Transición Ecológica.</string>
   <string name="resources__vv_y_enp__title">Vias Verdes y Red Natura 2000: Divulgación de Espacios Naturales Protegidos y Geoparques a través de la Red Estatal de Vías Verdes</string>
   <string name="resources__vv_y_enp__content">El presente informe es el resultado de un Inventario de Espacios Naturales protegidos, Red Natura 2000 y red de Geoparques y su relación con la red de Vías Verdes. Su objetivo es conocer esta conexión entre ambos tipos de recursos ambientales y contribuir a su divulgación. Este inventario se enmarca en el proyecto "Vias Verdes y Red Natura 2000: Divulgación de Espacios Naturales Protegidos y Geoparques a través de la Red Estatal de Vías Verdes" que desarrolla el área de Vías Verdes de la FFE con el apoyo de la Fundación Biodiversidad del Ministerio de Agricultura y Pesca, Alimentación y Medio Ambiente.</string>
   <string name="resources__vv_y_2000__title">Mapa Vías Verdes y Red Natura 2000</string>
