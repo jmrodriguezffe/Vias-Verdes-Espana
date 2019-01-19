@@ -20,7 +20,7 @@
   <string name="download_pdf">Descargar PDF</string>
 
   <string name="itinerary__see_in_map">Ver en mapa</string>
-  <string name="itinerary__how_to_get">Como llegar</string>
+  <string name="itinerary__how_to_get">Cómo llegar</string>
   <string name="itinerary__localization">Localización</string>
   <string name="itinerary__length">Longitud</string>
   <string name="itinerary__user_type">Perfil de usuarios</string>

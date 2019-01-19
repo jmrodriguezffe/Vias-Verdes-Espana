@@ -66,13 +66,14 @@
       android:gravity="center_vertical"
       android:orientation="horizontal">
 
-      <AutoCompleteTextView
+      <EditText
         android:id="@+id/itineraries__input__search"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:background="@drawable/bg__white__rounded"
         android:padding="6dp"
+        android:imeOptions="actionSearch"
         android:textSize="@dimen/text_size__small" />
 
       <Button

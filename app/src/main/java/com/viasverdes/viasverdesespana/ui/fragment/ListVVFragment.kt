@@ -3,12 +3,12 @@ package com.viasverdes.viasverdesespana.ui.fragment
 import android.arch.lifecycle.Observer
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
-import android.view.Menu
-import android.view.MenuInflater
-import android.view.MenuItem
-import android.view.View
+import android.view.*
+import android.view.inputmethod.EditorInfo
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
+import android.widget.TextView
+import com.underlegendz.corelegendz.utils.ResourcesUtils
 import com.underlegendz.corelegendz.vm.VMFragment
 import com.viasverdes.viasverdesespana.R
 import com.viasverdes.viasverdesespana.data.VVDatabase
@@ -41,9 +41,14 @@ class ListVVFragment : VMFragment(), Observer<List<ItineraryBO>>, AdapterClickLi
       itineraries__list.layoutManager = LinearLayoutManager(ctx)
       VVDatabase.getInstance(ctx)?.itineraryDAO()?.getAllLiveData()?.observe(this, this)
 
-//      val adapter = ArrayAdapter<String>(context, android.R.layout.select_dialog_item, autocompleteSearchValues())
-//      itineraries__input__search.setAdapter(adapter)
-//      itineraries__input__search.threshold = 2
+      itineraries__input__search.setOnEditorActionListener { v, actionId, event ->
+        if(actionId == EditorInfo.IME_ACTION_SEARCH){
+          search()
+          true
+        }else{
+          false
+        }
+      }
 
       ArrayAdapter.createFromResource(
             ctx,

@@ -7,10 +7,7 @@ import android.view.ViewGroup
 import com.underlegendz.corelegendz.utils.ResourcesUtils
 import com.viasverdes.viasverdesespana.*
 import com.viasverdes.viasverdesespana.data.bo.ItineraryBO
-import com.viasverdes.viasverdesespana.utils.AdapterClickListener
-import com.viasverdes.viasverdesespana.utils.getImageResource
-import com.viasverdes.viasverdesespana.utils.search
-import com.viasverdes.viasverdesespana.utils.setVisible
+import com.viasverdes.viasverdesespana.utils.*
 import kotlinx.android.extensions.LayoutContainer
 import kotlinx.android.synthetic.main.row__itinerary.*
 import java.util.*

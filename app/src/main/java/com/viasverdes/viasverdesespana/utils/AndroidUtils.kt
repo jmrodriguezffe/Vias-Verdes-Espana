@@ -30,6 +30,7 @@ fun String.search(other: CharSequence, ignoreCase: Boolean = true, ignoreAccent 
 }
 
 fun String.stripAccents() : String {
-  val out = Normalizer.normalize(this, Normalizer.Form.NFD)
-  return out.replace("[^\\p{ASCII}]", "")
+  var string = Normalizer.normalize(this, Normalizer.Form.NFD)
+  string = Regex("\\p{InCombiningDiacriticalMarks}+").replace(string, "")
+  return  string
 }
