@@ -8,13 +8,13 @@
 	<Style id="LineStyle0103">
 		<LineStyle>
 			<color>ff33691e</color>
-			<width>12</width>
+			<width>6</width>
 		</LineStyle>
 	</Style>
 	<Style id="LineStyle00">
 		<LineStyle>
 			<color>ff33691e</color>
-			<width>12</width>
+			<width>6</width>
 		</LineStyle>
 	</Style>
 	<Folder id="FeatureLayer0">
