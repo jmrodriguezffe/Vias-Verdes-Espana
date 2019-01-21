@@ -11,6 +11,7 @@ import com.underlegendz.underactivity.ActivityBuilder
 import com.underlegendz.underactivity.UnderActivity
 import com.viasverdes.viasverdesespana.*
 import com.viasverdes.viasverdesespana.data.bo.ItineraryBO
+import com.viasverdes.viasverdesespana.ui.fragment.HowToGetDialogFragment
 import com.viasverdes.viasverdesespana.utils.*
 import kotlinx.android.synthetic.main.activity_itinerary.*
 import org.xmlpull.v1.XmlPullParser
@@ -99,11 +100,9 @@ class ItineraryActivity : UnderActivity() {
       parser.parseKml()
       stream.close()
 
-      val latLng = getFirstCoordinateOnLayer(parser.containers)
-      val gmmIntentUri = Uri.parse("google.navigation:q=" + latLng.latitude + "," + latLng.longitude)
-      val mapIntent = Intent(Intent.ACTION_VIEW, gmmIntentUri)
-      mapIntent.setPackage("com.google.android.apps.maps")
-      startActivity(mapIntent)
+      val latLngList = getCoordinateListOnLayer(parser.containers)
+
+      HowToGetDialogFragment.newInstance(latLngList.first(), latLngList.last()).show(supportFragmentManager, "how_to_get")
     }
   }
 

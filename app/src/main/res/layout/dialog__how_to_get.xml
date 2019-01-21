@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:minWidth="250dp">
+
+  <TextView
+    android:id="@+id/how_to_get__route_point__label"
+    style="@style/Text_Normal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/margin__small"
+    android:paddingEnd="@dimen/margin__big"
+    android:paddingStart="@dimen/margin__big"
+    android:paddingTop="@dimen/margin__big"
+    android:text="@string/route_point"
+    android:textSize="16sp"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+    android:id="@+id/how_to_get__route_point__start"
+    style="@style/Text_Green_Button"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/margin__big"
+    android:background="@drawable/switch_button__bg"
+    android:gravity="center"
+    android:text="@string/start"
+    app:layout_constraintEnd_toStartOf="@id/how_to_get__route_point__end"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/how_to_get__route_point__label" />
+
+  <TextView
+    android:id="@+id/how_to_get__route_point__end"
+    style="@style/Text_Green_Button"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/margin__big"
+    android:background="@drawable/switch_button__bg"
+    android:gravity="center"
+    android:text="@string/end"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toEndOf="@id/how_to_get__route_point__start"
+    app:layout_constraintTop_toBottomOf="@id/how_to_get__route_point__label" />
+
+  <TextView
+    android:id="@+id/how_to_get__transport_mode__label"
+    style="@style/Text_Normal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/margin__small"
+    android:paddingEnd="@dimen/margin__big"
+    android:paddingStart="@dimen/margin__big"
+    android:paddingTop="@dimen/margin__big"
+    android:text="@string/transport_mode"
+    android:textSize="16sp"
+    app:layout_constraintTop_toBottomOf="@id/how_to_get__route_point__start" />
+
+  <ImageView
+    android:id="@+id/how_to_get__transport_mode__walk"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/margin__big"
+    android:background="@drawable/switch_button__bg"
+    android:paddingBottom="@dimen/margin__default"
+    android:paddingTop="@dimen/margin__default"
+    android:src="@drawable/ic__transport__walk"
+    app:layout_constraintEnd_toStartOf="@id/how_to_get__transport_mode__bike"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/how_to_get__transport_mode__label" />
+
+  <ImageView
+    android:id="@+id/how_to_get__transport_mode__bike"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/switch_button__bg"
+    android:paddingBottom="@dimen/margin__default"
+    android:paddingTop="@dimen/margin__default"
+    android:src="@drawable/ic__transport__bike"
+    app:layout_constraintEnd_toStartOf="@id/how_to_get__transport_mode__car"
+    app:layout_constraintStart_toEndOf="@id/how_to_get__transport_mode__walk"
+    app:layout_constraintTop_toBottomOf="@id/how_to_get__transport_mode__label" />
+
+  <ImageView
+    android:id="@+id/how_to_get__transport_mode__car"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/margin__big"
+    android:background="@drawable/switch_button__bg"
+    android:paddingBottom="@dimen/margin__default"
+    android:paddingTop="@dimen/margin__default"
+    android:src="@drawable/ic__transport__car"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toEndOf="@id/how_to_get__transport_mode__bike"
+    app:layout_constraintTop_toBottomOf="@id/how_to_get__transport_mode__label" />
+
+  <TextView
+    android:id="@+id/how_to_get__btn__go"
+    style="@style/Text_Green_Button"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin__map"
+    android:layout_marginBottom="@dimen/margin__big"
+    android:layout_marginStart="@dimen/margin__big"
+    android:layout_marginEnd="@dimen/margin__big"
+    android:gravity="center_horizontal"
+    android:padding="@dimen/margin__big"
+    android:text="@string/itinerary__how_to_get"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/how_to_get__transport_mode__bike" />
+
+</android.support.constraint.ConstraintLayout>

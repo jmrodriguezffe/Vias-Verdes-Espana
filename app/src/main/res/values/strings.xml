@@ -51,5 +51,9 @@
     \n\nTodos los contenidos de esta aplicación, ya sean textos, fotografías, imágenes, dibujos, audio, vídeo, software, logotipos o diseño, están protegidos por la normativa de Propiedad Intelectual e Industrial y en particular por el real Decreto Legislativo 1/96, de 12 de abril, por el que se aprueba el Texto Refundido de la Ley de Propiedad Intelectual, y la Ley 18/2006, de 5 de junio, por la que se amplían los medios de tutela de los derechos de propiedad intelectual e industrial y se establecen normas procesales para facilitar la aplicación de diversos reglamentos comunitarios.
     \n\nLos derechos sobre tales contenidos pertenecen a sus respectivos autores. El acceso a este material no supondrá en forma alguna licencia para su reproducción y/o distribución. El usuario se compromete a usar esta aplicación móvil exclusivamente para uso personal.</string>
 
-  <string name="close">Cerrar</string>
+  <string name="close">Cerrar</string>ç
+  <string name="start">Inicio</string>
+  <string name="end">Final</string>
+  <string name="route_point">Punto de la ruta</string>
+  <string name="transport_mode">Modo de transporte</string>
 </resources>

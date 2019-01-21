@@ -41,7 +41,7 @@ class ListVVFragment : VMFragment(), Observer<List<ItineraryBO>>, AdapterClickLi
       itineraries__list.layoutManager = LinearLayoutManager(ctx)
       VVDatabase.getInstance(ctx)?.itineraryDAO()?.getAllLiveData()?.observe(this, this)
 
-      itineraries__input__search.setOnEditorActionListener { v, actionId, event ->
+      itineraries__input__search.setOnEditorActionListener { _, actionId, _ ->
         if(actionId == EditorInfo.IME_ACTION_SEARCH){
           search()
           true

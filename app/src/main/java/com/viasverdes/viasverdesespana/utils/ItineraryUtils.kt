@@ -73,3 +73,17 @@ fun getFirstCoordinateOnLayer(kmlContainers: Iterable<KmlContainer>): LatLng {
   val latLng = latlngList.first()
   return latLng
 }
+
+fun getCoordinateListOnLayer(kmlContainers: Iterable<KmlContainer>): ArrayList<LatLng> {
+  //Retrieve the first container in the KML layer
+  var container = kmlContainers.iterator().next()
+  //Retrieve a nested container within the first container
+  container = container.containers.iterator().next()
+  //Retrieve the first placemark in the nested container
+  val placemark = container.placemarks.iterator().next()
+  //Retrieve a polygon object in a placemark
+  val polygon = placemark.geometry as KmlMultiGeometry
+  //Create LatLngBounds of the outer coordinates of the polygon
+  val latlngList = polygon.geometryObject.first().geometryObject as ArrayList<LatLng>
+  return latlngList
+}

@@ -73,6 +73,9 @@
         android:layout_weight="1"
         android:background="@drawable/bg__white__rounded"
         android:padding="6dp"
+        android:maxLines="1"
+        android:lines="1"
+        android:inputType="text"
         android:imeOptions="actionSearch"
         android:textSize="@dimen/text_size__small" />
 
