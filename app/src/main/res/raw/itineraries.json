@@ -204,7 +204,7 @@
       "name": "V.V. de la Sierra de la Demanda",
       "length": 54.33,
       "provinces": "Burgos",
-      "ca": "Castilla y león",
+      "ca": "Castilla y León",
       "userTypes": "1,2,3,5",
       "localization": "Entre Arlanzón y Monterrubio de la Demanda.",
       "naturaText": "Esta Vía Verde cuenta con 5 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: Los LICs Riberas del Río Arlanzón y afluentes, Riberas del Río Arlanza y afluentes, y Sierra de la Demanda, la ZEPA Sierras de la Demanda, y por proximidad y pertenecientes a La Rioja, la ZEPA Sierras de Demanda, Urbión, Cebollera y Cameros, y la Zona de Especial Conservación de Importancia Comunitaria del mismo nombre (Red Natura 2000)."
@@ -215,7 +215,7 @@
       "name": "V.V. FC. Santand.-Mediterráneo (Burgos-Cojobar)",
       "length": 13.39,
       "provinces": "Burgos",
-      "ca": "Castilla y león",
+      "ca": "Castilla y León",
       "userTypes": "1,2,3,4",
       "localization": "Burgos, Modúbar de la Emparedada y Cojóbar",
       "naturaText": "Esta Vía Verde cuenta con 1 Espacio Natural Protegido localizado en un radio inferior a 5 km: El LIC Riberas del Río Arlanzón y afluentes (Red Natura 2000)."
@@ -234,7 +234,7 @@
 	{
       "codVV": "GUA1",
       "id": 38,
-      "name": "V.V. Vegas del Guadiana",
+      "name": "V.V. de las Vegas del Guadiana",
       "length": 57.7,
       "provinces": "Badajoz, Cáceres",
       "ca": "Extremadura",
@@ -366,7 +366,7 @@
 	{
       "codVV": "BAZ1",
       "id": 56,
-      "name": "V.V.FC.Guadix-Almendricos (tramo.Sierra.de.Baza)",
+      "name": "V.V. de la Sierra de Baza",
       "length": 16,
       "provinces": "Granada",
       "ca": "Andalucía",
@@ -894,7 +894,7 @@
     {
       "codVV": "ALMN",
       "id": 124,
-      "name": "V.V.FC.Guadix-Almendricos.(tramo.Huércal-Overa)",
+      "name": "VV. del Valle del Almanzora (Huércal – Overa)",
       "length": 13.28,
       "provinces": "Almería",
       "ca": "Andalucía",
@@ -1056,7 +1056,7 @@
       "localization": "Entre Llíria y Benaguasil con final en el Parque Natural del Túria.",
       "naturaText": "Esta Vía Verde cuenta con 2 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: El Parque Natural Turia y el Paraje Natural Municipal de Les Rodanes.\n\n\nAdemás, es posible conocer más sobre estos Espacios Naturales Protegidos gracias al Centro de visitantes del Parc Natural del Túria."
     },
-	{
+    {
       "codVV": "VALL",
       "id": 146,
       "name": "V.V. del Vallès",
@@ -1122,16 +1122,71 @@
       "localization": "Entre la ciudad de Soria y Hontoria del Pinar (Burgos).",
       "naturaText": "Esta Vía Verde cuenta con 5 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: El Parque Natural de Cañón del Río Lobos, así como los LICS Sabinares Sierra de Cabrejas, Riberas del Río Duero y afluentes, y Cañón del Río Lobos y la ZEPA Cañón del Río Lobos - Zepa (Red Natura 2000).\n\n\nAdemás, es posible conocer más sobre estos Espacios Naturales Protegidos gracias a la Casa del Parque del Sabinar y Casa del Parque del Cañón del Río Lobos."
     },
-	{
+    {
       "codVV": "ALM1",
       "id": 152,
-      "name": "V.V.FC.Guadix-Almendricos.(tramo-Valle.del.Almanzora)",
+      "name": "V.V. del Valle del Almanzora",
       "length": 35.77,
       "provinces": "Almería",
       "ca": "Andalucía",
       "userTypes": "1,2,3,4",
       "localization": "Entre Fines y las inmediaciones de la estación de Hijate (Alcóntar).",
       "naturaText": "Esta Vía Verde cuenta con 3 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: El Parque Natural de Sierra de Baza, así como los ZIC Calares de Sierra de los Filabres y Sierra de Baza (Red Natura 2000)."
+    },
+    {
+      "codVV": "ANO",
+      "id": 500,
+      "name": "V.V. de Añorga - Errekalde - Lasarte",
+      "length": 2.76,
+      "provinces": "Guipúzcoa",
+      "ca": "País Vasco",
+      "userTypes": "1,2,3",
+      "localization": "Entre Añorga - Errekalde y Lasarte.",
+      "naturaText": "Esta Vía Verde cuenta con 6 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: Los LICS Ulia, Urumea ibaia/ Río Urumea y Oriako itsasadarra/ Ría del Oria (Red Natura 2000) y los Árboles Singulares Ginkgo de Hernani, Roble Igara y la Encina de Donostia – San Sebastián.\n\nAdemás, es posible conocer más sobre estos Espacios Naturales Protegidos gracias al Centro de visitantes Leitzaran.\n\nhttps://www.leitzaran.net/visitantes.html"
+    },
+    {
+      "codVV": "MORL",
+      "id": 501,
+      "name": "V.V. Morlans-Ibaeta",
+      "length": 1.73,
+      "provinces": "Guipúzcoa",
+      "ca": "País Vasco",
+      "userTypes": "1,2,3",
+      "localization": "San Sebastián/ Donosti.",
+      "naturaText": "Esta Vía Verde cuenta con 4 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: el LIC Ulia (Red Natura 2000) y los Árboles Singulares Ginkgo de Hernani, el Roble de Igara y la Encina de Donostia - San Sebastián."
+    },
+    {
+      "codVV": "JILO",
+      "id": 502,
+      "name": "V.V. del Jiloca",
+      "length": 9.48,
+      "provinces": "Zaragoza",
+      "ca": "Aragón",
+      "userTypes": "1,2,3",
+      "localization": "Entre Calatayud y Torralba de Ribota.",
+      "naturaText": "Esta Vía Verde cuenta con 4 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: Los LICS Hoces del Jalón y Muelas del Jiloca: El Campo y la Torreta y ZEPAS Muelas del Jiloca: El Campo y la Torreta y Desfiladeros del Río Jalón (Red Natura 2000)."
+    },
+    {
+      "codVV": "PLA2",
+      "id": 503,
+      "name": "V.V. Ruta de la Plata (Tramo Béjar – Baños de Montemayor)",
+      "length": 19.26,
+      "provinces": "Cáceres, Salamanca",
+      "ca": "Castilla y León, Extremadura",
+      "userTypes": "1,2,3",
+      "localization": "Entre Béjar y Baños de Montemayor.",
+      "naturaText": "Esta Vía Verde cuenta con 7 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: La Reserva de la Biosfera Sierras de Béjar y Francia, así como los LICS Candelario, Valle del Cuerpo de Hombre, Granadilla y Sierra de Gredos y Valle del Jerte y la ZEPA Candelario(Red Natura 2000), además del Paisaje Protegido Castañar de Gallego.\n\nEs posible conocer más sobre estos Espacios Naturales Protegidos gracias al Centro de Interpretación de la Reserva Natural de la Garganta de los infiernos.\n\nturismoextremadura.com/viajar/turismo/es/explora/Centro-de-Interpretacion-de-la-Reserva-\nNatural-de-la-Garganta-de-los-Infiernos/"
+    },
+    {
+      "codVV": "PLA3",
+      "id": 504,
+      "name": "V.V. Ruta de la Plata (Tramo Barcial – Pobladura)",
+      "length": 20.36,
+      "provinces": "Zamora",
+      "ca": "Castilla y León",
+      "userTypes": "1,2,3",
+      "localization": "Entre Barcial del Barco y Pobladura.",
+      "naturaText": "Esta Vía Verde cuenta con 5 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: La Reserva Natural de Lagunas de Villafáfila, así como los LICS Riberas del Río Esla y afluentes, y Riberas del Río Órbigo y afluentes y las ZEPAS Penillanuras-Campos Sur, y Lagunas de Villafáfila (Red Natura 2000).\n\nAdemás, es posible conocer más sobre estos Espacios Naturales Protegidos gracias a la Casa del Parque de las Lagunas de Villafáfila “El Palomar”.\n\nhttp://www.patrimonionatural.org/casas-del-parque/casas-del-parque/casa-del-parque-delas-\nlagunas-de-villafafila-el-palomar"
     }
   ]
 }
