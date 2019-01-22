@@ -12,7 +12,8 @@ android {
     beta {
       keyAlias 'beta'
       keyPassword '1234567890'
-      storeFile file('/home/jose/Android/Vias Verdes/project/keystore.jks')
+//      storeFile file('/home/jose/Android/Vias Verdes/project/keystore.jks')
+      storeFile file('/home/josefuentes/StudioProjects/Vias-Verdes-Espana/keystore.jks')
       storePassword '1234567890'
     }
   }
