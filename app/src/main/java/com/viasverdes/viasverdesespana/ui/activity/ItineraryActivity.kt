@@ -4,6 +4,8 @@ import android.app.Activity
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.text.Html
+import android.text.method.LinkMovementMethod
 import com.google.maps.android.data.kml.CustomKmlParser
 import com.underlegendz.corelegendz.utils.ResourcesUtils
 import com.underlegendz.corelegendz.utils.ScreenUtils
@@ -82,7 +84,13 @@ class ItineraryActivity : UnderActivity() {
       itinerary__title_bg.alpha = alpha
       itinerary__title_shadow.alpha = alpha
     }
-
+    val hasConnections = itinerary.connections != null
+    itinerary__connections.setVisible(hasConnections)
+    itinerary__connections_label.setVisible(hasConnections)
+    if(hasConnections){
+      itinerary__connections.text = Html.fromHtml(itinerary.connections)
+      itinerary__connections.movementMethod = LinkMovementMethod.getInstance()
+    }
   }
 
   override fun finish() {
