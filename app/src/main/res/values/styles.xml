@@ -59,7 +59,7 @@
     <item name="android:fontFamily">Roboto</item>
     <item name="android:textColor">@color/white</item>
     <item name="android:textSize">16sp</item>
-    <item name="android:background">@color/colorPrimaryDark_70</item>
+    <item name="android:background">@color/colorPrimary</item>
     <item name="android:paddingStart">@dimen/margin__default</item>
     <item name="android:textStyle">bold</item>
   </style>
