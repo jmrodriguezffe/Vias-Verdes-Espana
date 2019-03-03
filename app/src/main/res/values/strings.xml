@@ -67,7 +67,7 @@
 \n\nLa aplicación está diseñada de forma que no accede a ninguno de los registros protegibles del dispositivo móvil del usuario.
 \n\nLa marca de “Vías Verdes” es una marca registrada de la FFE, (Marca nacional M2831310(0) - VIAS VERDES), y por tanto dispone de protección legal\n\n.</string>
 
-  <string name="close">Cerrar</string>ç
+  <string name="close">Cerrar</string>
   <string name="start">Inicio</string>
   <string name="end">Final</string>
   <string name="route_point">Punto de la ruta</string>

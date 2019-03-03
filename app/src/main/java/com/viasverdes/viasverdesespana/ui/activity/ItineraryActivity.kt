@@ -6,6 +6,8 @@ import android.net.Uri
 import android.os.Bundle
 import android.text.Html
 import android.text.method.LinkMovementMethod
+import com.bumptech.glide.Glide
+import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions.withCrossFade
 import com.google.maps.android.data.kml.CustomKmlParser
 import com.underlegendz.corelegendz.utils.ResourcesUtils
 import com.underlegendz.corelegendz.utils.ScreenUtils
@@ -48,13 +50,7 @@ class ItineraryActivity : UnderActivity() {
     super.onCreate(savedInstanceState)
     val itinerary = intent.getParcelableExtra<ItineraryBO>(ARG_ITINERARY)
 
-    val imageResource = getImageResource(itinerary)
-    if (imageResource > 0) {
-      itinerary__image.setImageResource(imageResource)
-    } else {
-      itinerary__image.setImageResource(R.drawable.ic__itinerary__no_image)
-//      itinerary__image.setVisible(false)
-    }
+    loadImage(getRemoteImageUri(itinerary), itinerary__image)
 
     val altimetricResource = getAltimetricResource(itinerary)
     if (altimetricResource > 0) {
