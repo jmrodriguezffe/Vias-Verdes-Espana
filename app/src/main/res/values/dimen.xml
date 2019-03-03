@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <dimen name="text_size__title">18sp</dimen>
-  <dimen name="text_size__normal">13sp</dimen>
-  <dimen name="text_size__small">11sp</dimen>
+  <attr name="text_size__title" format="dimension" />
+  <attr name="text_size__medium" format="dimension" />
+  <attr name="text_size__normal" format="dimension" />
+  <attr name="text_size__small" format="dimension" />
+
   <dimen name="margin__itinerary_card__horizontal">16dp</dimen>
   <dimen name="margin__itinerary_card__vertical">10dp</dimen>
   <dimen name="margin__map">32dp</dimen>

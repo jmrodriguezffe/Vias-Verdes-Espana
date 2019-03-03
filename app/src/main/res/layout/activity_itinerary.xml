@@ -21,8 +21,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:src="@drawable/image__sier" />
+        app:layout_constraintTop_toTopOf="parent"/>
 
       <TextView
         android:id="@+id/itinerary__see_in_map"
@@ -285,8 +284,10 @@
   <TextView
     android:id="@+id/itinerary__title"
     style="@style/Text_Detail_Title"
-    android:layout_width="match_parent"
+    android:layout_width="0dp"
     android:layout_height="wrap_content"
+    app:layout_constraintStart_toEndOf="@id/itinerary__back"
+    app:layout_constraintEnd_toStartOf="@id/option__text_size"
     app:layout_constraintTop_toTopOf="parent"
     tools:text="V.V. de la Sierra y sus Espacios Naturales Protegidos" />
 
@@ -305,6 +306,16 @@
     android:scaleType="center"
     android:src="@drawable/ic__back"
     app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintBottom_toBottomOf="@id/itinerary__title"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <ImageView
+    android:id="@+id/option__text_size"
+    android:layout_width="50dp"
+    android:layout_height="0dp"
+    android:scaleType="center"
+    android:src="@drawable/ic__action__text_size"
+    app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintBottom_toBottomOf="@id/itinerary__title"
     app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>

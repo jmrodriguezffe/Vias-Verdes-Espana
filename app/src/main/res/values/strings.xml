@@ -15,6 +15,10 @@
   <string name="action__layer__satellite">Vista satélite</string>
   <string name="action__layer__hybrid">Vista híbrida</string>
   <string name="action__layer__terrain">Vista de terreno</string>
+  <string name="action__change_text_size">Cambiar tamaño de letra</string>
+  <string name="action__text_size__small">Pequeño</string>
+  <string name="action__text_size__normal">Normal</string>
+  <string name="action__text_size__big">Grande</string>
 
   <string name="km">%1$.2f km</string>
   <string name="download_pdf">Descargar PDF</string>

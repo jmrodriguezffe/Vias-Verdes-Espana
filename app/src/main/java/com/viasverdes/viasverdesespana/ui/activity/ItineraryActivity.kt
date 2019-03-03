@@ -24,7 +24,7 @@ import org.xmlpull.v1.XmlPullParserFactory
 import java.io.InputStream
 
 
-class ItineraryActivity : UnderActivity() {
+class ItineraryActivity : TextSizeThemeActivity() {
 
   companion object {
     const val ARG_ITINERARY = "ITINERARY"
@@ -49,6 +49,9 @@ class ItineraryActivity : UnderActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
     val itinerary = intent.getParcelableExtra<ItineraryBO>(ARG_ITINERARY)
+
+    registerForContextMenu(option__text_size)
+    option__text_size.setOnClickListener { it.showContextMenu() }
 
     loadImage(getRemoteImageUri(itinerary), itinerary__image)
 

@@ -1,13 +1,17 @@
 package com.viasverdes.viasverdesespana.utils
 
+import android.annotation.SuppressLint
 import android.net.Uri
 import android.os.Build
+import android.preference.PreferenceManager
 import android.support.v4.widget.CircularProgressDrawable
 import android.text.Html
 import android.text.Spanned
 import android.widget.ImageView
+import androidx.annotation.StyleRes
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
+import com.underlegendz.corelegendz.CoreApplication
 import com.viasverdes.viasverdesespana.R
 import kotlinx.android.synthetic.main.activity_itinerary.*
 import java.text.Normalizer
@@ -55,4 +59,21 @@ fun loadImage(uri: Uri, imageView: ImageView) {
         .error(R.drawable.ic__itinerary__no_image)
         .transition(DrawableTransitionOptions.withCrossFade())
         .into(imageView)
+}
+
+val KEY_TEXT_SIZE = "TEXT_SIZE"
+
+@SuppressLint("ApplySharedPref")
+fun saveTextSize(size : Int) {
+  val preferences = PreferenceManager.getDefaultSharedPreferences(CoreApplication.get())
+  preferences.edit().putInt(KEY_TEXT_SIZE, size).commit()
+}
+
+fun getTextSizeTheme() : Int {
+  val preferences = PreferenceManager.getDefaultSharedPreferences(CoreApplication.get())
+  return when(preferences.getInt(KEY_TEXT_SIZE, 0)){
+    -1 -> R.style.AppTheme_TextSmall
+    1 -> R.style.AppTheme_TextBig
+    else -> R.style.AppTheme_TextNormal
+  }
 }

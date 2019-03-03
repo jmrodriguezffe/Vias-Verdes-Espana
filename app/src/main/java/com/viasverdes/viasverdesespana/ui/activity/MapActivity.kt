@@ -11,7 +11,7 @@ import com.viasverdes.viasverdesespana.data.bo.ItineraryBO
 import com.viasverdes.viasverdesespana.ui.fragment.MapFragment
 import kotlinx.android.synthetic.main.toolbar.*
 
-class MapActivity : UnderActivity() {
+class MapActivity : TextSizeThemeActivity() {
 
   companion object {
     const val ARG_ITINERARY = "ITINERARY"

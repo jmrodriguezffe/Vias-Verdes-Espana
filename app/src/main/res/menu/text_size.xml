@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+  <item android:id="@+id/action__change_layer"
+    android:title="@string/action__change_text_size"
+    android:icon="@drawable/ic__action__text_size"
+    app:showAsAction="always">
+    <menu>
+      <item
+        android:id="@+id/action__text__small"
+        android:title="@string/action__text_size__small"/>
+      <item
+        android:id="@+id/action__text__normal"
+        android:title="@string/action__text_size__normal"/>
+      <item
+        android:id="@+id/action__text__big"
+        android:title="@string/action__text_size__big"/>
+    </menu>
+  </item>
+</menu>

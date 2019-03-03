@@ -15,7 +15,7 @@
     android:paddingStart="@dimen/margin__big"
     android:paddingTop="@dimen/margin__big"
     android:text="@string/route_point"
-    android:textSize="16sp"
+    android:textSize="?attr/text_size__medium"
     app:layout_constraintTop_toTopOf="parent" />
 
   <TextView
@@ -54,7 +54,7 @@
     android:paddingStart="@dimen/margin__big"
     android:paddingTop="@dimen/margin__big"
     android:text="@string/transport_mode"
-    android:textSize="16sp"
+    android:textSize="?attr/text_size__medium"
     app:layout_constraintTop_toBottomOf="@id/how_to_get__route_point__start" />
 
   <ImageView
