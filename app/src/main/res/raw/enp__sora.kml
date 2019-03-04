@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
+<Document id="ENPs">
+  <name>ENPs</name>
+  <Snippet></Snippet>
+  <Folder id="FeatureLayer0">
+    <name>ENPs</name>
+    <Snippet></Snippet>
+    <Placemark id="ID_00000">
+      <name>ENP-1064</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>ENP-1064</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>ENP-1064</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NOMBRE</td>
+<td>Magnolio de Bergara</td>
+</tr>
+<tr>
+<td>FIGURA</td>
+<td>Árbol Singular</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SITECODE</td>
+<td>ES212005</td>
+</tr>
+<tr>
+<td>CCAA</td>
+<td>PAÍS VASCO</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SUPHA</td>
+<td>0</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -2.413079659999937,43.11703823400006,0 -2.413086066999938,43.11703785700007,0 -2.413092287999973,43.11703667000006,0 -2.413098131999959,43.11703471000004,0 -2.413103423999928,43.11703203600007,0 -2.413107998999976,43.11702873000007,0 -2.413111723999975,43.11702489200007,0 -2.41311448099998,43.11702063800004,0 -2.413116186999957,43.11701609800008,0 -2.413116792999972,43.11701141000003,0 -2.413116276999972,43.11700671700004,0 -2.413114657999927,43.11700215900004,0 -2.413111981999975,43.11699787800006,0 -2.413108330999933,43.11699400200007,0 -2.413103818999957,43.11699065000005,0 -2.41309857899995,43.11698792100003,0 -2.41309277299996,43.11698590100008,0 -2.413086574999966,43.11698465100005,0 -2.413080176999927,43.11698420800008,0 -2.413073769999926,43.11698458600006,0 -2.413067548999948,43.11698577200008,0 -2.413061704999961,43.11698773200004,0 -2.413056413999925,43.11699040600007,0 -2.413051837999944,43.11699371200007,0 -2.413048112999945,43.11699755100005,0 -2.413045355999941,43.11700180400004,0 -2.413043649999963,43.11700634400006,0 -2.413043043999949,43.11701103200005,0 -2.413043559999949,43.11701572500004,0 -2.413045179999926,43.11702028300005,0 -2.413047854999945,43.11702456400008,0 -2.413051505999931,43.11702844000007,0 -2.413056017999963,43.11703179300008,0 -2.413061257999971,43.11703452100005,0 -2.413067063999961,43.11703654100006,0 -2.413073261999955,43.11703779100003,0 -2.413079659999937,43.11703823400006,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+  </Folder>
+  <Style id="PolyStyle00">
+    <LabelStyle>
+      <color>00000000</color>
+      <scale>0.000000</scale>
+    </LabelStyle>
+    <LineStyle>
+      <color>99007326</color>
+      <width>4.000000</width>
+    </LineStyle>
+    <PolyStyle>
+      <color>9900e698</color>
+      <outline>1</outline>
+    </PolyStyle>
+  </Style>
+</Document>
+</kml>

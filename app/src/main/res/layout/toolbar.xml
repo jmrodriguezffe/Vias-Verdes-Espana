@@ -11,5 +11,6 @@
     android:layout_height="wrap_content"
     android:textColor="@color/white"
     android:textStyle="bold"
+    android:textSize="18sp"
     app:autoSizeTextType="uniform" />
 </android.support.v7.widget.Toolbar>

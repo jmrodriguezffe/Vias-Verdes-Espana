@@ -6,6 +6,7 @@
   android:layout_height="match_parent"
   android:paddingStart="@dimen/margin__default"
   android:paddingEnd="@dimen/margin__default"
+  android:background="@color/white"
   tools:context=".ui.fragment.InfoAboutFragment">
   <WebView
     android:id="@+id/more_info__about__webview"

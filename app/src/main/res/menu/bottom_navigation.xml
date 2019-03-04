@@ -19,10 +19,4 @@
     android:icon="@drawable/ic__section__more_info"
     android:title="@string/section__more_info"
     app:showAsAction="ifRoom" />
-  <item
-    android:id="@+id/action__settings"
-    android:enabled="true"
-    android:icon="@drawable/ic__section__settings"
-    android:title="@string/section__settings"
-    app:showAsAction="ifRoom" />
 </menu>

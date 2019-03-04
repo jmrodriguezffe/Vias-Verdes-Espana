@@ -15,8 +15,8 @@ interface ItineraryDAO {
   @Query("SELECT * from itinerary")
   fun getAllLiveData(): LiveData<List<ItineraryBO>>
 
-  @Query("SELECT * from itinerary where id in (:ids)")
-  fun getById(ids: LongArray): List<ItineraryBO>
+  @Query("SELECT * from itinerary where id=:id")
+  fun getById(id: Long): LiveData<ItineraryBO>
 
   @Insert(onConflict = REPLACE)
   fun insert(itinerary: ItineraryBO)

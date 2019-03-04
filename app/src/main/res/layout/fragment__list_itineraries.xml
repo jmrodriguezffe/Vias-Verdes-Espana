@@ -66,14 +66,18 @@
       android:gravity="center_vertical"
       android:orientation="horizontal">
 
-      <AutoCompleteTextView
+      <EditText
         android:id="@+id/itineraries__input__search"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:background="@drawable/bg__white__rounded"
         android:padding="6dp"
-        android:textSize="@dimen/text_size__small" />
+        android:maxLines="1"
+        android:lines="1"
+        android:inputType="text"
+        android:imeOptions="actionSearch"
+        android:textSize="?attr/text_size__small" />
 
       <Button
         android:id="@+id/itineraries__btn__search"
@@ -81,7 +85,7 @@
         android:layout_height="40dp"
         android:layout_marginStart="@dimen/margin__default"
         android:text="@string/action__search"
-        android:textSize="@dimen/text_size__small" />
+        android:textSize="?attr/text_size__small" />
     </LinearLayout>
 
   </LinearLayout>

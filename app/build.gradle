@@ -12,7 +12,8 @@ android {
     beta {
       keyAlias 'beta'
       keyPassword '1234567890'
-      storeFile file('C:/Android/UNDERLEGENDZ/Proyectos/Vias-Verdes-Espana/keystore.jks')
+      storeFile file('/home/jose/Android/Vias Verdes/project/keystore.jks')
+//      storeFile file('/home/josefuentes/StudioProjects/Vias-Verdes-Espana/keystore.jks')
       storePassword '1234567890'
     }
   }
@@ -65,6 +66,9 @@ dependencies {
   // Google Maps
   implementation 'com.google.maps.android:android-maps-utils:0.5'
   implementation 'com.google.android.gms:play-services-maps:15.0.1'
+  // Glide
+  implementation 'com.github.bumptech.glide:glide:4.9.0'
+  kapt 'com.github.bumptech.glide:compiler:4.9.0'
   // Android Support
   implementation "com.android.support:appcompat-v7:$androidSupportVersion"
   implementation "com.android.support:design:$androidSupportVersion"

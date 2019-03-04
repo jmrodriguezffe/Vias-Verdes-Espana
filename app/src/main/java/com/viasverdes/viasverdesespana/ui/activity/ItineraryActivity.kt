@@ -4,6 +4,10 @@ import android.app.Activity
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.text.Html
+import android.text.method.LinkMovementMethod
+import com.bumptech.glide.Glide
+import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions.withCrossFade
 import com.google.maps.android.data.kml.CustomKmlParser
 import com.underlegendz.corelegendz.utils.ResourcesUtils
 import com.underlegendz.corelegendz.utils.ScreenUtils
@@ -11,6 +15,7 @@ import com.underlegendz.underactivity.ActivityBuilder
 import com.underlegendz.underactivity.UnderActivity
 import com.viasverdes.viasverdesespana.*
 import com.viasverdes.viasverdesespana.data.bo.ItineraryBO
+import com.viasverdes.viasverdesespana.ui.fragment.HowToGetDialogFragment
 import com.viasverdes.viasverdesespana.utils.*
 import kotlinx.android.synthetic.main.activity_itinerary.*
 import org.xmlpull.v1.XmlPullParser
@@ -19,7 +24,7 @@ import org.xmlpull.v1.XmlPullParserFactory
 import java.io.InputStream
 
 
-class ItineraryActivity : UnderActivity() {
+class ItineraryActivity : TextSizeThemeActivity() {
 
   companion object {
     const val ARG_ITINERARY = "ITINERARY"
@@ -45,12 +50,10 @@ class ItineraryActivity : UnderActivity() {
     super.onCreate(savedInstanceState)
     val itinerary = intent.getParcelableExtra<ItineraryBO>(ARG_ITINERARY)
 
-    val imageResource = getImageResource(itinerary)
-    if (imageResource > 0) {
-      itinerary__image.setImageResource(imageResource)
-    } else {
-      itinerary__image.setVisible(false)
-    }
+    registerForContextMenu(option__text_size)
+    option__text_size.setOnClickListener { it.showContextMenu() }
+
+    loadImage(getRemoteImageUri(itinerary), itinerary__image)
 
     val altimetricResource = getAltimetricResource(itinerary)
     if (altimetricResource > 0) {
@@ -68,6 +71,7 @@ class ItineraryActivity : UnderActivity() {
     itinerary__bicycle_user_type.setVisible(itinerary.userTypes.contains(USER_TYPE__BICYCLE))
     itinerary__wheelchair_user_type.setVisible(itinerary.userTypes.contains(USER_TYPE__WHEELCHAIR))
     itinerary__roller_user_type.setVisible(itinerary.userTypes.contains(USER_TYPE__ROLLER))
+    itinerary__horse_user_type.setVisible(itinerary.userTypes.contains(USER_TYPE__HORSE))
     itinerary__natura.text = itinerary.naturaText
     itinerary__back.setOnClickListener { onBackPressed() }
     itinerary__see_in_map.setOnClickListener { MapActivity.start(this, itinerary) }
@@ -79,7 +83,13 @@ class ItineraryActivity : UnderActivity() {
       itinerary__title_bg.alpha = alpha
       itinerary__title_shadow.alpha = alpha
     }
-
+    val hasConnections = itinerary.connections != null
+    itinerary__connections.setVisible(hasConnections)
+    itinerary__connections_label.setVisible(hasConnections)
+    if(hasConnections){
+      itinerary__connections.text = Html.fromHtml(itinerary.connections)
+      itinerary__connections.movementMethod = LinkMovementMethod.getInstance()
+    }
   }
 
   override fun finish() {
@@ -97,11 +107,9 @@ class ItineraryActivity : UnderActivity() {
       parser.parseKml()
       stream.close()
 
-      val latLng = getFirstCoordinateOnLayer(parser.containers)
-      val gmmIntentUri = Uri.parse("google.navigation:q=" + latLng.latitude + "," + latLng.longitude + "&mode=d")
-      val mapIntent = Intent(Intent.ACTION_VIEW, gmmIntentUri)
-      mapIntent.setPackage("com.google.android.apps.maps")
-      startActivity(mapIntent)
+      val latLngList = getCoordinateListOnLayer(parser.containers)
+
+      HowToGetDialogFragment.newInstance(latLngList.first(), latLngList.last()).show(supportFragmentManager, "how_to_get")
     }
   }
 

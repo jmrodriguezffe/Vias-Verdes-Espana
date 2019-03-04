@@ -16,5 +16,6 @@ data class ItineraryBO(
       var ca: String,
       var localization: String,
       var naturaText: String,
-      var userTypes: String
+      var userTypes: String,
+      var connections: String?
 ) : Parcelable

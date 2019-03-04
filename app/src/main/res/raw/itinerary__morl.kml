@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2"
+	 xmlns:gx="http://www.google.com/kml/ext/2.2"
+	 xmlns:kml="http://www.opengis.net/kml/2.2"
+	 xmlns:atom="http://www.w3.org/2005/Atom"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Document id="Vias_Verdes_2018-ACOND-APP_ENP" xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
+	<Style id="LineStyle0103">
+		<LineStyle>
+			<color>ff33691e</color>
+			<width>6</width>
+		</LineStyle>
+	</Style>
+	<Style id="LineStyle00">
+		<LineStyle>
+			<color>ff33691e</color>
+			<width>6</width>
+		</LineStyle>
+	</Style>
+	<Folder id="FeatureLayer0">
+		<Placemark id="ID_00069">
+			<name>VV-Morlans-Ibaeta</name>
+			<styleUrl>#LineStyle00</styleUrl>
+			<MultiGeometry>
+				<LineString>
+					<tessellate>1</tessellate>
+					<coordinates>
+						-1.982754380384341,43.30800760620314,0 -1.985089225296146,43.30807508588361,0 -1.986497000023854,43.30808756954418,0 -1.988672653647478,43.30810682840011,0 -1.990016440782141,43.30811870290586,0 -1.990656726354604,43.30810098685773,0 -1.991425764076126,43.30803766580438,0 -1.992131196604967,43.3079504106504,0 -1.99277340919449,43.30781585752288,0 -1.993577905890033,43.30754251827303,0 -1.994639892231086,43.30717796325897,0 -1.995385386292694,43.30660030277379,0 -1.996005967189131,43.30583459329664,0 -1.996560239489638,43.30520850931972,0 -1.997020057531273,43.30448812048264,0 -1.997614746163044,43.30334827952336,0 -1.997941963404154,43.30290714606956,0 -1.998523194546039,43.30258507845133,0 -1.999230087691371,43.30240431826644,0 -2.000128545468017,43.30224859702238,0
+					</coordinates>
+				</LineString>
+			</MultiGeometry>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>
