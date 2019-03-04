@@ -7,7 +7,6 @@ import com.viasverdes.viasverdesespana.R
 import com.viasverdes.viasverdesespana.ui.fragment.InfoFragment
 import com.viasverdes.viasverdesespana.ui.fragment.ListVVFragment
 import com.viasverdes.viasverdesespana.ui.fragment.MapFragment
-import com.viasverdes.viasverdesespana.ui.fragment.ToDoFragment
 import com.viasverdes.viasverdesespana.utils.removeShiftMode
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.toolbar.*
@@ -17,7 +16,6 @@ class MainActivity : TextSizeThemeActivity() {
   val tagListVV = "LIST_VV"
   val tagMap = "MAP"
   val tagMoreInfo = "MORE_INFO"
-  val tagSettings = "SETTINGS"
   val sectionSelected = "SECTION_SELECTED"
   var lastSectionSelected: Int = 0
 
@@ -66,7 +64,7 @@ class MainActivity : TextSizeThemeActivity() {
   }
 
   protected fun getOrCreateListVV(): Fragment {
-    var fragment: Fragment? = getFragment(tagListVV)
+    val fragment: Fragment? = getFragment(tagListVV)
     if (fragment != null) {
       return fragment
     } else {
@@ -75,7 +73,7 @@ class MainActivity : TextSizeThemeActivity() {
   }
 
   protected fun getOrCreateMap(): Fragment {
-    var fragment: Fragment? = getFragment(tagMap)
+    val fragment: Fragment? = getFragment(tagMap)
     if (fragment != null) {
       return fragment
     } else {
@@ -84,20 +82,11 @@ class MainActivity : TextSizeThemeActivity() {
   }
 
   protected fun getOrCreateMoreInfo(): Fragment {
-    var fragment: Fragment? = getFragment(tagMoreInfo)
+    val fragment: Fragment? = getFragment(tagMoreInfo)
     if (fragment != null) {
       return fragment
     } else {
       return InfoFragment.newInstance()
-    }
-  }
-
-  protected fun getOrCreateSettings(): Fragment {
-    var fragment: Fragment? = getFragment(tagSettings)
-    if (fragment != null) {
-      return fragment
-    } else {
-      return ToDoFragment.newInstance()
     }
   }
 }

@@ -8,7 +8,6 @@ import com.viasverdes.viasverdesespana.R
 import com.viasverdes.viasverdesespana.ui.fragment.InfoAboutFragment
 import com.viasverdes.viasverdesespana.ui.fragment.InfoLegalTextFragment
 import com.viasverdes.viasverdesespana.ui.fragment.InfoResourcesFragment
-import com.viasverdes.viasverdesespana.ui.fragment.ToDoFragment
 
 class MoreInfoPageAdapter(fm: FragmentManager?) : FragmentStatePagerAdapter(fm) {
   override fun getItem(position: Int): Fragment {
@@ -16,7 +15,7 @@ class MoreInfoPageAdapter(fm: FragmentManager?) : FragmentStatePagerAdapter(fm) 
       0 -> InfoResourcesFragment.newInstance()
       1 -> InfoAboutFragment.newInstance()
       2 -> InfoLegalTextFragment.newInstance()
-      else -> ToDoFragment.newInstance()
+      else -> InfoResourcesFragment.newInstance()
     }
   }
 
@@ -29,7 +28,7 @@ class MoreInfoPageAdapter(fm: FragmentManager?) : FragmentStatePagerAdapter(fm) 
       0 -> ResourcesUtils.getString(R.string.section__more_info__resources)
       1 -> ResourcesUtils.getString(R.string.section__more_info__about)
       2 -> ResourcesUtils.getString(R.string.section__more_info__legal_text)
-      else -> " "
+      else -> ResourcesUtils.getString(R.string.section__more_info__resources)
     }
   }
 }
