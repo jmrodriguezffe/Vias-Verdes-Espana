@@ -28,7 +28,7 @@ class ImportItinerariesWorker(
         }
       }
     }
-    return Result.SUCCESS
+    return Result.success()
   }
 
   private fun getRawResource(
