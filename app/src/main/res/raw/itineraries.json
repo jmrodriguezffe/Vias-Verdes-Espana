@@ -936,7 +936,7 @@
       "userTypes": "1,2",
       "localization": "Desde la Autovía del Mediterráneo A7 por Huércal Overa hasta la pedanía de Las Norias.",
       "naturaText": "Esta Vía Verde cuenta con 2 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: La Zona de Importancia Comunitaria Sierra del Alto de Almagro y el LIC Sierra de En medio (Red Natura 2000).",
-      "connections": "Esta Vía Verde conecta con la Vía Verde de Almendricos"
+      "connections": "Esta Vía Verde conecta con la <a href=\"viaverde://detail?id=506\">Vía Verde de Almendricos</a>"
     },
     {
       "codVV": "VILL",
@@ -1100,7 +1100,7 @@
       "name": "V.V. del Tren Burra",
       "length": 27.57,
       "provinces": "Palencia",
-      "ca": "Valencia",
+      "ca": "Castilla y León",
       "userTypes": "1,2",
       "localization": "Entre las localidades de Palencia y Castromocho",
       "naturaText": "Esta Vía Verde cuenta con 4 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: Los LICS de la Laguna de la Nava y las Riberas del Río Carrión y afluentes, así como las ZEPAS La Nava Campos Norte y La Nava – Campos Sur (Red Natura 2000).\n\nAdemás, es posible conocer más sobre estos Espacios Naturales Protegidos gracias a la Casa del Parque de la Nava y Campos de Palencia."
@@ -1196,7 +1196,7 @@
     },
     {
       "codVV": "MORL",
-      "id": 501,
+      "id": 157,
       "name": "V.V. Morlans-Ibaeta",
       "length": 1.73,
       "provinces": "Guipúzcoa",
@@ -1207,7 +1207,7 @@
     },
     {
       "codVV": "JILO",
-      "id": 502,
+      "id": 156,
       "name": "V.V. del Jiloca",
       "length": 9.48,
       "provinces": "Zaragoza",
@@ -1258,7 +1258,8 @@
       "ca": "Andalucía",
       "userTypes": "1,2,3",
       "localization": "Entre Límite provincial Almería-Murcia y Almendricos. Lorca.",
-      "naturaText": "Esta Vía Verde cuenta con 2 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: El LIC Sierra de Enmedio y el ZIC Sierra de Alto de Almargo (Red Natura 2000)."
+      "naturaText": "Esta Vía Verde cuenta con 2 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: El LIC Sierra de Enmedio y el ZIC Sierra de Alto de Almargo (Red Natura 2000).",
+      "connections": "Esta Vía Verde conecta con la <a href=\"viaverde://detail?id=124\">Vía Verde Valle del Almanzora (Huércal-Overa)</a>"
     }
   ]
 }

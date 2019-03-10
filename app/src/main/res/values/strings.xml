@@ -1,5 +1,5 @@
 <resources>
-  <string name="app_name">Vias Verdes y Red Natura 2000</string>
+  <string name="app_name">Vías Verdes y Red Natura 2000</string>
   <string name="section__vv_list">Itinerarios</string>
   <string name="section__map">Mapa</string>
   <string name="section__more_info">Más info</string>
@@ -63,13 +63,16 @@
 \n\nEn relación con el medio ambiente se recuerda la obligación de respetar la naturaleza, evitar molestias a la fauna y alteraciones a la flora, bienes y elementos geológicos y culturales. No arroje residuos, vertidos o cualquier otra forma de contaminantes. No recoja minerales, rocas, plantas o animales. Observe todas las recomendaciones y normas de los espacios por donde discurren las vías verdes para su plena conservación y disfrute.
     \n\n<b>Cláusula de exención de responsabilidad</b>
 \n\nEsta aplicación para dispositivos móviles es de carácter meramente informativo. Puede existir alguna información no completamente exhaustiva, exacta o actualizada. Técnicamente, es destacable y por tanto se señala, que los límites, características, descripción y visión de los elementos representados tienen un mero carácter aproximado y su concreción final puede no ajustarse plenamente a la realidad, en función de la escala, de las variaciones producidas y de la información disponible o de partida, teniendo solo carácter orientativo general y condicionado por las circunstancias antes expuestas.
-\n\nEs por ello, que las entidades participantes en la aplicación no asumirán ningún tipo de responsabilidad de ninguna naturaleza u orden legal respecto a la concurrencia de posibles inexactitudes, inconcreciones u omisiones y en su virtud, declina cualquier responsabilidad ante posibles daños o perjuicios vinculados, relacionados o derivados del uso de la misma. Igualmente, no se hacen responsables de las incidencias que puedan ocurrir durante el recorrido de los interesados por los itinerarios.
+\n\nEs por ello, que las entidades participantes en la aplicación no asumirán ningún tipo de responsabilidad de ninguna naturaleza u orden legal respecto a la concurrencia de posibles inexactitudes, inconcreciones u omisiones y en su virtud, declina cualquier responsabilidad ante posibles daños o perjuicios vinculados, relacionados o derivados del uso de la misma.
+\n\nIgualmente, no se hacen responsables de las incidencias que puedan ocurrir durante el recorrido de los interesados por los itinerarios. Las condiciones en las que se encuentre la vía verde no dependen de la Fundación de los Ferrocarriles Españoles.
+\n\nCabe señalar que los puntos de Inicio y Final de ruta no tienen que corresponder, necesariamente, a lugares debidamente acondicionados para el estacionamiento de vehículos.
 \n\nLos usuarios deberán guardar la debida diligencia en los aspectos especialmente relacionados con seguridad, salud y el respeto a la normativa vigente, cuando hagan uso de la aplicación en las vías verdes y su entorno, efectuando los itinerarios debidamente preparados y equipados, asumiendo las responsabilidades inherentes ante conductas inapropiadas, imprudencias o actos indebidos. Se ruega la máxima atención en las zonas de cruces con otras vías y carreteras, o de posible tránsito de personas, animales y/o vehículos, intercepción o choques con elementos móviles o fijos en las vías verdes, riesgo de caídas o accidentes. En caso necesario utilice el teléfono de emergencias 112.
     \n\n<b>Propiedad intelectual</b>
 \n\nTodos los contenidos de esta aplicación, ya sean textos, fotografías, imágenes, audio, vídeo, software, logotipos o diseño, están protegidos por la normativa de Propiedad Intelectual e Industrial y en particular por el Real Decreto Legislativo 1/96, de 12 de abril, por el que se aprueba el Texto Refundido de la Ley de Propiedad Intelectual, y la Ley 18/2006, de 5 de junio, por la que se amplían los medios de tutela de los derechos de propiedad intelectual e industrial y se establecen normas procesales para facilitar la aplicación de diversos reglamentos comunitarios.
 \n\nLos derechos sobre tales contenidos pertenecen a sus respectivos autores. El acceso a este material no supondrá en forma alguna licencia para su reproducción y/o distribución. El usuario se compromete a usar esta aplicación móvil exclusivamente para uso personal.
 \n\nLa aplicación está diseñada de forma que no accede a ninguno de los registros protegibles del dispositivo móvil del usuario.
-\n\nLa marca de “Vías Verdes” es una marca registrada de la FFE, (Marca nacional M2831310(0) - VIAS VERDES), y por tanto dispone de protección legal\n\n.</string>
+\n\nLa marca de “Vías Verdes” es una marca registrada de la FFE, (Marca nacional M2831310(0) - VIAS VERDES), y por tanto dispone de protección legal
+\n\n.</string>
 
   <string name="close">Cerrar</string>
   <string name="start">Inicio</string>
