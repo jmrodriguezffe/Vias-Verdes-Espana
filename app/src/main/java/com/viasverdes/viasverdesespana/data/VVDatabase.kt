@@ -11,7 +11,7 @@ import com.viasverdes.viasverdesespana.data.bo.ItineraryBO
 import com.viasverdes.viasverdesespana.data.dao.ItineraryDAO
 import com.viasverdes.viasverdesespana.work.ImportItinerariesWorker
 
-@Database(entities = arrayOf(ItineraryBO::class), version = 1, exportSchema = false)
+@Database(entities = arrayOf(ItineraryBO::class), version = 2, exportSchema = false)
 abstract class VVDatabase : RoomDatabase() {
 
   abstract fun itineraryDAO(): ItineraryDAO
@@ -24,6 +24,7 @@ abstract class VVDatabase : RoomDatabase() {
         synchronized(VVDatabase::class) {
           INSTANCE = Room.databaseBuilder(context.getApplicationContext(),
                 VVDatabase::class.java, "vv_database.db")
+                .fallbackToDestructiveMigration()
                 .build()
           startImportWork()
         }
