@@ -1184,17 +1184,6 @@
       "naturaText": "Esta Vía Verde cuenta con 3 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: El Parque Natural de Sierra de Baza, así como los ZIC Calares de Sierra de los Filabres y Sierra de Baza (Red Natura 2000)."
     },
     {
-      "codVV": "ANO",
-      "id": 500,
-      "name": "V.V. de Añorga - Errekalde - Lasarte",
-      "length": 2.76,
-      "provinces": "Guipúzcoa",
-      "ca": "País Vasco",
-      "userTypes": "1,2,3",
-      "localization": "Entre Añorga - Errekalde y Lasarte.",
-      "naturaText": "Esta Vía Verde cuenta con 6 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: Los LICS Ulia, Urumea ibaia/ Río Urumea y Oriako itsasadarra/ Ría del Oria (Red Natura 2000) y los Árboles Singulares Ginkgo de Hernani, Roble Igara y la Encina de Donostia – San Sebastián.\n\nAdemás, es posible conocer más sobre estos Espacios Naturales Protegidos gracias al Centro de visitantes Leitzaran.\n\nhttps://www.leitzaran.net/visitantes.html"
-    },
-    {
       "codVV": "MORL",
       "id": 157,
       "name": "V.V. Morlans-Ibaeta",
@@ -1215,6 +1204,17 @@
       "userTypes": "1,2,3",
       "localization": "Entre Calatayud y Torralba de Ribota.",
       "naturaText": "Esta Vía Verde cuenta con 4 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: Los LICS Hoces del Jalón y Muelas del Jiloca: El Campo y la Torreta y ZEPAS Muelas del Jiloca: El Campo y la Torreta y Desfiladeros del Río Jalón (Red Natura 2000)."
+    },
+    {
+      "codVV": "ANO",
+      "id": 500,
+      "name": "V.V. de Añorga - Errekalde - Lasarte",
+      "length": 2.76,
+      "provinces": "Guipúzcoa",
+      "ca": "País Vasco",
+      "userTypes": "1,2,3",
+      "localization": "Entre Añorga - Errekalde y Lasarte.",
+      "naturaText": "Esta Vía Verde cuenta con 6 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: Los LICS Ulia, Urumea ibaia/ Río Urumea y Oriako itsasadarra/ Ría del Oria (Red Natura 2000) y los Árboles Singulares Ginkgo de Hernani, Roble Igara y la Encina de Donostia – San Sebastián.\n\nAdemás, es posible conocer más sobre estos Espacios Naturales Protegidos gracias al Centro de visitantes Leitzaran.\n\nhttps://www.leitzaran.net/visitantes.html"
     },
     {
       "codVV": "PLA2",
