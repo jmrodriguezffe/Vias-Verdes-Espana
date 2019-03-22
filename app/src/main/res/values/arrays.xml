@@ -4,7 +4,7 @@
     <item>Comunidad Autónoma</item>
     <item>Andalucía</item>
     <item>Aragón</item>
-    <item>Asturias</item>
+    <item>Principado de Asturias</item>
     <item>Cantabria</item>
     <item>Castilla-La Mancha</item>
     <item>Castilla y León</item>
@@ -13,11 +13,11 @@
     <item>Galicia</item>
     <item>Islas Baleares</item>
     <item>La Rioja</item>
-    <item>Madrid</item>
-    <item>Murcia</item>
-    <item>Navarra</item>
+    <item>Comunidad de Madrid</item>
+    <item>Región de Murcia</item>
+    <item>Comunidad Foral de Navarra</item>
     <item>País Vasco</item>
-    <item>Valencia</item>
+    <item>Comunidad Valenciana</item>
   </string-array>
 
   <string-array name="provinces_andalucia">
