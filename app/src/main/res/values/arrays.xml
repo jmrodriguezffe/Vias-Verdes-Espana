@@ -4,20 +4,21 @@
     <item>Comunidad Autónoma</item>
     <item>Andalucía</item>
     <item>Aragón</item>
-    <item>Principado de Asturias</item>
     <item>Cantabria</item>
     <item>Castilla-La Mancha</item>
     <item>Castilla y León</item>
     <item>Cataluña</item>
+    <item>Comunidad de Madrid</item>
+    <item>Comunidad Foral de Navarra</item>
+    <item>Comunidad Valenciana</item>
     <item>Extremadura</item>
     <item>Galicia</item>
     <item>Islas Baleares</item>
+    <item>Islas Canarias</item>
     <item>La Rioja</item>
-    <item>Comunidad de Madrid</item>
-    <item>Región de Murcia</item>
-    <item>Comunidad Foral de Navarra</item>
     <item>País Vasco</item>
-    <item>Comunidad Valenciana</item>
+    <item>Principado de Asturias</item>
+    <item>Región de Murcia</item>
   </string-array>
 
   <string-array name="provinces_andalucia">
@@ -28,6 +29,7 @@
     <item>Granada</item>
     <item>Huelva</item>
     <item>Jaén</item>
+    <item>Málaga</item>
     <item>Sevilla</item>
   </string-array>
 
@@ -38,6 +40,12 @@
     <item>Zaragoza</item>
   </string-array>
 
+  <string-array name="provinces_canarias">
+    <item>Provincia</item>
+    <item>Las Palmas</item>
+    <item>Santa Cruz de Tenerife</item>
+  </string-array>
+
   <string-array name="provinces_cantabria">
     <item>Provincia</item>
     <item>Cantabria</item>
@@ -45,6 +53,7 @@
 
   <string-array name="provinces_castillaleon">
     <item>Provincia</item>
+    <item>Ávila</item>
     <item>Burgos</item>
     <item>León</item>
     <item>Palencia</item>
@@ -52,12 +61,14 @@
     <item>Segovia</item>
     <item>Soria</item>
     <item>Valladolid</item>
+    <item>Zamora</item>
   </string-array>
 
   <string-array name="provinces_castillalamancha">
     <item>Provincia</item>
     <item>Albacete</item>
     <item>Ciudad Real</item>
+    <item>Cuenca</item>
     <item>Guadalajara</item>
     <item>Toledo</item>
   </string-array>
@@ -102,7 +113,10 @@
 
   <string-array name="provinces_galicia">
     <item>Provincia</item>
+    <item>A Coruña</item>
     <item>Lugo</item>
+    <item>Ourense</item>
+    <item>Pontevedra</item>
   </string-array>
 
   <string-array name="provinces_baleares">
@@ -127,11 +141,13 @@
 
   <string-array name="provinces">
     <item>Provincia</item>
+    <item>Á Coruña</item>
     <item>Álava</item>
     <item>Albacete</item>
     <item>Alicante</item>
     <item>Almería</item>
     <item>Asturias</item>
+    <item>Ávila</item>
     <item>Badajoz</item>
     <item>Barcelona</item>
     <item>Burgos</item>
@@ -141,6 +157,7 @@
     <item>Castellón</item>
     <item>Ciudad Real</item>
     <item>Córdoba</item>
+    <item>Cuenca</item>
     <item>Girona</item>
     <item>Granada</item>
     <item>Guadalajara</item>
@@ -149,15 +166,20 @@
     <item>Huesca</item>
     <item>Jaén</item>
     <item>La Rioja</item>
+    <item>Las Palmas</item>
     <item>León</item>
     <item>Lleida</item>
     <item>Lugo</item>
     <item>Madrid</item>
+    <item>Málaga</item>
     <item>Mallorca</item>
     <item>Murcia</item>
     <item>Navarra</item>
+    <item>Ourense</item>
     <item>Palencia</item>
+    <item>Pontevedra</item>
     <item>Salamanca</item>
+    <item>Santa Cruz de Tenerife</item>
     <item>Segovia</item>
     <item>Sevilla</item>
     <item>Soria</item>
@@ -167,6 +189,7 @@
     <item>Valencia</item>
     <item>Valladolid</item>
     <item>Vizcaya</item>
+    <item>Zamora</item>
     <item>Zaragoza</item>
   </string-array>
 </resources>

@@ -33,6 +33,7 @@
   <string name="itinerary__connections">Conexiones con otros itinerarios</string>
   <string name="itinerary__altimetric">Perfil altimétrico</string>
   <string name="itinerary__title">%1$s y sus Espacios Naturales Protegidos</string>
+  <string name="itinerary__no_search_found">No se han encontrado itinerarios que coincidan con los criterios de búsqueda seleccionados</string>
 
   <string name="map__marker_more_info">Haz click aquí para más info</string>
 
