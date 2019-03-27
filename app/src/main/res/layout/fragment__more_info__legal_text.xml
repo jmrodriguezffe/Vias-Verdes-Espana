@@ -7,6 +7,7 @@
   tools:context=".ui.activity.MainActivity">
 
   <TextView
+    android:id="@+id/more_info__label__legal_text"
     style="@style/Text_Normal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
