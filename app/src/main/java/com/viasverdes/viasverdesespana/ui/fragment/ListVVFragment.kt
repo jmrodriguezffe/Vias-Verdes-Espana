@@ -15,10 +15,7 @@ import com.viasverdes.viasverdesespana.data.VVDatabase
 import com.viasverdes.viasverdesespana.data.bo.ItineraryBO
 import com.viasverdes.viasverdesespana.ui.activity.ItineraryActivity
 import com.viasverdes.viasverdesespana.ui.adapter.ListVVAdapter
-import com.viasverdes.viasverdesespana.utils.AdapterClickListener
-import com.viasverdes.viasverdesespana.utils.getProvinceFromCA
-import com.viasverdes.viasverdesespana.utils.toogleVisibility
-import com.viasverdes.viasverdesespana.utils.trueRes
+import com.viasverdes.viasverdesespana.utils.*
 import kotlinx.android.synthetic.main.fragment__list_itineraries.*
 
 
@@ -80,6 +77,7 @@ class ListVVFragment : VMFragment(), Observer<List<ItineraryBO>>, AdapterClickLi
     }
 
     listVVAdapter?.filter(itineraries__input__search.text.toString(), ca, province)
+    itineraries__label__no_search_found.setVisible(listVVAdapter?.itemCount == 0)
   }
 
   override fun getLayoutResource(): Int {
@@ -111,6 +109,7 @@ class ListVVFragment : VMFragment(), Observer<List<ItineraryBO>>, AdapterClickLi
       listVVAdapter = ListVVAdapter(data)
       listVVAdapter?.listener = this
       itineraries__list.adapter = listVVAdapter
+      itineraries__label__no_search_found.setVisible(listVVAdapter?.itemCount == 0)
     }
   }
 

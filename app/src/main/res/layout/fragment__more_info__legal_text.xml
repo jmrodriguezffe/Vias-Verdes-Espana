@@ -7,11 +7,10 @@
   tools:context=".ui.activity.MainActivity">
 
   <TextView
+    android:id="@+id/more_info__label__legal_text"
     style="@style/Text_Normal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:autoLink="all"
     android:padding="@dimen/margin__default"
-    android:text="@string/more_info__legal_text"
-    android:textColorLink="@color/colorPrimary" />
+    android:text="@string/more_info__legal_text" />
 </android.support.v4.widget.NestedScrollView>

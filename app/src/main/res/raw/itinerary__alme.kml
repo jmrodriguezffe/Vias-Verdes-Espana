@@ -20,7 +20,7 @@
 	<Folder id="FeatureLayer0">		
 		<Placemark id="ID_00123">
 			<name>VV Almendricos</name>
-			<styleUrl>#LineStyle0108</styleUrl>
+			<styleUrl>#LineStyle0103</styleUrl>
 			<MultiGeometry>
 				<LineString>
 					<tessellate>1</tessellate>

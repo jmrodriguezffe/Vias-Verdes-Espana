@@ -72,11 +72,11 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:background="@drawable/bg__white__rounded"
-        android:padding="6dp"
-        android:maxLines="1"
-        android:lines="1"
-        android:inputType="text"
         android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:lines="1"
+        android:maxLines="1"
+        android:padding="6dp"
         android:textSize="?attr/text_size__small" />
 
       <Button
@@ -98,6 +98,23 @@
     android:paddingBottom="@dimen/margin__default"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintTop_toBottomOf="@id/itineraries__container__search" />
+
+  <TextView
+    android:id="@+id/itineraries__label__no_search_found"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/margin__big"
+    android:layout_marginStart="@dimen/margin__big"
+    android:clipToPadding="false"
+    android:drawablePadding="@dimen/margin__small"
+    android:drawableTop="@drawable/ic__sad"
+    android:gravity="center_horizontal"
+    android:paddingBottom="@dimen/margin__default"
+    android:text="@string/itinerary__no_search_found"
+    android:visibility="gone"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/itineraries__container__search"
+    app:layout_constraintVertical_bias="0.15" />
 
   <View
     android:id="@+id/itineraries__shadow__search"

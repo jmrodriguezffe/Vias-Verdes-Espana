@@ -57,6 +57,9 @@ class ItineraryActivity : TextSizeThemeActivity() {
 
     val altimetricResource = getAltimetricResource(itinerary)
     if (altimetricResource > 0) {
+      val layoutParams = itinerary__altimetric__img.layoutParams
+      layoutParams.height = (ScreenUtils.height()/3).toInt()
+      itinerary__altimetric__img.layoutParams = layoutParams
       itinerary__altimetric__img.setImageResource(altimetricResource)
       itinerary__altimetric.setVisible(true)
     } else {
@@ -76,6 +79,7 @@ class ItineraryActivity : TextSizeThemeActivity() {
     itinerary__back.setOnClickListener { onBackPressed() }
     itinerary__see_in_map.setOnClickListener { MapActivity.start(this, itinerary) }
     itinerary__how_to_get.setOnClickListener { goTo() }
+    itinerary__more_info.setVisible(itinerary.id < 500)
     itinerary__more_info.setOnClickListener { moreInfo() }
     itinerary__scroll.viewTreeObserver.addOnScrollChangedListener {
       val scrollY = itinerary__scroll.scrollY.toFloat()

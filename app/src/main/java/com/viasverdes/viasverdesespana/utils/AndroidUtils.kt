@@ -8,12 +8,10 @@ import android.support.v4.widget.CircularProgressDrawable
 import android.text.Html
 import android.text.Spanned
 import android.widget.ImageView
-import androidx.annotation.StyleRes
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import com.underlegendz.corelegendz.CoreApplication
 import com.viasverdes.viasverdesespana.R
-import kotlinx.android.synthetic.main.activity_itinerary.*
 import java.text.Normalizer
 
 inline fun trueRes(f: () -> Unit): Boolean {
