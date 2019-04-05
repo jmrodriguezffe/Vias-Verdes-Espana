@@ -103,6 +103,28 @@
         android:text="@string/itinerary__user_type"
         app:layout_constraintTop_toBottomOf="@id/itinerary__length" />
 
+      <TextView
+        android:id="@+id/itinerary__accesibility_info"
+        style="@style/Text_Normal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin__small"
+        android:layout_marginStart="2dp"
+        app:layout_constraintStart_toEndOf="@id/itinerary__wheelchair_user_type"
+        app:layout_constraintTop_toTopOf="@id/itinerary__wheelchair_user_type"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="(*) En temporada de lluvias el tramo entre el km. 3,5 y 4 puede sufrir acumulación de barro." />
+
+      <ImageView
+        android:id="@+id/itinerary__wheelchair_user_type"
+        android:layout_width="@dimen/image_size__detail__user_type"
+        android:layout_height="@dimen/image_size__detail__user_type"
+        android:layout_margin="@dimen/margin__small"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic__user_type__wheelchair"
+        app:layout_constraintStart_toEndOf="@id/itinerary__horse_user_type"
+        app:layout_constraintTop_toBottomOf="@id/itinerary__user_type_label" />
+
       <ImageView
         android:id="@+id/itinerary__horse_user_type"
         android:layout_width="@dimen/image_size__detail__user_type"
@@ -120,16 +142,6 @@
         android:layout_margin="@dimen/margin__small"
         android:scaleType="fitCenter"
         android:src="@drawable/ic__user_type__roller"
-        app:layout_constraintStart_toEndOf="@id/itinerary__wheelchair_user_type"
-        app:layout_constraintTop_toBottomOf="@id/itinerary__user_type_label" />
-
-      <ImageView
-        android:id="@+id/itinerary__wheelchair_user_type"
-        android:layout_width="@dimen/image_size__detail__user_type"
-        android:layout_height="@dimen/image_size__detail__user_type"
-        android:layout_margin="@dimen/margin__small"
-        android:scaleType="fitCenter"
-        android:src="@drawable/ic__user_type__wheelchair"
         app:layout_constraintStart_toEndOf="@id/itinerary__bicycle_user_type"
         app:layout_constraintTop_toBottomOf="@id/itinerary__user_type_label" />
 
@@ -154,6 +166,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/itinerary__user_type_label" />
 
+      <android.support.constraint.Barrier
+        android:id="@+id/itinerary__user_type_bottom_barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="itinerary__walk_user_type,itinerary__bicycle_user_type,itinerary__roller_user_type,itinerary__horse_user_type,itinerary__wheelchair_user_type,itinerary__accesibility_info" />
+
       <TextView
         android:id="@+id/itinerary__natura_label"
         style="@style/Text_Detail_Section"
@@ -161,7 +180,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin__default"
         android:text="@string/itinerary__natura"
-        app:layout_constraintTop_toBottomOf="@id/itinerary__walk_user_type" />
+        app:layout_constraintTop_toBottomOf="@id/itinerary__user_type_bottom_barrier" />
 
       <TextView
         android:id="@+id/itinerary__natura"

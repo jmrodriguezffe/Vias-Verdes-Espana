@@ -13,7 +13,7 @@ import com.viasverdes.viasverdesespana.utils.trueRes
 
 
 abstract class TextSizeThemeActivity : UnderActivity() {
-  val textSizeTheme by lazy { getTextSizeTheme() }
+  val textSizeTheme by lazy { getTextSizeTheme(this) }
 
   override fun onCreate(savedInstanceState: Bundle?) {
     setTheme(textSizeTheme)
@@ -62,7 +62,7 @@ abstract class TextSizeThemeActivity : UnderActivity() {
   }
 
   fun checkTheme() {
-    if (getTextSizeTheme() != textSizeTheme) {
+    if (getTextSizeTheme(this) != textSizeTheme) {
       recreate()
     }
   }

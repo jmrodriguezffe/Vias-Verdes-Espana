@@ -1,6 +1,7 @@
 package com.viasverdes.viasverdesespana.utils
 
 import android.annotation.SuppressLint
+import android.content.Context
 import android.net.Uri
 import android.os.Build
 import android.preference.PreferenceManager
@@ -67,8 +68,8 @@ fun saveTextSize(size : Int) {
   preferences.edit().putInt(KEY_TEXT_SIZE, size).commit()
 }
 
-fun getTextSizeTheme() : Int {
-  val preferences = PreferenceManager.getDefaultSharedPreferences(CoreApplication.get())
+fun getTextSizeTheme(context: Context) : Int {
+  val preferences = PreferenceManager.getDefaultSharedPreferences(context)
   return when(preferences.getInt(KEY_TEXT_SIZE, 0)){
     -1 -> R.style.AppTheme_TextSmall
     1 -> R.style.AppTheme_TextBig
