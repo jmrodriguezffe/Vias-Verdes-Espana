@@ -464,7 +464,8 @@
       "ca": "Andalucía",
       "userTypes": "1,2,3",
       "localization": "Entre Jaén y la antigua estación de Campo Real, en Puente Genil (Córdoba)    Ramal entre la Estación de Luque y Baena (Córdoba).",
-      "naturaText": "Esta Vía Verde cuenta con 14 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: El Parque Natural Sierras Subbéticas, el Parque Periurbano Santa Catalina, el Geoparque Sierras Subbéticas, las Zona de Importancia Comunitaria ZIC Embalse de Cordobilla, Laguna Honda, Lagunas del Sur de Córdoba y Sierra Subbetica(Red Natura 2000). Además también están las Reservas Naturales Laguna del Conde o Salobral, la Laguna del Chinche, Laguna del Rincón y Laguna Honda,  los Monumentos Naturales  Bosque de la Bañizuela y la Cueva de los Murciélagos, así como el Paraje Natural del Embalse de Cordobilla.   Además, es posible conocer más sobre estos Espacios Naturales Protegidos gracias al Ecomuseo de la Cueva de los Murciélagos, al Punto de información laguna del Ricón, al Centro de Visitantes Santa Rita y al Centro de Visitantes Laguna de Zóñar."
+      "naturaText": "Esta Vía Verde cuenta con 14 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: El Parque Natural Sierras Subbéticas, el Parque Periurbano Santa Catalina, el Geoparque Sierras Subbéticas, las Zona de Importancia Comunitaria ZIC Embalse de Cordobilla, Laguna Honda, Lagunas del Sur de Córdoba y Sierra Subbetica(Red Natura 2000). Además también están las Reservas Naturales Laguna del Conde o Salobral, la Laguna del Chinche, Laguna del Rincón y Laguna Honda,  los Monumentos Naturales  Bosque de la Bañizuela y la Cueva de los Murciélagos, así como el Paraje Natural del Embalse de Cordobilla.   Además, es posible conocer más sobre estos Espacios Naturales Protegidos gracias al Ecomuseo de la Cueva de los Murciélagos, al Punto de información laguna del Ricón, al Centro de Visitantes Santa Rita y al Centro de Visitantes Laguna de Zóñar.",
+      "accesibilityText": "(*) Apto y practicable con algunos tramos con inclinación, más información en: www.viasverdesaccesibles.es"
     },
 	{
       "codVV": "GDLM",
@@ -476,7 +477,8 @@
       "userTypes": "1,2,3",
       "localization": "Entre el paraje de Arquillos, en las proximidades de la Estación Linares-Baeza (Linares), y el paraje del Horcajo (Begíjar).",
       "naturaText": "Esta Vía Verde cuenta con 4 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: Los ZIC Río Guadalimar, Laguna Grande, y Tramo Inferior del Río Guadalimar y Alto Guadalquivir (Red Natura 2000) y el Monumento Natural El Piélago.\n\n\nAdemás, es posible conocer más sobre estos Espacios Naturales Protegidos gracias al Punto de información Laguna Grande.",
-      "connections": "Esta Vía Verde conecta con la <a href=\"viaverde://detail?id=69\">Vía Verde de Linares</a> y la <a href=\"viaverde://detail?id=71\">Vía Verde de Vadollano</a>"
+      "connections": "Esta Vía Verde conecta con la <a href=\"viaverde://detail?id=69\">Vía Verde de Linares</a> y la <a href=\"viaverde://detail?id=71\">Vía Verde de Vadollano</a>",
+      "accesibilityText": "(*) En temporada de lluvias el tramo entre el km. 3,5 y 4 puede sufrir acumulación de barro."
     },
 	{
       "codVV": "LINA",
@@ -864,7 +866,7 @@
       "id": 112,
       "name": "V.V. de Tarazonica",
       "length": 21.82,
-      "provinces": "Zaragoza, Navarra",
+      "provinces": "Navarra, Zaragoza",
       "ca": "Aragón, Comunidad Foral de Navarra",
       "userTypes": "1,2,5",
       "localization": "Entre Tudela (Navarra) y Tarazona (Aragón).",
@@ -1277,7 +1279,7 @@
       "name": "V.V. de Almendricos",
       "length": 6.63,
       "provinces": "Murcia",
-      "ca": "Murcia",
+      "ca": "Región de Murcia",
       "userTypes": "1,2,3",
       "localization": "Entre Límite provincial Almería-Murcia y Almendricos. Lorca.",
       "naturaText": "Esta Vía Verde cuenta con 2 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: El LIC Sierra de Enmedio y el ZIC Sierra de Alto de Almargo (Red Natura 2000).",

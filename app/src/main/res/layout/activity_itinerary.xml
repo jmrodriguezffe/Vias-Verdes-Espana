@@ -113,7 +113,8 @@
         app:layout_constraintStart_toEndOf="@id/itinerary__wheelchair_user_type"
         app:layout_constraintTop_toTopOf="@id/itinerary__wheelchair_user_type"
         app:layout_constraintEnd_toEndOf="parent"
-        android:text="(*) En temporada de lluvias el tramo entre el km. 3,5 y 4 puede sufrir acumulación de barro." />
+        android:autoLink="web"
+        tools:text="(*) En temporada de lluvias el tramo entre el km. 3,5 y 4 puede sufrir acumulación de barro." />
 
       <ImageView
         android:id="@+id/itinerary__wheelchair_user_type"

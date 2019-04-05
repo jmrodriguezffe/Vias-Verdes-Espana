@@ -94,6 +94,9 @@ class ItineraryActivity : TextSizeThemeActivity() {
       itinerary__connections.text = Html.fromHtml(itinerary.connections)
       itinerary__connections.movementMethod = LinkMovementMethod.getInstance()
     }
+    if(!itinerary.accesibilityText.isNullOrEmpty()){
+      itinerary__accesibility_info.text = itinerary.accesibilityText
+    }
   }
 
   override fun finish() {
