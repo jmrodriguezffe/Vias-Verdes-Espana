@@ -90,7 +90,7 @@ class ListVVAdapter(private var data: List<ItineraryBO>) : RecyclerView.Adapter<
       itinerary__row__roller_user_type.setVisible(itinerary.userTypes.contains(USER_TYPE__ROLLER))
       itinerary__row__horse_user_type.setVisible(itinerary.userTypes.contains(USER_TYPE__HORSE))
 
-      loadImage(getRemoteImageThumbUri(itinerary), itinerary__row__image)
+      loadImage(itinerary__row__image, getRemoteImageThumbUri(itinerary), getRemoteImageThumbUri(itinerary, true))
     }
   }
 }

@@ -2,4 +2,6 @@
 <resources>
   <string name="remote_image_url">http://www.viasverdes.com/VVapp/image__%1$s.jpg</string>
   <string name="remote_image_thumbnail_url">http://www.viasverdes.com/VVapp/image__%1$s_thumbnail.jpg</string>
+  <string name="remote_image_url_png">http://www.viasverdes.com/VVapp/image__%1$s.png</string>
+  <string name="remote_image_thumbnail_url_png">http://www.viasverdes.com/VVapp/image__%1$s_thumbnail.png</string>
 </resources>

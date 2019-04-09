@@ -45,7 +45,7 @@ fun String.stripAccents() : String {
   return  string
 }
 
-fun loadImage(uri: Uri, imageView: ImageView) {
+fun loadImage(imageView: ImageView, uri: Uri, alternativeUri: Uri? = null) {
   val circularProgressDrawable = CircularProgressDrawable(imageView.context)
   circularProgressDrawable.strokeWidth = 5f
   circularProgressDrawable.centerRadius = 30f
@@ -55,7 +55,13 @@ fun loadImage(uri: Uri, imageView: ImageView) {
   Glide.with(imageView)
         .load(uri)
         .placeholder(circularProgressDrawable)
-        .error(R.drawable.ic__itinerary__no_image)
+        .error(
+            if(alternativeUri == null){
+              Glide.with(imageView).load(R.drawable.ic__itinerary__no_image)
+            }else{
+              Glide.with(imageView).load(alternativeUri)
+            }
+        )
         .transition(DrawableTransitionOptions.withCrossFade())
         .into(imageView)
 }

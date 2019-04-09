@@ -15,17 +15,19 @@ fun getImageResource(itinerary: ItineraryBO): Int {
         "image__" + itinerary.codVV.toLowerCase(), "drawable", application.getPackageName())
 }
 
-fun getRemoteImageUri(itinerary: ItineraryBO): Uri {
+fun getRemoteImageUri(itinerary: ItineraryBO, alternative: Boolean = false): Uri {
   val application = CoreApplication.get()
-  val url = application.getResources()
-        .getString(R.string.remote_image_url, itinerary.codVV.toLowerCase())
+  val url = application.getResources().getString(
+      if(alternative) { R.string.remote_image_url_png } else { R.string.remote_image_url },
+      itinerary.codVV.toLowerCase())
   return Uri.parse(url)
 }
 
-fun getRemoteImageThumbUri(itinerary: ItineraryBO): Uri {
+fun getRemoteImageThumbUri(itinerary: ItineraryBO, alternative: Boolean = false): Uri {
   val application = CoreApplication.get()
-  val url = application.getResources()
-        .getString(R.string.remote_image_thumbnail_url, itinerary.codVV.toLowerCase())
+  val url = application.getResources().getString(
+      if(alternative) { R.string.remote_image_thumbnail_url_png } else { R.string.remote_image_thumbnail_url },
+      itinerary.codVV.toLowerCase())
   return Uri.parse(url)
 }
 

@@ -53,7 +53,7 @@ class ItineraryActivity : TextSizeThemeActivity() {
     registerForContextMenu(option__text_size)
     option__text_size.setOnClickListener { it.showContextMenu() }
 
-    loadImage(getRemoteImageUri(itinerary), itinerary__image)
+    loadImage(itinerary__image, getRemoteImageUri(itinerary), getRemoteImageUri(itinerary, true))
 
     val altimetricResource = getAltimetricResource(itinerary)
     if (altimetricResource > 0) {
