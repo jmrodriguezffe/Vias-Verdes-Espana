@@ -11,6 +11,7 @@
   <string name="action__search">Buscar</string>
   <string name="action__filter">Filtrar</string>
   <string name="action__change_layer">Cambiar vista de mapa</string>
+  <string name="action__layer__mtn">Vista IGN MTN Raster</string>
   <string name="action__layer__roadmap">Vista de carretera</string>
   <string name="action__layer__satellite">Vista satélite</string>
   <string name="action__layer__hybrid">Vista híbrida</string>

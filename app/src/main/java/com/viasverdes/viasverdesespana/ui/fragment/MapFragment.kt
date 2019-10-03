@@ -13,10 +13,7 @@ import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
-import com.google.android.gms.maps.model.BitmapDescriptorFactory
-import com.google.android.gms.maps.model.LatLng
-import com.google.android.gms.maps.model.LatLngBounds
-import com.google.android.gms.maps.model.MarkerOptions
+import com.google.android.gms.maps.model.*
 import com.google.maps.android.data.Feature
 import com.google.maps.android.data.Layer
 import com.google.maps.android.data.kml.AssetIconKmlLayer
@@ -50,6 +47,7 @@ class MapFragment : VMFragment(), OnMapReadyCallback, Layer.OnFeatureClickListen
   }
 
   private lateinit var mMap: GoogleMap
+  private var customTileProvider: TileOverlay? = null
 
 
   override fun initializeView() {
@@ -72,12 +70,24 @@ class MapFragment : VMFragment(), OnMapReadyCallback, Layer.OnFeatureClickListen
 
   override fun onOptionsItemSelected(item: MenuItem): Boolean {
     return when (item.itemId) {
-      R.id.action__layer__roadmap -> trueRes { mMap.mapType = GoogleMap.MAP_TYPE_NORMAL }
-      R.id.action__layer__satellite -> trueRes { mMap.mapType = GoogleMap.MAP_TYPE_SATELLITE }
-      R.id.action__layer__hybrid -> trueRes { mMap.mapType = GoogleMap.MAP_TYPE_HYBRID }
-      R.id.action__layer__terrain -> trueRes { mMap.mapType = GoogleMap.MAP_TYPE_TERRAIN }
+      R.id.action__layer__mtn -> trueRes { loadMtnRasterLayer() }
+      R.id.action__layer__roadmap -> trueRes { loadGoogleLayer(GoogleMap.MAP_TYPE_NORMAL) }
+      R.id.action__layer__satellite -> trueRes { loadGoogleLayer(GoogleMap.MAP_TYPE_SATELLITE) }
+      R.id.action__layer__hybrid -> trueRes { loadGoogleLayer(GoogleMap.MAP_TYPE_HYBRID) }
+      R.id.action__layer__terrain -> trueRes { loadGoogleLayer(GoogleMap.MAP_TYPE_TERRAIN) }
       else -> super.onOptionsItemSelected(item)
     }
+  }
+
+  private fun loadMtnRasterLayer() {
+    mMap.mapType = GoogleMap.MAP_TYPE_NONE
+    customTileProvider = mMap.addTileOverlay(TileOverlayOptions().zIndex(-1f).tileProvider(MtnRasterTileProvider()))
+  }
+
+  private fun loadGoogleLayer(mapType: Int) {
+    customTileProvider?.remove()
+    customTileProvider = null
+    mMap.mapType = mapType
   }
 
   override fun onMapReady(googleMap: GoogleMap) {

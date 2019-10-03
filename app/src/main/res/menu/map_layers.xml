@@ -7,6 +7,9 @@
     app:showAsAction="always">
     <menu>
       <item
+        android:id="@+id/action__layer__mtn"
+        android:title="@string/action__layer__mtn" />
+      <item
         android:id="@+id/action__layer__roadmap"
         android:title="@string/action__layer__roadmap"/>
       <item
