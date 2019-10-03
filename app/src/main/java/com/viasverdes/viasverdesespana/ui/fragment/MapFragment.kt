@@ -1,14 +1,14 @@
 package com.viasverdes.viasverdesespana.ui.fragment
 
 import android.Manifest
-import android.arch.lifecycle.Observer
 import android.content.pm.PackageManager
 import android.os.Bundle
-import android.support.v4.app.ActivityCompat
-import android.support.v4.content.PermissionChecker
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
+import androidx.core.app.ActivityCompat
+import androidx.core.content.PermissionChecker
+import androidx.lifecycle.Observer
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
@@ -63,19 +63,19 @@ class MapFragment : VMFragment(), OnMapReadyCallback, Layer.OnFeatureClickListen
   }
 
   override fun onCreateOptionsMenu(
-        menu: Menu?,
-        inflater: MenuInflater?
+        menu: Menu,
+        inflater: MenuInflater
   ) {
     super.onCreateOptionsMenu(menu, inflater)
-    inflater?.inflate(R.menu.map_layers, menu)
+    inflater.inflate(R.menu.map_layers, menu)
   }
 
-  override fun onOptionsItemSelected(item: MenuItem?): Boolean {
-    return when (item?.itemId) {
-      R.id.action__layer__roadmap -> trueRes { mMap.mapType =  GoogleMap.MAP_TYPE_NORMAL}
-      R.id.action__layer__satellite -> trueRes { mMap.mapType =  GoogleMap.MAP_TYPE_SATELLITE}
-      R.id.action__layer__hybrid -> trueRes { mMap.mapType =  GoogleMap.MAP_TYPE_HYBRID}
-      R.id.action__layer__terrain -> trueRes { mMap.mapType =  GoogleMap.MAP_TYPE_TERRAIN}
+  override fun onOptionsItemSelected(item: MenuItem): Boolean {
+    return when (item.itemId) {
+      R.id.action__layer__roadmap -> trueRes { mMap.mapType = GoogleMap.MAP_TYPE_NORMAL }
+      R.id.action__layer__satellite -> trueRes { mMap.mapType = GoogleMap.MAP_TYPE_SATELLITE }
+      R.id.action__layer__hybrid -> trueRes { mMap.mapType = GoogleMap.MAP_TYPE_HYBRID }
+      R.id.action__layer__terrain -> trueRes { mMap.mapType = GoogleMap.MAP_TYPE_TERRAIN }
       else -> super.onOptionsItemSelected(item)
     }
   }
@@ -88,14 +88,14 @@ class MapFragment : VMFragment(), OnMapReadyCallback, Layer.OnFeatureClickListen
     arguments?.let { bundle ->
       if (bundle.containsKey(ARG_ITINERARY)) {
         val itinerary = bundle.getParcelable<ItineraryBO>(ARG_ITINERARY)
-        addItineraryToMap(itinerary, true, true)
+        addItineraryToMap(itinerary, centerMap = true, addEnp = true)
       } else {
         context?.let { ctx ->
           VVDatabase.getInstance(ctx)?.itineraryDAO()?.getAllLiveData()?.observe(this,
                 Observer { itinerary ->
                   if (itinerary.isNotNullOrEmpty()) {
                     itinerary?.forEach {
-                      addItineraryToMap(it, false, false)
+                      addItineraryToMap(it, centerMap = false, addEnp = false)
                     }
                     moveCameraToMadrid()
                     mMap.setOnInfoWindowClickListener {
@@ -110,7 +110,7 @@ class MapFragment : VMFragment(), OnMapReadyCallback, Layer.OnFeatureClickListen
 
   private fun checkMyLocation() {
     context?.let {
-      var permission = PermissionChecker.checkSelfPermission(it,
+      val permission = PermissionChecker.checkSelfPermission(it,
             Manifest.permission.ACCESS_FINE_LOCATION)
       if (permission == PermissionChecker.PERMISSION_GRANTED) {
         mMap.isMyLocationEnabled = true
@@ -120,12 +120,13 @@ class MapFragment : VMFragment(), OnMapReadyCallback, Layer.OnFeatureClickListen
     }
   }
 
-  override fun onRequestPermissionsResult(requestCode: Int,
-                                          permissions: Array<out String>,
-                                          grantResults: IntArray
+  override fun onRequestPermissionsResult(
+        requestCode: Int,
+        permissions: Array<out String>,
+        grantResults: IntArray
   ) {
     if (requestCode == LOCATION_REQUEST_CODE) {
-      if (grantResults.size > 0
+      if (grantResults.isNotEmpty()
             && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
         checkMyLocation()
       }

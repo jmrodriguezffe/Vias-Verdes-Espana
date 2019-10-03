@@ -1,13 +1,11 @@
 package com.viasverdes.viasverdesespana.data
 
-import android.arch.persistence.room.Database
-import android.arch.persistence.room.Room
-import android.arch.persistence.room.RoomDatabase
 import android.content.Context
-import android.os.Build
+import androidx.room.Database
+import androidx.room.Room
+import androidx.room.RoomDatabase
 import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.WorkManager
-import com.underlegendz.corelegendz.utils.ListUtils.isEmpty
 import com.viasverdes.viasverdesespana.BuildConfig
 import com.viasverdes.viasverdesespana.data.bo.ItineraryBO
 import com.viasverdes.viasverdesespana.data.dao.ItineraryDAO
@@ -24,19 +22,19 @@ abstract class VVDatabase : RoomDatabase() {
     fun getInstance(context: Context): VVDatabase? {
       if (INSTANCE == null) {
         synchronized(VVDatabase::class) {
-          INSTANCE = Room.databaseBuilder(context.getApplicationContext(),
+          INSTANCE = Room.databaseBuilder(context.applicationContext,
                 VVDatabase::class.java, "vv_database.db")
                 .fallbackToDestructiveMigration()
                 .build()
-          startImportWork()
+          startImportWork(context)
         }
       }
       return INSTANCE
     }
 
-    private fun startImportWork() {
+    private fun startImportWork(context: Context) {
       val importItinerariesWork = OneTimeWorkRequestBuilder<ImportItinerariesWorker>().build()
-      WorkManager.getInstance().enqueue(importItinerariesWork)
+      WorkManager.getInstance(context).enqueue(importItinerariesWork)
     }
 
     fun destroyInstance() {

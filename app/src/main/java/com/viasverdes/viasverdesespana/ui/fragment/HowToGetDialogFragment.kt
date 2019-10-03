@@ -4,23 +4,23 @@ import android.app.Dialog
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
-import android.support.v4.app.DialogFragment
-import android.support.v7.app.AlertDialog
 import android.view.View
+import androidx.appcompat.app.AlertDialog
+import androidx.fragment.app.DialogFragment
 import com.google.android.gms.maps.model.LatLng
 import com.viasverdes.viasverdesespana.R
 
 class HowToGetDialogFragment : DialogFragment() {
 
   companion object {
-    private val KEY_START_COORDINATES = "COORDINATES"
-    private val KEY_END_COORDINATES = "COORDINATES"
-    private val KEY_START_POINT = "START_POINT"
-    private val KEY_TRANSPORT_MODE = "TRANSPORT_MODE"
+    private const val KEY_START_COORDINATES = "COORDINATES"
+    private const val KEY_END_COORDINATES = "COORDINATES"
+    private const val KEY_START_POINT = "START_POINT"
+    private const val KEY_TRANSPORT_MODE = "TRANSPORT_MODE"
 
-    private val TRANSPORT_WALK = "w"
-    private val TRANSPORT_BIKE = "b"
-    private val TRANSPORT_CAR = "d"
+    private const val TRANSPORT_WALK = "w"
+    private const val TRANSPORT_BIKE = "b"
+    private const val TRANSPORT_CAR = "d"
 
     fun newInstance(startCoordinates: LatLng,
                     endCoordinates: LatLng
@@ -69,12 +69,12 @@ class HowToGetDialogFragment : DialogFragment() {
   }
 
   private fun initializeView(view: View) {
-    startView = view.findViewById<View>(R.id.how_to_get__route_point__start)
-    endView = view.findViewById<View>(R.id.how_to_get__route_point__end)
-    carView = view.findViewById<View>(R.id.how_to_get__transport_mode__car)
-    bikeView = view.findViewById<View>(R.id.how_to_get__transport_mode__bike)
-    walkView = view.findViewById<View>(R.id.how_to_get__transport_mode__walk)
-    goView = view.findViewById<View>(R.id.how_to_get__btn__go)
+    startView = view.findViewById(R.id.how_to_get__route_point__start)
+    endView = view.findViewById(R.id.how_to_get__route_point__end)
+    carView = view.findViewById(R.id.how_to_get__transport_mode__car)
+    bikeView = view.findViewById(R.id.how_to_get__transport_mode__bike)
+    walkView = view.findViewById(R.id.how_to_get__transport_mode__walk)
+    goView = view.findViewById(R.id.how_to_get__btn__go)
   }
 
   override fun onSaveInstanceState(outState: Bundle) {

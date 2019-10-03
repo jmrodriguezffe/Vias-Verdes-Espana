@@ -1,7 +1,7 @@
 package com.viasverdes.viasverdesespana.ui.activity
 
-import android.arch.lifecycle.Observer
 import android.os.Bundle
+import androidx.lifecycle.Observer
 import com.underlegendz.underactivity.ActivityBuilder
 import com.underlegendz.underactivity.UnderActivity
 import com.viasverdes.viasverdesespana.R
@@ -19,15 +19,17 @@ class DeepLinkActivity : UnderActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
     try {
-      val itineraryId = intent.data.getQueryParameter("id")
-      val id = itineraryId.toLong()
-      VVDatabase.getInstance(this)?.itineraryDAO()?.getById(id)?.observe(this,
-            Observer {
-              if (it != null) {
-                ItineraryActivity.start(this, it)
-              }
-              finish()
-            })
+      val itineraryId = intent.data?.getQueryParameter("id")
+      val id = itineraryId?.toLong()
+      if (id != null) {
+        VVDatabase.getInstance(this)?.itineraryDAO()?.getById(id)?.observe(this,
+              Observer {
+                if (it != null) {
+                  ItineraryActivity.start(this, it)
+                }
+                finish()
+              })
+      }
     } catch (e: Exception) {
       finish()
     }

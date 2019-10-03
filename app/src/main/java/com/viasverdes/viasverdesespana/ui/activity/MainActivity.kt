@@ -1,7 +1,7 @@
 package com.viasverdes.viasverdesespana.ui.activity
 
 import android.os.Bundle
-import android.support.v4.app.Fragment
+import androidx.fragment.app.Fragment
 import com.underlegendz.underactivity.ActivityBuilder
 import com.viasverdes.viasverdesespana.R
 import com.viasverdes.viasverdesespana.ui.fragment.InfoFragment
@@ -58,35 +58,20 @@ class MainActivity : TextSizeThemeActivity() {
     toolbar__title.setText(R.string.app_name)
   }
 
-  override fun onSaveInstanceState(outState: Bundle?) {
+  override fun onSaveInstanceState(outState: Bundle) {
     super.onSaveInstanceState(outState)
-    outState?.putInt(sectionSelected, lastSectionSelected)
+    outState.putInt(sectionSelected, lastSectionSelected)
   }
 
-  protected fun getOrCreateListVV(): Fragment {
-    val fragment: Fragment? = getFragment(tagListVV)
-    if (fragment != null) {
-      return fragment
-    } else {
-      return ListVVFragment.newInstance()
-    }
+  private fun getOrCreateListVV(): Fragment {
+    return getFragment(tagListVV) ?: ListVVFragment.newInstance()
   }
 
-  protected fun getOrCreateMap(): Fragment {
-    val fragment: Fragment? = getFragment(tagMap)
-    if (fragment != null) {
-      return fragment
-    } else {
-      return MapFragment.newInstance(null)
-    }
+  private fun getOrCreateMap(): Fragment {
+    return getFragment(tagMap) ?: MapFragment.newInstance(null)
   }
 
-  protected fun getOrCreateMoreInfo(): Fragment {
-    val fragment: Fragment? = getFragment(tagMoreInfo)
-    if (fragment != null) {
-      return fragment
-    } else {
-      return InfoFragment.newInstance()
-    }
+  private fun getOrCreateMoreInfo(): Fragment {
+    return getFragment(tagMoreInfo) ?: InfoFragment.newInstance()
   }
 }
