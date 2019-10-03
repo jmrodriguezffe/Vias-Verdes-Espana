@@ -6,13 +6,10 @@ import android.net.Uri
 import android.os.Bundle
 import android.text.Html
 import android.text.method.LinkMovementMethod
-import com.bumptech.glide.Glide
-import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions.withCrossFade
 import com.google.maps.android.data.kml.CustomKmlParser
 import com.underlegendz.corelegendz.utils.ResourcesUtils
 import com.underlegendz.corelegendz.utils.ScreenUtils
 import com.underlegendz.underactivity.ActivityBuilder
-import com.underlegendz.underactivity.UnderActivity
 import com.viasverdes.viasverdesespana.*
 import com.viasverdes.viasverdesespana.data.bo.ItineraryBO
 import com.viasverdes.viasverdesespana.ui.fragment.HowToGetDialogFragment
@@ -22,6 +19,7 @@ import org.xmlpull.v1.XmlPullParser
 import org.xmlpull.v1.XmlPullParserException
 import org.xmlpull.v1.XmlPullParserFactory
 import java.io.InputStream
+import kotlin.math.min
 
 
 class ItineraryActivity : TextSizeThemeActivity() {
@@ -83,7 +81,7 @@ class ItineraryActivity : TextSizeThemeActivity() {
     itinerary__more_info.setOnClickListener { moreInfo() }
     itinerary__scroll.viewTreeObserver.addOnScrollChangedListener {
       val scrollY = itinerary__scroll.scrollY.toFloat()
-      val alpha = Math.min(1f, scrollY / ScreenUtils.width() + 0.4f)
+      val alpha = min(1f, scrollY / ScreenUtils.width() + 0.4f)
       itinerary__title_bg.alpha = alpha
       itinerary__title_shadow.alpha = alpha
     }
@@ -96,6 +94,13 @@ class ItineraryActivity : TextSizeThemeActivity() {
     }
     if(!itinerary.accesibilityText.isNullOrEmpty()){
       itinerary__accesibility_info.text = itinerary.accesibilityText
+    }
+    if (!itinerary.unescoText.isNullOrEmpty()) {
+      itinerary__unesco.text = itinerary.unescoText
+    } else {
+      itinerary__unesco.setVisible(false)
+      itinerary__unesco_icon.setVisible(false)
+      itinerary__unesco_label.setVisible(false)
     }
   }
 
