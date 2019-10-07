@@ -21,11 +21,11 @@ inline fun trueRes(f: () -> Unit): Boolean {
 }
 
 @Suppress("DEPRECATION")
-fun fromHtmlCompact(html : String) : Spanned {
+fun String?.fromHtml(): Spanned {
   return if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-    Html.fromHtml(html, Html.FROM_HTML_MODE_LEGACY)
+    Html.fromHtml(this, Html.FROM_HTML_MODE_LEGACY)
   } else {
-    Html.fromHtml(html)
+    Html.fromHtml(this)
   }
 }
 

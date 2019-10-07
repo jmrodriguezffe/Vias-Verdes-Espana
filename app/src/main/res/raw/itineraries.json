@@ -45,7 +45,7 @@
       "ca": "Comunidad Valenciana",
       "userTypes": "1,2,3",
       "localization": "Entre Alcoi y La Canal.",
-      "unescoText": "Arte rupestre del arco mediterráneo de la Península Ibérica (Cueva de La Sarga, en Alcoi)\nMás Info>>http://whc.unesco.org/en/list/874",
+      "unescoText": "<a href=\"http://whc.unesco.org/en/list/874\">Arte rupestre del arco mediterráneo de la Península Ibérica</a> (Cueva de La Sarga, en Alcoi)",
       "naturaText": "Esta Vía Verde cuenta con 9 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: El Parque Natural de Carrascal de la Font Roja y el Parque Natural de Sierra Mariola, los LIC de Serres de Mariola i el Carrascar de la Font Roja y Cova Juliana, la ZEPA de Cova Juliana, el ZEC de Cova Juliana (Red Natura 2000), así como los Parajes Naturales Municipales de  Sant Pasqual-Torretes y Racó de Sant Bonaventura-Canalons, y finalmente el Paisaje Protegido de Serpis.\n\nAdemás, es posible conocer más sobre estos Espacios Naturales Protegidos gracias a los Centros de interpretación del Parc Natural del Carrascal de la Font Roja y del Parc Natural de la Serra de Mariola."
     },
     {
@@ -113,7 +113,7 @@
       "ca": "Principado de Asturias",
       "userTypes": "1,2,3",
       "localization": "Entre Oviedo y Fuso.",
-      "unescoText": "Monumentos de Oviedo y del reino de Asturias\nMás Info>> http://whc.unesco.org/en/list/312",
+      "unescoText": "<a href=\"http://whc.unesco.org/en/list/312\">Monumentos de Oviedo y del reino de Asturias</a>",
       "naturaText": "Esta Vía Verde cuenta con 3 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: Los LICs río Nalón y río Trubia (Red Natura 2000), y la Reserva Natural Parcial Cueva de las Caldas.\n\nAdemás, es posible conocer más sobre estos Espacios Naturales Protegidos gracias al Aula de la Naturaleza Estación de la Manjoya",
       "connections": "Esta Vía Verde conecta con la <a href=\"viaverde://detail?id=27\">Vía Verde de la Senda del Oso</a> a través del Camino Natural del río Nalón"
     },
@@ -126,7 +126,7 @@
       "ca": "Principado de Asturias",
       "userTypes": "1,2,3",
       "localization": "Entre Tuñon (Santo Adriano) y Caranga de Abajo (Proaza) con ramales a Entrago (Teverga) y por el embalse de Valdemurio a Santa Marina (Quirós). Concejos de Proaza, Santo Adriano, Teverga, Quirós y Oviedo (Asturias).",
-      "unescoText": "Monumentos de Oviedo y del reino de Asturias\nMás Info>> http://whc.unesco.org/en/list/312",
+      "unescoText": "<a href=\"http://whc.unesco.org/en/list/312\">Monumentos de Oviedo y del reino de Asturias</a>",
       "naturaText": "Esta Vía Verde cuenta con 14 Espacios Naturales Protegidos localizados en un radio inferior a 5 km de su itinerario: El Parque Natural de Las Ubiñas – La Mesa, Reserva de la Biosfera Las Ubiñas – La Mesa,  así como los LICS Caldoveiro, Meandros del Nora, Montovo-La Mesa, Peña Ubiña, Valgrande, Aller- Lena y Río Nalón y la ZEPA Ubiña – La Mesa (Red Natura 2000). Además, cuenta con varios Monumentos Naturales: los Puertos de Marabio, el Desfiladero de las Xanas, los Meandros del Nora y el Tejo Milenario de Bermiego.\n\nEs posible conocer más sobre estos Espacios Naturales gracias al centro de interpretación Casa del Oso",
       "connections": "Esta Vía Verde conecta con la <a href=\"viaverde://detail?id=23\">Vía Verde de Fuso</a> a través del Camino Natural del río Nalón, con el Camino natural de la Cordillera Cantábrica y otros los Caminos Naturales hacia Ricabo y Cueva Huerta"
     },
@@ -216,7 +216,7 @@
       "ca": "Castilla y León",
       "userTypes": "1,2,3,5",
       "localization": "Entre Arlanzón y Monterrubio de la Demanda.",
-      "unescoText": "Sitio Arqueológico de Atapuerca\nMás Info>> http://whc.unesco.org/en/list/989",
+      "unescoText": "<a href=\"http://whc.unesco.org/en/list/989\">Sitio Arqueológico de Atapuerca</a>",
       "naturaText": "Esta Vía Verde cuenta con 5 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: Los LICs Riberas del Río Arlanzón y afluentes, Riberas del Río Arlanza y afluentes, y Sierra de la Demanda, la ZEPA Sierras de la Demanda, y por proximidad y pertenecientes a La Rioja, la ZEPA Sierras de Demanda, Urbión, Cebollera y Cameros, y la Zona de Especial Conservación de Importancia Comunitaria del mismo nombre (Red Natura 2000)."
     },
 	{
@@ -228,7 +228,7 @@
       "ca": "Castilla y León",
       "userTypes": "1,2,3,4",
       "localization": "Burgos, Modúbar de la Emparedada y Cojóbar",
-      "unescoText": "Catedral de Burgos y Caminos de Santiago de Compostela: Camino francés (en Burgos)\nMás Info>>\nhttp://whc.unesco.org/en/list/316 \nhttp://whc.unesco.org/en/list/669 ",
+      "unescoText": "<a href=\"http://whc.unesco.org/en/list/316\">Catedral de Burgos</a> y <a href=\"http://whc.unesco.org/en/list/669\">Caminos de Santiago de Compostela: Camino francés</a> (en Burgos)",
       "naturaText": "Esta Vía Verde cuenta con 1 Espacio Natural Protegido localizado en un radio inferior a 5 km: El LIC Riberas del Río Arlanzón y afluentes (Red Natura 2000).",
       "connections": "Esta Vía Verde conecta con en Burgos con el Camino de Santiago"
     },
@@ -275,7 +275,7 @@
       "ca": "Cantabria",
       "userTypes": "1,2,3,5",
       "localization": "Entre Obregón y Puente Viesgo",
-      "unescoText": "Cueva de Altamira y arte rupestre paleolítico del norte de España (Cuevas de Monte Castillo)\n\nMás Info>> http://whc.unesco.org/en/list/310/",
+      "unescoText": "<a href=\"http://whc.unesco.org/en/list/310\">Cueva de Altamira y arte rupestre paleolítico del norte de España</a> (Cuevas de Monte Castillo)",
       "naturaText": "Esta Vía Verde cuenta con 1 Espacio Natural Protegido localizado en un radio inferior a 5 km: La Zona de la Red Ecológica Europea Natura 2000 LIC - Río Pas.\n\n\nAdemás, es posible conocer más sobre este Espacio Natural Protegido gracias al Punto de Información Red Natura 2000 en Valles Pasiegos."
     },
 	{
@@ -310,7 +310,7 @@
       "ca": "Comunidad Valenciana",
       "userTypes": "1,2,3,5",
       "localization": "Entre Barracas (Castellón) y Algimia de Alfara (Valencia).",
-      "unescoText": "Arquitectura mudéjar de Aragón (en Teruel)\nMás Info>> http://whc.unesco.org/en/list/378",
+      "unescoText": "<a href=\"http://whc.unesco.org/en/list/378\">Arquitectura mudéjar de Aragón</a> (en Teruel)",
       "naturaText": "Esta Vía Verde cuenta con 18 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: Los Parques Naturales Serra Espadà y Sierra Calderona; los LICs Sierra de Javalambre II, Serra d'Espadà, Curs alt del riu Millars, Alt Palància, Serra Calderona y Curs mitjà del riu Palància; las ZEPAs Serra D'Espadà y Serra Calderona (Red Natura 2000); los Parajes Naturales Municipales La Dehesa, La Esperanza y Peñaescabia; la Zona Húmeda Lagunas de Segorbe; y las Cuevas Sima de la Higuera, Los Ojos del Prao, Cueva Cerdaña y Tunel d`Arguines.\n\n\nAdemás, es posible conocer más sobre estos Espacios Naturales Protegidos gracias al Punto de información del Parc Natural de Serra Calderona, al Centro de Interpretación del Parc Natural de la Serra d'Espadà, y al Centro de Educación Ambiental de la Comunidad Valenciana.",
       "connections": "Esta Vía Verde conecta con la <a href=\"viaverde://detail?id=101\">Vía Verde de Ojos Negros II</a>"
     },
@@ -334,7 +334,7 @@
       "ca": "Andalucía",
       "userTypes": "1,2",
       "localization": "Entre Córdoba y Marchena.",
-      "unescoText": "Córdoba, la primera ciudad del mundo con cuatro declaraciones de Patrimonio de la Humanidad por la UNESCO: Mezquita de Córdoba, Centro Histórico de Córdoba, Los Patios de Córdoba y la Ciudad Califal de Madinat Al-Zahra. \nMás Info>>https://whc.unesco.org/en/list/313",
+      "unescoText": "Córdoba, la primera ciudad del mundo con cuatro declaraciones de Patrimonio de la Humanidad por la UNESCO: Mezquita de Córdoba, <a href=\"http://whc.unesco.org/en/list/313\">Centro Histórico de Córdoba,</a> Los Patios de Córdoba y la Ciudad Califal de Madinat Al-Zahra.",
       "naturaText": "Esta Vía Verde cuenta con 3 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: Los ZICs  Río Guadalquivir -Tramo medio, Tramo Inferior del Río Guadajoz y Río Corbones."
     },
 	{
@@ -521,7 +521,7 @@
       "ca": "La Rioja",
       "userTypes": "1,2,3,5",
       "localization": "Entre Casalarreina y Ezcaray",
-      "unescoText": "Caminos de Santiago de Compostela: Camino francés (en Santo Domingo de La Calzada)\nMás Info>> http://whc.unesco.org/en/list/669",
+      "unescoText": "<a href=\"http://whc.unesco.org/en/list/669\">Caminos de Santiago de Compostela: Camino francés</a> (en Santo Domingo de La Calzada)",
       "naturaText": "Esta Vía Verde cuenta con 2 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: La ZEPA Sierras de Demanda, Urbión, Cebollera y Cameros y el ZEC del mismo nombre.",
       "connections": "Esta Vía Verde conecta con en Santo Domingo de la Calzada con el Camino de Santiago"
     },
@@ -822,7 +822,7 @@
       "ca": "Comunidad Valenciana",
       "userTypes": "1,2,3",
       "localization": "Entre Gandía y Oliva.",
-      "unescoText": "Arte rupestre del arco mediterráneo de la Península Ibérica (Cueva del Parpalló, en Gandía) \nMás Info>>http://whc.unesco.org/en/list/874",
+      "unescoText": "<a href=\"http://whc.unesco.org/en/list/874\">Arte rupestre del arco mediterráneo de la Península Ibérica</a> (Cueva del Parpalló, en Gandía)",
       "naturaText": "Esta Vía Verde cuenta con 12 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: Los LICS Serres del Montdúver i Marxunquera, Marjal de la Safor, Dunes de la Safor y Cova Xurra - Gandia y la ZEPA Montdúver – Marjal de la Safor (Red Natura 2000), así como las Zonas Húmedas Marjal de la Safor y Ullal de l`Estany del Duc, el Paisaje Protegido Serpis, la Cova de l`Autopista, Cova dels Orgues, Cova Xurra y Sima Blanca. Además, a poco más de 5 km se encuentra el Parque Natural Marjal de Pego Oliva.\n\n\nAdemás, es posible conocer más sobre estos Espacios Naturales Protegidos gracias a la Oficina del Marjal de Pego-Oliva.",
       "connections": "Esta Vía Verde conecta con la <a href=\"viaverde://detail?id=7\">Vía Verde de Dénia</a> a través de los caminos del marjal de Pego-Oliva"
     },
@@ -835,7 +835,7 @@
       "ca": "Comunidad Valenciana",
       "userTypes": "1,2,3",
       "localization": "Entre Valencia y Puçol.",
-      "unescoText": "La Lonja de la Seda Valencia, el Tribunal de Aguas y las fallas \nMás Info>> http://whc.unesco.org/en/list/782",
+      "unescoText": "<a href=\"http://whc.unesco.org/en/list/782\">La Lonja de la Seda Valencia, el Tribunal de Aguas y las fallas</a>",
       "naturaText": "Esta Vía Verde cuenta con 8 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: El Parque Natural Sierra Calderona,  los LICs y ZEPAs Marjal dels Moros y Serra Calderona (Red Natura 2000), el Paraje Natural Municipal La Costera, y las Zonas Húmedas Marjal de Rafalell y Vistabella y Marjal dels Moros.\n\n\nAdemás, es posible conocer más sobre estos Espacios Naturales Protegidos gracias al Centro de Educación Ambiental de la Comunidad Valenciana y al Punto de información del Parc Natural de Serra Calderona."
     },
     {
@@ -858,7 +858,7 @@
       "ca": "País Vasco",
       "userTypes": "1,2,3,5",
       "localization": "Traslaviña (Artzentales) - Kobaron (Muskiz).",
-      "unescoText": "Puente de Bizkaia (en Getxo) y Caminos de Santiago de Compostela: Caminos del Norte de España.\n\nMás Info>>  http://whc.unesco.org/en/list/1217\nhttp://whc.unesco.org/en/list/669 ",
+      "unescoText": "<a href=\"http://whc.unesco.org/en/list/1217\">Puente de Bizkaia</a> (en Getxo) y <a href=\"http://whc.unesco.org/en/list/669\">Caminos de Santiago de Compostela: Caminos del Norte de España</a>.",
       "naturaText": "Esta Vía Verde cuenta con 4 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: los LICS Ría del Barbadum y Ordunte (Red Natura 2000), el Biotopo Protegido Meatzaldea – Zona Minera de Bizkaia, así como el Árbol Singular Hibrido de roble pedunculado y marojo de Arcentales.\n\n\nAdemás, es posible conocer más sobre estos Espacios Naturales Protegidos gracias al Centro de interpretación del Parque Natural de Armañón y de los Montes de Ordunte y el Museo de la Minería del País Vasco."
     },
     {
@@ -870,7 +870,7 @@
       "ca": "País Vasco",
       "userTypes": "1,2,3",
       "localization": "Entre el aparcamiento del barrio de Pobeña (Muskiz) y el aparcamiento de La Juncosa, en las inmediaciones del barrio de El Kobaron (Muskiz).",
-      "unescoText": "Puente de Bizkaia (en Getxo) y Caminos de Santiago de Compostela: Caminos del Norte de España.\n\nMás Info>>  http://whc.unesco.org/en/list/1217\nhttp://whc.unesco.org/en/list/669 ",
+      "unescoText": "<a href=\"http://whc.unesco.org/en/list/1217\">Puente de Bizkaia</a> (en Getxo) y <a href=\"http://whc.unesco.org/en/list/669\">Caminos de Santiago de Compostela: Caminos del Norte de España.</a>",
       "naturaText": "Esta Vía Verde cuenta con 1 Espacio Natural Protegido localizado en un radio inferior a 5 km: El LIC Barbadungo Itsasadarra/Ría de Barbadun (Red Natura 2000).\n\n\nAdemás, es posible conocer más sobre este Espacio Natural Protegido gracias al Museo de la Minería del País Vasco.",
       "connections": "Esta Vía Verde conecta con la <a href=\"viaverde://detail?id=44\">Vía Verde del Piquillo</a>"
     },
@@ -883,7 +883,7 @@
       "ca": "Aragón, Comunidad Foral de Navarra",
       "userTypes": "1,2,5",
       "localization": "Entre Tudela (Navarra) y Tarazona (Aragón).",
-      "unescoText": "Arquitectura mudéjar de Aragón (en Tarazona)\nMás Info>> http://whc.unesco.org/en/list/378",
+      "unescoText": "<a href=\"http://whc.unesco.org/en/list/378\">Arquitectura mudéjar de Aragón</a> (en Tarazona)",
       "naturaText": "Esta Vía Verde cuenta con 7 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: los LICS Peñadil, Montecillo y Monterrey, Balsa del Pulguer, Río Ebro y Bardenas Reales (Red Natura 2000) y el Monumento Natural el Roble de El Bocal y los Enclaves Naturales Sotos de Traslapuente y Soto de los Tetones.\n\n\nAdemás, es posible conocer más sobre estos Espacios Naturales Protegidos gracias al Centro de Interpretación de Agramonte, Centro de Interpretación de Añón del Moncayo, Centro de Información y Acogida de Visitantes del P.N de Bardenas Reales y el Centro de Interpretación de los Sotos del Ebro.",
       "connections": "Esta Vía Verde conecta con el CN del Ebro GR.99 y con el Camino Natural Agua Soriano-Camino Antonino"
     },
@@ -896,7 +896,7 @@
       "ca": "Andalucía",
       "userTypes": "1,2",
       "localization": "Entre los municipios de Rota y Chipiona",
-      "unescoText": "Parque Nacional de Doñana. \nMás Info>> http://%20http//whc.unesco.org/en/list/685 ",
+      "unescoText": "<a href=\"http://whc.unesco.org/en/list/685\">Parque Nacional de Doñana.</a>",
       "naturaText": "Esta Vía Verde cuenta con 8 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: La Reserva de la Biosfera de Doñana; el Parque Nacional Doñana; los LICs Corrales de Rota y Doñana; la ZEPA Doñana; los ZIC Fondos Marinos de Bahía de Cádiz y Doñana (Red Natura 2000), y el Monumento Natural Corrales de Rota.\n\n\nAdemás, es posible conocer más sobre estos Espacios Naturales Protegidos gracias al Centro de visitantes Fábrica de Hielo."
     },
     {
@@ -930,7 +930,7 @@
       "ca": "Castilla y León",
       "userTypes": "1,2,3",
       "localization": "Entre Segovia y Olmedo.",
-      "unescoText": "Ciudad vieja y acueducto de Segovia. Más Info>> https://whc.unesco.org/en/list/311",
+      "unescoText": "<a href=\"http://whc.unesco.org/en/list/311\">Ciudad vieja y acueducto de Segovia.</a>",
       "naturaText": "Esta Vía Verde cuenta con 7 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: El Parque Natural de Sierra Norte de Guadarrama, así como los LICS Sierra de Guadarrama, Valles del Voltoya y el Zorita, Riberas del Río Adaja y afluentes, y Lagunas de Coca y Olmedo, además de las ZEPAS Valles del Voltoya y el Zorita – Zepa, y la Sierra de Guadarrama (Red Natura 2000)."
     },
     {
@@ -1022,7 +1022,7 @@
       "ca": "Aragón",
       "userTypes": "1,2,3,4",
       "localization": "Entre la carretera de Logroño (inmediaciones del parque fluvial del Ebro) y el parque fluvial del Canal Imperial.",
-      "unescoText": "Arquitectura mudéjar de Aragón (en Zaragona)\nMás Info>> http://whc.unesco.org/en/list/378",
+      "unescoText": "<a href=\"http://whc.unesco.org/en/list/378\">Arquitectura mudéjar de Aragón</a> (en Zaragona)",
       "naturaText": "Esta Vía Verde cuenta con 1 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: El LIC Sotos y Mejanas del Ebro (Red Natura 2000).\n\n\nAdemás, es posible conocer más sobre estos Espacios Naturales Protegidos gracias al Centro de interpretación Espacio Alfranca."
     },
 	{
@@ -1089,7 +1089,7 @@
       "ca": "Castilla y León",
       "userTypes": "1,2",
       "localization": "Desde Alba de Tormes hasta Carbajosa de la Sagrada.",
-      "unescoText": "La Ciudad vieja de Salamanca\nMás Info>>\nhttp://whc.unesco.org/en/list/381",
+      "unescoText": "<a href=\"http://whc.unesco.org/en/list/381\">La Ciudad vieja de Salamanca</a>",
       "naturaText": "Esta Vía Verde cuenta con 1 Espacio Natural Protegido localizado en un radio inferior a 5 km: El LIC Riberas del Río Tormes y afluentes."
     },
 	{
@@ -1101,7 +1101,7 @@
       "ca": "Comunidad Foral de Navarra, País Vasco",
       "userTypes": "1,2,4",
       "localization": "De la línea principal del Ferrocarril Vasco Navarro en Guipúzcoa se ha recuperado, como Vía Verde, varios tramos inconexos entre la localidad de Eskoriatza y el polígono industrial del barrio de Mekolalde (Bergara). El Ramal de Oñati conecta dicha localidad con la línea principal del Vasco Navarro en la rotonda de San Prudentzio, Junto al barrio de Elorregi (Bergara).",
-      "unescoText": "Caminos de Santiago de Compostela: Camino francés (en Estella-Lizarra)\n\nMás Info>> http://whc.unesco.org/en/list/669 ",
+      "unescoText": "<a href=\"http://whc.unesco.org/en/list/669\">Caminos de Santiago de Compostela: Camino francés</a> (en Estella-Lizarra)",
       "naturaText": "Esta Vía Verde cuenta con 4 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: El Parque Natural de Aizkorri-Aratz, los LIC de Aizkorri-Aratz (Red Natura 2000), así como los Monumentos Naturales Secuoya del Parque de Monterron y el Magnolio de Bergara, ambos Árboles Singulares.\n\nAdemás, es posible conocer más sobre estos Espacios Naturales gracias a los Centros de interpretación Parque Natural Aizkorri-Ararz y Parketxe Anduetza. "
     },
     {
@@ -1213,7 +1213,7 @@
       "ca": "Castilla y León",
       "userTypes": "1,2,3",
       "localization": "Entre Quintanilla Vivar y Castellanos de Bureba (Oña).",
-      "unescoText": "Catedral de Burgos y Caminos de Santiago de Compostela: Camino francés (en Burgos)\nMás Info>>\nhttp://whc.unesco.org/en/list/316 \nhttp://whc.unesco.org/en/list/669 ",
+      "unescoText": "<a href=\"http://whc.unesco.org/en/list/316\">Catedral de Burgos</a> y <a href=\"http://whc.unesco.org/en/list/669\">Caminos de Santiago de Compostela: Camino francés</a> (en Burgos)",
       "naturaText": "Esta Vía Verde cuenta con 6 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: El Parque Natural de Montes Obarenes – San Zadornil, los LICS Sierra de la Tesla – Valdivielso, Riberas del Río Oca y afluentes, y Montes Obarenes, además de las ZEPAS Sierra de la Tesla – Valdivielso - Zepa (Red Natura 2000).\n\nEs posible conocer más sobre estos Espacios Naturales Protegidos gracias a la Casa del Parque de Montes Obarenes – San Zadornil (Oña)."
     },
     {
@@ -1236,7 +1236,7 @@
       "ca": "Aragón",
       "userTypes": "1,2,3",
       "localization": "Entre Calatayud y Torralba de Ribota.",
-      "unescoText": "Arquitectura mudéjar de Aragón (en Calatayud)\nMás Info>> http://whc.unesco.org/en/list/378",
+      "unescoText": "<a href=\"http://whc.unesco.org/en/list/378\">Arquitectura mudéjar de Aragón</a> (en Calatayud)",
       "naturaText": "Esta Vía Verde cuenta con 4 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: Los LICS Hoces del Jalón y Muelas del Jiloca: El Campo y la Torreta y ZEPAS Muelas del Jiloca: El Campo y la Torreta y Desfiladeros del Río Jalón (Red Natura 2000)."
     },
     {

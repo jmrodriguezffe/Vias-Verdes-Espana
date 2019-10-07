@@ -222,7 +222,6 @@
         style="@style/Text_Normal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:autoLink="web"
         android:paddingStart="@dimen/margin__default"
         android:paddingEnd="@dimen/margin__default"
         android:paddingBottom="@dimen/margin__default"

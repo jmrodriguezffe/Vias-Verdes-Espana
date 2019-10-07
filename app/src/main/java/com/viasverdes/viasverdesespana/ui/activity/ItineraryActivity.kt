@@ -4,7 +4,6 @@ import android.app.Activity
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
-import android.text.Html
 import android.text.method.LinkMovementMethod
 import com.google.maps.android.data.kml.CustomKmlParser
 import com.underlegendz.corelegendz.utils.ResourcesUtils
@@ -89,14 +88,15 @@ class ItineraryActivity : TextSizeThemeActivity() {
     itinerary__connections.setVisible(hasConnections)
     itinerary__connections_label.setVisible(hasConnections)
     if(hasConnections){
-      itinerary__connections.text = Html.fromHtml(itinerary.connections)
+      itinerary__connections.text = itinerary.connections.fromHtml()
       itinerary__connections.movementMethod = LinkMovementMethod.getInstance()
     }
     if(!itinerary.accesibilityText.isNullOrEmpty()){
       itinerary__accesibility_info.text = itinerary.accesibilityText
     }
     if (!itinerary.unescoText.isNullOrEmpty()) {
-      itinerary__unesco.text = itinerary.unescoText
+      itinerary__unesco.text = itinerary.unescoText.fromHtml()
+      itinerary__unesco.movementMethod = LinkMovementMethod.getInstance()
     } else {
       itinerary__unesco.setVisible(false)
       itinerary__unesco_icon.setVisible(false)
