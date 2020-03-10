@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:app="http://schemas.android.com/apk/res-auto"
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
@@ -12,7 +12,7 @@
     android:orientation="vertical"
     android:padding="@dimen/margin__default">
 
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
       android:id="@+id/resources__container__rednatura2000"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
@@ -21,7 +21,7 @@
       app:cardCornerRadius="7dp"
       tools:visibility="visible">
 
-      <android.support.constraint.ConstraintLayout
+      <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -56,10 +56,10 @@
           app:layout_constraintStart_toStartOf="parent"
           app:layout_constraintTop_toBottomOf="@id/resources__label__rednatura2000_text" />
 
-      </android.support.constraint.ConstraintLayout>
-    </android.support.v7.widget.CardView>
+      </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
 
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
       android:id="@+id/resources__container__report"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
@@ -69,7 +69,7 @@
       app:cardCornerRadius="7dp"
       tools:visibility="gone">
 
-      <android.support.constraint.ConstraintLayout
+      <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -104,10 +104,10 @@
           app:layout_constraintStart_toStartOf="parent"
           app:layout_constraintTop_toBottomOf="@id/resources__label__report_text" />
 
-      </android.support.constraint.ConstraintLayout>
-    </android.support.v7.widget.CardView>
+      </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
 
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
       android:id="@+id/resources__container__mapa"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
@@ -117,7 +117,7 @@
       app:cardCornerRadius="7dp"
       tools:visibility="gone">
 
-      <android.support.constraint.ConstraintLayout
+      <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -152,10 +152,10 @@
           app:layout_constraintStart_toStartOf="parent"
           app:layout_constraintTop_toBottomOf="@id/resources__label__mapa_text" />
 
-      </android.support.constraint.ConstraintLayout>
-    </android.support.v7.widget.CardView>
+      </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
 
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
       android:id="@+id/resources__container__camino"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
@@ -165,7 +165,7 @@
       app:cardCornerRadius="7dp"
       tools:visibility="gone">
 
-      <android.support.constraint.ConstraintLayout
+      <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -200,8 +200,8 @@
           app:layout_constraintStart_toStartOf="parent"
           app:layout_constraintTop_toBottomOf="@id/resources__label__camino_text" />
 
-      </android.support.constraint.ConstraintLayout>
-    </android.support.v7.widget.CardView>
+      </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
 
     <TextView
       style="@style/Text_Normal"
@@ -259,4 +259,4 @@
     </LinearLayout>
 
   </LinearLayout>
-</android.support.v4.widget.NestedScrollView>
+</androidx.core.widget.NestedScrollView>

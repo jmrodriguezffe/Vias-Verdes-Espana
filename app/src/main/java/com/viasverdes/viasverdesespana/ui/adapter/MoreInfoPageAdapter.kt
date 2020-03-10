@@ -1,15 +1,15 @@
 package com.viasverdes.viasverdesespana.ui.adapter
 
-import android.support.v4.app.Fragment
-import android.support.v4.app.FragmentManager
-import android.support.v4.app.FragmentStatePagerAdapter
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentStatePagerAdapter
 import com.underlegendz.corelegendz.utils.ResourcesUtils
 import com.viasverdes.viasverdesespana.R
 import com.viasverdes.viasverdesespana.ui.fragment.InfoAboutFragment
 import com.viasverdes.viasverdesespana.ui.fragment.InfoLegalTextFragment
 import com.viasverdes.viasverdesespana.ui.fragment.InfoResourcesFragment
 
-class MoreInfoPageAdapter(fm: FragmentManager?) : FragmentStatePagerAdapter(fm) {
+class MoreInfoPageAdapter(fm: FragmentManager) : FragmentStatePagerAdapter(fm, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT) {
   override fun getItem(position: Int): Fragment {
     return when (position) {
       0 -> InfoResourcesFragment.newInstance()

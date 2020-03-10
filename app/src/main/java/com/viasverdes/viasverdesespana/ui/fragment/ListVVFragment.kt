@@ -1,14 +1,14 @@
 package com.viasverdes.viasverdesespana.ui.fragment
 
-import android.arch.lifecycle.Observer
 import android.os.Bundle
-import android.support.v7.widget.LinearLayoutManager
-import android.view.*
+import android.view.Menu
+import android.view.MenuInflater
+import android.view.MenuItem
+import android.view.View
 import android.view.inputmethod.EditorInfo
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
-import android.widget.TextView
-import com.underlegendz.corelegendz.utils.ResourcesUtils
+import androidx.lifecycle.Observer
 import com.underlegendz.corelegendz.vm.VMFragment
 import com.viasverdes.viasverdesespana.R
 import com.viasverdes.viasverdesespana.data.VVDatabase
@@ -35,7 +35,7 @@ class ListVVFragment : VMFragment(), Observer<List<ItineraryBO>>, AdapterClickLi
 
   override fun initializeView() {
     context?.let {ctx ->
-      itineraries__list.layoutManager = LinearLayoutManager(ctx)
+      itineraries__list.layoutManager = androidx.recyclerview.widget.LinearLayoutManager(ctx)
       VVDatabase.getInstance(ctx)?.itineraryDAO()?.getAllLiveData()?.observe(this, this)
 
       itineraries__input__search.setOnEditorActionListener { _, actionId, _ ->
@@ -65,12 +65,12 @@ class ListVVFragment : VMFragment(), Observer<List<ItineraryBO>>, AdapterClickLi
   }
 
   private fun search() {
-    var ca = if(itineraries__input__ca.selectedItemPosition != 0){
+    val ca = if (itineraries__input__ca.selectedItemPosition != 0) {
       itineraries__input__ca.selectedItem.toString()
     }else{
       null
     }
-    var province = if(itineraries__input__provinces.selectedItemPosition != 0){
+    val province = if (itineraries__input__provinces.selectedItemPosition != 0) {
       itineraries__input__provinces.selectedItem.toString()
     }else{
       null
@@ -85,15 +85,15 @@ class ListVVFragment : VMFragment(), Observer<List<ItineraryBO>>, AdapterClickLi
   }
 
   override fun onCreateOptionsMenu(
-        menu: Menu?,
-        inflater: MenuInflater?
+        menu: Menu,
+        inflater: MenuInflater
   ) {
     super.onCreateOptionsMenu(menu, inflater)
-    inflater?.inflate(R.menu.list_itineraries, menu)
+    inflater.inflate(R.menu.list_itineraries, menu)
   }
 
-  override fun onOptionsItemSelected(item: MenuItem?): Boolean {
-    return when (item?.itemId) {
+  override fun onOptionsItemSelected(item: MenuItem): Boolean {
+    return when (item.itemId) {
       R.id.action__search -> trueRes { toogleSearchContainer() }
       else -> super.onOptionsItemSelected(item)
     }
@@ -126,15 +126,17 @@ class ListVVFragment : VMFragment(), Observer<List<ItineraryBO>>, AdapterClickLi
                               position: Int,
                               p3: Long
   ) {
-    ArrayAdapter.createFromResource(
-          context,
-          getProvinceFromCA(position),
-          android.R.layout.simple_spinner_item
-    ).also { adapter ->
-      // Specify the layout to use when the list of choices appears
-      adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-      // Apply the adapter to the spinner
-      itineraries__input__provinces.adapter = adapter
+    context?.let { ctx ->
+      ArrayAdapter.createFromResource(
+            ctx,
+            getProvinceFromCA(position),
+            android.R.layout.simple_spinner_item
+      ).also { adapter ->
+        // Specify the layout to use when the list of choices appears
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        // Apply the adapter to the spinner
+        itineraries__input__provinces.adapter = adapter
+      }
     }
   }
 

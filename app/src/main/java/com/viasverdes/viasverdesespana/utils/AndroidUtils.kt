@@ -5,10 +5,10 @@ import android.content.Context
 import android.net.Uri
 import android.os.Build
 import android.preference.PreferenceManager
-import android.support.v4.widget.CircularProgressDrawable
 import android.text.Html
 import android.text.Spanned
 import android.widget.ImageView
+import androidx.swiperefreshlayout.widget.CircularProgressDrawable
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import com.underlegendz.corelegendz.CoreApplication
@@ -21,11 +21,11 @@ inline fun trueRes(f: () -> Unit): Boolean {
 }
 
 @Suppress("DEPRECATION")
-fun fromHtmlCompact(html : String) : Spanned {
+fun String?.fromHtml(): Spanned {
   return if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-    Html.fromHtml(html, Html.FROM_HTML_MODE_LEGACY)
+    Html.fromHtml(this, Html.FROM_HTML_MODE_LEGACY)
   } else {
-    Html.fromHtml(html)
+    Html.fromHtml(this)
   }
 }
 

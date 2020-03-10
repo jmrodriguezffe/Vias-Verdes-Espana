@@ -1,10 +1,10 @@
 package com.viasverdes.viasverdesespana.utils
 
 import android.annotation.SuppressLint
-import android.support.design.internal.BottomNavigationItemView
-import android.support.design.internal.BottomNavigationMenuView
-import android.support.design.widget.BottomNavigationView
 import android.util.Log
+import com.google.android.material.bottomnavigation.BottomNavigationItemView
+import com.google.android.material.bottomnavigation.BottomNavigationMenuView
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 @SuppressLint("RestrictedApi")
 fun BottomNavigationView.removeShiftMode() {

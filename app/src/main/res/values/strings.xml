@@ -11,6 +11,7 @@
   <string name="action__search">Buscar</string>
   <string name="action__filter">Filtrar</string>
   <string name="action__change_layer">Cambiar vista de mapa</string>
+  <string name="action__layer__mtn">Vista de Mapa IGN</string>
   <string name="action__layer__roadmap">Vista de carretera</string>
   <string name="action__layer__satellite">Vista satélite</string>
   <string name="action__layer__hybrid">Vista híbrida</string>
@@ -29,6 +30,7 @@
   <string name="itinerary__localization">Localización</string>
   <string name="itinerary__length">Longitud</string>
   <string name="itinerary__user_type">Perfil de usuarios</string>
+  <string name="itinerary__unesco">Patrimonio UNESCO en el entorno de la Vía Verde</string>
   <string name="itinerary__natura">Espacios Naturales y Red Natura 2000</string>
   <string name="itinerary__connections">Conexiones con otros itinerarios</string>
   <string name="itinerary__altimetric">Perfil altimétrico</string>

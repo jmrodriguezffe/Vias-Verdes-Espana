@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<androidx.constraintlayout.widget.ConstraintLayout
   xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:app="http://schemas.android.com/apk/res-auto"
   xmlns:tools="http://schemas.android.com/tools"
@@ -7,7 +7,7 @@
   android:layout_height="match_parent"
   tools:context=".ui.activity.MainActivity">
 
-  <android.support.design.widget.TabLayout
+  <com.google.android.material.tabs.TabLayout
     android:id="@+id/more_info__list__tablayout"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -19,7 +19,7 @@
     app:tabTextColor="@color/white"
     app:tabSelectedTextColor="@color/green_light"/>
 
-  <android.support.v4.view.ViewPager
+  <androidx.viewpager.widget.ViewPager
     android:id="@+id/more_info__container__viewpager"
     android:layout_width="match_parent"
     android:layout_height="0dp"
@@ -27,4 +27,4 @@
     app:layout_constraintBottom_toBottomOf="parent"
     tools:background="#CCC"/>
 
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

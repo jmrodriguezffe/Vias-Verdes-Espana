@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kml xmlns="http://www.opengis.net/kml/2.2" 
-	 xmlns:gx="http://www.google.com/kml/ext/2.2" 
-	 xmlns:kml="http://www.opengis.net/kml/2.2" 
-	 xmlns:atom="http://www.w3.org/2005/Atom"
-	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<kml xmlns="http://www.opengis.net/kml/2.2"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <Document id="Vias_Verdes_2018-ACOND-APP_ENP" xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
 	<Style id="LineStyle00">
 		<LineStyle>
 			<color>ff33691e</color>
-			<width>6</width>
+			<width>12</width>
 		</LineStyle>
 	</Style>
 	<Folder id="FeatureLayer0">

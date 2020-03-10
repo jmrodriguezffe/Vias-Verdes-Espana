@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:app="http://schemas.android.com/apk/res-auto"
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
@@ -12,7 +12,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <android.support.constraint.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
       android:layout_width="match_parent"
       android:layout_height="wrap_content">
 
@@ -21,7 +21,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
       <TextView
         android:id="@+id/itinerary__see_in_map"
@@ -59,8 +59,8 @@
         style="@style/Text_Normal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingEnd="@dimen/margin__default"
         android:paddingStart="@dimen/margin__default"
+        android:paddingEnd="@dimen/margin__default"
         app:layout_constraintTop_toBottomOf="@id/itinerary__localization_label"
         tools:text="Entre Puerto Serrano y Olvera." />
 
@@ -69,8 +69,8 @@
         style="@style/Text_Normal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingEnd="@dimen/margin__default"
         android:paddingStart="@dimen/margin__default"
+        android:paddingEnd="@dimen/margin__default"
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@id/itinerary__localization"
         tools:text="Cádiz, Sevilla" />
@@ -89,8 +89,8 @@
         style="@style/Text_Normal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingEnd="@dimen/margin__default"
         android:paddingStart="@dimen/margin__default"
+        android:paddingEnd="@dimen/margin__default"
         app:layout_constraintTop_toBottomOf="@id/itinerary__length_label"
         tools:text="36 km" />
 
@@ -108,12 +108,12 @@
         style="@style/Text_Normal"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="@dimen/margin__small"
         android:layout_marginStart="2dp"
+        android:layout_marginEnd="@dimen/margin__small"
+        android:autoLink="web"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/itinerary__wheelchair_user_type"
         app:layout_constraintTop_toTopOf="@id/itinerary__wheelchair_user_type"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:autoLink="web"
         tools:text="(*) En temporada de lluvias el tramo entre el km. 3,5 y 4 puede sufrir acumulación de barro." />
 
       <ImageView
@@ -167,7 +167,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/itinerary__user_type_label" />
 
-      <android.support.constraint.Barrier
+      <androidx.constraintlayout.widget.Barrier
         android:id="@+id/itinerary__user_type_bottom_barrier"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -188,21 +188,55 @@
         style="@style/Text_Normal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingBottom="@dimen/margin__default"
-        android:paddingEnd="@dimen/margin__default"
         android:paddingStart="@dimen/margin__default"
+        android:paddingEnd="@dimen/margin__default"
+        android:paddingBottom="@dimen/margin__default"
         app:layout_constraintTop_toBottomOf="@id/itinerary__natura_label"
         tools:text="Esta Vía Verde cuenta con 9 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: La Reserva de la Biosfera Intercontinental del Mediterráneo, la Reserva Natural Peñón de Zaframagón,  así como el LIC Laguna de Coripe y las Zonas de Importancia Comunitaria ZICS Arroyo de Santiago, Salado de Morón y Matabueyes/Garrapata; el Peñón del Zaframagón; Río Guadaira; Río Guadalete; y la Sierra Lijar (Red Natura 2000). Además del Monumento Natural Chaparro de la Vega." />
+
+      <TextView
+        android:id="@+id/itinerary__unesco_label"
+        style="@style/Text_Detail_Section"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin__default"
+        android:text="@string/itinerary__unesco"
+        app:layout_constraintEnd_toStartOf="@id/itinerary__unesco_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/itinerary__natura" />
+
+      <ImageView
+        android:id="@+id/itinerary__unesco_icon"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="@dimen/margin__small"
+        android:minWidth="24dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/ic__unesco"
+        app:layout_constraintBottom_toBottomOf="@id/itinerary__unesco_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/itinerary__unesco_label" />
+
+      <TextView
+        android:id="@+id/itinerary__unesco"
+        style="@style/Text_Normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/margin__default"
+        android:paddingEnd="@dimen/margin__default"
+        android:paddingBottom="@dimen/margin__default"
+        app:layout_constraintTop_toBottomOf="@id/itinerary__unesco_label"
+        tools:text="Puente de Bizkaia (en Getxo) y Caminos de Santiago de Compostela: Caminos del Norte de España.\n\nMás Info>>  http://whc.unesco.org/en/list/1217\nhttp://whc.unesco.org/en/list/669 " />
 
       <LinearLayout
         android:id="@+id/itinerary__altimetric"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:paddingEnd="@dimen/margin__default"
         android:paddingStart="@dimen/margin__default"
+        android:paddingEnd="@dimen/margin__default"
         android:visibility="gone"
-        app:layout_constraintTop_toBottomOf="@id/itinerary__natura">
+        app:layout_constraintTop_toBottomOf="@id/itinerary__unesco">
 
 
         <TextView
@@ -240,19 +274,19 @@
         style="@style/Text_Normal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingBottom="@dimen/margin__default"
-        android:paddingEnd="@dimen/margin__default"
         android:paddingStart="@dimen/margin__default"
+        android:paddingEnd="@dimen/margin__default"
+        android:paddingBottom="@dimen/margin__default"
         app:layout_constraintTop_toBottomOf="@id/itinerary__connections_label"
         tools:text="El proyecto Ederbidea unirá esta Vía Verde con la Vía Verde del Plazaola en el futuro" />
 
-      <android.support.v7.widget.CardView
+      <androidx.cardview.widget.CardView
         android:id="@+id/itinerary__more_info"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="@dimen/margin__big"
         android:layout_marginStart="@dimen/margin__big"
         android:layout_marginTop="@dimen/margin__big"
+        android:layout_marginEnd="@dimen/margin__big"
         android:foreground="?android:attr/selectableItemBackground"
         app:cardCornerRadius="4dp"
         app:layout_constraintTop_toBottomOf="@id/itinerary__connections">
@@ -264,7 +298,7 @@
           android:gravity="center_horizontal"
           android:padding="@dimen/margin__big"
           android:text="@string/section__more_info" />
-      </android.support.v7.widget.CardView>
+      </androidx.cardview.widget.CardView>
 
       <TextView
         android:id="@+id/itinerary__logo__fundacion_biodiversidad_text"
@@ -272,24 +306,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:paddingBottom="@dimen/margin__default"
-        android:paddingEnd="@dimen/margin__map"
         android:paddingStart="@dimen/margin__map"
         android:paddingTop="@dimen/margin__map"
+        android:paddingEnd="@dimen/margin__map"
+        android:paddingBottom="@dimen/margin__default"
         android:text="@string/logo__fundacion_biodiversidad"
         app:layout_constraintTop_toBottomOf="@id/itinerary__more_info" />
 
       <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="@dimen/margin__map"
         android:layout_marginStart="@dimen/margin__map"
+        android:layout_marginEnd="@dimen/margin__map"
         android:adjustViewBounds="true"
         android:paddingBottom="@dimen/margin__map"
         android:src="@drawable/logo__fundacion_biodiversidad"
         app:layout_constraintTop_toBottomOf="@id/itinerary__logo__fundacion_biodiversidad_text" />
 
-    </android.support.constraint.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
   </ScrollView>
 
   <View
@@ -306,8 +340,8 @@
     style="@style/Text_Detail_Title"
     android:layout_width="0dp"
     android:layout_height="wrap_content"
-    app:layout_constraintStart_toEndOf="@id/itinerary__back"
     app:layout_constraintEnd_toStartOf="@id/option__text_size"
+    app:layout_constraintStart_toEndOf="@id/itinerary__back"
     app:layout_constraintTop_toTopOf="parent"
     tools:text="V.V. de la Sierra y sus Espacios Naturales Protegidos" />
 
@@ -325,8 +359,8 @@
     android:layout_height="0dp"
     android:scaleType="center"
     android:src="@drawable/ic__back"
-    app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintBottom_toBottomOf="@id/itinerary__title"
+    app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent" />
 
   <ImageView
@@ -335,7 +369,7 @@
     android:layout_height="0dp"
     android:scaleType="center"
     android:src="@drawable/ic__action__text_size"
-    app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintBottom_toBottomOf="@id/itinerary__title"
+    app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintTop_toTopOf="parent" />
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

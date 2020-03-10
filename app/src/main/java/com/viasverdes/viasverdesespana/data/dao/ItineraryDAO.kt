@@ -1,10 +1,10 @@
 package com.viasverdes.viasverdesespana.data.dao
 
-import android.arch.lifecycle.LiveData
-import android.arch.persistence.room.Dao
-import android.arch.persistence.room.Insert
-import android.arch.persistence.room.OnConflictStrategy.REPLACE
-import android.arch.persistence.room.Query
+import androidx.lifecycle.LiveData
+import androidx.room.Dao
+import androidx.room.Insert
+import androidx.room.OnConflictStrategy.REPLACE
+import androidx.room.Query
 import com.viasverdes.viasverdesespana.data.bo.ItineraryBO
 
 @Dao

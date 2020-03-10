@@ -1,6 +1,5 @@
 package com.viasverdes.viasverdesespana.ui.adapter
 
-import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -12,16 +11,12 @@ import kotlinx.android.extensions.LayoutContainer
 import kotlinx.android.synthetic.main.row__itinerary.*
 import java.util.*
 
-class ListVVAdapter(private var data: List<ItineraryBO>) : RecyclerView.Adapter<ListVVAdapter.ListVVHolder>() {
+class ListVVAdapter(private var data: List<ItineraryBO>) : androidx.recyclerview.widget.RecyclerView.Adapter<ListVVAdapter.ListVVHolder>() {
   var listener: AdapterClickListener<ItineraryBO>? = null
   private var filterText: String? = null
   private var filterCA: String? = null
   private var filterProvince: String? = null
-  private val backupData: List<ItineraryBO>
-
-  init {
-    backupData = data
-  }
+  private val backupData: List<ItineraryBO> = data
 
   fun filter(filterText: String?,
              filterCA: String?,
@@ -78,7 +73,7 @@ class ListVVAdapter(private var data: List<ItineraryBO>) : RecyclerView.Adapter<
     holder.itemView.setOnClickListener { listener?.onItemClick(itinerary) }
   }
 
-  class ListVVHolder(override val containerView: View) : RecyclerView.ViewHolder(containerView), LayoutContainer {
+  class ListVVHolder(override val containerView: View) : androidx.recyclerview.widget.RecyclerView.ViewHolder(containerView), LayoutContainer {
     fun bind(itinerary: ItineraryBO) {
       itinerary__row__title.text = itinerary.name
       itinerary__row__provinces.text = itinerary.provinces
