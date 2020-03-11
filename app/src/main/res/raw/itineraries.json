@@ -618,17 +618,6 @@
       "connections": "Esta Vía Verde conecta con la <a href=\"viaverde://detail?id=83\">Vía Verde del Tren de los 40 Días</a> y con las inmediaciones de la <a href=\"viaverde://detail?id=57\">Vía Verde del Tajuña II</a>"
     },
 	{
-      "codVV": "GASO",
-      "id": 85,
-      "name": "V.V. de la Gasolina",
-      "length": 3.01,
-      "provinces": "Madrid",
-      "ca": "Comunidad de Madrid",
-      "userTypes": "1,2,3",
-      "localization": "Barrio de Alameda de Osuna (Distrito Barajas) - Barrio de Rejas (Distrito San Blas).",
-      "naturaText": "Esta Vía Verde cuenta con 4 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: El Parque Regional Ejes de los Cursos Bajos de los Ríos Manzanares y Jarama; los LICs Vegas, Cuestas y Páramos del Sureste de Madrid, y Cuencas de los ríos Jarama y Henares; y la ZEPA Cortados y Cantiles de los ríos Jarama y Manzanares.\n\n\nAdemás, es posible conocer más sobre estos Espacios Naturales Protegidos gracias al Centro de Educación ambiental Caserío de Henares."
-    },
-	{
       "codVV": "CATO",
       "id": 86,
       "name": "V.V. del Campo de Cartagena",
