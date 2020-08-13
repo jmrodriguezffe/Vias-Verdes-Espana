@@ -68,3 +68,7 @@ fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
 fastlane/readme.md
+/.idea/sonarlint
+/.idea/jarRepositories.xml
+/.idea/markdown-navigator.xml
+/.idea/markdown-navigator-enh.xml
