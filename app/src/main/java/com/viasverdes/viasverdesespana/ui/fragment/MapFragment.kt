@@ -98,7 +98,7 @@ class MapFragment : VMFragment(), OnMapReadyCallback, Layer.OnFeatureClickListen
     arguments?.let { bundle ->
       if (bundle.containsKey(ARG_ITINERARY)) {
         val itinerary = bundle.getParcelable<ItineraryBO>(ARG_ITINERARY)
-        addItineraryToMap(itinerary, centerMap = true, addEnp = true)
+        itinerary?.let { addItineraryToMap(it, centerMap = true, addEnp = true) }
       } else {
         context?.let { ctx ->
           VVDatabase.getInstance(ctx)?.itineraryDAO()?.getAllLiveData()?.observe(this,
