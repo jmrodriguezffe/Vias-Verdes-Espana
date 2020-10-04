@@ -46,6 +46,10 @@ class ItineraryActivity : TextSizeThemeActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
     val itinerary = intent.getParcelableExtra<ItineraryBO>(ARG_ITINERARY)
+    if (itinerary == null) {
+      onBackPressed()
+      return
+    }
 
     registerForContextMenu(option__text_size)
     option__text_size.setOnClickListener { it.showContextMenu() }
@@ -72,6 +76,8 @@ class ItineraryActivity : TextSizeThemeActivity() {
     itinerary__wheelchair_user_type.setVisible(itinerary.userTypes.contains(USER_TYPE__WHEELCHAIR))
     itinerary__roller_user_type.setVisible(itinerary.userTypes.contains(USER_TYPE__ROLLER))
     itinerary__horse_user_type.setVisible(itinerary.userTypes.contains(USER_TYPE__HORSE))
+    itinerary__natura_label.setVisible(!itinerary.naturaText.isNullOrEmpty())
+    itinerary__natura.setVisible(!itinerary.naturaText.isNullOrEmpty())
     itinerary__natura.text = itinerary.naturaText
     itinerary__back.setOnClickListener { onBackPressed() }
     itinerary__see_in_map.setOnClickListener { MapActivity.start(this, itinerary) }

@@ -11,7 +11,7 @@ import com.viasverdes.viasverdesespana.data.bo.ItineraryBO
 import com.viasverdes.viasverdesespana.data.dao.ItineraryDAO
 import com.viasverdes.viasverdesespana.work.ImportItinerariesWorker
 
-@Database(entities = arrayOf(ItineraryBO::class), version = BuildConfig.VERSION_CODE, exportSchema = false)
+@Database(entities = [ItineraryBO::class], version = BuildConfig.VERSION_CODE, exportSchema = false)
 abstract class VVDatabase : RoomDatabase() {
 
   abstract fun itineraryDAO(): ItineraryDAO

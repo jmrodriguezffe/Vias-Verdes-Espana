@@ -15,7 +15,7 @@ data class ItineraryBO(
       var provinces: String,
       var ca: String,
       var localization: String,
-      var naturaText: String,
+      var naturaText: String?,
       var userTypes: String,
       var connections: String?,
       var accesibilityText: String?,
