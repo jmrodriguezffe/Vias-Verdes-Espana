@@ -1,12 +1,12 @@
 
 <
-build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
+build.gradle,f/0/f07866736216be0ee2aba49e392191aeae700a35
 }
 Mapp/src/main/java/com/viasverdes/viasverdesespana/ui/activity/MainActivity.kt,a\c\ac121e77de909159a37451d6339d6ff3e47e45ee
 Q
 !app/src/main/res/values/dimen.xml,0\e\0eb47b9fe42323c2f5c068c3140ad82892755766
 @
-app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
+app/build.gradle,f/4/f4a01d6a4fcb971362ec00a83903fd3902f52164
 P
  app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
 Y
@@ -23,22 +23,18 @@ R
 Rapp/src/main/java/com/viasverdes/viasverdesespana/ui/activity/ItineraryActivity.kt,b\6\b697dac22af4098a8366ddfabac1d9634a763e07
 n
 >app/src/main/java/com/viasverdes/viasverdesespana/Constants.kt,3\f\3fbcaba9556e6399bf764eeaa8a6125db09a3080
-^
-.app/src/main/res/layout/activity_itinerary.xml,8\1\81a8db0e63f94d575a034d86c632663dedcf20f7
 Z
 *app/src/main/res/layout/row__itinerary.xml,0\4\046f60644e735af7f74b2648d6c67160f2108dcd
-U
-%app/src/main/res/raw/itineraries.json,f\0\f0b31005883b7deebb3f838c368dfa75c5033f08
 }
 Mapp/src/main/java/com/viasverdes/viasverdesespana/ui/adapter/ListVVAdapter.kt,b\5\b591fc0681bd85a204b0cc0e303295a25d78f738
 y
 Iapp/src/main/java/com/viasverdes/viasverdesespana/utils/ItineraryUtils.kt,2\c\2ced9fd7c13254fcb66dd86e61a26f5dbe6b9f80
 |
-Lapp/src/main/java/com/viasverdes/viasverdesespana/ui/fragment/MapFragment.kt,b\e\be27eaf32054eb74da07dceaf0b3c03efc028dc4
+Lapp/src/main/java/com/viasverdes/viasverdesespana/ui/fragment/MapFragment.kt,b/e/be27eaf32054eb74da07dceaf0b3c03efc028dc4
 ^
 .app/src/release/res/values/google_maps_api.xml,8\a\8ad28fcd8d693ab58d4fdb7d36965532163ebfa3
 X
-(gradle/wrapper/gradle-wrapper.properties,f\b\fbe448ebfc3eb2d4e308f6b8b043666f5b57235e
+(gradle/wrapper/gradle-wrapper.properties,f/b/fbe448ebfc3eb2d4e308f6b8b043666f5b57235e
 ?
 settings.gradle,0\5\05efc8b1657769a27696d478ded1e95f38737233
 @
@@ -76,8 +72,6 @@ Oapp/src/main/java/com/viasverdes/viasverdesespana/ui/fragment/ListVVFragment.kt
 X
 (app/src/main/res/raw/itinerary__acei.kml,b\f\bfc10116f3d487293128c080dc802ba560fdf4da
 X
-(app/src/main/res/raw/itinerary__alco.kml,9\6\963d3ce0efcb414186f206855f5b610379b4a0fd
-X
 (app/src/main/res/raw/itinerary__ardi.kml,4\f\4f599468410f9c2c98b582a92c6a9b8353bf6b60
 X
 (app/src/main/res/raw/itinerary__arra.kml,1\0\10321aaa6bbd3cb3b8ea5142226ed59f2cdf4110
@@ -87,14 +81,10 @@ X
 (app/src/main/res/raw/itinerary__cart.kml,3\e\3e8208edaa7a0d555ddc5edc8ee87e203da54ff8
 X
 (app/src/main/res/raw/itinerary__sier.kml,b\4\b4329036f6b5d10be25155d0ac16e528067af0f3
-\
-,app/src/main/res/raw/itinerary__template.kml,c\6\c661fd237ffe2e53d04ce201506ef25d612f3ffd
 y
 Iapp/src/main/java/com/google/maps/android/data/kml/AssetIconKmlLayer.java,e\2\e26927b003faa151e91f0f3361773131e1de3ade
 |
 Lapp/src/main/java/com/google/maps/android/data/kml/AssetIconKmlRenderer.java,6\5\65c60df8df9486aca35daaba338a8d600b9b6e43
-Y
-)app/src/main/res/raw/capa_vias_verdes.kml,6\1\616fa452acbe1b41fc10a012d75eee6a6caa6871
 R
 "app/src/main/res/raw/enp__acei.kml,c\3\c3a5b1f90ea35577b500c904da9d6ca705462441
 R
@@ -122,13 +112,9 @@ X
 Ü
 Vapp/src/main/java/com/viasverdes/viasverdesespana/ui/fragment/InfoLegalTextFragment.kt,1\9\19a9153b0987af609d63d2c4e7c96de6038399b8
 Ü
-Vapp/src/main/java/com/viasverdes/viasverdesespana/ui/fragment/InfoResourcesFragment.kt,9\4\94dae2f3c7f210584f33008a4239c1ed2a98383c
+Vapp/src/main/java/com/viasverdes/viasverdesespana/ui/fragment/InfoResourcesFragment.kt,9/4/94dae2f3c7f210584f33008a4239c1ed2a98383c
 |
 Lapp/src/main/java/com/viasverdes/viasverdesespana/ui/activity/MapActivity.kt,b\9\b9bfe413cd9c04ee02a46a5e9d3d5a5a8e0da2e2
-}
-Mapp/src/main/java/com/viasverdes/viasverdesespana/ui/fragment/ToDoFragment.kt,7\6\76c8dbe9df78a07b0d7605a325143f181c9bb2d8
-R
-"app/src/main/res/values/arrays.xml,7\c\7cca4a2d94815c47d6a1ce79d4f7ac1c41c7b766
 t
 Dapp/src/main/java/com/viasverdes/viasverdesespana/data/VVDatabase.kt,7\5\75cd19fcb233d9a3e0515fc4ec8e39be74701785
 z
@@ -143,3 +129,10 @@ N
 app/src/main/assets/about.html,f\6\f6a7a590bd542850159b7bfb16408e55f004f859
 Ç
 Rapp/src/main/java/com/viasverdes/viasverdesespana/ui/fragment/InfoAboutFragment.kt,a\e\ae3a4090a8eeb02657800a2bdcc2ebeb9280fd7d
+9
+	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+:
+
+.gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
+Å
+Qapp/src/main/java/com/viasverdes/viasverdesespana/work/ImportItinerariesWorker.kt,c/6/c6aaca8dc03a3d4e9c448984069fd58a6158aeaa
