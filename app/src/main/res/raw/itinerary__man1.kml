@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Document id="Vias_Verdes_2018-ACOND-APP_ENP" xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
+	<Style id="LineStyle0103">
+		<LineStyle>
+			<color>ff33691e</color>
+      <width>12</width>
+		</LineStyle>
+	</Style>
+	<Style id="LineStyle00">
+		<LineStyle>
+			<color>ff33691e</color>
+      <width>12</width>
+		</LineStyle>
+	</Style>
+	<Folder id="FeatureLayer0">		
+		<Placemark id="ID_00090">
+			<name>VV-Manacor-Arta</name>
+			<styleUrl>#LineStyle00</styleUrl>
+			<MultiGeometry>
+				<LineString>
+					<tessellate>1</tessellate>
+					<coordinates>
+            -0.4892052351925604,39.03882107720739,0 -0.4891548115155486,39.0402448534775,0 -0.4891798484738713,39.04094487055702,0 -0.4893275798284852,39.04193250269251,0 -0.4898151579507794,39.04317356601653,0 -0.4902939112211364,39.04403879191445,0 -0.4908704321149274,39.04495793359683,0 -0.4914561291593186,39.04561820419809,0 -0.4918251036092276,39.04614427582682,0 -0.4920852579047019,39.04661619186688,0 -0.492386435535428,39.04702422344649,0 -0.4928135389893428,39.04762926225192,0 -0.4930769487653441,39.0481660125714,0 -0.4931909704209107,39.04869954957552,0 -0.4932533646525092,39.04928378929659,0 -0.4931548021401229,39.04972208123557,0 -0.4930732955681796,39.05014778660384,0 -0.4928765069308583,39.05054510570982,0 -0.492064832925468,39.0518877384842,0 -0.4912775172432081,39.05301068362248,0 -0.4908086905039365,39.05358348910221,0
+          </coordinates>
+				</LineString>
+			</MultiGeometry>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>
