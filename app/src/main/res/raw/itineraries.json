@@ -27,7 +27,7 @@
     {
       "codVV": "SAL1",
       "id": 11,
-      "name": "V.V. de la Sierra de Alcaraz",
+      "name": "VV-del-Fc Baeza-Utiel (Sierra de Alcaraz)",
       "length": 77.21,
       "provinces": "Albacete",
       "ca": "Castilla-La Mancha",
@@ -222,8 +222,8 @@
 	{
       "codVV": "SM4",
       "id": 36,
-      "name": "V.V. FC. Santand.-Mediterráneo (Burgos-Cojobar)",
-      "length": 13.39,
+      "name": "VV-Santander-Mediterraneo-(Burgos-Cascajares)",
+      "length": 50.35,
       "provinces": "Burgos",
       "ca": "Castilla y León",
       "userTypes": "1,2,3,4",
@@ -267,7 +267,7 @@
       "naturaText": "Esta Vía Verde cuenta con 9 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: La Reserva de la Biosfera Intercontinental del Mediterráneo, la Reserva Natural Peñón de Zaframagón,  así como el LIC Laguna de Coripe y las Zonas de Importancia Comunitaria ZICS Arroyo de Santiago, Salado de Morón y Matabueyes/Garrapata; el Peñón del Zaframagón; Río Guadaira; Río Guadalete; y la Sierra Lijar (Red Natura 2000). Además del Monumento Natural Chaparro de la Vega.\n\nAdemás, es posible conocer más sobre estos Espacios Naturales Protegidos gracias al Centro de Interpretación y Observatorio Ornitológico del Peñón de Zaframagón y al Centro de Interpretación de la Vía Verde de la Sierra."
     },
     {
-      "codVV": "CAST",
+      "codVV": "CATR",
       "id": 41,
       "name": "V.V. de Castro-Traslaviña",
       "length": 5.61,
@@ -398,7 +398,7 @@
       "codVV": "BAZ1",
       "id": 56,
       "name": "V.V. FC. Guadix-Almendricos (Sierra de Baza)",
-      "length": 16,
+      "length": 41.85,
       "provinces": "Granada",
       "ca": "Andalucía",
       "userTypes": "1,2",
@@ -574,7 +574,7 @@
       "codVV": "LAC2",
       "id": 76,
       "name": "V.V. de Laciana",
-      "length": 13.75,
+      "length": 13.74,
       "provinces": "León",
       "ca": "Castilla y León",
       "userTypes": "1,2",
@@ -1011,7 +1011,7 @@
       "naturaText": "Esta Vía Verde cuenta con 3 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: Los LICS Cabezo de Roldán y Valles submarinos del Escarpe de Mazarrón, así como la ZEPA La Muela – Cabo Tiñoso (Red Natura 2000)."
     },
     {
-      "codVV": "BUR1",
+      "codVV": "BURR",
       "id": 131,
       "name": "V.V. Tren Burra. Tramo Zaratán",
       "length": 3.3,
@@ -1033,7 +1033,7 @@
       "naturaText": "Esta Vía Verde cuenta con 1 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: El LIC Sotos y Mejanas del Ebro (Red Natura 2000).\n\n\nAdemás, es posible conocer más sobre estos Espacios Naturales Protegidos gracias al Centro de interpretación Espacio Alfranca."
     },
     {
-      "codVV": "MINA",
+      "codVV": "ALMO",
       "id": 133,
       "name": "V.V. Minas de San Quintín",
       "length": 1.93,
@@ -1352,6 +1352,46 @@
       "localization": "Entre Límite provincial Almería-Murcia y Almendricos. Lorca.",
       "naturaText": "Esta Vía Verde cuenta con 2 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: El LIC Sierra de Enmedio y el ZIC Sierra de Alto de Almargo (Red Natura 2000).",
       "connections": "Esta Vía Verde conecta con la <a href=\"viaverde://detail?id=124\">Vía Verde FC. Guadix-Almendricos (Huércal – Overa)</a>"
+    },
+    {
+      "codVV": "MAN1",
+      "id": 507,
+      "name": "V.V. de Manuel",
+      "length": 1.77,
+      "provinces": "Valencia",
+      "ca": "Comunidad Valenciana",
+      "userTypes": "1,2",
+      "localization": "Tramo urbano en la localidad de Manuel."
+    },
+    {
+      "codVV": "HUER",
+      "id": 508,
+      "name": "V.V. de Costera Sur o Las Pedanías",
+      "length": 8.8,
+      "provinces": "Murcia",
+      "ca": "Región de Murcia",
+      "userTypes": "1,2",
+      "localization": "Entre Alqueria a Los Dolores"
+    },
+    {
+      "codVV": "CARC",
+      "id": 509,
+      "name": "V.V. del Antic Trenet (Carcaixent-Denia)",
+      "length": 11.7,
+      "provinces": "Valencia",
+      "ca": "Comunidad Valenciana",
+      "userTypes": "1,2",
+      "localization": "Entre Carcaixent-Barraca Aigues Vives-Benifairo."
+    },
+    {
+      "codVV": "HORN",
+      "id": 510,
+      "name": "V.V. Embarcadero del Hornillo",
+      "length": 0.56,
+      "provinces": "Murcia",
+      "ca": "Región de Murcia",
+      "userTypes": "1,2",
+      "localization": "Embarcadero de El Hornillo. Águilas"
     }
   ]
 }
