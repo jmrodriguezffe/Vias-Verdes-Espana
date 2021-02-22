@@ -397,7 +397,7 @@
 	{
       "codVV": "BAZ1",
       "id": 56,
-      "name": "V.V. FC. Guadix-Almendricos (Sierra de Baza)",
+      "name": "V.V. FC. Guadix-Almendricos",
       "length": 41.85,
       "provinces": "Granada",
       "ca": "Andalucía",
@@ -885,6 +885,17 @@
       "connections": "Esta Vía Verde conecta con el CN del Ebro GR.99 y con el Camino Natural Agua Soriano-Camino Antonino"
     },
     {
+      "codVV": "GUAD",
+      "id": 115,
+      "name": "V.V. del Guadiato y los Pedroches",
+      "length": 34.26,
+      "provinces": "Córdoba",
+      "ca": "Andalucía",
+      "userTypes": "1,2",
+      "localization": "Entre Peñarroya-Pueblonuevo,Belmez-Villanueva Du",
+      "naturaText": "Esta Vía Verde cuenta con 1 Espacio Natural Protegido localizado en un radio inferior a 5 km: La ZIC Río Guadamatilla (Red Natura 2000)."
+    },
+    {
       "codVV": "CBAL",
       "id": 116,
       "name": "V.V. Entre Ríos",
@@ -942,18 +953,6 @@
       "naturaText": "Esta Vía Verde cuenta con 9 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: El Parque Natural de Llevant; los LICs de Canal de Menorca, Muntanyes d'Artà, Na Borges, Cova de can Bordils, Cova des Diners, Cova del Dimoni y Punta de n'Amer; y la ZEPA Muntanyes d'Artà.\n\n\nAdemás, es posible conocer más sobre estos Espacios Naturales Protegidos gracias al Centro de información Parque Natural de la península de Llevant."
     },
     {
-      "codVV": "ALMN",
-      "id": 124,
-      "name": "V.V. FC. Guadix-Almendricos (Huércal – Overa)",
-      "length": 13.28,
-      "provinces": "Almería",
-      "ca": "Andalucía",
-      "userTypes": "1,2",
-      "localization": "Desde la Autovía del Mediterráneo A7 por Huércal Overa hasta la pedanía de Las Norias.",
-      "naturaText": "Esta Vía Verde cuenta con 2 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: La Zona de Importancia Comunitaria Sierra del Alto de Almagro y el LIC Sierra de En medio (Red Natura 2000).",
-      "connections": "Esta Vía Verde conecta con la <a href=\"viaverde://detail?id=506\">Vía Verde de Almendricos</a>"
-    },
-    {
       "codVV": "VILL",
       "id": 125,
       "name": "V.V. del Trenillo",
@@ -979,8 +978,8 @@
     {
       "codVV": "SEGU",
       "id": 127,
-      "name": "V.V. de Segura",
-      "length": 27,
+      "name": "V.V. del Fc Baeza-Utiel (Reolid-Segura)",
+      "length": 46.68,
       "provinces": "Jaén",
       "ca": "Andalucía",
       "userTypes": "1,2,3",
@@ -1094,17 +1093,6 @@
       "userTypes": "1,2,4",
       "localization": "Entre la antigua escombrera de La Orkonera, junto al barrio de Cadegal (municipio de Ortuella) y la zona de peaje de la AP-8 (Variante Sur o “Supersur”) en las inmediaciones del polígono industrial Ugarte-Ade Pol (municipio de Valle de Trápaga/Trapagaran).\n\n\nEn una segunda fase está previsto que se recupere el tramo transitable de antigua vía entre el área de peaje de la AP-8 (extremo Este de la actual Vía Verde) y el barrio de Retuerto (Barakaldo).",
       "naturaText": "Esta Vía Verde cuenta con 1 Espacio Natural Protegido localizado en un radio inferior a 5 km: El Biotopo Protegido Meatzaldea – Zona Minera de Bizkaia\n\n\nAdemás, es posible conocer más sobre este Espacio Natural Protegido gracias al Museo de la Minería del País Vasco."
-    },
-	{
-      "codVV": "GUAD",
-      "id": 139,
-      "name": "V.V. de la Minería",
-      "length": 13.15,
-      "provinces": "Córdoba",
-      "ca": "Andalucía",
-      "userTypes": "1,2",
-      "localization": "Entre la antigua estación de El Soldado (Villanueva del Duque) y el límite municipal Villanueva del Duque-Bélmez.",
-      "naturaText": "Esta Vía Verde cuenta con 1 Espacio Natural Protegido localizado en un radio inferior a 5 km: La ZIC Río Guadamatilla (Red Natura 2000)."
     },
 	{
       "codVV": "BESA",
@@ -1231,17 +1219,6 @@
       "connections": "Esta Vía Verde conecta con el Camino Natural Agua Soriano - Camino Antonino"
     },
     {
-      "codVV": "ALM1",
-      "id": 152,
-      "name": "V.V. del FC. Guadix – Almendricos (Valle Almanzora)",
-      "length": 35.77,
-      "provinces": "Almería",
-      "ca": "Andalucía",
-      "userTypes": "1,2,3,4",
-      "localization": "Entre Fines y las inmediaciones de la estación de Hijate (Alcóntar).",
-      "naturaText": "Esta Vía Verde cuenta con 3 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: El Parque Natural de Sierra de Baza, así como los ZIC Calares de Sierra de los Filabres y Sierra de Baza (Red Natura 2000)."
-    },
-    {
       "codVV": "SM1",
       "id": 153,
       "name": "V.V. FC. Santand- Mediterráneo (La Bureba)",
@@ -1298,6 +1275,17 @@
       "naturaText": "Esta Vía Verde cuenta con 4 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: el LIC Ulia (Red Natura 2000) y los Árboles Singulares Ginkgo de Hernani, el Roble de Igara y la Encina de Donostia - San Sebastián."
     },
     {
+      "codVV": "ALME",
+      "id": 158,
+      "name": "V.V. Fc-Guadix-Almendricos (Tramo Almendricos-Huercal_Overa)",
+      "length": 20.05,
+      "provinces": "Almería, Murcia",
+      "ca": "Andalucía, Región de Murcia",
+      "userTypes": "1,2,3",
+      "localization": "Entre el apeadero de Almendricos (pedanía de Lorca) y la autovía A-7 del Mediterráneo (pedanía de Huércal-Overa).",
+      "naturaText": "Esta Vía Verde cuenta con 2 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: El LIC Sierra de Enmedio y el ZIC Sierra de Alto de Almargo (Red Natura 2000)."
+    },
+    {
       "codVV": "ANO",
       "id": 500,
       "name": "V.V. de Añorga - Errekalde - Lasarte",
@@ -1340,18 +1328,6 @@
       "userTypes": "1,2,3",
       "localization": "En Punta El Canal.",
       "naturaText": "Esta Vía Verde cuenta con 1 Espacio Natural Protegido localizado en un radio inferior a 5 km: La ZEPA Bahía de Málaga – Cerro Gordo (Red Natura 2000)."
-    },
-    {
-      "codVV": "ALME",
-      "id": 506,
-      "name": "V.V. de Almendricos",
-      "length": 6.63,
-      "provinces": "Murcia",
-      "ca": "Región de Murcia",
-      "userTypes": "1,2,3",
-      "localization": "Entre Límite provincial Almería-Murcia y Almendricos. Lorca.",
-      "naturaText": "Esta Vía Verde cuenta con 2 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: El LIC Sierra de Enmedio y el ZIC Sierra de Alto de Almargo (Red Natura 2000).",
-      "connections": "Esta Vía Verde conecta con la <a href=\"viaverde://detail?id=124\">Vía Verde FC. Guadix-Almendricos (Huércal – Overa)</a>"
     },
     {
       "codVV": "MAN1",

@@ -26,7 +26,7 @@ n
 Z
 *app/src/main/res/layout/row__itinerary.xml,0\4\046f60644e735af7f74b2648d6c67160f2108dcd
 }
-Mapp/src/main/java/com/viasverdes/viasverdesespana/ui/adapter/ListVVAdapter.kt,b\5\b591fc0681bd85a204b0cc0e303295a25d78f738
+Mapp/src/main/java/com/viasverdes/viasverdesespana/ui/adapter/ListVVAdapter.kt,b/5/b591fc0681bd85a204b0cc0e303295a25d78f738
 y
 Iapp/src/main/java/com/viasverdes/viasverdesespana/utils/ItineraryUtils.kt,2/c/2ced9fd7c13254fcb66dd86e61a26f5dbe6b9f80
 |
