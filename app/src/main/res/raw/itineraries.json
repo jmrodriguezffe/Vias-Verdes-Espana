@@ -395,17 +395,6 @@
       "naturaText": "Esta Vía Verde cuenta con 5 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: La Reserva de la Biosfera de Sierra Nevada, el Parque Nacional de Sierra Nevada, El Parque Natural de Sierra Nevada, así como el ZIC Sierra Nevada y el LIC Sierra Nevada Noroeste (Red Natura 2000).\n\n\nAdemás, es posible conocer más sobre estos Espacios Naturales Protegidos gracias al Centro de visitantes El Dornajo."
     },
 	{
-      "codVV": "BAZ1",
-      "id": 56,
-      "name": "V.V. FC. Guadix-Almendricos",
-      "length": 41.85,
-      "provinces": "Granada",
-      "ca": "Andalucía",
-      "userTypes": "1,2",
-      "localization": "Tramo Baúl: Entre Baúl y el límite municipal de Freila. 6,6 km\nTramo Baza: Entre el límite municipal de Zújar y límite 9,4 km municipal de Caniles.",
-      "naturaText": "Esta Vía Verde cuenta con 3 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: El Parque Natural de Sierra de Baza, así como el LIC Sierra de Baza Norte y la ZIC Sierra de Baza (Red Natura 2000).\n\n\nAdemás, es posible conocer más sobre estos Espacios Naturales Protegidos gracias al Centro de visitantes Narváez."
-    },
-	{
       "codVV": "TAJ2",
       "id": 57,
       "name": "V.V. del Tajuña II",
@@ -1217,6 +1206,17 @@
       "localization": "Entre la ciudad de Soria y Hontoria del Pinar (Burgos).",
       "naturaText": "Esta Vía Verde cuenta con 5 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: El Parque Natural de Cañón del Río Lobos, así como los LICS Sabinares Sierra de Cabrejas, Riberas del Río Duero y afluentes, y Cañón del Río Lobos y la ZEPA Cañón del Río Lobos - Zepa (Red Natura 2000).\n\n\nAdemás, es posible conocer más sobre estos Espacios Naturales Protegidos gracias a la Casa del Parque del Sabinar y Casa del Parque del Cañón del Río Lobos.",
       "connections": "Esta Vía Verde conecta con el Camino Natural Agua Soriano - Camino Antonino"
+    },
+    {
+      "codVV": "BAZ1",
+      "id": 152,
+      "name": "V.V. FC. Guadix-Almendricos",
+      "length": 98.6,
+      "provinces": "Almería, Granada",
+      "ca": "Andalucía",
+      "userTypes": "1,2",
+      "localization": "Entre el puente de El Baúl (Granada) y Almendricos (Región de Murcia), pasando por Baza, Caniles, Freila, Zújar, El Hijate (Granada), Alcontar, Serón, Tíjola, Purchena, Olula del Río, Fines, Cantoria, Almanzora, Arboleas y Huércal Overa (Almería).",
+      "naturaText": "Esta Vía Verde cuenta con 3 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: El Parque Natural de Sierra de Baza, así como el LIC Sierra de Baza Norte y la ZIC Sierra de Baza (Red Natura 2000).\\n\\n\\nAdemás, de Geoparque de Granada, sierra de los Filabres y sierra de Lúcar, valle del río Almanzora y sierra de Enmedio."
     },
     {
       "codVV": "SM1",
