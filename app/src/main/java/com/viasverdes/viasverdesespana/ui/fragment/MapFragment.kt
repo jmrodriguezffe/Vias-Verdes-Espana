@@ -16,7 +16,6 @@ import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.*
 import com.google.maps.android.data.Feature
 import com.google.maps.android.data.Layer
-import com.google.maps.android.data.kml.AssetIconKmlLayer
 import com.google.maps.android.data.kml.KmlLayer
 import com.google.maps.android.data.kml.KmlMultiGeometry
 import com.underlegendz.corelegendz.utils.ResourcesUtils
@@ -165,7 +164,7 @@ class MapFragment : VMFragment(), OnMapReadyCallback, Layer.OnFeatureClickListen
     if (addEnp) {
       val enpKmlResource = getEnpKmlResource(itinerary)
       if (enpKmlResource > 0) {
-        val layer = AssetIconKmlLayer(mMap, enpKmlResource, context)
+        val layer = KmlLayer(mMap, enpKmlResource, context)
         layer.setOnFeatureClickListener(this)
         layer.addLayerToMap()
       }
