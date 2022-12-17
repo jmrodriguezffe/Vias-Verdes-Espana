@@ -9,8 +9,6 @@ R
 "app/src/main/res/values/styles.xml,f\7\f79cc2688e29fcbc286fda14ae07b27c9e83690f
 n
 >app/src/main/java/com/viasverdes/viasverdesespana/Constants.kt,3\f\3fbcaba9556e6399bf764eeaa8a6125db09a3080
-^
-.app/src/main/res/layout/activity_itinerary.xml,8\1\81a8db0e63f94d575a034d86c632663dedcf20f7
 Z
 *app/src/main/res/layout/row__itinerary.xml,0\4\046f60644e735af7f74b2648d6c67160f2108dcd
 U
@@ -31,8 +29,6 @@ b
 2app/src/main/res/drawable/bg__bottomview__item.xml,7\9\7923d259976ec76dddcfd5cb5ae653bf048ac430
 `
 0app/src/main/res/drawable/bg__white__rounded.xml,d\5\d5b505bf075ff497e8d05ed7ba487e64e23fb4b6
-…
-Uapp/src/main/java/com/viasverdes/viasverdesespana/utils/BottomNavigationViewHelper.kt,e\2\e2db5d675469c5fb15342de53cefc0142b3c0705
 `
 0app/src/main/res/drawable/bg__shadow__bottom.xml,8\f\8f00a60b8ba49196e41f645bf69656bab43c4862
 ]
@@ -55,10 +51,6 @@ X
 (app/src/main/res/raw/itinerary__cart.kml,3\e\3e8208edaa7a0d555ddc5edc8ee87e203da54ff8
 X
 (app/src/main/res/raw/itinerary__sier.kml,b\4\b4329036f6b5d10be25155d0ac16e528067af0f3
-y
-Iapp/src/main/java/com/google/maps/android/data/kml/AssetIconKmlLayer.java,e\2\e26927b003faa151e91f0f3361773131e1de3ade
-|
-Lapp/src/main/java/com/google/maps/android/data/kml/AssetIconKmlRenderer.java,6\5\65c60df8df9486aca35daaba338a8d600b9b6e43
 R
 "app/src/main/res/raw/enp__acei.kml,c\3\c3a5b1f90ea35577b500c904da9d6ca705462441
 R
@@ -85,10 +77,6 @@ z
 Japp/src/main/java/com/viasverdes/viasverdesespana/utils/CollectionUtils.kt,d\b\db9ac4d73924481571cd114ac520d9bfffc81500
 T
 $app/src/main/res/menu/map_layers.xml,d\9\d9036a31ba5f1519c113f083b8faf0588f1210cc
-v
-Fapp/src/main/java/com/google/maps/android/data/kml/CustomKmlLayer.java,a\8\a833394f01b61843e0d72709bf183b69058a39af
-w
-Gapp/src/main/java/com/google/maps/android/data/kml/CustomKmlParser.java,c\b\cb3056aa77f99475b94b7ed13496dbf7ee1b42b8
 N
 app/src/main/assets/about.html,f\6\f6a7a590bd542850159b7bfb16408e55f004f859
 9

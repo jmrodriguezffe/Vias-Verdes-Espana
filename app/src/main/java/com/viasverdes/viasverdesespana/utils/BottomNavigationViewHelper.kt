@@ -18,7 +18,7 @@ fun BottomNavigationView.removeShiftMode() {
       val item = menuView.getChildAt(i) as BottomNavigationItemView
       item.setShifting(false)
       // set once again checked value, so view will be updated
-      item.setChecked(item.itemData.isChecked)
+      item.setChecked(item.itemData?.isChecked == true)
     }
   } catch (e: NoSuchFieldException) {
     Log.e("ERROR NO SUCH FIELD", "Unable to get shift mode field")
