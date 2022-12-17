@@ -1286,63 +1286,72 @@
       "naturaText": "Esta Vía Verde cuenta con 2 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: El LIC Sierra de Enmedio y el ZIC Sierra de Alto de Almargo (Red Natura 2000)."
     },
     {
-      "codVV": "ANO",
-      "id": 500,
-      "name": "V.V. de Añorga - Errekalde - Lasarte",
-      "length": 2.76,
-      "provinces": "Guipúzcoa",
-      "ca": "País Vasco",
+      "codVV": "HORN",
+      "id": 159,
+      "name": "V.V. Embarcadero del Hornillo",
+      "length": 0.56,
+      "provinces": "Murcia",
+      "ca": "Región de Murcia",
       "userTypes": "1,2,3",
-      "localization": "Entre Añorga - Errekalde y Lasarte.",
-      "naturaText": "Esta Vía Verde cuenta con 6 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: Los LICS Ulia, Urumea ibaia/ Río Urumea y Oriako itsasadarra/ Ría del Oria (Red Natura 2000) y los Árboles Singulares Ginkgo de Hernani, Roble Igara y la Encina de Donostia – San Sebastián.\n\nAdemás, es posible conocer más sobre estos Espacios Naturales Protegidos gracias al Centro de visitantes Leitzaran.\n\nhttps://www.leitzaran.net/visitantes.html"
-    },
-    {
-      "codVV": "PLA2",
-      "id": 503,
-      "name": "V.V. Ruta de la Plata (Tramo Béjar – Baños de Montemayor)",
-      "length": 42.11,
-      "provinces": "Cáceres, Salamanca",
-      "ca": "Castilla y León, Extremadura",
-      "userTypes": "1,2,3",
-      "localization": "Entre Béjar y Baños de Montemayor.",
-      "naturaText": "Esta Vía Verde cuenta con 7 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: La Reserva de la Biosfera Sierras de Béjar y Francia, así como los LICS Candelario, Valle del Cuerpo de Hombre, Granadilla y Sierra de Gredos y Valle del Jerte y la ZEPA Candelario(Red Natura 2000), además del Paisaje Protegido Castañar de Gallego.\n\nEs posible conocer más sobre estos Espacios Naturales Protegidos gracias al Centro de Interpretación de la Reserva Natural de la Garganta de los infiernos.\n\nturismoextremadura.com/viajar/turismo/es/explora/Centro-de-Interpretacion-de-la-Reserva-\nNatural-de-la-Garganta-de-los-Infiernos/"
-    },
-    {
-      "codVV": "PLA3",
-      "id": 504,
-      "name": "V.V. Ruta de la Plata (Barcial – Pobladura)",
-      "length": 20.36,
-      "provinces": "Zamora",
-      "ca": "Castilla y León",
-      "userTypes": "1,2,3",
-      "localization": "Entre Barcial del Barco y Pobladura.",
-      "naturaText": "Esta Vía Verde cuenta con 5 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: La Reserva Natural de Lagunas de Villafáfila, así como los LICS Riberas del Río Esla y afluentes, y Riberas del Río Órbigo y afluentes y las ZEPAS Penillanuras-Campos Sur, y Lagunas de Villafáfila (Red Natura 2000).\n\nAdemás, es posible conocer más sobre estos Espacios Naturales Protegidos gracias a la Casa del Parque de las Lagunas de Villafáfila “El Palomar”.\n\nhttp://www.patrimonionatural.org/casas-del-parque/casas-del-parque/casa-del-parque-delas-\nlagunas-de-villafafila-el-palomar"
+      "localization": "Embarcadero de El Hornillo. Águilas"
     },
     {
       "codVV": "RINC",
-      "id": 505,
+      "id": 161,
       "name": "V.V. del Rincón de la Victoria",
-      "length": 0.82,
+      "length": 8.00,
       "provinces": "Málaga",
       "ca": "Andalucía",
       "userTypes": "1,2,3",
-      "localization": "En Punta El Canal.",
+      "localization": "Entre Cala del Moral y proxim. parque Serrezuela.",
       "naturaText": "Esta Vía Verde cuenta con 1 Espacio Natural Protegido localizado en un radio inferior a 5 km: La ZEPA Bahía de Málaga – Cerro Gordo (Red Natura 2000)."
     },
     {
+      "codVV": "PLA2",
+      "id": 162,
+      "name": "V.V. Ruta de la Plata. (Tramo Béjar-Plasencia)",
+      "length": 65.60,
+      "provinces": "Cáceres, Salamanca",
+      "ca": "Castilla y León, Extremadura",
+      "userTypes": "1,2,3",
+      "localization": "Entre Bejar, Casas del Monte, Plasencia.",
+      "naturaText": "Esta Vía Verde cuenta con 7 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: La Reserva de la Biosfera Sierras de Béjar y Francia, así como los LICS Candelario, Valle del Cuerpo de Hombre, Granadilla y Sierra de Gredos y Valle del Jerte y la ZEPA Candelario(Red Natura 2000), además del Paisaje Protegido Castañar de Gallego.\n\nEs posible conocer más sobre estos Espacios Naturales Protegidos gracias al Centro de Interpretación de la Reserva Natural de la Garganta de los infiernos.\n\nturismoextremadura.com/viajar/turismo/es/explora/Centro-de-Interpretacion-de-la-Reserva-\nNatural-de-la-Garganta-de-los-Infiernos/"
+    },
+    {
+      "codVV": "CARC",
+      "id": 163,
+      "name": "V.V. del Antic Trenet",
+      "length": 12.75,
+      "provinces": "Valencia",
+      "ca": "Comunidad Valenciana",
+      "userTypes": "1,2,3",
+      "localization": "Entre Carcaixent-Barraca Aigues Vives-Benifairo."
+    },
+    {
+      "codVV": "PLA3",
+      "id": 165,
+      "name": "V. V. Ruta de la Plata (Barcial-Pobladura)",
+      "length": 24.76,
+      "provinces": "Zamora",
+      "ca": "Castilla y León",
+      "userTypes": "1,2,3",
+      "localization": "Entre Barcial del Barco-Pobladura-Maire de Castroponce.",
+      "naturaText": "Esta Vía Verde cuenta con 5 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: La Reserva Natural de Lagunas de Villafáfila, así como los LICS Riberas del Río Esla y afluentes, y Riberas del Río Órbigo y afluentes y las ZEPAS Penillanuras-Campos Sur, y Lagunas de Villafáfila (Red Natura 2000).\n\nAdemás, es posible conocer más sobre estos Espacios Naturales Protegidos gracias a la Casa del Parque de las Lagunas de Villafáfila “El Palomar”.\n\nhttp://www.patrimonionatural.org/casas-del-parque/casas-del-parque/casa-del-parque-delas-\nlagunas-de-villafafila-el-palomar"
+    },
+    {
       "codVV": "MAN1",
-      "id": 507,
-      "name": "V.V. de Manuel",
+      "id": 166,
+      "name": "V.V. Ribera Costera (Manuel)",
       "length": 1.77,
       "provinces": "Valencia",
       "ca": "Comunidad Valenciana",
       "userTypes": "1,2",
-      "localization": "Tramo urbano en la localidad de Manuel."
+      "localization": "En el término municipal de Manuel."
     },
     {
       "codVV": "HUER",
-      "id": 508,
-      "name": "V.V. de Costera Sur o Las Pedanías",
+      "id": 175,
+      "name": "V.V. de la Costera Sur",
       "length": 8.8,
       "provinces": "Murcia",
       "ca": "Región de Murcia",
@@ -1350,24 +1359,15 @@
       "localization": "Entre Alqueria a Los Dolores"
     },
     {
-      "codVV": "CARC",
-      "id": 509,
-      "name": "V.V. del Antic Trenet (Carcaixent-Denia)",
-      "length": 11.7,
-      "provinces": "Valencia",
-      "ca": "Comunidad Valenciana",
-      "userTypes": "1,2",
-      "localization": "Entre Carcaixent-Barraca Aigues Vives-Benifairo."
+      "codVV": "ANO",
+      "id": 179,
+      "name": "V.V. Añorga-Errekalde-San Sebastián",
+      "length": 3.11,
+      "provinces": "Guipúzcoa",
+      "ca": "País Vasco",
+      "userTypes": "1,2,3,4",
+      "localization": "Entre Añorga-Errekalde y Lasarte (Donostia/San Sebastián).",
+      "naturaText": "Esta Vía Verde cuenta con 6 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: Los LICS Ulia, Urumea ibaia/ Río Urumea y Oriako itsasadarra/ Ría del Oria (Red Natura 2000) y los Árboles Singulares Ginkgo de Hernani, Roble Igara y la Encina de Donostia – San Sebastián.\n\nAdemás, es posible conocer más sobre estos Espacios Naturales Protegidos gracias al Centro de visitantes Leitzaran.\n\nhttps://www.leitzaran.net/visitantes.html"
     },
-    {
-      "codVV": "HORN",
-      "id": 510,
-      "name": "V.V. Embarcadero del Hornillo",
-      "length": 0.56,
-      "provinces": "Murcia",
-      "ca": "Región de Murcia",
-      "userTypes": "1,2",
-      "localization": "Embarcadero de El Hornillo. Águilas"
-    }
   ]
 }
