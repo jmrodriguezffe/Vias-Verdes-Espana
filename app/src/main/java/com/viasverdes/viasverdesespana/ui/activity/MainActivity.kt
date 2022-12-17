@@ -1,15 +1,15 @@
 package com.viasverdes.viasverdesespana.ui.activity
 
 import android.os.Bundle
+import android.widget.TextView
 import androidx.fragment.app.Fragment
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.underlegendz.underactivity.ActivityBuilder
 import com.viasverdes.viasverdesespana.R
 import com.viasverdes.viasverdesespana.ui.fragment.InfoFragment
 import com.viasverdes.viasverdesespana.ui.fragment.ListVVFragment
 import com.viasverdes.viasverdesespana.ui.fragment.MapFragment
 import com.viasverdes.viasverdesespana.utils.removeShiftMode
-import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.toolbar.*
 
 class MainActivity : TextSizeThemeActivity() {
 
@@ -27,8 +27,9 @@ class MainActivity : TextSizeThemeActivity() {
 
   override fun onPostCreate(savedInstanceState: Bundle?) {
     super.onPostCreate(savedInstanceState)
-    main__bottom_navigation.removeShiftMode()
-    main__bottom_navigation.setOnNavigationItemSelectedListener { item ->
+    val bottomNavigationView = findViewById<BottomNavigationView>(R.id.main__bottom_navigation)
+    bottomNavigationView.removeShiftMode()
+    bottomNavigationView.setOnNavigationItemSelectedListener { item ->
       if (lastSectionSelected != item.itemId) {
         when (item.itemId) {
           R.id.action__vv_list -> {
@@ -49,13 +50,13 @@ class MainActivity : TextSizeThemeActivity() {
 
     if (savedInstanceState != null && savedInstanceState.containsKey(sectionSelected)) {
       lastSectionSelected = savedInstanceState.getInt(sectionSelected)
-      main__bottom_navigation.selectedItemId = lastSectionSelected
+      bottomNavigationView.selectedItemId = lastSectionSelected
     } else {
-      main__bottom_navigation.selectedItemId = R.id.action__vv_list
+      bottomNavigationView.selectedItemId = R.id.action__vv_list
     }
 
     toolbar.title = ""
-    toolbar__title.setText(R.string.app_name)
+    findViewById<TextView>(R.id.toolbar__title).setText(R.string.app_name)
   }
 
   override fun onSaveInstanceState(outState: Bundle) {

@@ -24,9 +24,9 @@ import com.underlegendz.corelegendz.vm.VMFragment
 import com.viasverdes.viasverdesespana.R
 import com.viasverdes.viasverdesespana.data.VVDatabase
 import com.viasverdes.viasverdesespana.data.bo.ItineraryBO
+import com.viasverdes.viasverdesespana.databinding.FragmentMapBinding
 import com.viasverdes.viasverdesespana.ui.activity.ItineraryActivity
 import com.viasverdes.viasverdesespana.utils.*
-import kotlinx.android.synthetic.main.fragment__map.*
 
 
 class MapFragment : VMFragment(), OnMapReadyCallback, Layer.OnFeatureClickListener {
@@ -47,13 +47,15 @@ class MapFragment : VMFragment(), OnMapReadyCallback, Layer.OnFeatureClickListen
   }
 
   private lateinit var mMap: GoogleMap
+  private lateinit var binding: FragmentMapBinding
   private var customTileProvider: TileOverlay? = null
 
 
   override fun initializeView() {
+    binding = FragmentMapBinding.bind(view!!)
     val mapFragment = childFragmentManager.findFragmentById(R.id.map__view__map) as SupportMapFragment
     mapFragment.getMapAsync(this)
-    map__btn__info_close.setOnClickListener { showInfoPanel(false) }
+    binding.mapBtnInfoClose.setOnClickListener { showInfoPanel(false) }
   }
 
   override fun getLayoutResource(): Int {
@@ -215,13 +217,13 @@ class MapFragment : VMFragment(), OnMapReadyCallback, Layer.OnFeatureClickListen
   }
 
   private fun showInfoPanel(show: Boolean) {
-    map__container__info.setVisible(show)
+    binding.mapContainerInfo.setVisible(show)
   }
 
   override fun onFeatureClick(feature: Feature?) {
     showInfoPanel(true)
     feature?.getProperty("description")?.let {
-      map__web__info_description.loadDataWithBaseURL(null, it, "text/html", "utf-8", null)
+      binding.mapWebInfoDescription.loadDataWithBaseURL(null, it, "text/html", "utf-8", null)
     }
   }
 

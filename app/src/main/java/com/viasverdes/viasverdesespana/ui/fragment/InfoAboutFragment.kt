@@ -1,9 +1,9 @@
 package com.viasverdes.viasverdesespana.ui.fragment
 
 import android.os.Bundle
+import android.webkit.WebView
 import com.underlegendz.corelegendz.vm.VMFragment
 import com.viasverdes.viasverdesespana.R
-import kotlinx.android.synthetic.main.fragment__more_info__about.*
 
 
 class InfoAboutFragment : VMFragment() {
@@ -21,7 +21,7 @@ class InfoAboutFragment : VMFragment() {
 
 
   override fun initializeView() {
-    more_info__about__webview.loadUrl("file:///android_asset/about.html")
+    view?.findViewById<WebView>(R.id.more_info__about__webview)?.loadUrl("file:///android_asset/about.html")
   }
 
   override fun getLayoutResource(): Int {

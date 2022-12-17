@@ -3,9 +3,9 @@ package com.viasverdes.viasverdesespana.ui.fragment
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.view.View
 import com.underlegendz.corelegendz.vm.VMFragment
 import com.viasverdes.viasverdesespana.R
-import kotlinx.android.synthetic.main.fragment__more_info__resources.*
 
 
 class InfoResourcesFragment : VMFragment() {
@@ -32,14 +32,16 @@ class InfoResourcesFragment : VMFragment() {
 
 
   override fun initializeView() {
-    resources__container__rednatura2000.setOnClickListener { goToUrl(VIDEO) }
-    resources__container__report.setOnClickListener { goToUrl(REPORT) }
-    resources__container__mapa.setOnClickListener { goToUrl(MAPA) }
-    resources__container__camino.setOnClickListener { goToUrl(CAMINOS) }
-    resources__btn__facebook.setOnClickListener { goToUrl(FACEBOOK) }
-    resources__btn__instagram.setOnClickListener { goToUrl(INSTAGRAM) }
-    resources__btn__twitter.setOnClickListener { goToUrl(TWITTER) }
-    resources__btn__youtube.setOnClickListener { goToUrl(YOUTUBE) }
+    view?.let {
+      it.findViewById<View>(R.id.resources__container__rednatura2000).setOnClickListener { goToUrl(VIDEO) }
+      it.findViewById<View>(R.id.resources__container__report).setOnClickListener { goToUrl(REPORT) }
+      it.findViewById<View>(R.id.resources__container__mapa).setOnClickListener { goToUrl(MAPA) }
+      it.findViewById<View>(R.id.resources__container__camino).setOnClickListener { goToUrl(CAMINOS) }
+      it.findViewById<View>(R.id.resources__btn__facebook).setOnClickListener { goToUrl(FACEBOOK) }
+      it.findViewById<View>(R.id.resources__btn__instagram).setOnClickListener { goToUrl(INSTAGRAM) }
+      it.findViewById<View>(R.id.resources__btn__twitter).setOnClickListener { goToUrl(TWITTER) }
+      it.findViewById<View>(R.id.resources__btn__youtube).setOnClickListener { goToUrl(YOUTUBE) }
+    }
   }
 
   private fun goToUrl(url: String) {

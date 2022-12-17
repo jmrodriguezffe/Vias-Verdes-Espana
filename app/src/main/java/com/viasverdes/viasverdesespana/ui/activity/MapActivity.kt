@@ -3,12 +3,12 @@ package com.viasverdes.viasverdesespana.ui.activity
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.underlegendz.underactivity.ActivityBuilder
 import com.viasverdes.viasverdesespana.R
 import com.viasverdes.viasverdesespana.data.bo.ItineraryBO
 import com.viasverdes.viasverdesespana.ui.fragment.MapFragment
-import kotlinx.android.synthetic.main.toolbar.*
 
 class MapActivity : TextSizeThemeActivity() {
 
@@ -38,7 +38,7 @@ class MapActivity : TextSizeThemeActivity() {
     setFragment(getOrCreateMap(), TAG_MAP, false)
 
     toolbar.title = ""
-    toolbar__title.setText(R.string.app_name)
+    findViewById<TextView>(R.id.toolbar__title).setText(R.string.app_name)
   }
 
   private fun getOrCreateMap(): Fragment {

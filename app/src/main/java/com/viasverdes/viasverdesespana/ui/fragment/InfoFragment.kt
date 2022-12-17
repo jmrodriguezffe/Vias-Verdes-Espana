@@ -1,10 +1,11 @@
 package com.viasverdes.viasverdesespana.ui.fragment
 
 import android.os.Bundle
+import androidx.viewpager.widget.ViewPager
+import com.google.android.material.tabs.TabLayout
 import com.underlegendz.corelegendz.vm.VMFragment
 import com.viasverdes.viasverdesespana.R
 import com.viasverdes.viasverdesespana.ui.adapter.MoreInfoPageAdapter
-import kotlinx.android.synthetic.main.fragment__more_info.*
 
 
 class InfoFragment : VMFragment() {
@@ -19,8 +20,10 @@ class InfoFragment : VMFragment() {
   }
 
   override fun initializeView() {
-    more_info__container__viewpager.adapter = MoreInfoPageAdapter(childFragmentManager)
-    more_info__list__tablayout.setupWithViewPager(more_info__container__viewpager)
+    view?.findViewById<ViewPager>(R.id.more_info__container__viewpager)?.let {
+      it.adapter = MoreInfoPageAdapter(childFragmentManager)
+      view?.findViewById<TabLayout>(R.id.more_info__list__tablayout)?.setupWithViewPager(it)
+    }
   }
 
   override fun getLayoutResource(): Int {
