@@ -26,8 +26,9 @@ class ItineraryActivity : TextSizeThemeActivity() {
   companion object {
     const val ARG_ITINERARY = "ITINERARY"
 
-    fun start(activity: Activity,
-              itinerary: ItineraryBO
+    fun start(
+      activity: Activity,
+      itinerary: ItineraryBO
     ) {
       val intent = Intent(activity, ItineraryActivity::class.java)
       intent.putExtra(ARG_ITINERARY, itinerary)
@@ -41,8 +42,8 @@ class ItineraryActivity : TextSizeThemeActivity() {
 
   override fun configureActivityBuilder(builder: ActivityBuilder): ActivityBuilder {
     return builder
-          .enableToolbar(false)
-          .setContentLayout(R.layout.activity_itinerary)
+      .enableToolbar(false)
+      .setContentLayout(R.layout.activity_itinerary)
   }
 
   override fun onCreate(savedInstanceState: Bundle?) {
@@ -53,17 +54,21 @@ class ItineraryActivity : TextSizeThemeActivity() {
       return
     }
 
-    binding = ActivityItineraryBinding.bind(window.decorView.findViewById(android.R.id.content))
+    binding = ActivityItineraryBinding.bind(window.decorView.findViewById(R.id.itinerary__activity))
 
     registerForContextMenu(binding.optionTextSize)
     binding.optionTextSize.setOnClickListener { it.showContextMenu() }
 
-    loadImage(binding.itineraryImage, getRemoteImageUri(itinerary), getRemoteImageUri(itinerary, true))
+    loadImage(
+      binding.itineraryImage,
+      getRemoteImageUri(itinerary),
+      getRemoteImageUri(itinerary, true)
+    )
 
     val altimetricResource = getAltimetricResource(itinerary)
     if (altimetricResource > 0) {
       val layoutParams = binding.itineraryAltimetricImg.layoutParams
-      layoutParams.height = (ScreenUtils.height()/3).toInt()
+      layoutParams.height = (ScreenUtils.height() / 3).toInt()
       binding.itineraryAltimetricImg.layoutParams = layoutParams
       binding.itineraryAltimetricImg.setImageResource(altimetricResource)
       binding.itineraryAltimetric.setVisible(true)
@@ -71,13 +76,18 @@ class ItineraryActivity : TextSizeThemeActivity() {
       binding.itineraryAltimetric.setVisible(false)
     }
 
-    binding.itineraryTitle.text = ResourcesUtils.getString(R.string.itinerary__title, itinerary.name)
+    binding.itineraryTitle.text =
+      ResourcesUtils.getString(R.string.itinerary__title, itinerary.name)
     binding.itineraryLocalization.text = itinerary.localization
     binding.itineraryProvinces.text = itinerary.provinces
     binding.itineraryLength.text = ResourcesUtils.getString(R.string.km, itinerary.length)
     binding.itineraryWalkUserType.setVisible(itinerary.userTypes.contains(USER_TYPE__WALK))
     binding.itineraryBicycleUserType.setVisible(itinerary.userTypes.contains(USER_TYPE__BICYCLE))
-    binding.itineraryWheelchairUserType.setVisible(itinerary.userTypes.contains(USER_TYPE__WHEELCHAIR))
+    binding.itineraryWheelchairUserType.setVisible(
+      itinerary.userTypes.contains(
+        USER_TYPE__WHEELCHAIR
+      )
+    )
     binding.itineraryRollerUserType.setVisible(itinerary.userTypes.contains(USER_TYPE__ROLLER))
     binding.itineraryHorseUserType.setVisible(itinerary.userTypes.contains(USER_TYPE__HORSE))
     binding.itineraryNaturaLabel.setVisible(!itinerary.naturaText.isNullOrEmpty())
@@ -97,11 +107,11 @@ class ItineraryActivity : TextSizeThemeActivity() {
     val hasConnections = itinerary.connections != null
     binding.itineraryConnections.setVisible(hasConnections)
     binding.itineraryConnectionsLabel.setVisible(hasConnections)
-    if(hasConnections){
+    if (hasConnections) {
       binding.itineraryConnections.text = itinerary.connections.fromHtml()
       binding.itineraryConnections.movementMethod = LinkMovementMethod.getInstance()
     }
-    if(!itinerary.accesibilityText.isNullOrEmpty()){
+    if (!itinerary.accesibilityText.isNullOrEmpty()) {
       binding.itineraryAccesibilityInfo.text = itinerary.accesibilityText
     }
     if (!itinerary.unescoText.isNullOrEmpty()) {
@@ -131,13 +141,15 @@ class ItineraryActivity : TextSizeThemeActivity() {
 
       val latLngList = getCoordinateListOnLayer(parser.containers)
 
-      HowToGetDialogFragment.newInstance(latLngList.first(), latLngList.last()).show(supportFragmentManager, "how_to_get")
+      HowToGetDialogFragment.newInstance(latLngList.first(), latLngList.last())
+        .show(supportFragmentManager, "how_to_get")
     }
   }
 
   fun moreInfo() {
     val itinerary = intent.getParcelableExtra<ItineraryBO>(ARG_ITINERARY)
-    val moreInfoUri = Uri.parse("http://www.viasverdes.com/rednatura2000/itinerarios/itinerario.asp?id=" + itinerary?.id)
+    val moreInfoUri =
+      Uri.parse("http://www.viasverdes.com/rednatura2000/itinerarios/itinerario.asp?id=" + itinerary?.id)
     val mapIntent = Intent(Intent.ACTION_VIEW, moreInfoUri)
     startActivity(mapIntent)
   }

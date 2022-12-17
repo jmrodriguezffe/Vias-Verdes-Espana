@@ -52,7 +52,7 @@ class MapFragment : VMFragment(), OnMapReadyCallback, Layer.OnFeatureClickListen
 
 
   override fun initializeView() {
-    binding = FragmentMapBinding.bind(view!!)
+    binding = FragmentMapBinding.bind(requireView())
     val mapFragment = childFragmentManager.findFragmentById(R.id.map__view__map) as SupportMapFragment
     mapFragment.getMapAsync(this)
     binding.mapBtnInfoClose.setOnClickListener { showInfoPanel(false) }
@@ -126,8 +126,8 @@ class MapFragment : VMFragment(), OnMapReadyCallback, Layer.OnFeatureClickListen
             Manifest.permission.ACCESS_FINE_LOCATION)
       if (permission == PermissionChecker.PERMISSION_GRANTED) {
         mMap.isMyLocationEnabled = true
-      } else if (activity != null && activity!!.isFinishing.not()) {
-        ActivityCompat.requestPermissions(activity!!, arrayOf(Manifest.permission.ACCESS_FINE_LOCATION), LOCATION_REQUEST_CODE)
+      } else if (activity != null && requireActivity().isFinishing.not()) {
+        ActivityCompat.requestPermissions(requireActivity(), arrayOf(Manifest.permission.ACCESS_FINE_LOCATION), LOCATION_REQUEST_CODE)
       }
     }
   }
@@ -210,7 +210,7 @@ class MapFragment : VMFragment(), OnMapReadyCallback, Layer.OnFeatureClickListen
             .title(itinerary.name)
             .snippet(getString(R.string.map__marker_more_info))
             .icon(BitmapDescriptorFactory.fromResource(R.drawable.marker__itinerary))
-      ).tag = itinerary
+      )?.tag = itinerary
     } catch (e: Exception) {
       // Nothing to do
     }
