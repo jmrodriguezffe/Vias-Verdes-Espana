@@ -7,12 +7,8 @@ S
 #app/src/main/res/values/strings.xml,d\2\d2281fbb3027de2722081a53408dd77628bf080e
 R
 "app/src/main/res/values/styles.xml,f\7\f79cc2688e29fcbc286fda14ae07b27c9e83690f
-n
->app/src/main/java/com/viasverdes/viasverdesespana/Constants.kt,3\f\3fbcaba9556e6399bf764eeaa8a6125db09a3080
 Z
 *app/src/main/res/layout/row__itinerary.xml,0\4\046f60644e735af7f74b2648d6c67160f2108dcd
-U
-%app/src/main/res/raw/itineraries.json,f\0\f0b31005883b7deebb3f838c368dfa75c5033f08
 ^
 .app/src/release/res/values/google_maps_api.xml,8\a\8ad28fcd8d693ab58d4fdb7d36965532163ebfa3
 ?
