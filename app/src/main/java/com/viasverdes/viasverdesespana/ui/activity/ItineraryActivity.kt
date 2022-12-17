@@ -11,9 +11,9 @@ import com.underlegendz.corelegendz.utils.ScreenUtils
 import com.underlegendz.underactivity.ActivityBuilder
 import com.viasverdes.viasverdesespana.*
 import com.viasverdes.viasverdesespana.data.bo.ItineraryBO
+import com.viasverdes.viasverdesespana.databinding.ActivityItineraryBinding
 import com.viasverdes.viasverdesespana.ui.fragment.HowToGetDialogFragment
 import com.viasverdes.viasverdesespana.utils.*
-import kotlinx.android.synthetic.main.activity_itinerary.*
 import org.xmlpull.v1.XmlPullParser
 import org.xmlpull.v1.XmlPullParserException
 import org.xmlpull.v1.XmlPullParserFactory
@@ -36,6 +36,8 @@ class ItineraryActivity : TextSizeThemeActivity() {
     }
   }
 
+  private lateinit var binding: ActivityItineraryBinding
+
 
   override fun configureActivityBuilder(builder: ActivityBuilder): ActivityBuilder {
     return builder
@@ -51,62 +53,64 @@ class ItineraryActivity : TextSizeThemeActivity() {
       return
     }
 
-    registerForContextMenu(option__text_size)
-    option__text_size.setOnClickListener { it.showContextMenu() }
+    binding = ActivityItineraryBinding.bind(window.decorView.findViewById(android.R.id.content))
 
-    loadImage(itinerary__image, getRemoteImageUri(itinerary), getRemoteImageUri(itinerary, true))
+    registerForContextMenu(binding.optionTextSize)
+    binding.optionTextSize.setOnClickListener { it.showContextMenu() }
+
+    loadImage(binding.itineraryImage, getRemoteImageUri(itinerary), getRemoteImageUri(itinerary, true))
 
     val altimetricResource = getAltimetricResource(itinerary)
     if (altimetricResource > 0) {
-      val layoutParams = itinerary__altimetric__img.layoutParams
+      val layoutParams = binding.itineraryAltimetricImg.layoutParams
       layoutParams.height = (ScreenUtils.height()/3).toInt()
-      itinerary__altimetric__img.layoutParams = layoutParams
-      itinerary__altimetric__img.setImageResource(altimetricResource)
-      itinerary__altimetric.setVisible(true)
+      binding.itineraryAltimetricImg.layoutParams = layoutParams
+      binding.itineraryAltimetricImg.setImageResource(altimetricResource)
+      binding.itineraryAltimetric.setVisible(true)
     } else {
-      itinerary__altimetric.setVisible(false)
+      binding.itineraryAltimetric.setVisible(false)
     }
 
-    itinerary__title.text = ResourcesUtils.getString(R.string.itinerary__title, itinerary.name)
-    itinerary__localization.text = itinerary.localization
-    itinerary__provinces.text = itinerary.provinces
-    itinerary__length.text = ResourcesUtils.getString(R.string.km, itinerary.length)
-    itinerary__walk_user_type.setVisible(itinerary.userTypes.contains(USER_TYPE__WALK))
-    itinerary__bicycle_user_type.setVisible(itinerary.userTypes.contains(USER_TYPE__BICYCLE))
-    itinerary__wheelchair_user_type.setVisible(itinerary.userTypes.contains(USER_TYPE__WHEELCHAIR))
-    itinerary__roller_user_type.setVisible(itinerary.userTypes.contains(USER_TYPE__ROLLER))
-    itinerary__horse_user_type.setVisible(itinerary.userTypes.contains(USER_TYPE__HORSE))
-    itinerary__natura_label.setVisible(!itinerary.naturaText.isNullOrEmpty())
-    itinerary__natura.setVisible(!itinerary.naturaText.isNullOrEmpty())
-    itinerary__natura.text = itinerary.naturaText
-    itinerary__back.setOnClickListener { onBackPressed() }
-    itinerary__see_in_map.setOnClickListener { MapActivity.start(this, itinerary) }
-    itinerary__how_to_get.setOnClickListener { goTo() }
-    itinerary__more_info.setVisible(itinerary.id < 500)
-    itinerary__more_info.setOnClickListener { moreInfo() }
-    itinerary__scroll.viewTreeObserver.addOnScrollChangedListener {
-      val scrollY = itinerary__scroll.scrollY.toFloat()
+    binding.itineraryTitle.text = ResourcesUtils.getString(R.string.itinerary__title, itinerary.name)
+    binding.itineraryLocalization.text = itinerary.localization
+    binding.itineraryProvinces.text = itinerary.provinces
+    binding.itineraryLength.text = ResourcesUtils.getString(R.string.km, itinerary.length)
+    binding.itineraryWalkUserType.setVisible(itinerary.userTypes.contains(USER_TYPE__WALK))
+    binding.itineraryBicycleUserType.setVisible(itinerary.userTypes.contains(USER_TYPE__BICYCLE))
+    binding.itineraryWheelchairUserType.setVisible(itinerary.userTypes.contains(USER_TYPE__WHEELCHAIR))
+    binding.itineraryRollerUserType.setVisible(itinerary.userTypes.contains(USER_TYPE__ROLLER))
+    binding.itineraryHorseUserType.setVisible(itinerary.userTypes.contains(USER_TYPE__HORSE))
+    binding.itineraryNaturaLabel.setVisible(!itinerary.naturaText.isNullOrEmpty())
+    binding.itineraryNatura.setVisible(!itinerary.naturaText.isNullOrEmpty())
+    binding.itineraryNatura.text = itinerary.naturaText
+    binding.itineraryBack.setOnClickListener { onBackPressed() }
+    binding.itinerarySeeInMap.setOnClickListener { MapActivity.start(this, itinerary) }
+    binding.itineraryHowToGet.setOnClickListener { goTo() }
+    binding.itineraryMoreInfo.setVisible(itinerary.id < 500)
+    binding.itineraryMoreInfo.setOnClickListener { moreInfo() }
+    binding.itineraryScroll.viewTreeObserver.addOnScrollChangedListener {
+      val scrollY = binding.itineraryScroll.scrollY.toFloat()
       val alpha = min(1f, scrollY / ScreenUtils.width() + 0.4f)
-      itinerary__title_bg.alpha = alpha
-      itinerary__title_shadow.alpha = alpha
+      binding.itineraryTitleBg.alpha = alpha
+      binding.itineraryTitleShadow.alpha = alpha
     }
     val hasConnections = itinerary.connections != null
-    itinerary__connections.setVisible(hasConnections)
-    itinerary__connections_label.setVisible(hasConnections)
+    binding.itineraryConnections.setVisible(hasConnections)
+    binding.itineraryConnectionsLabel.setVisible(hasConnections)
     if(hasConnections){
-      itinerary__connections.text = itinerary.connections.fromHtml()
-      itinerary__connections.movementMethod = LinkMovementMethod.getInstance()
+      binding.itineraryConnections.text = itinerary.connections.fromHtml()
+      binding.itineraryConnections.movementMethod = LinkMovementMethod.getInstance()
     }
     if(!itinerary.accesibilityText.isNullOrEmpty()){
-      itinerary__accesibility_info.text = itinerary.accesibilityText
+      binding.itineraryAccesibilityInfo.text = itinerary.accesibilityText
     }
     if (!itinerary.unescoText.isNullOrEmpty()) {
-      itinerary__unesco.text = itinerary.unescoText.fromHtml()
-      itinerary__unesco.movementMethod = LinkMovementMethod.getInstance()
+      binding.itineraryUnesco.text = itinerary.unescoText.fromHtml()
+      binding.itineraryUnesco.movementMethod = LinkMovementMethod.getInstance()
     } else {
-      itinerary__unesco.setVisible(false)
-      itinerary__unesco_icon.setVisible(false)
-      itinerary__unesco_label.setVisible(false)
+      binding.itineraryUnesco.setVisible(false)
+      binding.itineraryUnescoIcon.setVisible(false)
+      binding.itineraryUnescoLabel.setVisible(false)
     }
   }
 
@@ -133,7 +137,7 @@ class ItineraryActivity : TextSizeThemeActivity() {
 
   fun moreInfo() {
     val itinerary = intent.getParcelableExtra<ItineraryBO>(ARG_ITINERARY)
-    val moreInfoUri = Uri.parse("http://www.viasverdes.com/rednatura2000/itinerarios/itinerario.asp?id=" + itinerary.id)
+    val moreInfoUri = Uri.parse("http://www.viasverdes.com/rednatura2000/itinerarios/itinerario.asp?id=" + itinerary?.id)
     val mapIntent = Intent(Intent.ACTION_VIEW, moreInfoUri)
     startActivity(mapIntent)
   }

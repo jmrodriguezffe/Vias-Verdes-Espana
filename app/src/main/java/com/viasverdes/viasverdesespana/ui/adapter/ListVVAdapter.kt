@@ -6,9 +6,9 @@ import android.view.ViewGroup
 import com.underlegendz.corelegendz.utils.ResourcesUtils
 import com.viasverdes.viasverdesespana.*
 import com.viasverdes.viasverdesespana.data.bo.ItineraryBO
+import com.viasverdes.viasverdesespana.databinding.RowItineraryBinding
 import com.viasverdes.viasverdesespana.utils.*
 import kotlinx.android.extensions.LayoutContainer
-import kotlinx.android.synthetic.main.row__itinerary.*
 import java.util.*
 
 class ListVVAdapter(private var data: List<ItineraryBO>) : androidx.recyclerview.widget.RecyclerView.Adapter<ListVVAdapter.ListVVHolder>() {
@@ -74,18 +74,20 @@ class ListVVAdapter(private var data: List<ItineraryBO>) : androidx.recyclerview
   }
 
   class ListVVHolder(override val containerView: View) : androidx.recyclerview.widget.RecyclerView.ViewHolder(containerView), LayoutContainer {
-    fun bind(itinerary: ItineraryBO) {
-      itinerary__row__title.text = itinerary.name
-      itinerary__row__provinces.text = itinerary.provinces
-      itinerary__row__length.text = ResourcesUtils.getString(R.string.km, itinerary.length)
-      itinerary__row__ccaa.text = itinerary.ca
-      itinerary__row__walk_user_type.setVisible(itinerary.userTypes.contains(USER_TYPE__WALK))
-      itinerary__row__bicycle_user_type.setVisible(itinerary.userTypes.contains(USER_TYPE__BICYCLE))
-      itinerary__row__wheelchair_user_type.setVisible(itinerary.userTypes.contains(USER_TYPE__WHEELCHAIR))
-      itinerary__row__roller_user_type.setVisible(itinerary.userTypes.contains(USER_TYPE__ROLLER))
-      itinerary__row__horse_user_type.setVisible(itinerary.userTypes.contains(USER_TYPE__HORSE))
+    val binding: RowItineraryBinding = RowItineraryBinding.bind(containerView)
 
-      loadImage(itinerary__row__image, getRemoteImageThumbUri(itinerary), getRemoteImageThumbUri(itinerary, true))
+    fun bind(itinerary: ItineraryBO) {
+      binding.itineraryRowTitle.text = itinerary.name
+      binding.itineraryRowProvinces.text = itinerary.provinces
+      binding.itineraryRowLength.text = ResourcesUtils.getString(R.string.km, itinerary.length)
+      binding.itineraryRowCcaa.text = itinerary.ca
+      binding.itineraryRowWalkUserType.setVisible(itinerary.userTypes.contains(USER_TYPE__WALK))
+      binding.itineraryRowBicycleUserType.setVisible(itinerary.userTypes.contains(USER_TYPE__BICYCLE))
+      binding.itineraryRowWheelchairUserType.setVisible(itinerary.userTypes.contains(USER_TYPE__WHEELCHAIR))
+      binding.itineraryRowRollerUserType.setVisible(itinerary.userTypes.contains(USER_TYPE__ROLLER))
+      binding.itineraryRowHorseUserType.setVisible(itinerary.userTypes.contains(USER_TYPE__HORSE))
+
+      loadImage(binding.itineraryRowImage, getRemoteImageThumbUri(itinerary), getRemoteImageThumbUri(itinerary, true))
     }
   }
 }

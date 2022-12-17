@@ -2,9 +2,9 @@ package com.viasverdes.viasverdesespana.ui.fragment
 
 import android.os.Bundle
 import android.text.method.LinkMovementMethod
+import android.widget.TextView
 import com.underlegendz.corelegendz.vm.VMFragment
 import com.viasverdes.viasverdesespana.R
-import kotlinx.android.synthetic.main.fragment__more_info__legal_text.*
 
 
 class InfoLegalTextFragment : VMFragment() {
@@ -22,7 +22,7 @@ class InfoLegalTextFragment : VMFragment() {
 
 
   override fun initializeView() {
-    more_info__label__legal_text.movementMethod = LinkMovementMethod.getInstance()
+    view?.findViewById<TextView>(R.id.more_info__label__legal_text)?.movementMethod = LinkMovementMethod.getInstance()
   }
 
   override fun getLayoutResource(): Int {

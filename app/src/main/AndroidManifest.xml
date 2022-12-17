@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="com.viasverdes.viasverdesespana"
-  xmlns:android="http://schemas.android.com/apk/res/android"
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:tools="http://schemas.android.com/tools"
   android:installLocation="auto">
 
@@ -10,6 +9,7 @@
          location permissions for the 'MyLocation' functionality. 
     -->
   <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
@@ -25,7 +25,8 @@
     tools:replace="android:theme"
     tools:ignore="GoogleAppIndexingWarning">
     <activity android:name=".ui.activity.MainActivity"
-      android:screenOrientation="portrait">
+      android:screenOrientation="portrait"
+      android:exported="true">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
 
@@ -51,7 +52,8 @@
       android:screenOrientation="portrait"/>
 
     <activity android:name=".ui.activity.DeepLinkActivity"
-      android:screenOrientation="portrait">
+      android:screenOrientation="portrait"
+      android:exported="true">
       <intent-filter android:label="@string/app_name">
         <action android:name="android.intent.action.VIEW" />
         <category android:name="android.intent.category.DEFAULT" />

@@ -37,10 +37,13 @@ fun getAltimetricResource(itinerary: ItineraryBO): Int {
         "altimetric__" + itinerary.codVV.toLowerCase(), "drawable", application.getPackageName())
 }
 
-fun getItineraryKmlResource(itinerary: ItineraryBO): Int {
+fun getItineraryKmlResource(itinerary: ItineraryBO?): Int {
+  if (itinerary == null) {
+    return -1
+  }
   val application = CoreApplication.get()
-  return application.getResources().getIdentifier(
-        "itinerary__" + itinerary.codVV.toLowerCase(), "raw", application.getPackageName())
+  return application.resources.getIdentifier(
+        "itinerary__" + itinerary.codVV.toLowerCase(), "raw", application.packageName)
 }
 
 fun getEnpKmlResource(itinerary: ItineraryBO): Int {

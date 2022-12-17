@@ -41,8 +41,8 @@ abstract class TextSizeThemeActivity : UnderActivity() {
     }
   }
 
-  override fun onContextItemSelected(item: MenuItem?): Boolean {
-    return when (item?.itemId) {
+  override fun onContextItemSelected(item: MenuItem): Boolean {
+    return when (item.itemId) {
       R.id.action__text__small -> trueRes { saveTextPreference(-1) }
       R.id.action__text__normal -> trueRes { saveTextPreference(0) }
       R.id.action__text__big -> trueRes { saveTextPreference(1) }
@@ -51,8 +51,8 @@ abstract class TextSizeThemeActivity : UnderActivity() {
     }
   }
 
-  override fun onOptionsItemSelected(item: MenuItem?): Boolean {
-    return when (item?.itemId) {
+  override fun onOptionsItemSelected(item: MenuItem): Boolean {
+    return when (item.itemId) {
       R.id.action__text__small -> trueRes { saveTextPreference(-1) }
       R.id.action__text__normal -> trueRes { saveTextPreference(0) }
       R.id.action__text__big -> trueRes { saveTextPreference(1) }
