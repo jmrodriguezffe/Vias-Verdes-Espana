@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Document id="Vias_Verdes_2018-ACOND-APP_ENP" xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
+		<Style id="LineStyle0103">
+			<LineStyle>
+				<color>ff33691e</color>
+				<width>12</width>
+			</LineStyle>
+		</Style>
+		<Style id="LineStyle00">
+			<LineStyle>
+				<color>ff33691e</color>
+				<width>12</width>
+			</LineStyle>
+		</Style>
+		<Folder id="FeatureLayer0">
+			<Placemark id="ID_00135">
+				<name>VV-Vigo-Redondela. Tramo Chapela</name>
+				<styleUrl>#LineStyle00</styleUrl>
+				<MultiGeometry>
+					<LineString>
+						<coordinates>
+							-8.668837700031952,42.27346949773418,0 -8.668929514064631,42.27249317009445,0 -8.669048615127943,42.2718203596056,0 -8.669077486184715,42.27128540458497,0 -8.669295339526593,42.2705695876725,0 -8.66960686797521,42.27003966843333,0 -8.669820861750164,42.26968159865176,0 -8.670050293031995,42.26931265071544,0 -8.670501693333254,42.26861709250019,0 -8.671331203957827,42.26736236914397,0 -8.672568734951465,42.26535093809853,0 -8.673585849810804,42.26380163237513,0 -8.674049608572433,42.26324547208652,0 -8.674400256781231,42.26286603381547,0 -8.675130556124229,42.26242963884232,0 -8.675893210826308,42.26206785032436,0 -8.676281328718828,42.26181992666623,0 -8.676841376825999,42.26148724640189,0 -8.677493976050387,42.26104343979363,0
+						</coordinates>
+					</LineString>
+				</MultiGeometry>
+			</Placemark>
+		</Folder>
+	</Document>
+</kml>

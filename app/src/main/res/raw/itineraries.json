@@ -314,7 +314,7 @@
 	{
       "codVV": "OJN1",
       "id": 46,
-      "name": "V.V. de Ojos Negros",
+      "name": "V.V. de Ojos Negros (Comunidad Valenciana)",
       "length": 75.53,
       "provinces": "Castellón, Valencia",
       "ca": "Comunidad Valenciana",
@@ -757,7 +757,7 @@
 	{
       "codVV": "OJN2",
       "id": 101,
-      "name": "V.V. de Ojos Negros II",
+      "name": "V.V. de Ojos Negros (Teruel)",
       "length": 93.65,
       "provinces": "Castellón, Teruel",
       "ca": "Aragón, Comunidad Valenciana",
@@ -781,7 +781,7 @@
 	{
       "codVV": "JARA",
       "id": 103,
-      "name": "V.V. de la Jara",
+      "name": "V.V. de la Jara. \"En mal estado\"",
       "length": 51.76,
       "provinces": "Toledo",
       "ca": "Castilla-La Mancha",
@@ -794,7 +794,7 @@
       "codVV": "TCAM",
       "id": 104,
       "name": "V.V. de Tierra de Campos",
-      "length": 18.95,
+      "length": 5.04,
       "provinces": "Valladolid",
       "ca": "Castilla y León",
       "userTypes": "1,2,3,5",
@@ -813,6 +813,16 @@
       "unescoText": "<a href=\"http://whc.unesco.org/en/list/874\">Arte rupestre del arco mediterráneo de la Península Ibérica</a> (Cueva del Parpalló, en Gandía)",
       "naturaText": "Esta Vía Verde cuenta con 12 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: Los LICS Serres del Montdúver i Marxunquera, Marjal de la Safor, Dunes de la Safor y Cova Xurra - Gandia y la ZEPA Montdúver – Marjal de la Safor (Red Natura 2000), así como las Zonas Húmedas Marjal de la Safor y Ullal de l`Estany del Duc, el Paisaje Protegido Serpis, la Cova de l`Autopista, Cova dels Orgues, Cova Xurra y Sima Blanca. Además, a poco más de 5 km se encuentra el Parque Natural Marjal de Pego Oliva.\n\n\nAdemás, es posible conocer más sobre estos Espacios Naturales Protegidos gracias a la Oficina del Marjal de Pego-Oliva.",
       "connections": "Esta Vía Verde conecta con la <a href=\"viaverde://detail?id=7\">Vía Verde de Dénia</a> a través de los caminos del marjal de Pego-Oliva"
+    },
+    {
+      "codVV": "XURR",
+      "id": 106,
+      "name": "V.V. de Xurra",
+      "length": 16.19,
+      "provinces": "Valencia",
+      "ca": "Comunidad Valenciana",
+      "userTypes": "1,2,3",
+      "localization": "Entre Valencia y Puçol."
     },
     {
       "codVV": "ARRA",
@@ -1054,7 +1064,7 @@
       "codVV": "JAYO",
       "id": 136,
       "name": "V.V. Mina La Jayona",
-      "length": 19.83,
+      "length": 19.76,
       "provinces": "Badajoz",
       "ca": "Extremadura",
       "userTypes": "1,2",
@@ -1155,7 +1165,7 @@
       "codVV": "LAGU",
       "id": 147,
       "name": "V.V. de Las Lagunas",
-      "length": 6.64,
+      "length": 11.77,
       "provinces": "Sevilla",
       "ca": "Andalucía",
       "userTypes": "1,2",
@@ -1210,7 +1220,7 @@
     {
       "codVV": "BAZ1",
       "id": 152,
-      "name": "V.V. FC. Guadix-Almendricos",
+      "name": "V.V. del FC Guadix-Almendricos (Baza-Valle del Almanzora)",
       "length": 98.6,
       "provinces": "Almería, Granada",
       "ca": "Andalucía",
@@ -1254,7 +1264,7 @@
     {
       "codVV": "JILO",
       "id": 156,
-      "name": "V.V. FC. Santand.-Mediterráneo (Jiloca)",
+      "name": "V.V. Santander-Mediterráneo (Calatayud)",
       "length": 9.48,
       "provinces": "Zaragoza",
       "ca": "Aragón",
@@ -1328,6 +1338,16 @@
       "localization": "Entre Carcaixent-Barraca Aigues Vives-Benifairo."
     },
     {
+      "codVV": "SALN",
+      "id": 164,
+      "name": "V.V. do Salnés",
+      "length": 9.21,
+      "provinces": "Pontevedra",
+      "ca": "Galicia",
+      "userTypes": "1,2,3",
+      "localization": "Entre Abelle en Vilagarcia, Caldas y Portas."
+    },
+    {
       "codVV": "PLA3",
       "id": 165,
       "name": "V. V. Ruta de la Plata (Barcial-Pobladura)",
@@ -1349,6 +1369,66 @@
       "localization": "En el término municipal de Manuel."
     },
     {
+      "codVV": "PETI",
+      "id": 167,
+      "name": "V.V. del Tren Petit",
+      "length": 6.54,
+      "provinces": "Girona",
+      "ca": "Cataluña",
+      "userTypes": "1,2,3,4",
+      "localization": "Ente Palamós y Palafrugell"
+    },
+    {
+      "codVV": "CAVA",
+      "id": 169,
+      "name": "V.V. del Carrilet de la Cava",
+      "length": 7.32,
+      "provinces": "Tarragona",
+      "ca": "Cataluña",
+      "userTypes": "1,2,3",
+      "localization": "Entre Tortosa y L'Aldea."
+    },
+    {
+      "codVV": "DARO",
+      "id": 170,
+      "name": "V.V. Santander-Mediterraneo-(Campo de Daroca)",
+      "length": 15.17,
+      "provinces": "Zaragoza",
+      "ca": "Aragón",
+      "userTypes": "1,2,3",
+      "localization": "Entre Murero y Villanueva de Jiloca."
+    },
+    {
+      "codVV": "XIX3",
+      "id": 172,
+      "name": "V.V. del Chicharra (Cieza)",
+      "length": 13.79,
+      "provinces": "Murcia",
+      "ca": "Región de Murcia",
+      "userTypes": "1,2,3",
+      "localization": "Entre Cieza y Jumilla"
+    },
+    {
+      "codVV": "XIX4",
+      "id": 1172,
+      "name": "V.V. del Chicharra (Yecla)",
+      "length": 8.91,
+      "provinces": "Murcia",
+      "ca": "Región de Murcia",
+      "userTypes": "1,2,3",
+      "localization": "Entre Yecla y Jumilla"
+    },
+    {
+      "codVV": "ARGM",
+      "id": 173,
+      "name": "V.V. del Trenillo de la Calzá",
+      "length": 10.9,
+      "provinces": "Ciudad Real",
+      "ca": "Castilla-La Mancha",
+      "userTypes": "1,2",
+      "localization": "Tramos interrumpidos en Argamasilla de Calatrava"
+    },
+    {
       "codVV": "HUER",
       "id": 175,
       "name": "V.V. de la Costera Sur",
@@ -1357,6 +1437,26 @@
       "ca": "Región de Murcia",
       "userTypes": "1,2",
       "localization": "Entre Alqueria a Los Dolores"
+    },
+    {
+      "codVV": "SMSO",
+      "id": 176,
+      "name": "V.V. FC. Santander-Mediterráneo (Valcorba-Ciria)",
+      "length": 43.52,
+      "provinces": "Soria",
+      "ca": "Castilla y León",
+      "userTypes": "1,2,3",
+      "localization": "Entre Ontalvilla de Valcorba y Ciria."
+    },
+    {
+      "codVV": "ALDE",
+      "id": 178,
+      "name": "V.V. del-Delta de l´Ebre.",
+      "length": 1.81,
+      "provinces": "Tarragona",
+      "ca": "Cataluña",
+      "userTypes": "1,2,3",
+      "localization": "Aparcamiento Plz 1 octubre (L'Aldea)-Bco.Mas Roig."
     },
     {
       "codVV": "ANO",
@@ -1369,5 +1469,55 @@
       "localization": "Entre Añorga-Errekalde y Lasarte (Donostia/San Sebastián).",
       "naturaText": "Esta Vía Verde cuenta con 6 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: Los LICS Ulia, Urumea ibaia/ Río Urumea y Oriako itsasadarra/ Ría del Oria (Red Natura 2000) y los Árboles Singulares Ginkgo de Hernani, Roble Igara y la Encina de Donostia – San Sebastián.\n\nAdemás, es posible conocer más sobre estos Espacios Naturales Protegidos gracias al Centro de visitantes Leitzaran.\n\nhttps://www.leitzaran.net/visitantes.html"
     },
+    {
+      "codVV": "SOTC",
+      "id": 180,
+      "name": "V.V. Compostela-Tambre-Lenguelle",
+      "length": 26.67,
+      "provinces": "La Coruña",
+      "ca": "Galicia",
+      "userTypes": "1,2,3",
+      "localization": "Entre Oroso y Cerceda"
+    },
+    {
+      "codVV": "BENI",
+      "id": 500,
+      "name": "V.V. Benidorm",
+      "length": 1.62,
+      "provinces": "Alicante",
+      "ca": "Comunidad Valenciana",
+      "userTypes": "1,2",
+      "localization": "Partida del Moralet."
+    },
+    {
+      "codVV": "SM6",
+      "id": 501,
+      "name": "Conexión Burgos - Tramos V.V. Santander Mediterráneo",
+      "length": 8.26,
+      "provinces": "Burgos",
+      "ca": "Castilla y León",
+      "userTypes": "1,2",
+      "localization": "Entre Cojóbar-Cascajares y Castellanos-Quintanilla"
+    },
+    {
+      "codVV": "CHAP",
+      "id": 502,
+      "name": "V.V. Vigo-Redondela. Tramo Chapela",
+      "length": 1.61,
+      "provinces": "Pontevedra",
+      "ca": "Galicia",
+      "userTypes": "1,2",
+      "localization": "Entre limite Redondela y Estación de Chapela."
+    },
+    {
+      "codVV": "VIRE",
+      "id": 503,
+      "name": "V.V. Vigo-Redondela. Tramo Urzáiz-Teis",
+      "length": 3.78,
+      "provinces": "Pontevedra",
+      "ca": "Galicia",
+      "userTypes": "1,2",
+      "localization": "Entre C.C. Vialia- Vigo Urzáiz-Teis y Chapela."
+    }
   ]
 }
