@@ -3,6 +3,7 @@ package com.viasverdes.viasverdesespana.data.bo
 import android.os.Parcelable
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import kotlinx.parcelize.IgnoredOnParcel
 import kotlinx.parcelize.Parcelize
 
 @Parcelize
@@ -21,5 +22,6 @@ data class ItineraryBO(
       var accesibilityText: String?,
       var unescoText: String?
 ) : Parcelable {
-      val webLink = id % 1000 // workaround to have 2 or more itineraries with the same web id
+
+      fun webLink() = id % 1000 // workaround to have 2 or more itineraries with the same web id
 }

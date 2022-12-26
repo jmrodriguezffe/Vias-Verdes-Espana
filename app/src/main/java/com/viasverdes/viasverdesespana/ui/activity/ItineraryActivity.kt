@@ -96,7 +96,7 @@ class ItineraryActivity : TextSizeThemeActivity() {
     binding.itineraryBack.setOnClickListener { onBackPressed() }
     binding.itinerarySeeInMap.setOnClickListener { MapActivity.start(this, itinerary) }
     binding.itineraryHowToGet.setOnClickListener { goTo() }
-    binding.itineraryMoreInfo.setVisible(itinerary.webLink < 500)
+    binding.itineraryMoreInfo.setVisible(itinerary.webLink() < 500)
     binding.itineraryMoreInfo.setOnClickListener { moreInfo() }
     binding.itineraryScroll.viewTreeObserver.addOnScrollChangedListener {
       val scrollY = binding.itineraryScroll.scrollY.toFloat()
@@ -149,7 +149,7 @@ class ItineraryActivity : TextSizeThemeActivity() {
   fun moreInfo() {
     val itinerary = intent.getParcelableExtra<ItineraryBO>(ARG_ITINERARY)
     val moreInfoUri =
-      Uri.parse("http://www.viasverdes.com/rednatura2000/itinerarios/itinerario.asp?id=" + itinerary?.webLink)
+      Uri.parse("http://www.viasverdes.com/rednatura2000/itinerarios/itinerario.asp?id=" + itinerary?.webLink())
     val mapIntent = Intent(Intent.ACTION_VIEW, moreInfoUri)
     startActivity(mapIntent)
   }
