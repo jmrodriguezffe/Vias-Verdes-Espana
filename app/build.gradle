@@ -28,8 +28,8 @@ android {
     applicationId "com.viasverdes.viasverdesyenp"
     minSdkVersion 19
     targetSdkVersion 33
-    versionCode 14
-    versionName "1.5"
+    versionCode 15
+    versionName "1.6"
     testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
   }
   buildTypes {
