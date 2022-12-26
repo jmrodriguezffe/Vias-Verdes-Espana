@@ -20,4 +20,6 @@ data class ItineraryBO(
       var connections: String?,
       var accesibilityText: String?,
       var unescoText: String?
-) : Parcelable
+) : Parcelable {
+      val webLink = id % 1000 // workaround to have 2 or more itineraries with the same web id
+}

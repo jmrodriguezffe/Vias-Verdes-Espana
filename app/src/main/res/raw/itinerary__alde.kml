@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Document id="Vias_Verdes_2018-ACOND-APP_ENP" xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
+		<Style id="LineStyle0103">
+			<LineStyle>
+				<color>ff33691e</color>
+				<width>12</width>
+			</LineStyle>
+		</Style>
+		<Style id="LineStyle00">
+			<LineStyle>
+				<color>ff33691e</color>
+				<width>12</width>
+			</LineStyle>
+		</Style>
+		<Folder id="FeatureLayer0">
+			<Placemark id="ID_00136">
+				<name>VV-del-Delta de l´Ebre.</name>
+				<styleUrl>#LineStyle00</styleUrl>
+				<MultiGeometry>
+					<LineString>
+						<coordinates>
+							0.6398784318605938,40.75629545410701,0 0.6373493303553062,40.7548769784438,0 0.6339777996031809,40.75290169436796,0 0.6308885357489893,40.75113473092917,0 0.6281709492128937,40.74956185964007,0 0.6257180331144464,40.74815216084987,0 0.6248199315674288,40.74767715468808,0 0.6241100957590227,40.74732549041394,0 0.6232521295470835,40.74705734860905,0 0.6224502253994216,40.7468462302474,0
+						</coordinates>
+					</LineString>
+				</MultiGeometry>
+			</Placemark>
+		</Folder>
+	</Document>
+</kml>

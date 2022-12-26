@@ -42,8 +42,6 @@ X
 X
 (app/src/main/res/raw/itinerary__arra.kml,1\0\10321aaa6bbd3cb3b8ea5142226ed59f2cdf4110
 X
-(app/src/main/res/raw/itinerary__besa.kml,6\1\61a8c8b7d28a1111e5e191550d9cd89dd0d974d2
-X
 (app/src/main/res/raw/itinerary__cart.kml,3\e\3e8208edaa7a0d555ddc5edc8ee87e203da54ff8
 X
 (app/src/main/res/raw/itinerary__sier.kml,b\4\b4329036f6b5d10be25155d0ac16e528067af0f3
@@ -67,8 +65,6 @@ X
 (app/src/main/res/raw/itinerary__car2.kml,3\1\313fc6fea777d096cb9bdd536a8afde058a884fc
 R
 "app/src/main/res/values/arrays.xml,7\c\7cca4a2d94815c47d6a1ce79d4f7ac1c41c7b766
-t
-Dapp/src/main/java/com/viasverdes/viasverdesespana/data/VVDatabase.kt,7\5\75cd19fcb233d9a3e0515fc4ec8e39be74701785
 z
 Japp/src/main/java/com/viasverdes/viasverdesespana/utils/CollectionUtils.kt,d\b\db9ac4d73924481571cd114ac520d9bfffc81500
 T
