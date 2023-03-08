@@ -107,9 +107,9 @@ Vapp/src/main/java/com/viasverdes/viasverdesespana/ui/fragment/InfoResourcesFrag
 Uapp/src/main/java/com/viasverdes/viasverdesespana/utils/BottomNavigationViewHelper.kt,e/2/e2db5d675469c5fb15342de53cefc0142b3c0705
 |
 Lapp/src/main/java/com/viasverdes/viasverdesespana/ui/activity/MapActivity.kt,b/9/b9bfe413cd9c04ee02a46a5e9d3d5a5a8e0da2e2
-|
-Lapp/src/main/java/com/viasverdes/viasverdesespana/ui/fragment/MapFragment.kt,b/e/be27eaf32054eb74da07dceaf0b3c03efc028dc4
 w
 Gapp/src/main/java/com/google/maps/android/data/kml/CustomKmlParser.java,c/b/cb3056aa77f99475b94b7ed13496dbf7ee1b42b8
 n
 >app/src/main/java/com/viasverdes/viasverdesespana/Constants.kt,3/f/3fbcaba9556e6399bf764eeaa8a6125db09a3080
+<
+build.gradle,f/0/f07866736216be0ee2aba49e392191aeae700a35

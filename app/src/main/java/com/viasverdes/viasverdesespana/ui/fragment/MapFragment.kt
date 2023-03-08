@@ -14,6 +14,10 @@ import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.*
+import com.google.maps.android.collections.GroundOverlayManager
+import com.google.maps.android.collections.MarkerManager
+import com.google.maps.android.collections.PolygonManager
+import com.google.maps.android.collections.PolylineManager
 import com.google.maps.android.data.Feature
 import com.google.maps.android.data.Layer
 import com.google.maps.android.data.kml.KmlLayer
@@ -33,6 +37,7 @@ class MapFragment : VMFragment(), OnMapReadyCallback, Layer.OnFeatureClickListen
   companion object {
     const val ARG_ITINERARY = "ITINERARY"
     const val LOCATION_REQUEST_CODE = 786
+    const val ITINERARY_MARKER_COLLECTION = "ITINERARIES"
 
     fun newInstance(itinerary: ItineraryBO?): MapFragment {
       val args = Bundle()
@@ -46,13 +51,17 @@ class MapFragment : VMFragment(), OnMapReadyCallback, Layer.OnFeatureClickListen
   }
 
   private lateinit var mMap: GoogleMap
-  private lateinit var binding: FragmentMapBinding
+  private lateinit var markerManager: MarkerManager
+  private lateinit var groundOverlayManager: GroundOverlayManager
+  private lateinit var polygonManager: PolygonManager
+  private lateinit var polylineManager: PolylineManager
   private var customTileProvider: TileOverlay? = null
-
+  private lateinit var binding: FragmentMapBinding
 
   override fun initializeView() {
     binding = FragmentMapBinding.bind(requireView())
-    val mapFragment = childFragmentManager.findFragmentById(R.id.map__view__map) as SupportMapFragment
+    val mapFragment =
+      childFragmentManager.findFragmentById(R.id.map__view__map) as SupportMapFragment
     mapFragment.getMapAsync(this)
     binding.mapBtnInfoClose.setOnClickListener { showInfoPanel(false) }
   }
@@ -62,8 +71,8 @@ class MapFragment : VMFragment(), OnMapReadyCallback, Layer.OnFeatureClickListen
   }
 
   override fun onCreateOptionsMenu(
-        menu: Menu,
-        inflater: MenuInflater
+    menu: Menu,
+    inflater: MenuInflater
   ) {
     super.onCreateOptionsMenu(menu, inflater)
     inflater.inflate(R.menu.map_layers, menu)
@@ -82,7 +91,8 @@ class MapFragment : VMFragment(), OnMapReadyCallback, Layer.OnFeatureClickListen
 
   private fun loadMtnRasterLayer() {
     mMap.mapType = GoogleMap.MAP_TYPE_NONE
-    customTileProvider = mMap.addTileOverlay(TileOverlayOptions().zIndex(-1f).tileProvider(MtnRasterTileProvider()))
+    customTileProvider =
+      mMap.addTileOverlay(TileOverlayOptions().zIndex(-1f).tileProvider(MtnRasterTileProvider()))
   }
 
   private fun loadGoogleLayer(mapType: Int) {
@@ -93,6 +103,11 @@ class MapFragment : VMFragment(), OnMapReadyCallback, Layer.OnFeatureClickListen
 
   override fun onMapReady(googleMap: GoogleMap) {
     mMap = googleMap
+    markerManager = MarkerManager(googleMap)
+    markerManager.newCollection(ITINERARY_MARKER_COLLECTION)
+    polygonManager = PolygonManager(googleMap)
+    polylineManager = PolylineManager(googleMap)
+    groundOverlayManager = GroundOverlayManager(googleMap)
 
     checkMyLocation()
 
@@ -102,18 +117,19 @@ class MapFragment : VMFragment(), OnMapReadyCallback, Layer.OnFeatureClickListen
         itinerary?.let { addItineraryToMap(it, centerMap = true, addEnp = true) }
       } else {
         context?.let { ctx ->
-          VVDatabase.getInstance(ctx)?.itineraryDAO()?.getAllLiveData()?.observe(this,
-                Observer { itinerary ->
-                  if (itinerary.isNotNullOrEmpty()) {
-                    itinerary?.forEach {
-                      addItineraryToMap(it, centerMap = false, addEnp = false)
-                    }
-                    moveCameraToMadrid()
-                    mMap.setOnInfoWindowClickListener {
-                      activity?.let { it1 -> ItineraryActivity.start(it1, it.tag as ItineraryBO) }
-                    }
-                  }
-                })
+          VVDatabase.getInstance(ctx)?.itineraryDAO()?.getAllLiveData()?.observe(this
+          ) { itineraries ->
+            if (itineraries.isNotNullOrEmpty()) {
+              itineraries?.forEach {
+                addItineraryToMap(it, centerMap = false, addEnp = false)
+              }
+              moveCameraToMadrid()
+              markerManager.getCollection(ITINERARY_MARKER_COLLECTION)
+                .setOnInfoWindowClickListener {
+                  activity?.let { it1 -> ItineraryActivity.start(it1, it.tag as ItineraryBO) }
+                }
+            }
+          }
         }
       }
     }
@@ -121,24 +137,31 @@ class MapFragment : VMFragment(), OnMapReadyCallback, Layer.OnFeatureClickListen
 
   private fun checkMyLocation() {
     context?.let {
-      val permission = PermissionChecker.checkSelfPermission(it,
-            Manifest.permission.ACCESS_FINE_LOCATION)
+      val permission = PermissionChecker.checkSelfPermission(
+        it,
+        Manifest.permission.ACCESS_FINE_LOCATION
+      )
       if (permission == PermissionChecker.PERMISSION_GRANTED) {
         mMap.isMyLocationEnabled = true
       } else if (activity != null && requireActivity().isFinishing.not()) {
-        ActivityCompat.requestPermissions(requireActivity(), arrayOf(Manifest.permission.ACCESS_FINE_LOCATION), LOCATION_REQUEST_CODE)
+        ActivityCompat.requestPermissions(
+          requireActivity(),
+          arrayOf(Manifest.permission.ACCESS_FINE_LOCATION),
+          LOCATION_REQUEST_CODE
+        )
       }
     }
   }
 
   override fun onRequestPermissionsResult(
-        requestCode: Int,
-        permissions: Array<out String>,
-        grantResults: IntArray
+    requestCode: Int,
+    permissions: Array<out String>,
+    grantResults: IntArray
   ) {
     if (requestCode == LOCATION_REQUEST_CODE) {
       if (grantResults.isNotEmpty()
-            && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+        && grantResults[0] == PackageManager.PERMISSION_GRANTED
+      ) {
         checkMyLocation()
       }
     } else {
@@ -147,13 +170,22 @@ class MapFragment : VMFragment(), OnMapReadyCallback, Layer.OnFeatureClickListen
   }
 
   private fun addItineraryToMap(
-        itinerary: ItineraryBO,
-        centerMap: Boolean,
-        addEnp: Boolean
+    itinerary: ItineraryBO,
+    centerMap: Boolean,
+    addEnp: Boolean
   ) {
     val kmlResource = getItineraryKmlResource(itinerary)
     if (kmlResource > 0) {
-      val layer = KmlLayer(mMap, kmlResource, context)
+      val layer = KmlLayer(
+        mMap,
+        kmlResource,
+        context,
+        markerManager,
+        polygonManager,
+        polylineManager,
+        groundOverlayManager,
+        null
+      )
       layer.addLayerToMap()
       if (centerMap) {
         mMap.setOnMapLoadedCallback { moveCameraToKml(layer) }
@@ -164,7 +196,16 @@ class MapFragment : VMFragment(), OnMapReadyCallback, Layer.OnFeatureClickListen
     if (addEnp) {
       val enpKmlResource = getEnpKmlResource(itinerary)
       if (enpKmlResource > 0) {
-        val layer = KmlLayer(mMap, enpKmlResource, context)
+        val layer = KmlLayer(
+          mMap,
+          enpKmlResource,
+          context,
+          markerManager,
+          polygonManager,
+          polylineManager,
+          groundOverlayManager,
+          null
+        )
         layer.setOnFeatureClickListener(this)
         layer.addLayerToMap()
       }
@@ -192,23 +233,29 @@ class MapFragment : VMFragment(), OnMapReadyCallback, Layer.OnFeatureClickListen
       for (latLng in latlngList) {
         builder.include(latLng)
       }
-      mMap.moveCamera(CameraUpdateFactory.newLatLngBounds(builder.build(), ResourcesUtils.getDimen(R.dimen.margin__map).toInt()))
+      mMap.moveCamera(
+        CameraUpdateFactory.newLatLngBounds(
+          builder.build(),
+          ResourcesUtils.getDimen(R.dimen.margin__map).toInt()
+        )
+      )
     } catch (e: Exception) {
       moveCameraToMadrid()
     }
   }
 
   private fun insertMarkerOnFirstCoordinate(
-        itinerary: ItineraryBO,
-        kmlLayer: KmlLayer
+    itinerary: ItineraryBO,
+    kmlLayer: KmlLayer
   ) {
     try {
       val latLng = getFirstCoordinateOnLayer(kmlLayer.containers)
-      mMap.addMarker(MarkerOptions()
-            .position(latLng)
-            .title(itinerary.name)
-            .snippet(getString(R.string.map__marker_more_info))
-            .icon(BitmapDescriptorFactory.fromResource(R.drawable.marker__itinerary))
+      markerManager.getCollection(ITINERARY_MARKER_COLLECTION).addMarker(
+        MarkerOptions()
+          .position(latLng)
+          .title(itinerary.name)
+          .snippet(getString(R.string.map__marker_more_info))
+          .icon(BitmapDescriptorFactory.fromResource(R.drawable.marker__itinerary))
       )?.tag = itinerary
     } catch (e: Exception) {
       // Nothing to do
