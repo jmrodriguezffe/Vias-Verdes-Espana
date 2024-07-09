@@ -6,12 +6,11 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.WorkManager
-import com.viasverdes.viasverdesespana.BuildConfig
 import com.viasverdes.viasverdesespana.data.bo.ItineraryBO
 import com.viasverdes.viasverdesespana.data.dao.ItineraryDAO
 import com.viasverdes.viasverdesespana.work.ImportItinerariesWorker
 
-@Database(entities = [ItineraryBO::class], version = BuildConfig.VERSION_CODE, exportSchema = false)
+@Database(entities = [ItineraryBO::class], version = 18, exportSchema = false)
 abstract class VVDatabase : RoomDatabase() {
 
   abstract fun itineraryDAO(): ItineraryDAO

@@ -35,7 +35,7 @@ class ListVVFragment : VMFragment(), Observer<List<ItineraryBO>>, AdapterClickLi
   private lateinit var binding: FragmentListItinerariesBinding
 
   override fun initializeView() {
-    binding = FragmentListItinerariesBinding.bind(view!!)
+    binding = FragmentListItinerariesBinding.bind(requireView())
     context?.let {ctx ->
       binding.itinerariesList.layoutManager = androidx.recyclerview.widget.LinearLayoutManager(ctx)
       VVDatabase.getInstance(ctx)?.itineraryDAO()?.getAllLiveData()?.observe(this, this)
@@ -86,6 +86,7 @@ class ListVVFragment : VMFragment(), Observer<List<ItineraryBO>>, AdapterClickLi
     return R.layout.fragment__list_itineraries
   }
 
+  @Deprecated("Deprecated in Java")
   override fun onCreateOptionsMenu(
         menu: Menu,
         inflater: MenuInflater
@@ -94,25 +95,24 @@ class ListVVFragment : VMFragment(), Observer<List<ItineraryBO>>, AdapterClickLi
     inflater.inflate(R.menu.list_itineraries, menu)
   }
 
+  @Deprecated("Deprecated in Java")
   override fun onOptionsItemSelected(item: MenuItem): Boolean {
     return when (item.itemId) {
-      R.id.action__search -> trueRes { toogleSearchContainer() }
+      R.id.action__search -> trueRes { toggleSearchContainer() }
       else -> super.onOptionsItemSelected(item)
     }
   }
 
-  private fun toogleSearchContainer() {
+  private fun toggleSearchContainer() {
     binding.itinerariesContainerSearch.toogleVisibility()
     binding.itinerariesShadowSearch.visibility = binding.itinerariesContainerSearch.visibility
   }
 
-  override fun onChanged(data: List<ItineraryBO>?) {
-    if (data != null) {
-      listVVAdapter = ListVVAdapter(data)
-      listVVAdapter?.listener = this
-      binding.itinerariesList.adapter = listVVAdapter
-      binding.itinerariesLabelNoSearchFound.setVisible(listVVAdapter?.itemCount == 0)
-    }
+  override fun onChanged(value: List<ItineraryBO>) {
+    listVVAdapter = ListVVAdapter(value)
+    listVVAdapter?.listener = this
+    binding.itinerariesList.adapter = listVVAdapter
+    binding.itinerariesLabelNoSearchFound.setVisible(listVVAdapter?.itemCount == 0)
   }
 
   override fun onItemClick(item: ItineraryBO) {
