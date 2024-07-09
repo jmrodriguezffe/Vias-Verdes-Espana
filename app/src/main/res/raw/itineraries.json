@@ -233,17 +233,6 @@
       "connections": "Esta Vía Verde conecta con en Burgos con el Camino de Santiago"
     },
 	{
-      "codVV": "SM3",
-      "id": 37,
-      "name": "V.V. FC. Santand.-Mediterráneo. (La Engaña)",
-      "length": 5.94,
-      "provinces": "Burgos",
-      "ca": "Castilla y León",
-      "userTypes": "1,2,5",
-      "localization": "Entre Santelices y el túnel de La Engaña",
-      "naturaText": "Esta Vía Verde cuenta con 3 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: los LICS Ojo Guareña y Riberas del Río Nela y afluentes (Red Natura 2000), así como el Monumento Natural Ojo Guareña.\n\n\nAdemás, es posible conocer más sobre estos Espacios Naturales Protegidos gracias a la Casa del Parque “Ojo Guareña”."
-    },
-	{
       "codVV": "GUA1",
       "id": 38,
       "name": "V.V. de las Vegas del Guadiana",
@@ -395,18 +384,6 @@
       "naturaText": "Esta Vía Verde cuenta con 5 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: La Reserva de la Biosfera de Sierra Nevada, el Parque Nacional de Sierra Nevada, El Parque Natural de Sierra Nevada, así como el ZIC Sierra Nevada y el LIC Sierra Nevada Noroeste (Red Natura 2000).\n\n\nAdemás, es posible conocer más sobre estos Espacios Naturales Protegidos gracias al Centro de visitantes El Dornajo."
     },
 	{
-      "codVV": "TAJ2",
-      "id": 57,
-      "name": "V.V. del Tajuña II",
-      "length": 16,
-      "provinces": "Guadalajara",
-      "ca": "Castilla-La Mancha",
-      "userTypes": "1,2",
-      "localization": "Entre el polideportivo situado en la explanación de la antigua estación de Pozo de Almoguera y el límite provincial de Guadalajara con Madrid en Mondéjar.",
-      "naturaText": "Esta Vía Verde cuenta con 1 Espacio Natural Protegido localizado en un radio inferior a 5 km: El LIC Vegas, Cuestas y Páramos del Sureste de Madrid (Red Natura 2000).",
-      "connections": "Esta Vía Verde queda muy próxima a la <a href=\"viaverde://detail?id=84\">Vía Verde del Tajuña</a>"
-    },
-	{
       "codVV": "ARDI",
       "id": 58,
       "name": "V.V. de Arditurri",
@@ -498,18 +475,6 @@
       "localization": "Entre Linares (Barriada San Gonzalo) y  el Camino de Arquillas,  proximidades de la Crta. N-322, Estación de Linares-Baeza).",
       "naturaText": "Esta Vía Verde cuenta con 1 Espacio Natural Protegido localizado en un radio inferior a 5 km: El ZIC del río Guadalimar (Red Natura 2000).\n\n\nAdemás, es posible conocer más sobre este Espacio Natural Protegido gracias al Punto de información Laguna Grande.",
       "connections": "Esta Vía Verde conecta con la <a href=\"viaverde://detail?id=71\">Vía Verde de Vadollano</a> y la <a href=\"viaverde://detail?id=68\">Vía Verde del Guadalimar</a>"
-    },
-	{
-      "codVV": "VADO",
-      "id": 71,
-      "name": "V.V. de Vadollano",
-      "length": 6.82,
-      "provinces": "Jaén",
-      "ca": "Andalucía",
-      "userTypes": "1,2",
-      "localization": "Entre Linares y el paraje de Vadollano",
-      "naturaText": "Esta Vía Verde cuenta con 2 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: El ZIC del río Guadalimar (Red Natura 2000) y el Monumento Natural El Piélago.\n\n\nAdemás, es posible conocer más sobre estos Espacios Naturales Protegidos gracias al Punto de información Laguna Grande.",
-      "connections": "Esta Vía Verde conecta con la <a href=\"viaverde://detail?id=69\">Vía Verde de Linares</a> y la <a href=\"viaverde://detail?id=68\">Vía Verde del Guadalimar</a>"
     },
 	{
       "codVV": "ROJA",
@@ -731,18 +696,6 @@
       "naturaText": "Esta Vía Verde cuenta con 2 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: Los LICs Quejigares y encinares de Sierra del Madero y Sierra del Moncayo (Red Natura 2000).\n\n\nAdemás, es posible conocer más sobre estos Espacios Naturales Protegidos gracias al Centro de Interpretación de Agramonte."
     },
 	{
-      "codVV": "TERR",
-      "id": 99,
-      "name": "V.V. del Val de Zafán - Terra Alta",
-      "length": 23.46,
-      "provinces": "Tarragona",
-      "ca": "Cataluña",
-      "userTypes": "1,2,3,5",
-      "localization": "Entre las estaciones de Arnes-Lledó y El Pinell de Brai.",
-      "naturaText": "Esta Vía Verde cuenta con 12 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: El Parque Natural de Els Ports, la Reserva de la Biosfera Terres de l’Ebre, la Reserva Natural Parcial de Ribera de l’Algars, así como los LICS Ribera de’Algars, Sistema prelitoral meridional, Río Algars y las ZEPAS Ribera de l’Algars y Sistema prelitoral meridional (Red Natura 2000) y los PEIN els Ports, Ribera de l`Algars, Serres de Pàndols-Cavalls y Algars-Serra Fulletera.\n\n\nAdemás, es posible conocer más sobre estos Espacios Naturales Protegidos gracias al Punto de Información. Ecomuseu dels Ports, al Centro de Visitantes del Parc Natural dels Ports en la Terra Alta, el Punto de información Molí de l’Oli. Parc Natural dels Ports y el Punto de Información Ca la Pelo de Paüls. Parc Natural dels Ports.",
-      "connections": "Esta Vía Verde conecta con la <a href=\"viaverde://detail?id=102\">Vía Verde Val de Zafán (Teruel)</a>, la <a href=\"viaverde://detail?id=100\">Vía Verde Val de Zafán (Baix Ebre)</a> y con el Camino Natural del Ebro GR.99"
-    },
-	{
       "codVV": "BAIX",
       "id": 100,
       "name": "V.V. del Val del Zafán - Baix Ebre",
@@ -856,19 +809,6 @@
       "localization": "Traslaviña (Artzentales) - Kobaron (Muskiz).",
       "unescoText": "<a href=\"http://whc.unesco.org/en/list/1217\">Puente de Bizkaia</a> (en Getxo) y <a href=\"http://whc.unesco.org/en/list/669\">Caminos de Santiago de Compostela: Caminos del Norte de España</a>.",
       "naturaText": "Esta Vía Verde cuenta con 4 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: los LICS Ría del Barbadum y Ordunte (Red Natura 2000), el Biotopo Protegido Meatzaldea – Zona Minera de Bizkaia, así como el Árbol Singular Hibrido de roble pedunculado y marojo de Arcentales.\n\n\nAdemás, es posible conocer más sobre estos Espacios Naturales Protegidos gracias al Centro de interpretación del Parque Natural de Armañón y de los Montes de Ordunte y el Museo de la Minería del País Vasco."
-    },
-    {
-      "codVV": "ITSA",
-      "id": 110,
-      "name": "V.V. Paseo de Itsaslur",
-      "length": 2.21,
-      "provinces": "Vizcaya",
-      "ca": "País Vasco",
-      "userTypes": "1,2,3",
-      "localization": "Entre el aparcamiento del barrio de Pobeña (Muskiz) y el aparcamiento de La Juncosa, en las inmediaciones del barrio de El Kobaron (Muskiz).",
-      "unescoText": "<a href=\"http://whc.unesco.org/en/list/1217\">Puente de Bizkaia</a> (en Getxo) y <a href=\"http://whc.unesco.org/en/list/669\">Caminos de Santiago de Compostela: Caminos del Norte de España.</a>",
-      "naturaText": "Esta Vía Verde cuenta con 1 Espacio Natural Protegido localizado en un radio inferior a 5 km: El LIC Barbadungo Itsasadarra/Ría de Barbadun (Red Natura 2000).\n\n\nAdemás, es posible conocer más sobre este Espacio Natural Protegido gracias al Museo de la Minería del País Vasco.",
-      "connections": "Esta Vía Verde conecta con la <a href=\"viaverde://detail?id=44\">Vía Verde del Piquillo</a>"
     },
     {
       "codVV": "TARA",
@@ -985,17 +925,6 @@
       "localization": "Entre el km 217 de la N-322 (T.M. de Arroyo del Ojanco) y el límite provincial Jaén-Albacete (T.M de Villarrodrigo).",
       "naturaText": "Esta Vía Verde cuenta con 8 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: El Parque Natural de Sierra de Cazorla, Segura y las Villas y la Reserva de la Biosfera Sierra de Cazorla, Segura y las Villas. Además de los LICS Cuencas del Rumblar, Guadalén y Guadalmena; Sierra del Relumbrar y estribaciones de Alcaraz; Sierra de Alcaraz y Segura; Cañones del Segura y del Mundo; y Sierra de Cazorla, Segura y las Villas, así como la  ZEPA Sierra de Cazorla, Segura y las Villas (Red Natura 2000).",
       "connections": "Esta Vía Verde conecta con la <a href=\"viaverde://detail?id=11\">Vía Verde de la Sierra de Alcaraz</a>"
-    },
-    {
-      "codVV": "ALC1",
-      "id": 128,
-      "name": "V.V. de Ibi",
-      "length": 1.41,
-      "provinces": "Alicante",
-      "ca": "Comunidad Valenciana",
-      "userTypes": "1,2,3",
-      "localization": "Ibi.",
-      "naturaText": "Esta Vía Verde cuenta con 5 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: El Parque Natural de Carrascal de la Font Roja, así como el LIC y ZEPA Serres de Mariola I El Carrascal de la Font Roja (Red Natura 2000) y los Parajes Naturales Sant Pasqual- Torretes y Els Plantadets.\n\nAdemás, es posible conocer más sobre estos Espacios Naturales Protegidos gracias al Centro de visitantes del Parc Natural del Carrascal de la Font Roja."
     },
 	{
       "codVV": "CART",
@@ -1116,18 +1045,6 @@
       "unescoText": "<a href=\"http://whc.unesco.org/en/list/381\">La Ciudad vieja de Salamanca</a>",
       "naturaText": "Esta Vía Verde cuenta con 1 Espacio Natural Protegido localizado en un radio inferior a 5 km: El LIC Riberas del Río Tormes y afluentes."
     },
-	{
-      "codVV": "VANG",
-      "id": 143,
-      "name": "V.V. del Fc Vasco - Navarro. Tramo Guipúzcoa",
-      "length": 20.14,
-      "provinces": "Guipúzcoa, Navarra",
-      "ca": "Comunidad Foral de Navarra, País Vasco",
-      "userTypes": "1,2,4",
-      "localization": "De la línea principal del Ferrocarril Vasco Navarro en Guipúzcoa se ha recuperado, como Vía Verde, varios tramos inconexos entre la localidad de Eskoriatza y el polígono industrial del barrio de Mekolalde (Bergara). El Ramal de Oñati conecta dicha localidad con la línea principal del Vasco Navarro en la rotonda de San Prudentzio, Junto al barrio de Elorregi (Bergara).",
-      "unescoText": "<a href=\"http://whc.unesco.org/en/list/669\">Caminos de Santiago de Compostela: Camino francés</a> (en Estella-Lizarra)",
-      "naturaText": "Esta Vía Verde cuenta con 4 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: El Parque Natural de Aizkorri-Aratz, los LIC de Aizkorri-Aratz (Red Natura 2000), así como los Monumentos Naturales Secuoya del Parque de Monterron y el Magnolio de Bergara, ambos Árboles Singulares.\n\nAdemás, es posible conocer más sobre estos Espacios Naturales gracias a los Centros de interpretación Parque Natural Aizkorri-Ararz y Parketxe Anduetza. "
-    },
     {
       "codVV": "LLIR",
       "id": 144,
@@ -1193,17 +1110,6 @@
       "userTypes": "1,2,3,4",
       "localization": "Entre los barrios de Arbuio (Alonsotegi) y Sodupe (Güeñes).",
       "naturaText": "Esta Vía Verde cuenta con 1 Espacio Natural Protegido localizado en un radio inferior a 5 km: El Biotopo Meatzaldea - Zona Minera de Bizkaia.\n\nAdemás, es posible conocer más sobre este Espacio Natural Protegido gracias al Museo de la Minería del País Vasco"
-    },
-	{
-      "codVV": "FUOV",
-      "id": 150,
-      "name": "V.V. Fuente Obejuna",
-      "length": 4.93,
-      "provinces": "Córdoba",
-      "ca": "Andalucía",
-      "userTypes": "1,2",
-      "localization": "1,5 k del inicio de la Carretera Fuente Obejuna-Los Blázquez",
-      "naturaText": "Esta Vía Verde cuenta con 1 Espacio Natural Protegido localizado en un radio inferior a 5 km: El ZIC Alto Guadiato."
     },
 	{
       "codVV": "SM5",
@@ -1439,16 +1345,6 @@
       "localization": "Entre Alqueria a Los Dolores"
     },
     {
-      "codVV": "SMSO",
-      "id": 176,
-      "name": "V.V. FC. Santander-Mediterráneo (Valcorba-Ciria)",
-      "length": 43.52,
-      "provinces": "Soria",
-      "ca": "Castilla y León",
-      "userTypes": "1,2,3",
-      "localization": "Entre Ontalvilla de Valcorba y Ciria."
-    },
-    {
       "codVV": "ALDE",
       "id": 178,
       "name": "V.V. del-Delta de l´Ebre.",
@@ -1498,26 +1394,6 @@
       "ca": "Castilla y León",
       "userTypes": "1,2",
       "localization": "Entre Cojóbar-Cascajares y Castellanos-Quintanilla"
-    },
-    {
-      "codVV": "CHAP",
-      "id": 502,
-      "name": "V.V. Vigo-Redondela. Tramo Chapela",
-      "length": 1.61,
-      "provinces": "Pontevedra",
-      "ca": "Galicia",
-      "userTypes": "1,2",
-      "localization": "Entre limite Redondela y Estación de Chapela."
-    },
-    {
-      "codVV": "VIRE",
-      "id": 503,
-      "name": "V.V. Vigo-Redondela. Tramo Urzáiz-Teis",
-      "length": 3.78,
-      "provinces": "Pontevedra",
-      "ca": "Galicia",
-      "userTypes": "1,2",
-      "localization": "Entre C.C. Vialia- Vigo Urzáiz-Teis y Chapela."
     }
   ]
 }
