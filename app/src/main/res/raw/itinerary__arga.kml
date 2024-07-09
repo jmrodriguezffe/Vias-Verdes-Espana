@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Document id="Vias_Verdes_2018-ACOND-APP_ENP" xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
+	<Style id="LineStyle0103">
+		<LineStyle>
+			<color>ff33691e</color>
+      <width>12</width>
+		</LineStyle>
+	</Style>
+	<Style id="LineStyle00">
+		<LineStyle>
+			<color>ff33691e</color>
+      <width>12</width>
+		</LineStyle>
+	</Style>
+	<Folder id="FeatureLayer0">		
+		<Placemark id="ID_00067">
+			<styleUrl>#LineStyle00</styleUrl>
+			<MultiGeometry>
+                <LineString>
+                    <tessellate>1</tessellate>
+                    <coordinates>
+                        -3.076892656125539,39.13531694051362,0 -3.078764026088831,39.13521852345877,0 -3.083671297213938,39.13508554747708,0 -3.084295082535029,39.13505270885808,0 -3.087039746940504,39.13492113494408,0 -3.093236083456083,39.13468961904605,0 -3.10021447576804,39.13436874404812,0 -3.100802123487067,39.13433835607447,0 -3.101420241828561,39.13432147386123,0 -3.101885876526396,39.13432609832946,0 -3.102509787362209,39.13439032967957,0 -3.103549862633757,39.13464852382638,0
+                    </coordinates>
+                </LineString>
+            </MultiGeometry>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

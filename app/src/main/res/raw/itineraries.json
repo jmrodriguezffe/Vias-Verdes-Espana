@@ -569,7 +569,7 @@
       "naturaText": "Esta Vía Verde cuenta con 1 Espacio Natural Protegido localizado en un radio inferior a 5 km: El LIC Vegas, Cuestas y Páramos del Sureste de Madrid (Red Natura 2000).",
       "connections": "Esta Vía Verde conecta con la <a href=\"viaverde://detail?id=84\">Vía Verde del Tajuña</a>, con el Camino Natural de la Cañada Real Soriana Oriental y el Camino Natural del Tajo"
     },
-	{
+    {
       "codVV": "TAJU",
       "id": 84,
       "name": "V.V. del Tajuña",
@@ -580,6 +580,16 @@
       "localization": "Entre Arganda del Rey y Ambite.",
       "naturaText": "Esta Vía Verde cuenta con 3 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: El Parque Regional Ejes de los Cursos Bajos de los Ríos Manzanares y Jarama, el LIC Vegas, Cuestas y Páramos del Sureste de Madrid y la ZEPA Cortados y Cantiles de los ríos Jarama y Manzanares (Red Natura 2000).\n\n\nEs posible conocer más sobre estos Espacios Naturales gracias al Centro de Educación ambiental El Campillo.",
       "connections": "Esta Vía Verde conecta con la <a href=\"viaverde://detail?id=83\">Vía Verde del Tren de los 40 Días</a> y con las inmediaciones de la <a href=\"viaverde://detail?id=57\">Vía Verde del Tajuña II</a>"
+    },
+    {
+      "codVV": "GASO",
+      "id": 85,
+      "name": "V.V. de la Gasolina",
+      "length": 3.05,
+      "provinces": "Madrid",
+      "ca": "Comunidad de Madrid",
+      "userTypes": "1,2,3",
+      "localization": "Barrio de Alameda de Osuna (Distrito Barajas) - Barrio de Rejas (Distrito San Blas)."
     },
 	{
       "codVV": "CATO",
@@ -890,6 +900,16 @@
       "userTypes": "1,2",
       "localization": "Entre las poblaciones de Manacor y Artà, situadas en el este de la isla de Mallorca.",
       "naturaText": "Esta Vía Verde cuenta con 9 Espacios Naturales Protegidos localizados en un radio inferior a 5 km: El Parque Natural de Llevant; los LICs de Canal de Menorca, Muntanyes d'Artà, Na Borges, Cova de can Bordils, Cova des Diners, Cova del Dimoni y Punta de n'Amer; y la ZEPA Muntanyes d'Artà.\n\n\nAdemás, es posible conocer más sobre estos Espacios Naturales Protegidos gracias al Centro de información Parque Natural de la península de Llevant."
+    },
+    {
+      "codVV": "PEN",
+      "id": 123,
+      "name": "V.V. Peñarroya-Pueblonuevo",
+      "length": 3.17,
+      "provinces": "Córdoba",
+      "ca": "Andalucía",
+      "userTypes": "1,2,3",
+      "localization": "Entre el Barrio Francés y el casco urbano de Pueblonuevo, pasando junto al soberbio edificio de la dirección de la antigua Sociedad Minero Metalúrgica de Peñarroya, el antiguo Hospital Minero, el Colegio Francés, la Fábrica de harinas y la Estación de vía estrecha de Pueblonuevo del Terrible, todo un viaje al pasado industrial del norte de Córdoba."
     },
     {
       "codVV": "VILL",
@@ -1396,6 +1416,26 @@
       "localization": "Partida del Moralet."
     },
     {
+      "codVV": "RTIN",
+      "id": 182,
+      "name": "V.V. de Río Tinto",
+      "length": 5.86,
+      "provinces": "Huelva",
+      "ca": "Andalucía",
+      "userTypes": "1,2,3",
+      "localization": "Estación Los Frailes (El Campillo) - Estación El Berrocal (Zalamea La Real)."
+    },
+    {
+      "codVV": "CAMH",
+      "id": 183,
+      "name": "Camino de Hierro",
+      "length": 16.46,
+      "provinces": "Salamanca",
+      "ca": "Castilla y León",
+      "userTypes": "1",
+      "localization": "Un bello recorrido a pie por el antiguo ferrocarril de ancho ibérico que unía Fuente de San Esteban (Salamanca), con la estación portuguesa de Barca d’Alva (Figueira de Castelo Rodrigo). La única vía férrea declarada Bien de Interés Cultural (BIC) en el año 2000."
+    },
+    {
       "codVV": "VIRE",
       "id": 184,
       "name": "V.V. de Vigo-Redondela",
@@ -1404,6 +1444,77 @@
       "ca": "Galicia",
       "userTypes": "1,2,3,4",
       "localization": "Centro Comercial Vialia (Vigo) - estación de Chapela (Redondela)"
+    },
+    {
+      "codVV": "THAR",
+      "id": 186,
+      "name": "V.V. Tharsis-Odiel",
+      "length": 29.75,
+      "provinces": "Huelva",
+      "ca": "Andalucía",
+      "userTypes": "1,2,3",
+      "localization": "Bordes urbanos en el estuario norte de Odiel (Huelva) - Gibraleón pasando por Aljaraque.",
+      "connections": "Conexión para ciclistas, a través de Eurovelo 1, con VV Molinos del Agua"
+    },
+    {
+      "codVV": "CIEZ",
+      "id": 187,
+      "name": "V.V. de la Floración de Cieza",
+      "length": 9.78,
+      "provinces": "Murcia",
+      "ca": "Región de Murcia",
+      "userTypes": "1,2,3",
+      "localization": "Este nuevo itinerario senderista y cicloturista sigue el antiguo trazado del ferrocarril entre Cieza y el límite con Calasparra, -vía que quedó en desuso al entrar en servicio la nueva variante de Camarillas- por un entorno de campos y frutales, con el principal atractivo de la floración en primavera, y con la posibilidad de conectar con la Vía Verde del Chicharra Cieza y otros itinerarios."
+    },
+    {
+      "codVV": "CAL1",
+      "id": 189,
+      "name": "V.V. del Campo de Calatrava",
+      "length": 2.78,
+      "provinces": "Ciudad Real",
+      "ca": "Castilla-La Mancha",
+      "userTypes": "1,2",
+      "localization": "Calzada de Calatrava - Casa Hernán. Aldea del Rey."
+    },
+    {
+      "codVV": "ARGA",
+      "id": 190,
+      "name": "V.V. de Argamasilla de Alba",
+      "length": 2.31,
+      "provinces": "Ciudad Real",
+      "ca": "Castilla-La Mancha",
+      "userTypes": "1,2",
+      "localization": "Estación de ferrrocaril - Camino de Campo de Calatrava. Argamasilla de Calatrava."
+    },
+    {
+      "codVV": "BARA",
+      "id": 193,
+      "name": "V.V. de Toledo",
+      "length": 2.33,
+      "provinces": "Toledo",
+      "ca": "Castilla-La Mancha",
+      "userTypes": "1,2,3",
+      "localization": "Entre Santa Bárbara y Azucaica (Toledo)."
+    },
+    {
+      "codVV": "BURJ",
+      "id": 194,
+      "name": "V.V. de Alfara",
+      "length": 0.30,
+      "provinces": "Valencia",
+      "ca": "Comunidad Valenciana",
+      "userTypes": "1,2,3",
+      "localization": "Burjassot"
+    },
+    {
+      "codVV": "CANT",
+      "id": 195,
+      "name": "V.V. de La Cantera",
+      "length": 1.18,
+      "provinces": "Alicante",
+      "ca": "Comunidad Valenciana",
+      "userTypes": "1,2,3",
+      "localization": "Un paseo por el frente litoral de la Avenida de Villajollosa en la Cantera sobre el antiguo trazado del trenet."
     },
     {
       "codVV": "SM6",
