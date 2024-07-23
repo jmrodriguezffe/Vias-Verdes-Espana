@@ -65,17 +65,6 @@ class ItineraryActivity : TextSizeThemeActivity() {
       getRemoteImageUri(itinerary, true)
     )
 
-    val altimetricResource = getAltimetricResource(itinerary)
-    if (altimetricResource > 0) {
-      val layoutParams = binding.itineraryAltimetricImg.layoutParams
-      layoutParams.height = (ScreenUtils.height() / 3).toInt()
-      binding.itineraryAltimetricImg.layoutParams = layoutParams
-      binding.itineraryAltimetricImg.setImageResource(altimetricResource)
-      binding.itineraryAltimetric.setVisible(true)
-    } else {
-      binding.itineraryAltimetric.setVisible(false)
-    }
-
     binding.itineraryTitle.text =
       ResourcesUtils.getString(R.string.itinerary__title, itinerary.name)
     binding.itineraryLocalization.text = itinerary.localization
