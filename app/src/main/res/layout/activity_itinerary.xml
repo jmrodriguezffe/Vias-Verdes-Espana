@@ -229,38 +229,6 @@
         app:layout_constraintTop_toBottomOf="@id/itinerary__unesco_label"
         tools:text="Puente de Bizkaia (en Getxo) y Caminos de Santiago de Compostela: Caminos del Norte de España.\n\nMás Info>>  http://whc.unesco.org/en/list/1217\nhttp://whc.unesco.org/en/list/669 " />
 
-      <LinearLayout
-        android:id="@+id/itinerary__altimetric"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingStart="@dimen/margin__default"
-        android:paddingEnd="@dimen/margin__default"
-        android:visibility="gone"
-        app:layout_constraintTop_toBottomOf="@id/itinerary__unesco">
-
-
-        <TextView
-          style="@style/Text_Detail_Section"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:paddingStart="0dp"
-          android:text="@string/itinerary__altimetric"
-          app:layout_constraintTop_toBottomOf="@id/itinerary__walk_user_type" />
-
-        <HorizontalScrollView
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content">
-
-          <ImageView
-            android:id="@+id/itinerary__altimetric__img"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:adjustViewBounds="true"
-            android:src="@drawable/altimetric__acei" />
-        </HorizontalScrollView>
-      </LinearLayout>
-
       <TextView
         android:id="@+id/itinerary__connections_label"
         style="@style/Text_Detail_Section"
@@ -268,7 +236,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin__default"
         android:text="@string/itinerary__connections"
-        app:layout_constraintTop_toBottomOf="@id/itinerary__altimetric" />
+        app:layout_constraintTop_toBottomOf="@id/itinerary__unesco" />
 
       <TextView
         android:id="@+id/itinerary__connections"
