@@ -80,11 +80,11 @@
         android:textSize="?attr/text_size__small" />
 
       <Button
-        android:id="@+id/itineraries__btn__search"
+        android:id="@+id/itineraries__btn__search_cancel"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_marginStart="@dimen/margin__default"
-        android:text="@string/action__search"
+        android:text="@string/action__cancel"
         android:textSize="?attr/text_size__small" />
     </LinearLayout>
 
