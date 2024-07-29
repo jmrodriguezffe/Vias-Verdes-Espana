@@ -9,6 +9,7 @@
   <string name="section__settings">Ajustes</string>
 
   <string name="action__search">Buscar</string>
+  <string name="action__cancel">Cancelar</string>
   <string name="action__filter">Filtrar</string>
   <string name="action__change_layer">Cambiar vista de mapa</string>
   <string name="action__layer__mtn">Vista de Mapa IGN</string>

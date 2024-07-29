@@ -12,7 +12,7 @@ interface ItineraryDAO {
   @Query("SELECT * from itinerary")
   fun getAll(): List<ItineraryBO>
 
-  @Query("SELECT * from itinerary ORDER BY provinces ASC")
+  @Query("SELECT * from itinerary ORDER BY `order` ASC")
   fun getAllLiveData(): LiveData<List<ItineraryBO>>
 
   @Query("SELECT * from itinerary where id=:id")

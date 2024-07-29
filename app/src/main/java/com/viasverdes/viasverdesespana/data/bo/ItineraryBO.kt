@@ -20,7 +20,8 @@ data class ItineraryBO(
       var userTypes: String,
       var connections: String?,
       var accesibilityText: String?,
-      var unescoText: String?
+      var unescoText: String?,
+      var order: String?,
 ) : Parcelable {
 
       fun webLink() = id % 1000 // workaround to have 2 or more itineraries with the same web id

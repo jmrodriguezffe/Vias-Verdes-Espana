@@ -8,6 +8,7 @@ import android.view.View
 import android.view.inputmethod.EditorInfo
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
+import androidx.core.widget.doOnTextChanged
 import androidx.lifecycle.Observer
 import com.underlegendz.corelegendz.vm.VMFragment
 import com.viasverdes.viasverdesespana.R
@@ -63,16 +64,36 @@ class ListVVFragment : VMFragment(), Observer<List<ItineraryBO>>, AdapterClickLi
     }
 
     binding.itinerariesInputCa.onItemSelectedListener = this
-    binding.itinerariesBtnSearch.setOnClickListener { search() }
+    binding.itinerariesInputSearch.doOnTextChanged { _, _, _, _ ->
+      search()
+    }
+    binding.itinerariesBtnSearchCancel.setOnClickListener {
+      binding.itinerariesInputSearch.text = null
+      binding.itinerariesInputCa.setSelection(0)
+      binding.itinerariesInputProvinces.setSelection(0)
+      search()
+      toggleSearchContainer()
+    }
+    val itemSelectedListener = object : AdapterView.OnItemSelectedListener {
+      override fun onItemSelected(p0: AdapterView<*>?, p1: View?, p2: Int, p3: Long) {
+        search()
+      }
+
+      override fun onNothingSelected(p0: AdapterView<*>?) {
+        // no-op
+      }
+
+    }
+    binding.itinerariesInputProvinces.onItemSelectedListener = itemSelectedListener
   }
 
   private fun search() {
-    val ca = if (binding.itinerariesInputCa.selectedItemPosition != 0) {
+    val ca = if (binding.itinerariesInputCa.selectedItemPosition > 0) {
       binding.itinerariesInputCa.selectedItem.toString()
     }else{
       null
     }
-    val province = if (binding.itinerariesInputProvinces.selectedItemPosition != 0) {
+    val province = if (binding.itinerariesInputProvinces.selectedItemPosition > 0) {
       binding.itinerariesInputProvinces.selectedItem.toString()
     }else{
       null
@@ -140,6 +161,7 @@ class ListVVFragment : VMFragment(), Observer<List<ItineraryBO>>, AdapterClickLi
         binding.itinerariesInputProvinces.adapter = adapter
       }
     }
+    search()
   }
 
 }
