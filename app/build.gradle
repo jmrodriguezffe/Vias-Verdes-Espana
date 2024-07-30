@@ -28,7 +28,7 @@ android {
     applicationId "com.viasverdes.viasverdesyenp"
     minSdkVersion 21
     targetSdk 35
-    versionCode 19 // Don't forget to update VVDatabase version too
+    versionCode 20 // Don't forget to update VVDatabase version too
     versionName "1.8.1"
     testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
   }

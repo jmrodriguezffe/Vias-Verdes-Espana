@@ -138,7 +138,7 @@ class ItineraryActivity : TextSizeThemeActivity() {
   fun moreInfo() {
     val itinerary = intent.getParcelableExtra<ItineraryBO>(ARG_ITINERARY)
     val moreInfoUri =
-      Uri.parse("http://www.viasverdes.com/rednatura2000/itinerarios/itinerario.asp?id=" + itinerary?.webLink())
+      Uri.parse("https://www.viasverdes.com/itinerarios/itinerario.asp?id=" + itinerary?.webLink())
     val mapIntent = Intent(Intent.ACTION_VIEW, moreInfoUri)
     startActivity(mapIntent)
   }
